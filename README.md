@@ -1,1 +1,1 @@
-# QAFD-RAG
+# QAFD
