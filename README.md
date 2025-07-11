@@ -1,1 +1,1 @@
-# QAFD----
+# QAFD Method
