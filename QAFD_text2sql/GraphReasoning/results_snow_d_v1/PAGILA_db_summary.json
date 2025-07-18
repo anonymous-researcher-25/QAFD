@@ -1,0 +1,4875 @@
+{
+  "metadata": {
+    "connection_account": "xxxxx",
+    "analyzed_databases": [
+      "PAGILA"
+    ],
+    "total_databases": 156,
+    "extracted_at": "xxxx"
+  },
+  "databases": {
+    "PAGILA": {
+      "schemas": {
+        "INFORMATION_SCHEMA": {
+          "tables": {}
+        },
+        "PAGILA": {
+          "tables": {
+            "ACTOR": {
+              "name": "ACTOR",
+              "column_count": 4,
+              "row_count": 200,
+              "columns": [
+                {
+                  "name": "actor_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 200,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.INVENTORY",
+                  "references_column": "inventory_id"
+                },
+                {
+                  "name": "first_name",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 128,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.64
+                },
+                {
+                  "name": "last_name",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 121,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.605
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.01
+                }
+              ],
+              "samples": {
+                "actor_id": [
+                  1,
+                  131,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  193,
+                  107,
+                  10
+                ],
+                "first_name": [
+                  "PENELOPE",
+                  "JANE",
+                  "ED",
+                  "JENNIFER",
+                  "JOHNNY",
+                  "BETTE",
+                  "GRACE",
+                  "BURT",
+                  "GINA",
+                  "CHRISTIAN"
+                ],
+                "last_name": [
+                  "GUINESS",
+                  "JACKMAN",
+                  "CHASE",
+                  "DAVIS",
+                  "LOLLOBRIGIDA",
+                  "NICHOLSON",
+                  "MOSTEL",
+                  "TEMPLE",
+                  "DEGENERES",
+                  "GABLE"
+                ],
+                "last_update": [
+                  "2021-03-06 15:51:59",
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:51:59",
+                  "2021-03-06 15:51:59",
+                  "2021-03-06 15:51:59",
+                  "2021-03-06 15:51:59",
+                  "2021-03-06 15:51:59",
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:51:59",
+                  "2021-03-06 15:51:59"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ADDRESS",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CITY",
+                    "column": "city_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "customer_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                }
+              ]
+            },
+            "ADDRESS": {
+              "name": "ADDRESS",
+              "column_count": 8,
+              "row_count": 603,
+              "columns": [
+                {
+                  "name": "address_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 603,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STORE",
+                  "references_column": "address_id"
+                },
+                {
+                  "name": "address",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 603,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "address2",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0017
+                },
+                {
+                  "name": "district",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0017
+                },
+                {
+                  "name": "city_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 599,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.9934,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.INVENTORY",
+                  "references_column": "inventory_id"
+                },
+                {
+                  "name": "postal_code",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 597,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.99
+                },
+                {
+                  "name": "phone",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0017
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 6,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.01
+                }
+              ],
+              "samples": {
+                "address_id": [
+                  167,
+                  214,
+                  482,
+                  216,
+                  503,
+                  451,
+                  174,
+                  326,
+                  9,
+                  145
+                ],
+                "address": [
+                  "1287 Xiangfan Boulevard",
+                  "751 Lima Loop",
+                  "808 Naala-Porto Parkway",
+                  "660 Jedda Boulevard",
+                  "1416 San Juan Bautista Tuxtepec Avenue",
+                  "1704 Tambaram Manor",
+                  "1877 Ezhou Lane",
+                  "470 Boksburg Street",
+                  "53 Idfu Parkway",
+                  "928 Jaffna Loop"
+                ],
+                "address2": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "district": [
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " "
+                ],
+                "city_id": [
+                  253,
+                  7,
+                  500,
+                  65,
+                  444,
+                  554,
+                  550,
+                  81,
+                  361,
+                  172
+                ],
+                "postal_code": [
+                  "57844",
+                  "99405",
+                  "41060",
+                  "25053",
+                  "50592",
+                  "2834",
+                  "63337",
+                  "97960",
+                  "42399",
+                  "93762"
+                ],
+                "phone": [
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " "
+                ],
+                "last_update": [
+                  "2021-03-06 15:51:55",
+                  "2021-03-06 15:51:56",
+                  "2021-03-06 15:51:58",
+                  "2021-03-06 15:51:56",
+                  "2021-03-06 15:51:58",
+                  "2021-03-06 15:51:57",
+                  "2021-03-06 15:51:55",
+                  "2021-03-06 15:51:56",
+                  "2021-03-06 15:51:54",
+                  "2021-03-06 15:51:55"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "city_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CITY",
+                    "column": "city_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "city_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "city_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "city_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                }
+              ]
+            },
+            "CATEGORY": {
+              "name": "CATEGORY",
+              "column_count": 3,
+              "row_count": 16,
+              "columns": [
+                {
+                  "name": "category_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 16,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.FILM_CATEGORY",
+                  "references_column": "film_id"
+                },
+                {
+                  "name": "name",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 16,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0625
+                }
+              ],
+              "samples": {
+                "category_id": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "name": [
+                  "Action",
+                  "Animation",
+                  "Children",
+                  "Classics",
+                  "Comedy",
+                  "Documentary",
+                  "Drama",
+                  "Family",
+                  "Foreign",
+                  "Games"
+                ],
+                "last_update": [
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:52:00"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ACTOR",
+                    "column": "actor_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ADDRESS",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CITY",
+                    "column": "city_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "customer_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                }
+              ]
+            },
+            "CITY": {
+              "name": "CITY",
+              "column_count": 4,
+              "row_count": 600,
+              "columns": [
+                {
+                  "name": "city_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 600,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.INVENTORY",
+                  "references_column": "inventory_id"
+                },
+                {
+                  "name": "city",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 599,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.9983
+                },
+                {
+                  "name": "country_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 109,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.1817,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.INVENTORY",
+                  "references_column": "inventory_id"
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 6,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.01
+                }
+              ],
+              "samples": {
+                "city_id": [
+                  1,
+                  325,
+                  404,
+                  496,
+                  157,
+                  112,
+                  7,
+                  387,
+                  526,
+                  234
+                ],
+                "city": [
+                  "A Corua (La Corua)",
+                  "Mannheim",
+                  "Peoria",
+                  "Southport",
+                  "Emeishan",
+                  "Chatsworth",
+                  "Aden",
+                  "Oulu",
+                  "Tanshui",
+                  "Jamalpur"
+                ],
+                "country_id": [
+                  87,
+                  38,
+                  103,
+                  102,
+                  23,
+                  85,
+                  107,
+                  33,
+                  92,
+                  12
+                ],
+                "last_update": [
+                  "2021-03-06 15:51:49",
+                  "2021-03-06 15:51:52",
+                  "2021-03-06 15:51:52",
+                  "2021-03-06 15:51:53",
+                  "2021-03-06 15:51:51",
+                  "2021-03-06 15:51:50",
+                  "2021-03-06 15:51:49",
+                  "2021-03-06 15:51:52",
+                  "2021-03-06 15:51:53",
+                  "2021-03-06 15:51:51"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "city_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "city_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "city_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ACTOR",
+                    "column": "actor_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ADDRESS",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "customer_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                }
+              ]
+            },
+            "COUNTRY": {
+              "name": "COUNTRY",
+              "column_count": 3,
+              "row_count": 109,
+              "columns": [
+                {
+                  "name": "country_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 109,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.INVENTORY",
+                  "references_column": "inventory_id"
+                },
+                {
+                  "name": "country",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 109,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0092
+                }
+              ],
+              "samples": {
+                "country_id": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  104
+                ],
+                "country": [
+                  "Afghanistan",
+                  "Algeria",
+                  "American Samoa",
+                  "Angola",
+                  "Anguilla",
+                  "Argentina",
+                  "Armenia",
+                  "Australia",
+                  "Austria",
+                  "Venezuela"
+                ],
+                "last_update": [
+                  "2021-03-06 15:51:49",
+                  "2021-03-06 15:51:49",
+                  "2021-03-06 15:51:49",
+                  "2021-03-06 15:51:49",
+                  "2021-03-06 15:51:49",
+                  "2021-03-06 15:51:49",
+                  "2021-03-06 15:51:49",
+                  "2021-03-06 15:51:49",
+                  "2021-03-06 15:51:49",
+                  "2021-03-06 15:51:49"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ACTOR",
+                    "column": "actor_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ADDRESS",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CITY",
+                    "column": "city_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "customer_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "country_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                }
+              ]
+            },
+            "CUSTOMER": {
+              "name": "CUSTOMER",
+              "column_count": 9,
+              "row_count": 599,
+              "columns": [
+                {
+                  "name": "customer_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 599,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.INVENTORY",
+                  "references_column": "inventory_id"
+                },
+                {
+                  "name": "store_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0033,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STORE",
+                  "references_column": "address_id"
+                },
+                {
+                  "name": "first_name",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 591,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.9866
+                },
+                {
+                  "name": "last_name",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 599,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "email",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 599,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "address_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 599,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STORE",
+                  "references_column": "address_id"
+                },
+                {
+                  "name": "active",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0033
+                },
+                {
+                  "name": "create_date",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0033
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 6,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.01
+                }
+              ],
+              "samples": {
+                "customer_id": [
+                  592,
+                  352,
+                  103,
+                  309,
+                  5,
+                  444,
+                  368,
+                  423,
+                  341,
+                  506
+                ],
+                "store_id": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  2,
+                  1,
+                  2,
+                  1,
+                  2
+                ],
+                "first_name": [
+                  "TERRANCE",
+                  "ALBERT",
+                  "GLADYS",
+                  "CHRISTOPHER",
+                  "ELIZABETH",
+                  "MARCUS",
+                  "HARRY",
+                  "ALFRED",
+                  "PETER",
+                  "LESLIE"
+                ],
+                "last_name": [
+                  "ROUSH",
+                  "CROUSE",
+                  "HAMILTON",
+                  "GRECO",
+                  "BROWN",
+                  "HIDALGO",
+                  "ARCE",
+                  "CASILLAS",
+                  "MENARD",
+                  "SEWARD"
+                ],
+                "email": [
+                  "TERRANCE.ROUSH@sakilacustomer.org",
+                  "ALBERT.CROUSE@sakilacustomer.org",
+                  "GLADYS.HAMILTON@sakilacustomer.org",
+                  "CHRISTOPHER.GRECO@sakilacustomer.org",
+                  "ELIZABETH.BROWN@sakilacustomer.org",
+                  "MARCUS.HIDALGO@sakilacustomer.org",
+                  "HARRY.ARCE@sakilacustomer.org",
+                  "ALFRED.CASILLAS@sakilacustomer.org",
+                  "PETER.MENARD@sakilacustomer.org",
+                  "LESLIE.SEWARD@sakilacustomer.org"
+                ],
+                "address_id": [
+                  598,
+                  357,
+                  107,
+                  314,
+                  9,
+                  449,
+                  373,
+                  428,
+                  346,
+                  511
+                ],
+                "active": [
+                  "0",
+                  "1",
+                  "1",
+                  "1",
+                  "1",
+                  "1",
+                  "0",
+                  "1",
+                  "1",
+                  "1"
+                ],
+                "create_date": [
+                  "2006-02-14 22:04:37.000",
+                  "2006-02-14 22:04:37.000",
+                  "2006-02-14 22:04:36.000",
+                  "2006-02-14 22:04:37.000",
+                  "2006-02-14 22:04:36.000",
+                  "2006-02-14 22:04:37.000",
+                  "2006-02-14 22:04:37.000",
+                  "2006-02-14 22:04:37.000",
+                  "2006-02-14 22:04:37.000",
+                  "2006-02-14 22:04:37.000"
+                ],
+                "last_update": [
+                  "2021-03-06 15:53:41",
+                  "2021-03-06 15:53:39",
+                  "2021-03-06 15:53:36",
+                  "2021-03-06 15:53:38",
+                  "2021-03-06 15:53:36",
+                  "2021-03-06 15:53:39",
+                  "2021-03-06 15:53:39",
+                  "2021-03-06 15:53:39",
+                  "2021-03-06 15:53:38",
+                  "2021-03-06 15:53:40"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "customer_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CITY",
+                    "column": "city_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "customer_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "customer_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "customer_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.LANGUAGE",
+                    "column": "language_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "manager_staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ADDRESS",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                }
+              ]
+            },
+            "FILM": {
+              "name": "FILM",
+              "column_count": 13,
+              "row_count": 1000,
+              "columns": [
+                {
+                  "name": "film_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 1000,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.INVENTORY",
+                  "references_column": "inventory_id"
+                },
+                {
+                  "name": "title",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1000,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "description",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1000,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "release_year",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.001
+                },
+                {
+                  "name": "language_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.001,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STORE",
+                  "references_column": "address_id"
+                },
+                {
+                  "name": "original_language_id",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.001
+                },
+                {
+                  "name": "rental_duration",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 5,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.005,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.COUNTRY",
+                  "references_column": "country_id"
+                },
+                {
+                  "name": "rental_rate",
+                  "type": "FLOAT",
+                  "is_primary_key": false,
+                  "distinct_count": 3,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.003
+                },
+                {
+                  "name": "length",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 140,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.14,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.INVENTORY",
+                  "references_column": "inventory_id"
+                },
+                {
+                  "name": "replacement_cost",
+                  "type": "FLOAT",
+                  "is_primary_key": false,
+                  "distinct_count": 21,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.021
+                },
+                {
+                  "name": "rating",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 5,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.005
+                },
+                {
+                  "name": "special_features",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 15,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.015
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 9,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.009
+                }
+              ],
+              "samples": {
+                "film_id": [
+                  178,
+                  843,
+                  418,
+                  300,
+                  694,
+                  886,
+                  444,
+                  712,
+                  9,
+                  392
+                ],
+                "title": [
+                  "CONNECTION MICROCOSMOS",
+                  "STEEL SANTA",
+                  "HOBBIT ALIEN",
+                  "FALCON VOLUME",
+                  "PREJUDICE OLEANDER",
+                  "THEORY MERMAID",
+                  "HUSTLER PARTY",
+                  "RAIDERS ANTITRUST",
+                  "ALABAMA DEVIL",
+                  "HALL CASSIDY"
+                ],
+                "description": [
+                  "A Fateful Documentary of a Crocodile And a Husband who must Face a Husband in The First Manned Sp...",
+                  "A Fast-Paced Yarn of a Composer And a Frisbee who must Face a Moose in Nigeria",
+                  "A Emotional Drama of a Husband And a Girl who must Outgun a Composer in The First Manned Space St...",
+                  "A Fateful Saga of a Sumo Wrestler And a Hunter who must Redeem a A Shark in New Orleans",
+                  "A Epic Saga of a Boy And a Dentist who must Outrace a Madman in A U-Boat",
+                  "A Fateful Yarn of a Composer And a Monkey who must Vanquish a Womanizer in The First Manned Space...",
+                  "A Emotional Reflection of a Sumo Wrestler And a Monkey who must Conquer a Robot in The Sahara Desert",
+                  "A Amazing Drama of a Teacher And a Feminist who must Meet a Woman in The First Manned Space Station",
+                  "A Thoughtful Panorama of a Database Administrator And a Mad Scientist who must Outgun a Mad Scien...",
+                  "A Beautiful Panorama of a Pastry Chef And a A Shark who must Battle a Pioneer in Soviet Georgia"
+                ],
+                "release_year": [
+                  "2006",
+                  "2006",
+                  "2006",
+                  "2006",
+                  "2006",
+                  "2006",
+                  "2006",
+                  "2006",
+                  "2006",
+                  "2006"
+                ],
+                "language_id": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "original_language_id": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                "rental_duration": [
+                  6,
+                  4,
+                  5,
+                  5,
+                  6,
+                  5,
+                  3,
+                  4,
+                  3,
+                  5
+                ],
+                "rental_rate": [
+                  0.99,
+                  4.99,
+                  0.99,
+                  4.99,
+                  4.99,
+                  0.99,
+                  4.99,
+                  0.99,
+                  2.99,
+                  4.99
+                ],
+                "length": [
+                  115,
+                  143,
+                  157,
+                  102,
+                  98,
+                  184,
+                  83,
+                  82,
+                  114,
+                  51
+                ],
+                "replacement_cost": [
+                  25.99,
+                  15.99,
+                  27.99,
+                  21.99,
+                  15.99,
+                  9.99,
+                  22.99,
+                  11.99,
+                  21.99,
+                  13.99
+                ],
+                "rating": [
+                  "G",
+                  "NC-17",
+                  "PG-13",
+                  "PG-13",
+                  "PG-13",
+                  "PG-13",
+                  "NC-17",
+                  "PG-13",
+                  "PG-13",
+                  "NC-17"
+                ],
+                "special_features": [
+                  "Deleted Scenes,Behind the Scenes",
+                  "Commentaries,Deleted Scenes",
+                  "Commentaries",
+                  "Commentaries,Behind the Scenes",
+                  "Trailers,Commentaries,Deleted Scenes",
+                  "Deleted Scenes,Behind the Scenes",
+                  "Trailers,Commentaries,Behind the Scenes",
+                  "Deleted Scenes",
+                  "Trailers,Deleted Scenes",
+                  "Commentaries,Behind the Scenes"
+                ],
+                "last_update": [
+                  "2021-03-06 15:52:02",
+                  "2021-03-06 15:52:07",
+                  "2021-03-06 15:52:04",
+                  "2021-03-06 15:52:03",
+                  "2021-03-06 15:52:06",
+                  "2021-03-06 15:52:07",
+                  "2021-03-06 15:52:04",
+                  "2021-03-06 15:52:06",
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:52:03"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "film_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "film_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "language_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "language_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.LANGUAGE",
+                    "column": "language_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "language_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "language_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "language_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "language_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "manager_staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "language_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "rental_duration",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ACTOR",
+                    "column": "actor_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "rental_duration",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "rental_duration",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "length",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ACTOR",
+                    "column": "actor_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "length",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ADDRESS",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "length",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CITY",
+                    "column": "city_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "length",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "customer_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "length",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "length",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "length",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                }
+              ]
+            },
+            "FILM_ACTOR": {
+              "name": "FILM_ACTOR",
+              "column_count": 3,
+              "row_count": 5462,
+              "columns": [
+                {
+                  "name": "actor_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 200,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0366,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.INVENTORY",
+                  "references_column": "inventory_id"
+                },
+                {
+                  "name": "film_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 997,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.1825,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.INVENTORY",
+                  "references_column": "inventory_id"
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 44,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0081
+                }
+              ],
+              "samples": {
+                "actor_id": [
+                  143,
+                  87,
+                  16,
+                  14,
+                  174,
+                  187,
+                  200,
+                  162,
+                  49,
+                  68
+                ],
+                "film_id": [
+                  906,
+                  48,
+                  87,
+                  187,
+                  853,
+                  976,
+                  346,
+                  612,
+                  716,
+                  331
+                ],
+                "last_update": [
+                  "2021-03-06 15:53:16",
+                  "2021-03-06 15:53:03",
+                  "2021-03-06 15:52:48",
+                  "2021-03-06 15:52:47",
+                  "2021-03-06 15:53:22",
+                  "2021-03-06 15:53:25",
+                  "2021-03-06 15:53:28",
+                  "2021-03-06 15:53:20",
+                  "2021-03-06 15:52:55",
+                  "2021-03-06 15:52:59"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ACTOR",
+                    "column": "actor_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ADDRESS",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CITY",
+                    "column": "city_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "customer_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "actor_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "film_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "film_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "film_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                }
+              ]
+            },
+            "FILM_CATEGORY": {
+              "name": "FILM_CATEGORY",
+              "column_count": 3,
+              "row_count": 1000,
+              "columns": [
+                {
+                  "name": "film_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 1000,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.INVENTORY",
+                  "references_column": "inventory_id"
+                },
+                {
+                  "name": "category_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 16,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.016,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.FILM",
+                  "references_column": "film_id"
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 9,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.009
+                }
+              ],
+              "samples": {
+                "film_id": [
+                  658,
+                  414,
+                  793,
+                  419,
+                  809,
+                  376,
+                  907,
+                  418,
+                  757,
+                  898
+                ],
+                "category_id": [
+                  11,
+                  9,
+                  1,
+                  8,
+                  15,
+                  9,
+                  7,
+                  7,
+                  6,
+                  15
+                ],
+                "last_update": [
+                  "2021-03-06 15:53:33",
+                  "2021-03-06 15:53:31",
+                  "2021-03-06 15:53:34",
+                  "2021-03-06 15:53:31",
+                  "2021-03-06 15:53:34",
+                  "2021-03-06 15:53:31",
+                  "2021-03-06 15:53:35",
+                  "2021-03-06 15:53:31",
+                  "2021-03-06 15:53:34",
+                  "2021-03-06 15:53:35"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "film_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "film_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ACTOR",
+                    "column": "actor_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ADDRESS",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CITY",
+                    "column": "city_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "customer_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "category_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                }
+              ]
+            },
+            "FILM_TEXT": {
+              "name": "FILM_TEXT",
+              "column_count": 3,
+              "row_count": 0,
+              "columns": [
+                {
+                  "name": "film_id",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 0,
+                  "null_count": 0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.FILM_CATEGORY",
+                  "references_column": "film_id"
+                },
+                {
+                  "name": "title",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 0,
+                  "null_count": 0
+                },
+                {
+                  "name": "description",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 0,
+                  "null_count": 0
+                }
+              ],
+              "samples": {
+                "film_id": [],
+                "title": [],
+                "description": []
+              },
+              "foreign_keys": [
+                {
+                  "column": "film_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "low"
+                },
+                {
+                  "column": "film_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "low"
+                }
+              ]
+            },
+            "INVENTORY": {
+              "name": "INVENTORY",
+              "column_count": 4,
+              "row_count": 4581,
+              "columns": [
+                {
+                  "name": "inventory_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 4581,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "film_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 958,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.2091,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.FILM_CATEGORY",
+                  "references_column": "film_id"
+                },
+                {
+                  "name": "store_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0004,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STORE",
+                  "references_column": "address_id"
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 38,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0083
+                }
+              ],
+              "samples": {
+                "inventory_id": [
+                  3608,
+                  4146,
+                  882,
+                  3328,
+                  2229,
+                  525,
+                  3198,
+                  2965,
+                  9,
+                  219
+                ],
+                "film_id": [
+                  789,
+                  901,
+                  194,
+                  732,
+                  482,
+                  115,
+                  702,
+                  650,
+                  2,
+                  49
+                ],
+                "store_id": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  2,
+                  2,
+                  1,
+                  2,
+                  2
+                ],
+                "last_update": [
+                  "2021-03-06 15:52:37",
+                  "2021-03-06 15:52:41",
+                  "2021-03-06 15:52:15",
+                  "2021-03-06 15:52:35",
+                  "2021-03-06 15:52:26",
+                  "2021-03-06 15:52:12",
+                  "2021-03-06 15:52:34",
+                  "2021-03-06 15:52:32",
+                  "2021-03-06 15:52:08",
+                  "2021-03-06 15:52:10"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "film_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "film_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.FILM_CATEGORY",
+                    "column": "film_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.LANGUAGE",
+                    "column": "language_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "manager_staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                }
+              ]
+            },
+            "LANGUAGE": {
+              "name": "LANGUAGE",
+              "column_count": 3,
+              "row_count": 6,
+              "columns": [
+                {
+                  "name": "language_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 6,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.CUSTOMER",
+                  "references_column": "customer_id"
+                },
+                {
+                  "name": "name",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 6,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.1667
+                }
+              ],
+              "samples": {
+                "language_id": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "name": [
+                  "English",
+                  "Italian",
+                  "Japanese",
+                  "Mandarin",
+                  "French",
+                  "German"
+                ],
+                "last_update": [
+                  "2021-03-06 15:51:48",
+                  "2021-03-06 15:51:48",
+                  "2021-03-06 15:51:48",
+                  "2021-03-06 15:51:48",
+                  "2021-03-06 15:51:48",
+                  "2021-03-06 15:51:48"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "language_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ACTOR",
+                    "column": "actor_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "language_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "language_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "language_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "customer_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                }
+              ]
+            },
+            "PAYMENT": {
+              "name": "PAYMENT",
+              "column_count": 7,
+              "row_count": 16049,
+              "columns": [
+                {
+                  "name": "payment_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 16049,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "customer_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 599,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0373,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.CUSTOMER",
+                  "references_column": "address_id"
+                },
+                {
+                  "name": "staff_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0001,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STAFF",
+                  "references_column": "store_id"
+                },
+                {
+                  "name": "rental_id",
+                  "type": "FLOAT",
+                  "is_primary_key": false,
+                  "distinct_count": 16044,
+                  "null_count": 5,
+                  "nullability": 0.0003,
+                  "cardinality": 0.9997,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.RENTAL",
+                  "references_column": "rental_id"
+                },
+                {
+                  "name": "amount",
+                  "type": "FLOAT",
+                  "is_primary_key": false,
+                  "distinct_count": 19,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0012
+                },
+                {
+                  "name": "payment_date",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 15819,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.9857
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 133,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0083
+                }
+              ],
+              "samples": {
+                "payment_id": [
+                  6723,
+                  14082,
+                  9013,
+                  4305,
+                  15726,
+                  5537,
+                  13685,
+                  14458,
+                  14402,
+                  12009
+                ],
+                "customer_id": [
+                  249,
+                  523,
+                  333,
+                  158,
+                  587,
+                  204,
+                  507,
+                  537,
+                  535,
+                  445
+                ],
+                "staff_id": [
+                  1,
+                  1,
+                  1,
+                  2,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  2
+                ],
+                "rental_id": [
+                  4352.0,
+                  4605.0,
+                  15313.0,
+                  7952.0,
+                  10825.0,
+                  9394.0,
+                  15394.0,
+                  3555.0,
+                  4331.0,
+                  9625.0
+                ],
+                "amount": [
+                  9.99,
+                  4.99,
+                  4.99,
+                  2.99,
+                  2.99,
+                  5.99,
+                  2.99,
+                  0.99,
+                  4.99,
+                  4.99
+                ],
+                "payment_date": [
+                  "2005-07-07 19:15:58.000",
+                  "2005-07-08 07:00:14.000",
+                  "2005-08-22 19:59:42.000",
+                  "2005-07-28 13:23:49.000",
+                  "2005-08-01 23:05:33.000",
+                  "2005-07-30 20:06:24.000",
+                  "2005-08-22 23:04:21.000",
+                  "2005-07-06 02:45:35.000",
+                  "2005-07-07 18:22:30.000",
+                  "2005-07-31 04:30:48.000"
+                ],
+                "last_update": [
+                  "2021-03-06 15:56:53",
+                  "2021-03-06 15:57:53",
+                  "2021-03-06 15:57:12",
+                  "2021-03-06 15:56:33",
+                  "2021-03-06 15:58:06",
+                  "2021-03-06 15:56:43",
+                  "2021-03-06 15:57:50",
+                  "2021-03-06 15:57:56",
+                  "2021-03-06 15:57:55",
+                  "2021-03-06 15:57:36"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "customer_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "customer_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "customer_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "rental_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.RENTAL",
+                    "column": "rental_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "low"
+                }
+              ]
+            },
+            "RENTAL": {
+              "name": "RENTAL",
+              "column_count": 7,
+              "row_count": 16044,
+              "columns": [
+                {
+                  "name": "rental_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 16044,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "rental_date",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 15815,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.9857
+                },
+                {
+                  "name": "inventory_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 4580,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.2855,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.INVENTORY",
+                  "references_column": "inventory_id"
+                },
+                {
+                  "name": "customer_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 599,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0373,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.CUSTOMER",
+                  "references_column": "address_id"
+                },
+                {
+                  "name": "return_date",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 15837,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.9871
+                },
+                {
+                  "name": "staff_id",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0001,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STAFF",
+                  "references_column": "store_id"
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 137,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.0085
+                }
+              ],
+              "samples": {
+                "rental_id": [
+                  2644,
+                  11358,
+                  14754,
+                  13499,
+                  7893,
+                  10303,
+                  10005,
+                  8266,
+                  12538,
+                  2210
+                ],
+                "rental_date": [
+                  "2005-06-19 09:42:30.000",
+                  "2005-08-02 17:45:02.000",
+                  "2005-08-21 23:17:26.000",
+                  "2005-08-20 01:52:30.000",
+                  "2005-07-28 10:49:27.000",
+                  "2005-08-01 04:13:33.000",
+                  "2005-07-31 17:53:51.000",
+                  "2005-07-29 01:20:16.000",
+                  "2005-08-18 14:09:09.000",
+                  "2005-06-18 02:27:01.000"
+                ],
+                "inventory_id": [
+                  1923,
+                  2361,
+                  2355,
+                  1893,
+                  3058,
+                  936,
+                  928,
+                  1972,
+                  1373,
+                  219
+                ],
+                "customer_id": [
+                  309,
+                  56,
+                  137,
+                  300,
+                  479,
+                  479,
+                  454,
+                  196,
+                  118,
+                  108
+                ],
+                "return_date": [
+                  "2005-06-27 07:23:30.000",
+                  "2005-08-11 18:16:02.000",
+                  "2005-08-29 18:55:26.000",
+                  "2005-08-28 04:57:30.000",
+                  "2005-08-02 06:46:27.000",
+                  "2005-08-06 02:16:33.000",
+                  "2005-08-09 21:39:51.000",
+                  "2005-07-30 04:31:16.000",
+                  "2005-08-23 19:12:09.000",
+                  "2005-06-21 00:45:01.000"
+                ],
+                "staff_id": [
+                  2,
+                  1,
+                  2,
+                  1,
+                  1,
+                  2,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "last_update": [
+                  "2021-03-06 15:54:02",
+                  "2021-03-06 15:55:14",
+                  "2021-03-06 15:55:44",
+                  "2021-03-06 15:55:32",
+                  "2021-03-06 15:54:45",
+                  "2021-03-06 15:55:05",
+                  "2021-03-06 15:55:03",
+                  "2021-03-06 15:54:48",
+                  "2021-03-06 15:55:24",
+                  "2021-03-06 15:53:58"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "inventory_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.INVENTORY",
+                    "column": "inventory_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "customer_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "customer_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "customer_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                }
+              ]
+            },
+            "STAFF": {
+              "name": "STAFF",
+              "column_count": 11,
+              "row_count": 2,
+              "columns": [
+                {
+                  "name": "staff_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STORE",
+                  "references_column": "address_id"
+                },
+                {
+                  "name": "first_name",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "last_name",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "address_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STORE",
+                  "references_column": "address_id"
+                },
+                {
+                  "name": "picture",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.5
+                },
+                {
+                  "name": "email",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "store_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STORE",
+                  "references_column": "address_id"
+                },
+                {
+                  "name": "active",
+                  "type": "NUMBER",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.5,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STORE",
+                  "references_column": "address_id"
+                },
+                {
+                  "name": "username",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0
+                },
+                {
+                  "name": "password",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.5
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.5
+                }
+              ],
+              "samples": {
+                "staff_id": [
+                  1,
+                  2
+                ],
+                "first_name": [
+                  "Mike",
+                  "Jon"
+                ],
+                "last_name": [
+                  "Hillyer",
+                  "Stephens"
+                ],
+                "address_id": [
+                  3,
+                  4
+                ],
+                "picture": [
+                  "",
+                  ""
+                ],
+                "email": [
+                  "Mike.Hillyer@sakilastaff.com",
+                  "Jon.Stephens@sakilastaff.com"
+                ],
+                "store_id": [
+                  1,
+                  2
+                ],
+                "active": [
+                  1,
+                  1
+                ],
+                "username": [
+                  "Mike",
+                  "Jon"
+                ],
+                "password": [
+                  "8cb2237d0679ca88db6464eac60da96345513964",
+                  "8cb2237d0679ca88db6464eac60da96345513964"
+                ],
+                "last_update": [
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:52:00"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.LANGUAGE",
+                    "column": "language_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "manager_staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ADDRESS",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.LANGUAGE",
+                    "column": "language_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.LANGUAGE",
+                    "column": "language_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "manager_staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "active",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "active",
+                  "references": {
+                    "table": "PAGILA.PAGILA.LANGUAGE",
+                    "column": "language_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "active",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "active",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "manager_staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "active",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STORE",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                }
+              ]
+            },
+            "STORE": {
+              "name": "STORE",
+              "column_count": 4,
+              "row_count": 2,
+              "columns": [
+                {
+                  "name": "store_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STAFF",
+                  "references_column": "store_id"
+                },
+                {
+                  "name": "manager_staff_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STAFF",
+                  "references_column": "store_id"
+                },
+                {
+                  "name": "address_id",
+                  "type": "NUMBER",
+                  "is_primary_key": true,
+                  "pk_origin": "potential",
+                  "distinct_count": 2,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 1.0,
+                  "is_foreign_key": true,
+                  "fk_origin": "potential",
+                  "references_table": "PAGILA.PAGILA.STAFF",
+                  "references_column": "store_id"
+                },
+                {
+                  "name": "last_update",
+                  "type": "TEXT",
+                  "is_primary_key": false,
+                  "distinct_count": 1,
+                  "null_count": 0,
+                  "nullability": 0.0,
+                  "cardinality": 0.5
+                }
+              ],
+              "samples": {
+                "store_id": [
+                  1,
+                  2
+                ],
+                "manager_staff_id": [
+                  1,
+                  2
+                ],
+                "address_id": [
+                  1,
+                  2
+                ],
+                "last_update": [
+                  "2021-03-06 15:52:00",
+                  "2021-03-06 15:52:00"
+                ]
+              },
+              "foreign_keys": [
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.LANGUAGE",
+                    "column": "language_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "store_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "manager_staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "manager_staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "manager_staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.LANGUAGE",
+                    "column": "language_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "manager_staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "manager_staff_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.ADDRESS",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CATEGORY",
+                    "column": "category_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.COUNTRY",
+                    "column": "country_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.CUSTOMER",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.LANGUAGE",
+                    "column": "language_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "staff_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "address_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "medium"
+                },
+                {
+                  "column": "address_id",
+                  "references": {
+                    "table": "PAGILA.PAGILA.STAFF",
+                    "column": "store_id"
+                  },
+                  "fk_origin": "potential",
+                  "confidence": "high"
+                }
+              ]
+            }
+          }
+        },
+        "PUBLIC": {
+          "tables": {}
+        }
+      }
+    }
+  },
+  "schema_summary": {
+    "total_databases": 156,
+    "total_schemas": 3,
+    "total_tables": 16,
+    "total_columns": 89,
+    "tables_with_primary_keys": 14,
+    "tables_with_foreign_keys": 16,
+    "total_relationships": 165
+  },
+  "relationships": [
+    {
+      "from_table": "PAGILA.PAGILA.ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.ADDRESS",
+      "to_column": "address_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.CITY",
+      "to_column": "city_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "customer_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ADDRESS",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ADDRESS",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ADDRESS",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ADDRESS",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ADDRESS",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ADDRESS",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ADDRESS",
+      "from_column": "city_id",
+      "to_table": "PAGILA.PAGILA.CITY",
+      "to_column": "city_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ADDRESS",
+      "from_column": "city_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ADDRESS",
+      "from_column": "city_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.ADDRESS",
+      "from_column": "city_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.ACTOR",
+      "to_column": "actor_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.ADDRESS",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.CITY",
+      "to_column": "city_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "customer_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CITY",
+      "from_column": "city_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CITY",
+      "from_column": "city_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CITY",
+      "from_column": "city_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CITY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.ACTOR",
+      "to_column": "actor_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CITY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.ADDRESS",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CITY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CITY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "customer_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CITY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CITY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CITY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.COUNTRY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.ACTOR",
+      "to_column": "actor_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.COUNTRY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.ADDRESS",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.COUNTRY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.CITY",
+      "to_column": "city_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.COUNTRY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "customer_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.COUNTRY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.COUNTRY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.COUNTRY",
+      "from_column": "country_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "customer_id",
+      "to_table": "PAGILA.PAGILA.CITY",
+      "to_column": "city_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "customer_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "customer_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "customer_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.LANGUAGE",
+      "to_column": "language_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "staff_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "store_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "store_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "manager_staff_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.ADDRESS",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.CUSTOMER",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "film_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "film_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "language_id",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "language_id",
+      "to_table": "PAGILA.PAGILA.LANGUAGE",
+      "to_column": "language_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "language_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "staff_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "language_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "store_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "language_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "store_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "language_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "manager_staff_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "language_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "address_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "rental_duration",
+      "to_table": "PAGILA.PAGILA.ACTOR",
+      "to_column": "actor_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "rental_duration",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "rental_duration",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "length",
+      "to_table": "PAGILA.PAGILA.ACTOR",
+      "to_column": "actor_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "length",
+      "to_table": "PAGILA.PAGILA.ADDRESS",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "length",
+      "to_table": "PAGILA.PAGILA.CITY",
+      "to_column": "city_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "length",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "customer_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "length",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "length",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM",
+      "from_column": "length",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.ACTOR",
+      "to_column": "actor_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.ADDRESS",
+      "to_column": "address_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.CITY",
+      "to_column": "city_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "customer_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_ACTOR",
+      "from_column": "actor_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_ACTOR",
+      "from_column": "film_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_ACTOR",
+      "from_column": "film_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_ACTOR",
+      "from_column": "film_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "from_column": "film_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "from_column": "film_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.ACTOR",
+      "to_column": "actor_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.ADDRESS",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.CITY",
+      "to_column": "city_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "customer_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "from_column": "category_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_TEXT",
+      "from_column": "film_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "low",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.FILM_TEXT",
+      "from_column": "film_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "low",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.INVENTORY",
+      "from_column": "film_id",
+      "to_table": "PAGILA.PAGILA.FILM",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.INVENTORY",
+      "from_column": "film_id",
+      "to_table": "PAGILA.PAGILA.FILM_CATEGORY",
+      "to_column": "film_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.INVENTORY",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.INVENTORY",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.INVENTORY",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.LANGUAGE",
+      "to_column": "language_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.INVENTORY",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "staff_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.INVENTORY",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "store_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.INVENTORY",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "store_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.INVENTORY",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "manager_staff_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.INVENTORY",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.LANGUAGE",
+      "from_column": "language_id",
+      "to_table": "PAGILA.PAGILA.ACTOR",
+      "to_column": "actor_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.LANGUAGE",
+      "from_column": "language_id",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.LANGUAGE",
+      "from_column": "language_id",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.LANGUAGE",
+      "from_column": "language_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "customer_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.PAYMENT",
+      "from_column": "customer_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "customer_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.PAYMENT",
+      "from_column": "customer_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.PAYMENT",
+      "from_column": "staff_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "staff_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.PAYMENT",
+      "from_column": "staff_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.PAYMENT",
+      "from_column": "staff_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "store_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.PAYMENT",
+      "from_column": "rental_id",
+      "to_table": "PAGILA.PAGILA.RENTAL",
+      "to_column": "rental_id",
+      "confidence": "low",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.RENTAL",
+      "from_column": "inventory_id",
+      "to_table": "PAGILA.PAGILA.INVENTORY",
+      "to_column": "inventory_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.RENTAL",
+      "from_column": "customer_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "customer_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.RENTAL",
+      "from_column": "customer_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.RENTAL",
+      "from_column": "staff_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "staff_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.RENTAL",
+      "from_column": "staff_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.RENTAL",
+      "from_column": "staff_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "store_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "staff_id",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "staff_id",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "staff_id",
+      "to_table": "PAGILA.PAGILA.LANGUAGE",
+      "to_column": "language_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "staff_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "store_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "staff_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "manager_staff_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "staff_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "address_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.ADDRESS",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.LANGUAGE",
+      "to_column": "language_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.LANGUAGE",
+      "to_column": "language_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "store_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "manager_staff_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "active",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "active",
+      "to_table": "PAGILA.PAGILA.LANGUAGE",
+      "to_column": "language_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "active",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "store_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "active",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "manager_staff_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STAFF",
+      "from_column": "active",
+      "to_table": "PAGILA.PAGILA.STORE",
+      "to_column": "address_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.LANGUAGE",
+      "to_column": "language_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "staff_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "store_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "store_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "manager_staff_id",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "manager_staff_id",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "manager_staff_id",
+      "to_table": "PAGILA.PAGILA.LANGUAGE",
+      "to_column": "language_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "manager_staff_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "staff_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "manager_staff_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "store_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.ADDRESS",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.CATEGORY",
+      "to_column": "category_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.COUNTRY",
+      "to_column": "country_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.CUSTOMER",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.LANGUAGE",
+      "to_column": "language_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "staff_id",
+      "confidence": "high",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "address_id",
+      "confidence": "medium",
+      "origin": "potential"
+    },
+    {
+      "from_table": "PAGILA.PAGILA.STORE",
+      "from_column": "address_id",
+      "to_table": "PAGILA.PAGILA.STAFF",
+      "to_column": "store_id",
+      "confidence": "high",
+      "origin": "potential"
+    }
+  ]
+}
