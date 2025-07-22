@@ -1,0 +1,84 @@
+--- a/DIN-SQL.py
++++ b/DIN-SQL.py
+@@ -1,6 +1,8 @@
+ import pandas as pd
++import logging                ### NEW
+ import time
+ import openai
+ import os
+ import sys
++from contextlib import nullcontext   ### NEW
+
+@@
+ openai.api_key = os.environ["OPENAI_API_KEY"]
++
++# —————————————————————————————————————————————————————  ### NEW
++logging.basicConfig(
++    level=logging.INFO,
++    format="%(asctime)s  %(processName)s  %(levelname)s: %(message)s",
++    handlers=[logging.StreamHandler(sys.stdout)],
++    force=True,
++)
++log = logging.getLogger(__name__)
++# —————————————————————————————————————————————————————  ### NEW
+
+@@ def GPT4o_generation(prompt, n=1, temperature=0):
+-        print("Prompt is", num_tokens(prompt), "tokens")
++        log.debug("Prompt is %d tokens", num_tokens(prompt))   ### NEW
+
+@@ except (openai.error.RateLimitError, json.decoder.JSONDecodeError, Exception) as e:
+-        print(f"Error occurred: {e}")
++        log.exception("GPT4o_generation failed")               ### NEW
+
+@@ def multi_processing_process_row(index, row, args, output_dir, spider_schema, spider_primary, spider_foreign):
+-    # step1. schema linking
++    tic = time.time()                                           ### NEW
++    rid = row["instance_id"]                                    ### NEW
++    log.info("▶️  [%s] starting", rid)                          ### NEW
++
++    # step1. schema linking
+
+@@
+-        except Exception as e:
+-            print(e)
++        except Exception as e:
++            log.exception("Schema linking failed for %s", rid)  ### NEW
+
+@@
+-    # step2. difficulty classification
++    log.info("🔗 [%s] schema links ready", rid)                 ### NEW
++    # step2. difficulty classification
+
+@@
+-        except Exception as e:
+-            print(e)
++        except Exception as e:
++            log.exception("Classification failed for %s", rid) ### NEW
+
+@@
+-    # step3. SQL generation
++    log.info("⚖️  [%s] classified as %s", rid, flag)            ### NEW
++    # step3. SQL generation
+
+@@
+-        except Exception as e:
+-            print(e)
++        except Exception as e:
++            log.exception("SQL generation failed for %s", rid) ### NEW
+
+@@
+-        except:
+-            print(f"SQL slicing error for index {idx}")
++        except:
++            log.error("SQL slicing error for row %s idx %d", rid, idx) ### NEW
+
+@@
+-            except Exception as e:
+-                print(f"Error occurred: {e}")
++            except Exception as e:
++                log.exception("Debugging failed for %s", rid)         ### NEW
+
+@@
+-    return index
++    log.info("✅ [%s] done in %.1fs", rid, time.time() - tic)   ### NEW
++    return index
