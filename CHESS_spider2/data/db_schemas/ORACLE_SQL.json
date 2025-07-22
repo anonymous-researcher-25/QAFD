@@ -1,0 +1,192 @@
+{
+  "BREWERIES": [
+    "id",
+    "name"
+  ],
+  "CHANNELS_DIM": [
+    "id",
+    "name",
+    "shortcut"
+  ],
+  "CONWAY_GEN_ZERO": [
+    "x",
+    "y",
+    "alive"
+  ],
+  "CUSTOMERS": [
+    "id",
+    "name"
+  ],
+  "CUSTOMER_FAVORITES": [
+    "customer_id",
+    "favorite_list"
+  ],
+  "CUSTOMER_REVIEWS": [
+    "customer_id",
+    "review_list"
+  ],
+  "EMPLOYEES": [
+    "id",
+    "name",
+    "title",
+    "supervisor_id"
+  ],
+  "EMP_HIRE_PERIODS": [
+    "emp_id",
+    "start_",
+    "end_",
+    "title"
+  ],
+  "FAVORITE_COLL_TYPE": [
+    "id"
+  ],
+  "GENDER_DIM": [
+    "letter",
+    "name"
+  ],
+  "ID_NAME_COLL_ENTRIES": [
+    "collection_id",
+    "id",
+    "name"
+  ],
+  "ID_NAME_COLL_TYPE": [
+    "collection_id"
+  ],
+  "ID_NAME_TYPE": [
+    "id",
+    "name"
+  ],
+  "INVENTORY": [
+    "PRODUCTID",
+    "WAREHOUSEID",
+    "AISLE",
+    "POSITION",
+    "PURCHASEDATE",
+    "QUANTITY"
+  ],
+  "LOCATIONS": [
+    "id",
+    "warehouse",
+    "aisle",
+    "position"
+  ],
+  "MONTHLY_BUDGET": [
+    "product_id",
+    "mth",
+    "qty"
+  ],
+  "MONTHLY_SALES": [
+    "product_id",
+    "mth",
+    "qty"
+  ],
+  "ORDERLINES": [
+    "ORDERID",
+    "PRODUCTID",
+    "QUANTITY"
+  ],
+  "ORDERS": [
+    "ORDERID"
+  ],
+  "PACKAGING": [
+    "id",
+    "name"
+  ],
+  "PACKAGING_RELATIONS": [
+    "packaging_id",
+    "contains_id",
+    "qty"
+  ],
+  "PICKING_LINE": [
+    "picklist_id",
+    "line_no",
+    "location_id",
+    "order_id",
+    "product_id",
+    "qty"
+  ],
+  "PICKING_LIST": [
+    "id",
+    "created",
+    "picker_emp_id"
+  ],
+  "PICKING_LOG": [
+    "picklist_id",
+    "log_time",
+    "activity",
+    "location_id",
+    "pickline_no"
+  ],
+  "PRODUCTS": [
+    "PRODUCTID"
+  ],
+  "PRODUCT_ALCOHOL": [
+    "product_id",
+    "sales_volume",
+    "abv"
+  ],
+  "PRODUCT_GROUPS": [
+    "id",
+    "name"
+  ],
+  "PRODUCT_MINIMUMS": [
+    "product_id",
+    "qty_minimum",
+    "qty_purchase"
+  ],
+  "PURCHASES": [
+    "PRODUCTID",
+    "PURCHASEDATE"
+  ],
+  "SERVER_HEARTBEAT": [
+    "server",
+    "beat_time"
+  ],
+  "STOCK": [
+    "symbol",
+    "company"
+  ],
+  "TICKER": [
+    "symbol",
+    "day",
+    "price"
+  ],
+  "WEB_APPS": [
+    "id",
+    "name"
+  ],
+  "WEB_COUNTER_HIST": [
+    "app_id",
+    "page_no",
+    "day",
+    "counter"
+  ],
+  "WEB_DEMOGRAPHICS": [
+    "day",
+    "m_tw_cnt",
+    "m_tw_qty",
+    "m_fb_cnt",
+    "m_fb_qty",
+    "f_tw_cnt",
+    "f_tw_qty",
+    "f_fb_cnt",
+    "f_fb_qty"
+  ],
+  "WEB_DEVICES": [
+    "day",
+    "pc",
+    "tablet",
+    "phone"
+  ],
+  "WEB_PAGES": [
+    "app_id",
+    "page_no",
+    "friendly_url"
+  ],
+  "WEB_PAGE_VISITS": [
+    "client_ip",
+    "visit_time",
+    "app_id",
+    "page_no"
+  ]
+}

@@ -1,0 +1,1425 @@
+{
+  "COUNTRY": {
+    "id": [
+      1,
+      1729,
+      4769,
+      7809,
+      10257
+    ],
+    "name": [
+      "Belgium",
+      "England",
+      "France",
+      "Germany",
+      "Italy"
+    ]
+  },
+  "LEAGUE": {
+    "id": [
+      1,
+      1729,
+      4769,
+      7809,
+      10257
+    ],
+    "country_id": [
+      1,
+      1729,
+      4769,
+      7809,
+      10257
+    ],
+    "name": [
+      "Belgium Jupiler League",
+      "England Premier League",
+      "France Ligue 1",
+      "Germany 1. Bundesliga",
+      "Italy Serie A"
+    ]
+  },
+  "MATCH": {
+    "id": [
+      23497,
+      25210,
+      19643,
+      25024,
+      17118
+    ],
+    "country_id": [
+      21518,
+      24558,
+      17642,
+      24558,
+      15722
+    ],
+    "league_id": [
+      21518,
+      24558,
+      17642,
+      24558,
+      15722
+    ],
+    "season": [
+      "2013/2014",
+      "2011/2012",
+      "2015/2016",
+      "2010/2011",
+      "2013/2014"
+    ],
+    "stage": [
+      16,
+      32,
+      4,
+      29,
+      4
+    ],
+    "date": [
+      "2013-12-14 00:00:00",
+      "2012-05-01 00:00:00",
+      "2015-09-13 00:00:00",
+      "2011-04-19 00:00:00",
+      "2013-08-10 00:00:00"
+    ],
+    "match_api_id": [
+      1505971,
+      1147508,
+      2015839,
+      954517,
+      1467827
+    ],
+    "home_team_api_id": [
+      8371,
+      10192,
+      10212,
+      10243,
+      8024
+    ],
+    "away_team_api_id": [
+      8633,
+      10243,
+      10238,
+      10192,
+      8020
+    ],
+    "home_team_goal": [
+      2,
+      1,
+      5,
+      2,
+      0
+    ],
+    "away_team_goal": [
+      2,
+      0,
+      2,
+      1,
+      3
+    ],
+    "home_player_X1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "home_player_X2": [
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "home_player_X3": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0
+    ],
+    "home_player_X4": [
+      6.0,
+      6.0,
+      6.0,
+      6.0,
+      6.0
+    ],
+    "home_player_X5": [
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "home_player_X6": [
+      4.0,
+      3.0,
+      3.0,
+      2.0,
+      1.0
+    ],
+    "home_player_X7": [
+      6.0,
+      5.0,
+      5.0,
+      4.0,
+      3.0
+    ],
+    "home_player_X8": [
+      3.0,
+      7.0,
+      7.0,
+      6.0,
+      5.0
+    ],
+    "home_player_X9": [
+      5.0,
+      3.0,
+      3.0,
+      8.0,
+      7.0
+    ],
+    "home_player_X10": [
+      7.0,
+      5.0,
+      5.0,
+      4.0,
+      9.0
+    ],
+    "home_player_X11": [
+      5.0,
+      7.0,
+      7.0,
+      6.0,
+      5.0
+    ],
+    "away_player_X1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "away_player_X2": [
+      2.0,
+      2.0,
+      2.0,
+      3.0,
+      2.0
+    ],
+    "away_player_X3": [
+      4.0,
+      4.0,
+      4.0,
+      5.0,
+      4.0
+    ],
+    "away_player_X4": [
+      6.0,
+      6.0,
+      6.0,
+      7.0,
+      6.0
+    ],
+    "away_player_X5": [
+      8.0,
+      8.0,
+      8.0,
+      2.0,
+      8.0
+    ],
+    "away_player_X6": [
+      4.0,
+      2.0,
+      2.0,
+      4.0,
+      1.0
+    ],
+    "away_player_X7": [
+      6.0,
+      4.0,
+      4.0,
+      6.0,
+      3.0
+    ],
+    "away_player_X8": [
+      3.0,
+      6.0,
+      6.0,
+      8.0,
+      5.0
+    ],
+    "away_player_X9": [
+      5.0,
+      8.0,
+      8.0,
+      3.0,
+      7.0
+    ],
+    "away_player_X10": [
+      7.0,
+      4.0,
+      4.0,
+      4.0,
+      9.0
+    ],
+    "away_player_X11": [
+      5.0,
+      6.0,
+      6.0,
+      7.0,
+      5.0
+    ],
+    "home_player_Y1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "home_player_Y2": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "home_player_Y3": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "home_player_Y4": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "home_player_Y5": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "home_player_Y6": [
+      6.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0
+    ],
+    "home_player_Y7": [
+      6.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0
+    ],
+    "home_player_Y8": [
+      8.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0
+    ],
+    "home_player_Y9": [
+      8.0,
+      10.0,
+      10.0,
+      7.0,
+      7.0
+    ],
+    "home_player_Y10": [
+      8.0,
+      10.0,
+      10.0,
+      10.0,
+      7.0
+    ],
+    "home_player_Y11": [
+      11.0,
+      10.0,
+      10.0,
+      10.0,
+      11.0
+    ],
+    "away_player_Y1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "away_player_Y2": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "away_player_Y3": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "away_player_Y4": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "away_player_Y5": [
+      3.0,
+      3.0,
+      3.0,
+      7.0,
+      3.0
+    ],
+    "away_player_Y6": [
+      6.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0
+    ],
+    "away_player_Y7": [
+      6.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0
+    ],
+    "away_player_Y8": [
+      8.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0
+    ],
+    "away_player_Y9": [
+      8.0,
+      7.0,
+      7.0,
+      10.0,
+      7.0
+    ],
+    "away_player_Y10": [
+      8.0,
+      10.0,
+      10.0,
+      10.0,
+      7.0
+    ],
+    "away_player_Y11": [
+      11.0,
+      10.0,
+      10.0,
+      10.0,
+      11.0
+    ],
+    "home_player_1": [
+      104986.0,
+      25947.0,
+      33431.0,
+      25811.0,
+      13473.0
+    ],
+    "home_player_2": [
+      21450.0,
+      30912.0,
+      322354.0,
+      121080.0,
+      315793.0
+    ],
+    "home_player_3": [
+      191906.0,
+      16254.0,
+      139898.0,
+      111925.0,
+      94280.0
+    ],
+    "home_player_4": [
+      17875.0,
+      34268.0,
+      498603.0,
+      181275.0,
+      null
+    ],
+    "home_player_5": [
+      37422.0,
+      190525.0,
+      242892.0,
+      115591.0,
+      null
+    ],
+    "home_player_6": [
+      38151.0,
+      113227.0,
+      174853.0,
+      41725.0,
+      null
+    ],
+    "home_player_7": [
+      50027.0,
+      26781.0,
+      478988.0,
+      198082.0,
+      null
+    ],
+    "home_player_8": [
+      183350.0,
+      31672.0,
+      73172.0,
+      78410.0,
+      169520.0
+    ],
+    "home_player_9": [
+      300623.0,
+      37681.0,
+      191789.0,
+      39136.0,
+      310192.0
+    ],
+    "home_player_10": [
+      18784.0,
+      66940.0,
+      361341.0,
+      132844.0,
+      69227.0
+    ],
+    "home_player_11": [
+      37653.0,
+      112012.0,
+      184590.0,
+      108525.0,
+      168232.0
+    ],
+    "away_player_1": [
+      41466.0,
+      25811.0,
+      355347.0,
+      25947.0,
+      68740.0
+    ],
+    "away_player_2": [
+      282674.0,
+      25843.0,
+      164360.0,
+      34268.0,
+      212377.0
+    ],
+    "away_player_3": [
+      25921.0,
+      25257.0,
+      361379.0,
+      114715.0,
+      68962.0
+    ],
+    "away_player_4": [
+      30962.0,
+      171338.0,
+      98361.0,
+      150007.0,
+      31019.0
+    ],
+    "away_player_5": [
+      28467.0,
+      41559.0,
+      45280.0,
+      41616.0,
+      69009.0
+    ],
+    "away_player_6": [
+      30889.0,
+      78410.0,
+      150039.0,
+      25843.0,
+      93850.0
+    ],
+    "away_player_7": [
+      31097.0,
+      198082.0,
+      280972.0,
+      132809.0,
+      107848.0
+    ],
+    "away_player_8": [
+      31921.0,
+      111925.0,
+      362661.0,
+      113227.0,
+      30976.0
+    ],
+    "away_player_9": [
+      191315.0,
+      42257.0,
+      605507.0,
+      31672.0,
+      115143.0
+    ],
+    "away_player_10": [
+      30893.0,
+      31100.0,
+      163839.0,
+      112012.0,
+      95533.0
+    ],
+    "away_player_11": [
+      26166.0,
+      108525.0,
+      193322.0,
+      66890.0,
+      254289.0
+    ],
+    "goal": [
+      "<goal><value><comment>n</comment><stats><goals>1</goals><shoton>1</shoton></stats><event_incident...",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "shoton": [
+      "<shoton />",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "shotoff": [
+      "<shotoff />",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "foulcommit": [
+      "<foulcommit />",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "card": [
+      "<card><value><comment>y</comment><stats><ycards>1</ycards></stats><event_incident_typefk>70</even...",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "cross": [
+      "<cross />",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "corner": [
+      "<corner />",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "possession": [
+      "<possession />",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "B365H": [
+      11.0,
+      null,
+      1.83,
+      null,
+      null
+    ],
+    "B365D": [
+      6.5,
+      null,
+      3.4,
+      null,
+      null
+    ],
+    "B365A": [
+      1.22,
+      null,
+      4.5,
+      null,
+      null
+    ],
+    "BWH": [
+      12.0,
+      null,
+      1.78,
+      null,
+      null
+    ],
+    "BWD": [
+      6.0,
+      null,
+      3.3,
+      null,
+      null
+    ],
+    "BWA": [
+      1.22,
+      null,
+      4.6,
+      null,
+      null
+    ],
+    "IWH": [
+      9.0,
+      null,
+      1.8,
+      null,
+      null
+    ],
+    "IWD": [
+      6.0,
+      null,
+      3.4,
+      null,
+      null
+    ],
+    "IWA": [
+      1.25,
+      null,
+      4.0,
+      null,
+      null
+    ],
+    "LBH": [
+      10.0,
+      null,
+      1.85,
+      null,
+      null
+    ],
+    "LBD": [
+      6.0,
+      null,
+      3.2,
+      null,
+      null
+    ],
+    "LBA": [
+      1.25,
+      null,
+      4.5,
+      null,
+      null
+    ],
+    "PSH": [
+      13.78,
+      null,
+      1.9,
+      null,
+      null
+    ],
+    "PSD": [
+      6.72,
+      null,
+      3.44,
+      null,
+      null
+    ],
+    "PSA": [
+      1.25,
+      null,
+      4.8,
+      null,
+      null
+    ],
+    "WHH": [
+      10.0,
+      null,
+      1.8,
+      null,
+      null
+    ],
+    "WHD": [
+      6.0,
+      null,
+      3.2,
+      null,
+      null
+    ],
+    "WHA": [
+      1.25,
+      null,
+      4.5,
+      null,
+      null
+    ],
+    "SJH": [
+      13.0,
+      null,
+      null,
+      null,
+      null
+    ],
+    "SJD": [
+      6.5,
+      null,
+      null,
+      null,
+      null
+    ],
+    "SJA": [
+      1.22,
+      null,
+      null,
+      null,
+      null
+    ],
+    "VCH": [
+      13.0,
+      null,
+      1.87,
+      null,
+      null
+    ],
+    "VCD": [
+      6.5,
+      null,
+      3.4,
+      null,
+      null
+    ],
+    "VCA": [
+      1.25,
+      null,
+      4.8,
+      null,
+      null
+    ],
+    "GBH": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "GBD": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "GBA": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "BSH": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "BSD": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "BSA": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "PLAYER": {
+    "id": [
+      10983,
+      4385,
+      5070,
+      2292,
+      4340
+    ],
+    "player_api_id": [
+      25538,
+      469285,
+      113292,
+      206592,
+      206701
+    ],
+    "player_name": [
+      "Youssouf Hadji",
+      "Ingo van Weert",
+      "Joey Suk",
+      "Darren Keet",
+      "Ignacio Lores"
+    ],
+    "player_fifa_api_id": [
+      116368,
+      219505,
+      212570,
+      204062,
+      205671
+    ],
+    "birthday": [
+      "1980-02-25 00:00:00",
+      "1994-02-08 00:00:00",
+      "1989-07-08 00:00:00",
+      "1989-08-05 00:00:00",
+      "1991-04-26 00:00:00"
+    ],
+    "height": [
+      182.88,
+      180.34,
+      185.42,
+      182.88,
+      182.88
+    ],
+    "weight": [
+      172,
+      168,
+      181,
+      170,
+      161
+    ]
+  },
+  "PLAYER_ATTRIBUTES": {
+    "id": [
+      182769,
+      105697,
+      107715,
+      53989,
+      136043
+    ],
+    "player_fifa_api_id": [
+      154950,
+      137242,
+      178177,
+      201454,
+      152603
+    ],
+    "player_api_id": [
+      40825,
+      39306,
+      38419,
+      187017,
+      40054
+    ],
+    "date": [
+      "2016-05-05 00:00:00",
+      "2009-08-30 00:00:00",
+      "2015-09-21 00:00:00",
+      "2016-05-05 00:00:00",
+      "2015-01-02 00:00:00"
+    ],
+    "overall_rating": [
+      77.0,
+      76.0,
+      71.0,
+      78.0,
+      67.0
+    ],
+    "potential": [
+      77.0,
+      84.0,
+      71.0,
+      81.0,
+      67.0
+    ],
+    "preferred_foot": [
+      "left",
+      "right",
+      "right",
+      "left",
+      "right"
+    ],
+    "attacking_work_rate": [
+      "medium",
+      "high",
+      "high",
+      "high",
+      "high"
+    ],
+    "defensive_work_rate": [
+      "medium",
+      "medium",
+      "low",
+      "medium",
+      "high"
+    ],
+    "crossing": [
+      81.0,
+      75.0,
+      62.0,
+      80.0,
+      57.0
+    ],
+    "finishing": [
+      63.0,
+      75.0,
+      72.0,
+      54.0,
+      66.0
+    ],
+    "heading_accuracy": [
+      57.0,
+      57.0,
+      68.0,
+      70.0,
+      75.0
+    ],
+    "short_passing": [
+      77.0,
+      81.0,
+      63.0,
+      74.0,
+      65.0
+    ],
+    "volleys": [
+      67.0,
+      72.0,
+      69.0,
+      52.0,
+      60.0
+    ],
+    "dribbling": [
+      79.0,
+      82.0,
+      71.0,
+      74.0,
+      57.0
+    ],
+    "curve": [
+      80.0,
+      74.0,
+      47.0,
+      73.0,
+      52.0
+    ],
+    "free_kick_accuracy": [
+      76.0,
+      73.0,
+      52.0,
+      68.0,
+      40.0
+    ],
+    "long_passing": [
+      72.0,
+      76.0,
+      49.0,
+      70.0,
+      33.0
+    ],
+    "ball_control": [
+      80.0,
+      82.0,
+      68.0,
+      75.0,
+      62.0
+    ],
+    "acceleration": [
+      76.0,
+      83.0,
+      74.0,
+      77.0,
+      65.0
+    ],
+    "sprint_speed": [
+      78.0,
+      81.0,
+      75.0,
+      84.0,
+      73.0
+    ],
+    "agility": [
+      77.0,
+      78.0,
+      68.0,
+      69.0,
+      63.0
+    ],
+    "reactions": [
+      71.0,
+      73.0,
+      70.0,
+      78.0,
+      65.0
+    ],
+    "balance": [
+      71.0,
+      68.0,
+      57.0,
+      62.0,
+      60.0
+    ],
+    "shot_power": [
+      74.0,
+      70.0,
+      76.0,
+      80.0,
+      76.0
+    ],
+    "jumping": [
+      54.0,
+      61.0,
+      71.0,
+      73.0,
+      83.0
+    ],
+    "stamina": [
+      81.0,
+      68.0,
+      65.0,
+      91.0,
+      75.0
+    ],
+    "strength": [
+      67.0,
+      72.0,
+      80.0,
+      75.0,
+      90.0
+    ],
+    "long_shots": [
+      78.0,
+      73.0,
+      70.0,
+      69.0,
+      64.0
+    ],
+    "aggression": [
+      84.0,
+      73.0,
+      59.0,
+      74.0,
+      70.0
+    ],
+    "interceptions": [
+      75.0,
+      70.0,
+      28.0,
+      74.0,
+      39.0
+    ],
+    "positioning": [
+      77.0,
+      70.0,
+      71.0,
+      64.0,
+      67.0
+    ],
+    "vision": [
+      72.0,
+      78.0,
+      62.0,
+      58.0,
+      61.0
+    ],
+    "penalties": [
+      72.0,
+      74.0,
+      58.0,
+      76.0,
+      68.0
+    ],
+    "marking": [
+      68.0,
+      24.0,
+      13.0,
+      74.0,
+      22.0
+    ],
+    "standing_tackle": [
+      73.0,
+      42.0,
+      33.0,
+      79.0,
+      33.0
+    ],
+    "sliding_tackle": [
+      80.0,
+      39.0,
+      24.0,
+      78.0,
+      24.0
+    ],
+    "gk_diving": [
+      6.0,
+      6.0,
+      11.0,
+      12.0,
+      5.0
+    ],
+    "gk_handling": [
+      6.0,
+      22.0,
+      9.0,
+      7.0,
+      14.0
+    ],
+    "gk_kicking": [
+      14.0,
+      76.0,
+      12.0,
+      8.0,
+      11.0
+    ],
+    "gk_positioning": [
+      7.0,
+      22.0,
+      7.0,
+      8.0,
+      8.0
+    ],
+    "gk_reflexes": [
+      10.0,
+      22.0,
+      6.0,
+      13.0,
+      14.0
+    ]
+  },
+  "SQLITE_SEQUENCE": {
+    "name": [
+      "Team",
+      "Country",
+      "League",
+      "Match",
+      "Player"
+    ],
+    "seq": [
+      103916,
+      51958,
+      51958,
+      51958,
+      11075
+    ]
+  },
+  "TEAM": {
+    "id": [
+      43038,
+      2,
+      3,
+      4,
+      33855
+    ],
+    "team_api_id": [
+      10205,
+      9993,
+      10000,
+      9994,
+      8027
+    ],
+    "team_fifa_api_id": [
+      483.0,
+      675.0,
+      15005.0,
+      2007.0,
+      112512.0
+    ],
+    "team_long_name": [
+      "Villarreal CF",
+      "Beerschot AC",
+      "SV Zulte-Waregem",
+      "Sporting Lokeren",
+      "Zawisza Bydgoszcz"
+    ],
+    "team_short_name": [
+      "VIL",
+      "BAC",
+      "ZUL",
+      "LOK",
+      "ZAW"
+    ]
+  },
+  "TEAM_ATTRIBUTES": {
+    "id": [
+      522,
+      176,
+      138,
+      1239,
+      826
+    ],
+    "team_fifa_api_id": [
+      110565,
+      3,
+      32,
+      232,
+      68
+    ],
+    "team_api_id": [
+      8019,
+      8655,
+      8178,
+      9985,
+      8550
+    ],
+    "date": [
+      "2015-09-10 00:00:00",
+      "2013-09-20 00:00:00",
+      "2011-02-22 00:00:00",
+      "2012-02-22 00:00:00",
+      "2011-02-22 00:00:00"
+    ],
+    "buildUpPlaySpeed": [
+      41,
+      44,
+      67,
+      75,
+      65
+    ],
+    "buildUpPlaySpeedClass": [
+      "Balanced",
+      "Balanced",
+      "Fast",
+      "Fast",
+      "Balanced"
+    ],
+    "buildUpPlayDribbling": [
+      40.0,
+      null,
+      null,
+      null,
+      null
+    ],
+    "buildUpPlayDribblingClass": [
+      "Normal",
+      "Little",
+      "Little",
+      "Little",
+      "Little"
+    ],
+    "buildUpPlayPassing": [
+      59,
+      64,
+      38,
+      70,
+      65
+    ],
+    "buildUpPlayPassingClass": [
+      "Mixed",
+      "Mixed",
+      "Mixed",
+      "Long",
+      "Mixed"
+    ],
+    "buildUpPlayPositioningClass": [
+      "Organised",
+      "Organised",
+      "Organised",
+      "Organised",
+      "Organised"
+    ],
+    "chanceCreationPassing": [
+      41,
+      55,
+      51,
+      55,
+      35
+    ],
+    "chanceCreationPassingClass": [
+      "Normal",
+      "Normal",
+      "Normal",
+      "Normal",
+      "Normal"
+    ],
+    "chanceCreationCrossing": [
+      44,
+      52,
+      47,
+      58,
+      65
+    ],
+    "chanceCreationCrossingClass": [
+      "Normal",
+      "Normal",
+      "Normal",
+      "Normal",
+      "Normal"
+    ],
+    "chanceCreationShooting": [
+      54,
+      40,
+      55,
+      60,
+      50
+    ],
+    "chanceCreationShootingClass": [
+      "Normal",
+      "Normal",
+      "Normal",
+      "Normal",
+      "Normal"
+    ],
+    "chanceCreationPositioningClass": [
+      "Organised",
+      "Organised",
+      "Organised",
+      "Organised",
+      "Organised"
+    ],
+    "defencePressure": [
+      52,
+      42,
+      57,
+      45,
+      35
+    ],
+    "defencePressureClass": [
+      "Medium",
+      "Medium",
+      "Medium",
+      "Medium",
+      "Medium"
+    ],
+    "defenceAggression": [
+      47,
+      50,
+      39,
+      60,
+      35
+    ],
+    "defenceAggressionClass": [
+      "Press",
+      "Press",
+      "Press",
+      "Press",
+      "Press"
+    ],
+    "defenceTeamWidth": [
+      50,
+      38,
+      51,
+      52,
+      65
+    ],
+    "defenceTeamWidthClass": [
+      "Normal",
+      "Normal",
+      "Normal",
+      "Normal",
+      "Normal"
+    ],
+    "defenceDefenderLineClass": [
+      "Cover",
+      "Cover",
+      "Cover",
+      "Cover",
+      "Cover"
+    ]
+  }
+}

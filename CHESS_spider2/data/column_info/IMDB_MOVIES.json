@@ -1,0 +1,393 @@
+{
+  "DIRECTOR_MAPPING": {
+    "movie_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3867 - Distinct count 3577 - Null count 0"
+    },
+    "name_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3867 - Distinct count 3603 - Null count 0"
+    }
+  },
+  "ERD": {
+    "table": {
+      "type": "TEXT",
+      "unique_values": [
+        "movie",
+        "movie",
+        "movie",
+        "movie",
+        "movie",
+        "movie",
+        "movie",
+        "movie",
+        "movie",
+        "genre"
+      ],
+      "value_statics": "Total count 25 - Distinct count 6 - Null count 0"
+    },
+    "column": {
+      "type": "TEXT",
+      "unique_values": [
+        "id",
+        "title",
+        "year",
+        "date_published",
+        "duration",
+        "country",
+        "worlwide_gross_income",
+        "languages",
+        "production_company",
+        "movie_id"
+      ],
+      "value_statics": "Total count 25 - Distinct count 20 - Null count 0"
+    },
+    "Unnamed: 2": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 25 - Distinct count 1 - Null count 0"
+    },
+    "Unnamed: 3": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 25 - Distinct count 1 - Null count 0"
+    },
+    "Unnamed: 4": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 25 - Distinct count 1 - Null count 0"
+    },
+    "Unnamed: 5": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 25 - Distinct count 1 - Null count 0"
+    },
+    "Unnamed: 6": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 25 - Distinct count 5 - Null count 0"
+    },
+    "Unnamed: 7": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 25 - Distinct count 1 - Null count 0"
+    },
+    "Unnamed: 8": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 25 - Distinct count 1 - Null count 0"
+    },
+    "Unnamed: 9": {
+      "type": "TEXT",
+      "unique_values": [
+        "genre",
+        "* movie_id",
+        "* genre",
+        "",
+        "",
+        "",
+        "",
+        "movie",
+        "* id",
+        "title"
+      ],
+      "value_statics": "Total count 25 - Distinct count 19 - Null count 0"
+    },
+    "Unnamed: 10": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 25 - Distinct count 1 - Null count 0"
+    },
+    "Unnamed: 11": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 25 - Distinct count 1 - Null count 0"
+    },
+    "Unnamed: 12": {
+      "type": "TEXT",
+      "unique_values": [
+        "ratings",
+        "* movie_id",
+        "avg_rating",
+        "total_votes",
+        "median_rating",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 25 - Distinct count 8 - Null count 0"
+    }
+  },
+  "GENRE": {
+    "movie_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 14662 - Distinct count 7997 - Null count 0"
+    },
+    "genre": {
+      "type": "TEXT",
+      "unique_values": [
+        "Comedy",
+        "Mystery",
+        "Drama",
+        "Horror",
+        "Drama",
+        "Action",
+        "Horror",
+        "Drama",
+        "Comedy",
+        "Action"
+      ],
+      "value_statics": "Total count 14662 - Distinct count 13 - Null count 0"
+    }
+  },
+  "MOVIES": {
+    "id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 7997 - Distinct count 7997 - Null count 0"
+    },
+    "title": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 7997 - Distinct count 7932 - Null count 0"
+    },
+    "year": {
+      "type": "NUMBER",
+      "unique_values": [
+        2017,
+        2018,
+        2017,
+        2019,
+        2018,
+        2017,
+        2017,
+        2018,
+        2017,
+        2018
+      ],
+      "value_statics": "Total count 7997 - Distinct count 3 - Null count 0"
+    },
+    "date_published": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 7997 - Distinct count 948 - Null count 0"
+    },
+    "duration": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 7997 - Distinct count 150 - Null count 0"
+    },
+    "country": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 7997 - Distinct count 987 - Null count 0"
+    },
+    "worlwide_gross_income": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 7997 - Distinct count 4257 - Null count 0"
+    },
+    "languages": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 7997 - Distinct count 881 - Null count 0"
+    },
+    "production_company": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 7997 - Distinct count 5333 - Null count 0"
+    }
+  },
+  "NAMES": {
+    "id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25735 - Distinct count 25735 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25735 - Distinct count 25674 - Null count 0"
+    },
+    "height": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25735 - Distinct count 55 - Null count 17335"
+    },
+    "date_of_birth": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25735 - Distinct count 9330 - Null count 0"
+    },
+    "known_for_movies": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25735 - Distinct count 6246 - Null count 0"
+    }
+  },
+  "RATINGS": {
+    "movie_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 7997 - Distinct count 7997 - Null count 0"
+    },
+    "avg_rating": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 7997 - Distinct count 90 - Null count 0"
+    },
+    "total_votes": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 7997 - Distinct count 3061 - Null count 0"
+    },
+    "median_rating": {
+      "type": "FLOAT",
+      "unique_values": [
+        6.0,
+        8.0,
+        6.0,
+        6.0,
+        7.0,
+        3.0,
+        7.0,
+        7.0,
+        6.0,
+        8.0
+      ],
+      "value_statics": "Total count 7997 - Distinct count 18 - Null count 0"
+    }
+  },
+  "ROLE_MAPPING": {
+    "movie_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 15615 - Distinct count 3757 - Null count 0"
+    },
+    "name_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 15615 - Distinct count 12611 - Null count 0"
+    },
+    "category": {
+      "type": "TEXT",
+      "unique_values": [
+        "actress",
+        "actress",
+        "actress",
+        "actor",
+        "actor",
+        "actress",
+        "actor",
+        "actor",
+        "actor",
+        "actor"
+      ],
+      "value_statics": "Total count 15615 - Distinct count 2 - Null count 0"
+    }
+  }
+}

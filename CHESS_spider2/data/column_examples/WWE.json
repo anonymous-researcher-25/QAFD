@@ -1,0 +1,267 @@
+{
+  "BELTS": {
+    "id": [
+      57137,
+      57041,
+      58871,
+      14,
+      66896
+    ],
+    "name": [
+      "WCW Cruiserweight Tag Team Titles",
+      "WWE European Championship WWE Women's Championship (original)",
+      "WCW United States Title WCW World Television Title",
+      "WWWF Junior Heavyweight Title",
+      "NXT Championship NXT UK Championship"
+    ]
+  },
+  "CARDS": {
+    "id": [
+      1592,
+      9076,
+      1181,
+      10196,
+      6860
+    ],
+    "table_id": [
+      1590,
+      9071,
+      1180,
+      10196,
+      6851
+    ],
+    "location_id": [
+      471,
+      347,
+      279,
+      232,
+      325
+    ],
+    "promotion_id": [
+      230,
+      3211,
+      230,
+      9876,
+      3211
+    ],
+    "event_date": [
+      "1996-04-30",
+      "2005-06-13",
+      "1999-01-10",
+      "1999-07-11",
+      "2012-12-04"
+    ],
+    "event_id": [
+      1592,
+      9076,
+      1181,
+      10196,
+      236
+    ],
+    "url": [
+      "http://www.profightdb.com/cards/wwf/superstars-of-wrestling-taping-501-13373.html",
+      "http://www.profightdb.com/cards/wwe/sunday-night-heat-357-taping-2513.html",
+      "http://www.profightdb.com/cards/wwf/super-astros-9-taping-3746.html",
+      "http://www.profightdb.com/cards/wcw/bash-at-the-beach-3999-301.html",
+      "http://www.profightdb.com/cards/wwe/smackdown-taping-16636.html"
+    ],
+    "info_html": [
+      "<table border=\"0\" width=\"100%\">\n <tr>\n  <td align=\"left\" height=\"23\" width=\"40%\">\n   <strong>\n   ...",
+      "<table border=\"0\" width=\"100%\">\n <tr>\n  <td align=\"left\" height=\"23\" width=\"40%\">\n   <strong>\n   ...",
+      "<table border=\"0\" width=\"100%\">\n <tr>\n  <td align=\"left\" height=\"23\" width=\"40%\">\n   <strong>\n   ...",
+      "<table border=\"0\" width=\"100%\">\n <tr>\n  <td align=\"left\" height=\"23\" width=\"40%\">\n   <strong>\n   ...",
+      "<table border=\"0\" width=\"100%\">\n <tr>\n  <td align=\"left\" height=\"23\" width=\"40%\">\n   <strong>\n   ..."
+    ],
+    "match_html": [
+      "<table cellpadding=\"0\" cellspacing=\"1\" width=\"100%\">\n <tr class=\"head\">\n  <th width=\"3%\">\n   no.\n...",
+      "<table cellpadding=\"0\" cellspacing=\"1\" width=\"100%\">\n <tr class=\"head\">\n  <th width=\"3%\">\n   no.\n...",
+      "<table cellpadding=\"0\" cellspacing=\"1\" width=\"100%\">\n <tr class=\"head\">\n  <th width=\"3%\">\n   no.\n...",
+      "<table cellpadding=\"0\" cellspacing=\"1\" width=\"100%\">\n <tr class=\"head\">\n  <th width=\"3%\">\n   no.\n...",
+      "<table cellpadding=\"0\" cellspacing=\"1\" width=\"100%\">\n <tr class=\"head\">\n  <th width=\"3%\">\n   no.\n..."
+    ]
+  },
+  "EVENTS": {
+    "id": [
+      10543,
+      2853,
+      1153,
+      7560,
+      2011
+    ],
+    "name": [
+      "Saturday Night Taping (December '97 #2)",
+      "Wrestling Challenge Taping #95",
+      "Sunday Night Heat #30 Taping",
+      "NXT Redemption Taping #11",
+      "Superstars of Wrestling Taping #387"
+    ]
+  },
+  "LOCATIONS": {
+    "id": [
+      1117,
+      448,
+      10264,
+      3101,
+      10110
+    ],
+    "name": [
+      "East Lansing, Michigan",
+      "Reading, Pennsylvania",
+      "Fort Pierce, Florida",
+      "Foxboro, Massachusetts",
+      "Vail, Colorado"
+    ]
+  },
+  "MATCHES": {
+    "id": [
+      429756,
+      16625,
+      273265,
+      325665,
+      287825
+    ],
+    "card_id": [
+      7292,
+      2661,
+      6955,
+      2745,
+      9788
+    ],
+    "winner_id": [
+      "49759",
+      "20633",
+      "52432",
+      "26240",
+      "54028"
+    ],
+    "win_type": [
+      "def.",
+      "def. (pin)",
+      "def. (pin)",
+      "def. (sub)",
+      "def. (pin)"
+    ],
+    "loser_id": [
+      "85977",
+      "33250",
+      "77594",
+      "23957",
+      "112631"
+    ],
+    "match_type_id": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "duration": [
+      "",
+      "01:49",
+      "",
+      "02:30",
+      "02:32"
+    ],
+    "title_id": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "title_change": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "MATCH_TYPES": {
+    "id": [
+      1,
+      29375,
+      7348,
+      25,
+      57889
+    ],
+    "name": [
+      "",
+      "commentator: Kevin Owens Battle Royal",
+      "\"Cast\"",
+      "steel cage",
+      "4-way tag \"Caged Heat\""
+    ]
+  },
+  "PROMOTIONS": {
+    "id": [
+      1,
+      230,
+      3211,
+      9876,
+      10963
+    ],
+    "name": [
+      "WWWF",
+      "WWF",
+      "WWE",
+      "WCW",
+      "NXT"
+    ]
+  },
+  "SQLITE_SEQUENCE": {
+    "name": [
+      "Tables",
+      "Events",
+      "Locations",
+      "Promotions",
+      "Cards"
+    ],
+    "seq": [
+      14431,
+      14431,
+      14431,
+      14431,
+      14431
+    ]
+  },
+  "TABLES": {
+    "id": [
+      1,
+      5561,
+      2500,
+      5311,
+      41
+    ],
+    "html": [
+      "<table cellpadding=\"0\" cellspacing=\"1\">\n <tr class=\"head\">\n  <th>\n   <a href=\"?order=date&amp;ppv...",
+      "<table cellpadding=\"0\" cellspacing=\"1\">\n <tr class=\"head\">\n  <th>\n   <a href=\"?order=date&amp;ppv...",
+      "<table cellpadding=\"0\" cellspacing=\"1\">\n <tr class=\"head\">\n  <th>\n   <a href=\"?order=date&amp;ppv...",
+      "<table cellpadding=\"0\" cellspacing=\"1\">\n <tr class=\"head\">\n  <th>\n   <a href=\"?order=date&amp;ppv...",
+      "<table cellpadding=\"0\" cellspacing=\"1\">\n <tr class=\"head\">\n  <th>\n   <a href=\"?order=date&amp;ppv..."
+    ],
+    "url": [
+      "http://www.profightdb.com/cards/wwwf-cards-pg1-no-20.html?order=&type=",
+      "http://www.profightdb.com/cards/wwe-cards-pg236-no-2.html?order=&type=",
+      "http://www.profightdb.com/cards/wwf-cards-pg228-no-1.html?order=&type=",
+      "http://www.profightdb.com/cards/wwe-cards-pg211-no-2.html?order=&type=",
+      "http://www.profightdb.com/cards/wwwf-cards-pg5-no-20.html?order=&type="
+    ]
+  },
+  "WRESTLERS": {
+    "id": [
+      53968,
+      53998,
+      72491,
+      117692,
+      142349
+    ],
+    "name": [
+      "Kay Lee Ray",
+      "Konnor & Viktor",
+      "Paul Heyman",
+      "Fit Finlay & Meng",
+      "Johnny Gargano & Kassius Ohno"
+    ]
+  }
+}

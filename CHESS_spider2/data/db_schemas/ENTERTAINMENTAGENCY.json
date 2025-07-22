@@ -1,0 +1,104 @@
+{
+  "AGENTS": [
+    "AgentID",
+    "AgtFirstName",
+    "AgtLastName",
+    "AgtStreetAddress",
+    "AgtCity",
+    "AgtState",
+    "AgtZipCode",
+    "AgtPhoneNumber",
+    "DateHired",
+    "Salary",
+    "CommissionRate"
+  ],
+  "CUSTOMERS": [
+    "CustomerID",
+    "CustFirstName",
+    "CustLastName",
+    "CustStreetAddress",
+    "CustCity",
+    "CustState",
+    "CustZipCode",
+    "CustPhoneNumber"
+  ],
+  "ENGAGEMENTS": [
+    "EngagementNumber",
+    "StartDate",
+    "EndDate",
+    "StartTime",
+    "StopTime",
+    "ContractPrice",
+    "CustomerID",
+    "AgentID",
+    "EntertainerID"
+  ],
+  "ENTERTAINERS": [
+    "EntertainerID",
+    "EntStageName",
+    "EntSSN",
+    "EntStreetAddress",
+    "EntCity",
+    "EntState",
+    "EntZipCode",
+    "EntPhoneNumber",
+    "EntWebPage",
+    "EntEMailAddress",
+    "DateEntered"
+  ],
+  "ENTERTAINER_MEMBERS": [
+    "EntertainerID",
+    "MemberID",
+    "Status"
+  ],
+  "ENTERTAINER_STYLES": [
+    "EntertainerID",
+    "StyleID",
+    "StyleStrength"
+  ],
+  "MEMBERS": [
+    "MemberID",
+    "MbrFirstName",
+    "MbrLastName",
+    "MbrPhoneNumber",
+    "Gender"
+  ],
+  "MUSICAL_PREFERENCES": [
+    "CustomerID",
+    "StyleID",
+    "PreferenceSeq"
+  ],
+  "MUSICAL_STYLES": [
+    "StyleID",
+    "StyleName"
+  ],
+  "ZTBLDAYS": [
+    "DateField"
+  ],
+  "ZTBLMONTHS": [
+    "MonthYear",
+    "YearNumber",
+    "MonthNumber",
+    "MonthStart",
+    "MonthEnd",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "ZTBLSKIPLABELS": [
+    "LabelCount"
+  ],
+  "ZTBLWEEKS": [
+    "WeekStart",
+    "WeekEnd"
+  ]
+}

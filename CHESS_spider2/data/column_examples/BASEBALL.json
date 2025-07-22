@@ -1,0 +1,328 @@
+{
+  "BATTING": {
+    "PLAYER_ID": [
+      "tarbear01",
+      "linkfr01",
+      "poledi01",
+      "mitchro01",
+      "lindad01"
+    ],
+    "YEAR": [
+      1928,
+      1910,
+      1974,
+      1914,
+      2009
+    ],
+    "STINT": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "TEAM_ID": [
+      "BOS",
+      "CLE",
+      "BOS",
+      "SLA",
+      "TOR"
+    ],
+    "LEAGUE_ID": [
+      "AL",
+      "AL",
+      "AL",
+      "AL",
+      "AL"
+    ],
+    "G": [
+      6,
+      22,
+      15,
+      28,
+      151
+    ],
+    "AB": [
+      17,
+      42,
+      null,
+      34,
+      587
+    ],
+    "R": [
+      1,
+      2,
+      null,
+      4,
+      93
+    ],
+    "H": [
+      3,
+      7,
+      null,
+      7,
+      179
+    ],
+    "DOUBLE": [
+      1,
+      0,
+      null,
+      1,
+      46
+    ],
+    "TRIPLE": [
+      0,
+      0,
+      null,
+      0,
+      0
+    ],
+    "HR": [
+      0,
+      0,
+      null,
+      0,
+      35
+    ],
+    "RBI": [
+      2,
+      0,
+      null,
+      0,
+      114
+    ],
+    "SB": [
+      1,
+      1,
+      null,
+      1,
+      1
+    ],
+    "CS": [
+      0,
+      null,
+      null,
+      null,
+      1
+    ],
+    "BB": [
+      1,
+      2,
+      null,
+      2,
+      58
+    ],
+    "SO": [
+      1,
+      null,
+      null,
+      7,
+      110
+    ],
+    "IBB": [
+      null,
+      null,
+      null,
+      null,
+      7
+    ],
+    "HBP": [
+      0,
+      0,
+      null,
+      0,
+      5
+    ],
+    "SH": [
+      1,
+      3,
+      null,
+      0,
+      0
+    ],
+    "SF": [
+      null,
+      null,
+      null,
+      null,
+      4
+    ],
+    "G_IDP": [
+      null,
+      null,
+      null,
+      null,
+      15
+    ]
+  },
+  "PLAYER": {
+    "PLAYER_ID": [
+      "berbelo01",
+      "swartpa01",
+      "bertafr01",
+      "terry01",
+      "hamilto01"
+    ],
+    "BIRTH_YEAR": [
+      1929,
+      1865,
+      1944,
+      1850,
+      1925
+    ],
+    "BIRTH_MONTH": [
+      11,
+      11,
+      4,
+      4,
+      9
+    ],
+    "BIRTH_DAY": [
+      20,
+      21,
+      14,
+      7,
+      29
+    ],
+    "BIRTH_COUNTRY": [
+      "USA",
+      "USA",
+      "USA",
+      "USA",
+      "USA"
+    ],
+    "BIRTH_STATE": [
+      "CA",
+      "IN",
+      "CA",
+      "PA",
+      "KS"
+    ],
+    "BIRTH_CITY": [
+      "Long Beach",
+      "Knightstown",
+      "San Francisco",
+      "Middletown",
+      "Altoona"
+    ],
+    "DEATH_YEAR": [
+      2004,
+      1940,
+      2010,
+      1908,
+      1973
+    ],
+    "DEATH_MONTH": [
+      4,
+      1,
+      3,
+      2,
+      11
+    ],
+    "DEATH_DAY": [
+      6,
+      3,
+      3,
+      20,
+      29
+    ],
+    "DEATH_COUNTRY": [
+      "USA",
+      "USA",
+      "USA",
+      "USA",
+      "USA"
+    ],
+    "DEATH_STATE": [
+      "NV",
+      "CA",
+      "CA",
+      "NJ",
+      "TX"
+    ],
+    "DEATH_CITY": [
+      "Las Vegas",
+      "Los Angeles",
+      "Santa Rosa",
+      "Elizabeth",
+      "Tyler"
+    ],
+    "NAME_FIRST": [
+      "Lou",
+      "Park",
+      "Frank",
+      "Walter",
+      "Tom"
+    ],
+    "NAME_LAST": [
+      "Berberet",
+      "Swartzel",
+      "Bertaina",
+      "Terry",
+      "Hamilton"
+    ],
+    "NAME_GIVEN": [
+      "Louis Joseph",
+      "Park B.",
+      "Frank Louis",
+      "Walter W.",
+      "Thomas Bail"
+    ],
+    "WEIGHT": [
+      200,
+      150,
+      177,
+      null,
+      213
+    ],
+    "HEIGHT": [
+      71,
+      70,
+      71,
+      null,
+      76
+    ],
+    "BATS": [
+      "L",
+      "R",
+      "L",
+      null,
+      "L"
+    ],
+    "THROWS": [
+      "R",
+      "R",
+      "L",
+      null,
+      "R"
+    ],
+    "DEBUT": [
+      "1954-09-17",
+      "1889-04-17",
+      "1964-08-01",
+      "1875-04-26",
+      "1952-09-04"
+    ],
+    "FINAL_GAME": [
+      "1960-09-25",
+      "1889-10-14",
+      "1970-09-25",
+      "1875-05-05",
+      "1953-09-13"
+    ],
+    "RETRO_ID": [
+      "berbl101",
+      "swarp101",
+      "bertf101",
+      "terru101",
+      "hamit101"
+    ],
+    "BBREF_ID": [
+      "berbelo01",
+      "swartpa01",
+      "bertafr01",
+      "terry01",
+      "hamilto01"
+    ]
+  }
+}

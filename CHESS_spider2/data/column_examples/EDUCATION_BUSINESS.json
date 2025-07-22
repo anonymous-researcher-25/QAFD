@@ -1,0 +1,722 @@
+{
+  "HARDWARE_DIM_CUSTOMER": {
+    "customer_code": [
+      70002017,
+      70002018,
+      70003181,
+      90022081,
+      90017053
+    ],
+    "customer": [
+      "Atliq Exclusive",
+      "Atliq e Store",
+      "Atliq Exclusive",
+      "Amazon",
+      "Info Stores"
+    ],
+    "platform": [
+      "Brick & Mortar",
+      "E-Commerce",
+      "Brick & Mortar",
+      "E-Commerce",
+      "Brick & Mortar"
+    ],
+    "channel": [
+      "Direct",
+      "Direct",
+      "Direct",
+      "Retailer",
+      "Retailer"
+    ],
+    "market": [
+      "India",
+      "India",
+      "Indonesia",
+      "USA",
+      "Portugal"
+    ],
+    "sub_zone": [
+      "India",
+      "India",
+      "ROA",
+      "",
+      "SE"
+    ],
+    "region": [
+      "APAC",
+      "APAC",
+      "APAC",
+      "",
+      "EU"
+    ]
+  },
+  "HARDWARE_DIM_PRODUCT": {
+    "product_code": [
+      "A5921110205",
+      "A3819150204",
+      "A6620160501",
+      "A5621110403",
+      "A6719160101"
+    ],
+    "division": [
+      "PC",
+      "P & A",
+      "N & S",
+      "PC",
+      "N & S"
+    ],
+    "segment": [
+      "Desktop",
+      "Accessories",
+      "Storage",
+      "Notebook",
+      "Storage"
+    ],
+    "category": [
+      "Business Laptop",
+      "Batteries",
+      "External Solid State Drives",
+      "Gaming Laptop",
+      "USB Flash Drives"
+    ],
+    "product": [
+      "AQ BZ Allin1 Gen 2",
+      "AQ LION x2",
+      "AQ Clx3",
+      "AQ Smash 1",
+      "AQ Pen Drive 2 IN 1"
+    ],
+    "variant": [
+      "Plus 2",
+      "Plus 3",
+      "Standard",
+      "Standard Black",
+      "Standard"
+    ]
+  },
+  "HARDWARE_FACT_GROSS_PRICE": {
+    "product_code": [
+      "A4419110407",
+      "A4519110502",
+      "A0118150102",
+      "A5820110104",
+      "A2918150104"
+    ],
+    "fiscal_year": [
+      2020,
+      2021,
+      2020,
+      2021,
+      2020
+    ],
+    "gross_price": [
+      272.485,
+      300.3378,
+      19.8577,
+      690.4971,
+      9.2172
+    ]
+  },
+  "HARDWARE_FACT_MANUFACTURING_COST": {
+    "product_code": [
+      "A3920150303",
+      "A6218160101",
+      "A5119110308",
+      "A0118150102",
+      "A4021150404"
+    ],
+    "cost_year": [
+      2021,
+      2020,
+      2021,
+      2021,
+      2021
+    ],
+    "manufacturing_cost": [
+      7.2797,
+      4.0966,
+      152.6437,
+      6.2835,
+      8.7356
+    ]
+  },
+  "HARDWARE_FACT_PRE_INVOICE_DEDUCTIONS": {
+    "customer_code": [
+      70002017,
+      90021095,
+      90016175,
+      90021091,
+      90012034
+    ],
+    "fiscal_year": [
+      2020,
+      2021,
+      2021,
+      2021,
+      2021
+    ],
+    "pre_invoice_discount_pct": [
+      0.0735,
+      0.2848,
+      0.213,
+      0.2501,
+      0.2195
+    ]
+  },
+  "HARDWARE_FACT_SALES_MONTHLY": {
+    "date": [
+      "2021-01-01",
+      "2020-10-01",
+      "2021-04-01",
+      "2020-09-01",
+      "2019-10-01"
+    ],
+    "product_code": [
+      "A4419110408",
+      "A5721110506",
+      "A0519150207",
+      "A1919150402",
+      "A0620150306"
+    ],
+    "customer_code": [
+      90002007,
+      90013118,
+      90023022,
+      90012041,
+      90022078
+    ],
+    "sold_quantity": [
+      24,
+      2,
+      27,
+      14,
+      97
+    ],
+    "fiscal_year": [
+      2021,
+      2021,
+      2021,
+      2021,
+      2020
+    ]
+  },
+  "SALARYDATASET": {
+    "index": [
+      3808,
+      1601,
+      2574,
+      2651,
+      509
+    ],
+    "CompanyName": [
+      "Intel Corporation",
+      "Naukri.com",
+      "LiquidHub",
+      "iEnergizer",
+      "Bounce"
+    ],
+    "JobTitle": [
+      "Machine Learning Engineer",
+      "Data Scientist",
+      "Data Analyst",
+      "Data Analyst",
+      "Data Scientist"
+    ],
+    "SalariesReported": [
+      1.0,
+      4.0,
+      10.0,
+      3.0,
+      1.0
+    ],
+    "Location": [
+      "Bangalore",
+      "New Delhi",
+      "New Delhi",
+      "New Delhi",
+      "Bangalore"
+    ],
+    "Salary": [
+      "\u20b932,548/mo",
+      "\u20b925,76,614/yr",
+      "\u20b93,51,668/yr",
+      "\u20b93,32,016/yr",
+      "\u20b932,808/mo"
+    ]
+  },
+  "STAFFHOURS": {
+    "StaffMember": [
+      "W",
+      "A",
+      "C",
+      "A",
+      "K"
+    ],
+    "EventDate": [
+      "2013-01-13",
+      "2013-01-15",
+      "2013-03-01",
+      "2013-01-08",
+      "2013-02-18"
+    ],
+    "EventTime": [
+      "09:00",
+      "08:00",
+      "07:45",
+      "11:00",
+      "13:20"
+    ],
+    "EventType": [
+      "Enter",
+      "Exit",
+      "Enter",
+      "Enter",
+      "Enter"
+    ]
+  },
+  "UNIVERSITY_COURSE": {
+    "CourseNo": [
+      "FIN300",
+      "FIN450",
+      "FIN480",
+      "IS320",
+      "IS460"
+    ],
+    "CrsDesc": [
+      "FUNDAMENTALS OF FINANCE",
+      "PRINCIPLES OF INVESTMENTS",
+      "CORPORATE FINANCE",
+      "FUNDAMENTALS OF BUSINESS PROGRAMMING",
+      "SYSTEMS ANALYSIS"
+    ],
+    "CrsUnits": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "UNIVERSITY_ENROLLMENT": {
+    "OfferNo": [
+      1234,
+      1234,
+      1234,
+      1234,
+      1234
+    ],
+    "StdNo": [
+      123456789,
+      234567890,
+      345678901,
+      456789012,
+      567890123
+    ],
+    "EnrGrade": [
+      3.3,
+      3.5,
+      3.2,
+      3.1,
+      3.8
+    ]
+  },
+  "UNIVERSITY_FACULTY": {
+    "FacNo": [
+      98765432,
+      543210987,
+      654321098,
+      765432109,
+      876543210
+    ],
+    "FacFirstName": [
+      "LEONARD",
+      "VICTORIA",
+      "LEONARD",
+      "NICKI",
+      "CRISTOPHER"
+    ],
+    "FacLastName": [
+      "VINCE",
+      "EMMANUEL",
+      "FIBON",
+      "MACON",
+      "COLAN"
+    ],
+    "FacCity": [
+      "SEATTLE",
+      "BOTHELL",
+      "SEATTLE",
+      "BELLEVUE",
+      "SEATTLE"
+    ],
+    "FacState": [
+      "WA",
+      "WA",
+      "WA",
+      "WA",
+      "WA"
+    ],
+    "FacDept": [
+      "MS",
+      "MS",
+      "MS",
+      "FIN",
+      "MS"
+    ],
+    "FacRank": [
+      "ASST",
+      "PROF",
+      "ASSC",
+      "PROF",
+      "ASST"
+    ],
+    "FacSalary": [
+      35000,
+      120000,
+      70000,
+      65000,
+      40000
+    ],
+    "FacSupervisor": [
+      654321098.0,
+      null,
+      543210987.0,
+      null,
+      654321098.0
+    ],
+    "FacHireDate": [
+      "1997-04-10",
+      "1998-04-15",
+      "1996-05-01",
+      "1999-04-11",
+      "2001-03-01"
+    ],
+    "FacZipCode": [
+      "98111-9921",
+      "98011-2242",
+      "98121-0094",
+      "98015-9945",
+      "98114-1332"
+    ]
+  },
+  "UNIVERSITY_OFFERING": {
+    "OfferNo": [
+      1111,
+      1234,
+      2222,
+      3333,
+      4321
+    ],
+    "CourseNo": [
+      "IS320",
+      "IS320",
+      "IS460",
+      "IS320",
+      "IS320"
+    ],
+    "OffTerm": [
+      "SUMMER",
+      "FALL",
+      "SUMMER",
+      "SPRING",
+      "FALL"
+    ],
+    "OffYear": [
+      2010,
+      2009,
+      2009,
+      2010,
+      2009
+    ],
+    "OffLocation": [
+      "BLM302",
+      "BLM302",
+      "BLM412",
+      "BLM214",
+      "BLM214"
+    ],
+    "OffTime": [
+      "10:30 AM",
+      "10:30 AM",
+      "1:30 PM",
+      "8:30 AM",
+      "3:30 PM"
+    ],
+    "FacNo": [
+      null,
+      98765432.0,
+      null,
+      98765432.0,
+      98765432.0
+    ],
+    "OffDays": [
+      "MW",
+      "MW",
+      "TTH",
+      "MW",
+      "TTH"
+    ]
+  },
+  "UNIVERSITY_STUDENT": {
+    "StdNo": [
+      123456789,
+      124567890,
+      234567890,
+      345678901,
+      456789012
+    ],
+    "StdFirstName": [
+      "HOMER",
+      "BOB",
+      "CANDY",
+      "WALLY",
+      "JOE"
+    ],
+    "StdLastName": [
+      "WELLS",
+      "NORBERT",
+      "KENDALL",
+      "KENDALL",
+      "ESTRADA"
+    ],
+    "StdCity": [
+      "SEATTLE",
+      "BOTHELL",
+      "TACOMA",
+      "SEATTLE",
+      "SEATTLE"
+    ],
+    "StdState": [
+      "WA",
+      "WA",
+      "WA",
+      "WA",
+      "WA"
+    ],
+    "StdZip": [
+      "98121-1111",
+      "98011-2121",
+      "99042-3321",
+      "98123-1141",
+      "98121-2333"
+    ],
+    "StdMajor": [
+      "IS",
+      "FIN",
+      "ACCT",
+      "IS",
+      "FIN"
+    ],
+    "StdClass": [
+      "FR",
+      "JR",
+      "JR",
+      "SR",
+      "SR"
+    ],
+    "StdGPA": [
+      3.0,
+      2.7,
+      3.5,
+      2.8,
+      3.2
+    ]
+  },
+  "WEB_ACCOUNTS": {
+    "id": [
+      2491,
+      1011,
+      3751,
+      1031,
+      2721
+    ],
+    "name": [
+      "Xerox",
+      "Exxon Mobil",
+      "Global Partners",
+      "Berkshire Hathaway",
+      "Micron Technology"
+    ],
+    "website": [
+      "www.xerox.com",
+      "www.exxonmobil.com",
+      "www.globalp.com",
+      "www.berkshirehathaway.com",
+      "www.micron.com"
+    ],
+    "lat": [
+      39.35788429,
+      41.1691563,
+      34.05561326,
+      40.94902131,
+      33.7640395
+    ],
+    "long": [
+      -99.13150995,
+      -73.84937379,
+      -118.25118871,
+      -75.76389759,
+      -84.32761056
+    ],
+    "primary_poc": [
+      "Ivory Crockett",
+      "Sung Shields",
+      "Jordan Fils",
+      "Serafina Banda",
+      "Kimiko Brasfield"
+    ],
+    "sales_rep_id": [
+      321750,
+      321510,
+      321950,
+      321530,
+      321880
+    ]
+  },
+  "WEB_EVENTS": {
+    "id": [
+      6361,
+      6501,
+      2777,
+      1352,
+      2383
+    ],
+    "account_id": [
+      2381,
+      2481,
+      3051,
+      1921,
+      2731
+    ],
+    "occurred_at": [
+      "2014-07-26T00:41:49.000Z",
+      "2013-12-28T16:23:33.000Z",
+      "2016-02-18T07:52:13.000Z",
+      "2016-03-31T17:51:55.000Z",
+      "2015-09-17T05:43:40.000Z"
+    ],
+    "channel": [
+      "direct",
+      "direct",
+      "direct",
+      "direct",
+      "direct"
+    ]
+  },
+  "WEB_ORDERS": {
+    "id": [
+      1153,
+      6272,
+      5669,
+      2442,
+      3890
+    ],
+    "account_id": [
+      1791,
+      3481,
+      2671,
+      2861,
+      4161
+    ],
+    "occurred_at": [
+      "2016-01-16T18:34:59.000Z",
+      "2016-08-30T06:12:10.000Z",
+      "2015-07-09T06:47:21.000Z",
+      "2016-02-06T14:27:39.000Z",
+      "2016-04-26T12:34:20.000Z"
+    ],
+    "standard_qty": [
+      498,
+      88,
+      484,
+      504,
+      500
+    ],
+    "gloss_qty": [
+      9,
+      569,
+      643,
+      16,
+      11
+    ],
+    "poster_qty": [
+      0,
+      300,
+      1043,
+      0,
+      4
+    ],
+    "total": [
+      507,
+      957,
+      2170,
+      520,
+      515
+    ],
+    "standard_amt_usd": [
+      2485.02,
+      439.12,
+      2415.16,
+      2514.96,
+      2495.0
+    ],
+    "gloss_amt_usd": [
+      67.41,
+      4261.81,
+      4816.07,
+      119.84,
+      82.39
+    ],
+    "poster_amt_usd": [
+      0.0,
+      2436.0,
+      8469.16,
+      0.0,
+      32.48
+    ],
+    "total_amt_usd": [
+      2552.43,
+      7136.93,
+      15700.39,
+      2634.8,
+      2609.87
+    ]
+  },
+  "WEB_REGION": {
+    "id": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "name": [
+      "Northeast",
+      "Midwest",
+      "Southeast",
+      "West"
+    ]
+  },
+  "WEB_SALES_REPS": {
+    "id": [
+      321500,
+      321510,
+      321520,
+      321530,
+      321540
+    ],
+    "name": [
+      "Samuel Racine",
+      "Eugena Esser",
+      "Michel Averette",
+      "Renetta Carew",
+      "Cara Clarke"
+    ],
+    "region_id": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "COMPANIES_DATES": "create or replace TABLE COMPANIES_DATES (\n\t\"company_id\" NUMBER(38,0),\n\t\"date_joined\" VARCHAR(16777216),\n\t\"year_founded\" NUMBER(38,0)\n);",
+  "COMPANIES_FUNDING": "create or replace TABLE COMPANIES_FUNDING (\n\t\"company_id\" NUMBER(38,0),\n\t\"valuation\" NUMBER(38,0),\n\t\"funding\" NUMBER(38,0),\n\t\"select_investors\" VARCHAR(16777216)\n);",
+  "COMPANIES_INDUSTRIES": "create or replace TABLE COMPANIES_INDUSTRIES (\n\t\"company_id\" NUMBER(38,0),\n\t\"industry\" VARCHAR(16777216)\n);",
+  "INCOME_TREES": "create or replace TABLE INCOME_TREES (\n\t\"zipcode\" NUMBER(38,0),\n\t\"Estimate_Total\" NUMBER(38,0),\n\t\"Margin_of_Error_Total\" NUMBER(38,0),\n\t\"Estimate_Median_income\" NUMBER(38,0),\n\t\"Margin_of_Error_Median_income\" NUMBER(38,0),\n\t\"Estimate_Mean_income\" NUMBER(38,0),\n\t\"Margin_of_Error_Mean_income\" NUMBER(38,0)\n);",
+  "PIZZA_CLEAN_CUSTOMER_ORDERS": "create or replace TABLE PIZZA_CLEAN_CUSTOMER_ORDERS (\n\t\"order_id\" NUMBER(38,0),\n\t\"customer_id\" NUMBER(38,0),\n\t\"pizza_id\" NUMBER(38,0),\n\t\"exclusions\" VARCHAR(16777216),\n\t\"extras\" VARCHAR(16777216),\n\t\"order_time\" VARCHAR(16777216)\n);",
+  "PIZZA_CLEAN_RUNNER_ORDERS": "create or replace TABLE PIZZA_CLEAN_RUNNER_ORDERS (\n\t\"order_id\" NUMBER(38,0),\n\t\"runner_id\" NUMBER(38,0),\n\t\"pickup_time\" VARCHAR(16777216),\n\t\"distance\" FLOAT,\n\t\"duration\" FLOAT,\n\t\"cancellation\" VARCHAR(16777216)\n);",
+  "PIZZA_CUSTOMER_ORDERS": "create or replace TABLE PIZZA_CUSTOMER_ORDERS (\n\t\"order_id\" NUMBER(38,0),\n\t\"customer_id\" NUMBER(38,0),\n\t\"pizza_id\" NUMBER(38,0),\n\t\"exclusions\" VARCHAR(16777216),\n\t\"extras\" VARCHAR(16777216),\n\t\"order_time\" VARCHAR(16777216)\n);",
+  "PIZZA_GET_EXCLUSIONS": "create or replace TABLE PIZZA_GET_EXCLUSIONS (\n\t\"row_id\" NUMBER(38,0),\n\t\"order_id\" NUMBER(38,0),\n\t\"exclusions\" NUMBER(38,0),\n\t\"total_exclusions\" NUMBER(38,0)\n);",
+  "PIZZA_GET_EXTRAS": "create or replace TABLE PIZZA_GET_EXTRAS (\n\t\"row_id\" NUMBER(38,0),\n\t\"order_id\" NUMBER(38,0),\n\t\"extras\" NUMBER(38,0),\n\t\"extras_count\" NUMBER(38,0)\n);",
+  "PIZZA_NAMES": "create or replace TABLE PIZZA_NAMES (\n\t\"pizza_id\" NUMBER(38,0),\n\t\"pizza_name\" VARCHAR(16777216)\n);",
+  "PIZZA_RECIPES": "create or replace TABLE PIZZA_RECIPES (\n\t\"pizza_id\" NUMBER(38,0),\n\t\"toppings\" VARCHAR(16777216)\n);",
+  "PIZZA_RUNNERS": "create or replace TABLE PIZZA_RUNNERS (\n\t\"runner_id\" NUMBER(38,0),\n\t\"registration_date\" VARCHAR(16777216)\n);",
+  "PIZZA_RUNNER_ORDERS": "create or replace TABLE PIZZA_RUNNER_ORDERS (\n\t\"order_id\" NUMBER(38,0),\n\t\"runner_id\" NUMBER(38,0),\n\t\"pickup_time\" VARCHAR(16777216),\n\t\"distance\" VARCHAR(16777216),\n\t\"duration\" VARCHAR(16777216),\n\t\"cancellation\" VARCHAR(16777216)\n);",
+  "PIZZA_TOPPINGS": "create or replace TABLE PIZZA_TOPPINGS (\n\t\"topping_id\" NUMBER(38,0),\n\t\"topping_name\" VARCHAR(16777216)\n);",
+  "STATISTICS": "create or replace TABLE STATISTICS (\n\t\"date\" VARCHAR(16777216),\n\t\"state\" VARCHAR(16777216),\n\t\"total_cases\" NUMBER(38,0),\n\t\"total_deaths\" NUMBER(38,0)\n);",
+  "TREES": "create or replace TABLE TREES (\n\t\"idx\" NUMBER(38,0),\n\t\"tree_id\" NUMBER(38,0),\n\t\"tree_dbh\" NUMBER(38,0),\n\t\"stump_diam\" NUMBER(38,0),\n\t\"status\" VARCHAR(16777216),\n\t\"health\" VARCHAR(16777216),\n\t\"spc_latin\" VARCHAR(16777216),\n\t\"spc_common\" VARCHAR(16777216),\n\t\"address\" VARCHAR(16777216),\n\t\"zipcode\" NUMBER(38,0),\n\t\"borocode\" NUMBER(38,0),\n\t\"boroname\" VARCHAR(16777216),\n\t\"nta_name\" VARCHAR(16777216),\n\t\"state\" VARCHAR(16777216),\n\t\"latitude\" FLOAT,\n\t\"longitude\" FLOAT\n);",
+  "WORD_LIST": "create or replace TABLE WORD_LIST (\n\t\"words\" VARCHAR(16777216)\n);"
+}

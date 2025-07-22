@@ -1,0 +1,15 @@
+{
+  "ALBUMS": "create or replace TABLE ALBUMS (\n\t\"AlbumId\" NUMBER(38,0),\n\t\"Title\" VARCHAR(16777216),\n\t\"ArtistId\" NUMBER(38,0)\n);",
+  "ARTISTS": "create or replace TABLE ARTISTS (\n\t\"ArtistId\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216)\n);",
+  "CUSTOMERS": "create or replace TABLE CUSTOMERS (\n\t\"CustomerId\" NUMBER(38,0),\n\t\"FirstName\" VARCHAR(16777216),\n\t\"LastName\" VARCHAR(16777216),\n\t\"Company\" VARCHAR(16777216),\n\t\"Address\" VARCHAR(16777216),\n\t\"City\" VARCHAR(16777216),\n\t\"State\" VARCHAR(16777216),\n\t\"Country\" VARCHAR(16777216),\n\t\"PostalCode\" VARCHAR(16777216),\n\t\"Phone\" VARCHAR(16777216),\n\t\"Fax\" VARCHAR(16777216),\n\t\"Email\" VARCHAR(16777216),\n\t\"SupportRepId\" NUMBER(38,0)\n);",
+  "EMPLOYEES": "create or replace TABLE EMPLOYEES (\n\t\"EmployeeId\" NUMBER(38,0),\n\t\"LastName\" VARCHAR(16777216),\n\t\"FirstName\" VARCHAR(16777216),\n\t\"Title\" VARCHAR(16777216),\n\t\"ReportsTo\" FLOAT,\n\t\"BirthDate\" VARCHAR(16777216),\n\t\"HireDate\" VARCHAR(16777216),\n\t\"Address\" VARCHAR(16777216),\n\t\"City\" VARCHAR(16777216),\n\t\"State\" VARCHAR(16777216),\n\t\"Country\" VARCHAR(16777216),\n\t\"PostalCode\" VARCHAR(16777216),\n\t\"Phone\" VARCHAR(16777216),\n\t\"Fax\" VARCHAR(16777216),\n\t\"Email\" VARCHAR(16777216)\n);",
+  "GENRES": "create or replace TABLE GENRES (\n\t\"GenreId\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216)\n);",
+  "INVOICES": "create or replace TABLE INVOICES (\n\t\"InvoiceId\" NUMBER(38,0),\n\t\"CustomerId\" NUMBER(38,0),\n\t\"InvoiceDate\" VARCHAR(16777216),\n\t\"BillingAddress\" VARCHAR(16777216),\n\t\"BillingCity\" VARCHAR(16777216),\n\t\"BillingState\" VARCHAR(16777216),\n\t\"BillingCountry\" VARCHAR(16777216),\n\t\"BillingPostalCode\" VARCHAR(16777216),\n\t\"Total\" FLOAT\n);",
+  "INVOICE_ITEMS": "create or replace TABLE INVOICE_ITEMS (\n\t\"InvoiceLineId\" NUMBER(38,0),\n\t\"InvoiceId\" NUMBER(38,0),\n\t\"TrackId\" NUMBER(38,0),\n\t\"UnitPrice\" FLOAT,\n\t\"Quantity\" NUMBER(38,0)\n);",
+  "MEDIA_TYPES": "create or replace TABLE MEDIA_TYPES (\n\t\"MediaTypeId\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216)\n);",
+  "PLAYLISTS": "create or replace TABLE PLAYLISTS (\n\t\"PlaylistId\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216)\n);",
+  "PLAYLIST_TRACK": "create or replace TABLE PLAYLIST_TRACK (\n\t\"PlaylistId\" NUMBER(38,0),\n\t\"TrackId\" NUMBER(38,0)\n);",
+  "SQLITE_SEQUENCE": "create or replace TABLE SQLITE_SEQUENCE (\n\t\"name\" VARCHAR(16777216),\n\t\"seq\" NUMBER(38,0)\n);",
+  "SQLITE_STAT1": "create or replace TABLE SQLITE_STAT1 (\n\t\"tbl\" VARCHAR(16777216),\n\t\"idx\" VARCHAR(16777216),\n\t\"stat\" VARCHAR(16777216)\n);",
+  "TRACKS": "create or replace TABLE TRACKS (\n\t\"TrackId\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216),\n\t\"AlbumId\" NUMBER(38,0),\n\t\"MediaTypeId\" NUMBER(38,0),\n\t\"GenreId\" NUMBER(38,0),\n\t\"Composer\" VARCHAR(16777216),\n\t\"Milliseconds\" NUMBER(38,0),\n\t\"Bytes\" NUMBER(38,0),\n\t\"UnitPrice\" FLOAT\n);"
+}

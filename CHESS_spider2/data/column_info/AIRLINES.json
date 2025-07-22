@@ -1,0 +1,289 @@
+{
+  "AIRCRAFTS_DATA": {
+    "aircraft_code": {
+      "type": "TEXT",
+      "unique_values": [
+        "773",
+        "763",
+        "SU9",
+        "320",
+        "321",
+        "319",
+        "733",
+        "CN1",
+        "CR2"
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "model": {
+      "type": "TEXT",
+      "unique_values": [
+        "{\"en\": \"Boeing 777-300\", \"ru\": \"\u0411\u043e\u0438\u043d\u0433 777-300\"}",
+        "{\"en\": \"Boeing 767-300\", \"ru\": \"\u0411\u043e\u0438\u043d\u0433 767-300\"}",
+        "{\"en\": \"Sukhoi Superjet-100\", \"ru\": \"\u0421\u0443\u0445\u043e\u0439 \u0421\u0443\u043f\u0435\u0440\u0434\u0436\u0435\u0442-100\"}",
+        "{\"en\": \"Airbus A320-200\", \"ru\": \"\u0410\u044d\u0440\u043e\u0431\u0443\u0441 A320-200\"}",
+        "{\"en\": \"Airbus A321-200\", \"ru\": \"\u0410\u044d\u0440\u043e\u0431\u0443\u0441 A321-200\"}",
+        "{\"en\": \"Airbus A319-100\", \"ru\": \"\u0410\u044d\u0440\u043e\u0431\u0443\u0441 A319-100\"}",
+        "{\"en\": \"Boeing 737-300\", \"ru\": \"\u0411\u043e\u0438\u043d\u0433 737-300\"}",
+        "{\"en\": \"Cessna 208 Caravan\", \"ru\": \"\u0421\u0435\u0441\u0441\u043d\u0430 208 \u041a\u0430\u0440\u0430\u0432\u0430\u043d\"}",
+        "{\"en\": \"Bombardier CRJ-200\", \"ru\": \"\u0411\u043e\u043c\u0431\u0430\u0440\u0434\u044c\u0435 CRJ-200\"}"
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "range": {
+      "type": "NUMBER",
+      "unique_values": [
+        11100,
+        7900,
+        3000,
+        5700,
+        5600,
+        6700,
+        4200,
+        1200,
+        2700
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    }
+  },
+  "AIRPORTS_DATA": {
+    "airport_code": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 104 - Distinct count 104 - Null count 0"
+    },
+    "airport_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 104 - Distinct count 104 - Null count 0"
+    },
+    "city": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 104 - Distinct count 101 - Null count 0"
+    },
+    "coordinates": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 104 - Distinct count 104 - Null count 0"
+    },
+    "timezone": {
+      "type": "TEXT",
+      "unique_values": [
+        "Asia/Yakutsk",
+        "Asia/Yakutsk",
+        "Asia/Vladivostok",
+        "Asia/Kamchatka",
+        "Asia/Sakhalin",
+        "Asia/Vladivostok",
+        "Europe/Moscow",
+        "Europe/Kaliningrad",
+        "Asia/Novokuznetsk",
+        "Asia/Yekaterinburg"
+      ],
+      "value_statics": "Total count 104 - Distinct count 17 - Null count 0"
+    }
+  },
+  "BOARDING_PASSES": {
+    "ticket_no": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 579686 - Distinct count 238834 - Null count 0"
+    },
+    "flight_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 579686 - Distinct count 11518 - Null count 0"
+    },
+    "boarding_no": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 579686 - Distinct count 374 - Null count 0"
+    },
+    "seat_no": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 579686 - Distinct count 461 - Null count 0"
+    }
+  },
+  "BOOKINGS": {
+    "book_ref": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 262788 - Distinct count 262788 - Null count 0"
+    },
+    "book_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 262788 - Distinct count 68631 - Null count 0"
+    },
+    "total_amount": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 262788 - Distinct count 3926 - Null count 0"
+    }
+  },
+  "FLIGHTS": {
+    "flight_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 33121 - Distinct count 33121 - Null count 0"
+    },
+    "flight_no": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 33121 - Distinct count 710 - Null count 0"
+    },
+    "scheduled_departure": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 33121 - Distinct count 10365 - Null count 0"
+    },
+    "scheduled_arrival": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 33121 - Distinct count 9648 - Null count 0"
+    },
+    "departure_airport": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 33121 - Distinct count 104 - Null count 0"
+    },
+    "arrival_airport": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 33121 - Distinct count 104 - Null count 0"
+    },
+    "status": {
+      "type": "TEXT",
+      "unique_values": [
+        "Arrived",
+        "Arrived",
+        "Scheduled",
+        "Arrived",
+        "Scheduled",
+        "Arrived",
+        "Scheduled",
+        "Scheduled",
+        "Arrived",
+        "Scheduled"
+      ],
+      "value_statics": "Total count 33121 - Distinct count 6 - Null count 0"
+    },
+    "aircraft_code": {
+      "type": "TEXT",
+      "unique_values": [
+        "SU9",
+        "CR2",
+        "SU9",
+        "CR2",
+        "CN1",
+        "CR2",
+        "CR2",
+        "763",
+        "CR2",
+        "SU9"
+      ],
+      "value_statics": "Total count 33121 - Distinct count 8 - Null count 0"
+    },
+    "actual_departure": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 33121 - Distinct count 12108 - Null count 0"
+    },
+    "actual_arrival": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 33121 - Distinct count 11851 - Null count 0"
+    }
+  },
+  "SEATS": {
+    "aircraft_code": {
+      "type": "TEXT",
+      "unique_values": [
+        "773",
+        "773",
+        "321",
+        "763",
+        "321",
+        "319",
+        "773",
+        "321",
+        "773",
+        "321"
+      ],
+      "value_statics": "Total count 1339 - Distinct count 9 - Null count 0"
+    },
+    "seat_no": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1339 - Distinct count 461 - Null count 0"
+    },
+    "fare_conditions": {
+      "type": "TEXT",
+      "unique_values": [
+        "Economy",
+        "Economy",
+        "Economy",
+        "Economy",
+        "Economy",
+        "Business",
+        "Economy",
+        "Economy",
+        "Comfort",
+        "Business"
+      ],
+      "value_statics": "Total count 1339 - Distinct count 3 - Null count 0"
+    }
+  },
+  "TICKETS": {
+    "ticket_no": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 366733 - Distinct count 366733 - Null count 0"
+    },
+    "book_ref": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 366733 - Distinct count 262788 - Null count 0"
+    },
+    "passenger_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 366733 - Distinct count 366733 - Null count 0"
+    }
+  },
+  "TICKET_FLIGHTS": {
+    "ticket_no": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1045726 - Distinct count 366733 - Null count 0"
+    },
+    "flight_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1045726 - Distinct count 22226 - Null count 0"
+    },
+    "fare_conditions": {
+      "type": "TEXT",
+      "unique_values": [
+        "Economy",
+        "Economy",
+        "Comfort",
+        "Economy",
+        "Economy",
+        "Economy",
+        "Economy",
+        "Economy",
+        "Economy",
+        "Economy"
+      ],
+      "value_statics": "Total count 1045726 - Distinct count 3 - Null count 0"
+    },
+    "amount": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1045726 - Distinct count 338 - Null count 0"
+    }
+  }
+}

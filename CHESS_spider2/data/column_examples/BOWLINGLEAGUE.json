@@ -1,0 +1,270 @@
+{
+  "BOWLERS": {
+    "BowlerState": [
+      "WA"
+    ],
+    "BowlerPhoneNumber": [
+      "(206) 555-9876",
+      "(206) 555-7854",
+      "(206) 555-9893",
+      "(206) 555-3487",
+      "(206) 882-8878"
+    ],
+    "BowlerGamesBowled": [
+      "39",
+      "0"
+    ],
+    "BowlerCity": [
+      "Bothell",
+      "Ballard",
+      "Seattle",
+      "Auburn",
+      "Bellevue"
+    ],
+    "BowlerID": [
+      1,
+      2,
+      3
+    ],
+    "BowlerCurrentHcp": [
+      "47",
+      "38",
+      "32",
+      "52",
+      "46"
+    ],
+    "BowlerFirstName": [
+      "Barbara",
+      "David",
+      "John"
+    ],
+    "BowlerAddress": [
+      "67 Willow Drive",
+      "17950 N 59th",
+      "16 Maple Lane",
+      "4726 - 11th Ave. N.E.",
+      "4110 Old Redmond Rd."
+    ],
+    "TeamID": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "BowlerMiddleInit": [
+      "",
+      "A",
+      "J",
+      "K",
+      "M"
+    ],
+    "BowlerLastName": [
+      "Fournier",
+      "Kennedy",
+      "Patterson",
+      "Viescas",
+      "Black"
+    ],
+    "BowlerZip": [
+      "98014",
+      "98154",
+      "98011",
+      "98002",
+      "98052"
+    ],
+    "BowlerTotalPins": [
+      5790,
+      6152,
+      6435
+    ],
+    "BowlerCurrentAverage": [
+      "148",
+      "158",
+      "165",
+      "142",
+      "169"
+    ]
+  },
+  "BOWLER_SCORES": {
+    "HandiCapScore": [
+      192,
+      205,
+      171
+    ],
+    "BowlerID": [
+      1,
+      2,
+      3
+    ],
+    "MatchID": [
+      1,
+      2,
+      3
+    ],
+    "RawScore": [
+      146,
+      166,
+      140
+    ],
+    "GameNumber": [
+      "1",
+      "2",
+      "3"
+    ],
+    "WonGame": [
+      "0",
+      "1"
+    ]
+  },
+  "BOWLER_SCORES_ARCHIVE": {
+    "BowlerID": [],
+    "WonGame": [],
+    "GameNumber": [],
+    "HandiCapScore": [],
+    "RawScore": [],
+    "MatchID": []
+  },
+  "MATCH_GAMES": {
+    "MatchID": [
+      1,
+      2,
+      3
+    ],
+    "WinningTeamID": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "GameNumber": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  "MATCH_GAMES_ARCHIVE": {
+    "GameNumber": [],
+    "WinningTeamID": [],
+    "MatchID": []
+  },
+  "SQLITE_SEQUENCE": {
+    "seq": [
+      "20",
+      "34",
+      "10",
+      "57"
+    ],
+    "name": [
+      "Tournaments",
+      "Bowlers",
+      "Teams",
+      "Tourney_Matches"
+    ]
+  },
+  "TOURNAMENTS": {
+    "TourneyDate": [
+      "2017-09-04",
+      "2017-09-11",
+      "2017-09-18"
+    ],
+    "TourneyLocation": [
+      "Red Rooster Lanes",
+      "Thunderbird Lanes",
+      "Bolero Lanes",
+      "Imperial Lanes",
+      "Sports World Lanes"
+    ],
+    "TourneyID": [
+      1,
+      2,
+      3
+    ]
+  },
+  "TOURNAMENTS_ARCHIVE": {
+    "TourneyLocation": [],
+    "TourneyDate": [],
+    "TourneyID": []
+  },
+  "TOURNEY_MATCHES": {
+    "OddLaneTeamID": [
+      "1",
+      "3",
+      "5",
+      "7",
+      "4"
+    ],
+    "Lanes": [
+      "01-02",
+      "03-04",
+      "05-06",
+      "07-08",
+      "21-22"
+    ],
+    "TourneyID": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "EvenLaneTeamID": [
+      "2",
+      "4",
+      "6",
+      "1",
+      "7"
+    ],
+    "MatchID": [
+      1,
+      2,
+      3
+    ]
+  },
+  "TOURNEY_MATCHES_ARCHIVE": {
+    "EvenLaneTeamID": [],
+    "MatchID": [],
+    "TourneyID": [],
+    "OddLaneTeamID": [],
+    "Lanes": []
+  },
+  "WAZIPS": {
+    "State": [
+      "WA"
+    ],
+    "ZIP": [
+      "98001",
+      "98002",
+      "98003"
+    ],
+    "City": [
+      "Auburn",
+      "Federal Way",
+      "Bellevue"
+    ]
+  },
+  "TEAMS": {
+    "TeamName": [
+      "Marlins",
+      "Sharks",
+      "Terrapins",
+      "Barracudas",
+      "Dolphins"
+    ],
+    "TeamID": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "CaptainID": [
+      "2",
+      "5",
+      "16",
+      "20",
+      "24"
+    ]
+  }
+}

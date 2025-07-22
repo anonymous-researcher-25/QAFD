@@ -1,0 +1,1004 @@
+{
+  "BOWLERS": {
+    "BowlerState": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "WA"
+        ]
+      ],
+      "value_statics": "Total count 34 - Distinct count 1 - Null count 0"
+    },
+    "BowlerPhoneNumber": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "(206) 555-9876"
+        ],
+        [
+          "(206) 555-7854"
+        ],
+        [
+          "(206) 555-9893"
+        ],
+        [
+          "(206) 555-3487"
+        ],
+        [
+          "(206) 882-8878"
+        ],
+        [
+          "(206) 555-1189"
+        ],
+        [
+          "(206) 555-8122"
+        ],
+        [
+          "(206) 555-8990"
+        ],
+        [
+          "(206) 889-9191"
+        ],
+        [
+          "(206) 881-5596"
+        ],
+        [
+          "(206) 555-9857"
+        ],
+        [
+          "(206) 555-8989"
+        ],
+        [
+          "(206) 555-9482"
+        ],
+        [
+          "(206) 555-3412"
+        ],
+        [
+          "(206) 555-7295"
+        ]
+      ],
+      "value_statics": "Total count 34 - Distinct count 15 - Null count 0"
+    },
+    "BowlerGamesBowled": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          39
+        ],
+        [
+          0
+        ]
+      ],
+      "value_statics": "Total count 34 - Distinct count 2 - Null count 0"
+    },
+    "BowlerCity": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Bothell"
+        ],
+        [
+          "Ballard"
+        ],
+        [
+          "Seattle"
+        ],
+        [
+          "Auburn"
+        ],
+        [
+          "Bellevue"
+        ],
+        [
+          "Woodinville"
+        ],
+        [
+          "Kirkland"
+        ],
+        [
+          "Duvall"
+        ],
+        [
+          "Tacoma"
+        ],
+        [
+          "Redmond"
+        ]
+      ],
+      "value_statics": "Total count 34 - Distinct count 10 - Null count 0"
+    },
+    "BowlerID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 34 - Distinct count 34 - Null count 0"
+    },
+    "BowlerCurrentHcp": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          47
+        ],
+        [
+          38
+        ],
+        [
+          32
+        ],
+        [
+          52
+        ],
+        [
+          46
+        ],
+        [
+          51
+        ],
+        [
+          44
+        ],
+        [
+          37
+        ],
+        [
+          33
+        ],
+        [
+          43
+        ],
+        [
+          34
+        ],
+        [
+          45
+        ],
+        [
+          39
+        ],
+        [
+          28
+        ],
+        [
+          30
+        ],
+        [
+          0
+        ]
+      ],
+      "value_statics": "Total count 34 - Distinct count 16 - Null count 0"
+    },
+    "BowlerFirstName": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 34 - Distinct count 30 - Null count 0"
+    },
+    "BowlerAddress": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "67 Willow Drive"
+        ],
+        [
+          "17950 N 59th"
+        ],
+        [
+          "16 Maple Lane"
+        ],
+        [
+          "4726 - 11th Ave. N.E."
+        ],
+        [
+          "4110 Old Redmond Rd."
+        ],
+        [
+          "16345 NE 32nd Street"
+        ],
+        [
+          "Route 2, Box 203B"
+        ],
+        [
+          "47 Harvard Drive"
+        ],
+        [
+          "218 Main Street"
+        ],
+        [
+          "507 - 20th Ave. E."
+        ],
+        [
+          "122 Spring Valley Drive"
+        ],
+        [
+          "908 W. Capital Way"
+        ],
+        [
+          "722 Moss Bay Blvd."
+        ],
+        [
+          "16679 NE 42nd Court"
+        ],
+        [
+          "2957 W 33rd"
+        ]
+      ],
+      "value_statics": "Total count 34 - Distinct count 15 - Null count 0"
+    },
+    "TeamID": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          8
+        ]
+      ],
+      "value_statics": "Total count 34 - Distinct count 8 - Null count 0"
+    },
+    "BowlerMiddleInit": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          ""
+        ],
+        [
+          "A"
+        ],
+        [
+          "J"
+        ],
+        [
+          "K"
+        ],
+        [
+          "M"
+        ],
+        [
+          "L"
+        ],
+        [
+          "G"
+        ]
+      ],
+      "value_statics": "Total count 34 - Distinct count 7 - Null count 0"
+    },
+    "BowlerLastName": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Fournier"
+        ],
+        [
+          "Kennedy"
+        ],
+        [
+          "Patterson"
+        ],
+        [
+          "Viescas"
+        ],
+        [
+          "Black"
+        ],
+        [
+          "Cunningham"
+        ],
+        [
+          "Hernandez"
+        ],
+        [
+          "Ehrlich"
+        ],
+        [
+          "Thompson"
+        ],
+        [
+          "Clothier"
+        ],
+        [
+          "Sheskey"
+        ],
+        [
+          "Rosales"
+        ],
+        [
+          "Hallmark"
+        ]
+      ],
+      "value_statics": "Total count 34 - Distinct count 13 - Null count 0"
+    },
+    "BowlerZip": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "98014"
+        ],
+        [
+          "98154"
+        ],
+        [
+          "98011"
+        ],
+        [
+          "98002"
+        ],
+        [
+          "98052"
+        ],
+        [
+          "98105"
+        ],
+        [
+          "98004"
+        ],
+        [
+          "98072"
+        ],
+        [
+          "98033"
+        ],
+        [
+          "98122"
+        ],
+        [
+          "98019"
+        ],
+        [
+          "98404"
+        ]
+      ],
+      "value_statics": "Total count 34 - Distinct count 12 - Null count 0"
+    },
+    "BowlerTotalPins": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 34 - Distinct count 33 - Null count 0"
+    },
+    "BowlerCurrentAverage": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          148
+        ],
+        [
+          158
+        ],
+        [
+          165
+        ],
+        [
+          142
+        ],
+        [
+          169
+        ],
+        [
+          143
+        ],
+        [
+          151
+        ],
+        [
+          159
+        ],
+        [
+          162
+        ],
+        [
+          150
+        ],
+        [
+          164
+        ],
+        [
+          149
+        ],
+        [
+          163
+        ],
+        [
+          152
+        ],
+        [
+          157
+        ],
+        [
+          0
+        ],
+        [
+          167
+        ]
+      ],
+      "value_statics": "Total count 34 - Distinct count 17 - Null count 0"
+    }
+  },
+  "BOWLER_SCORES": {
+    "HandiCapScore": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1344 - Distinct count 70 - Null count 0"
+    },
+    "BowlerID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1344 - Distinct count 32 - Null count 0"
+    },
+    "MatchID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1344 - Distinct count 56 - Null count 0"
+    },
+    "GameNumber": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 1344 - Distinct count 3 - Null count 0"
+    },
+    "RawScore": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1344 - Distinct count 61 - Null count 0"
+    },
+    "WonGame": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "value_statics": "Total count 1344 - Distinct count 2 - Null count 0"
+    }
+  },
+  "BOWLER_SCORES_ARCHIVE": {
+    "BowlerID": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "WonGame": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "GameNumber": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "HandiCapScore": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "RawScore": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "MatchID": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    }
+  },
+  "MATCH_GAMES": {
+    "MatchID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 168 - Distinct count 56 - Null count 0"
+    },
+    "WinningTeamID": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          8
+        ]
+      ],
+      "value_statics": "Total count 168 - Distinct count 8 - Null count 0"
+    },
+    "GameNumber": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 168 - Distinct count 3 - Null count 0"
+    }
+  },
+  "MATCH_GAMES_ARCHIVE": {
+    "GameNumber": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "WinningTeamID": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "MatchID": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    }
+  },
+  "SQLITE_SEQUENCE": {
+    "seq": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          20
+        ],
+        [
+          34
+        ],
+        [
+          10
+        ],
+        [
+          57
+        ]
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Tournaments"
+        ],
+        [
+          "Bowlers"
+        ],
+        [
+          "Teams"
+        ],
+        [
+          "Tourney_Matches"
+        ]
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    }
+  },
+  "TOURNAMENTS": {
+    "TourneyDate": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 20 - Distinct count 20 - Null count 0"
+    },
+    "TourneyLocation": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Red Rooster Lanes"
+        ],
+        [
+          "Thunderbird Lanes"
+        ],
+        [
+          "Bolero Lanes"
+        ],
+        [
+          "Imperial Lanes"
+        ],
+        [
+          "Sports World Lanes"
+        ],
+        [
+          "Totem Lanes"
+        ],
+        [
+          "Acapulco Lanes"
+        ]
+      ],
+      "value_statics": "Total count 20 - Distinct count 7 - Null count 0"
+    },
+    "TourneyID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 20 - Distinct count 20 - Null count 0"
+    }
+  },
+  "TOURNAMENTS_ARCHIVE": {
+    "TourneyLocation": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "TourneyDate": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "TourneyID": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    }
+  },
+  "TOURNEY_MATCHES": {
+    "OddLaneTeamID": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          7
+        ],
+        [
+          4
+        ],
+        [
+          8
+        ],
+        [
+          2
+        ],
+        [
+          6
+        ],
+        [
+          10
+        ]
+      ],
+      "value_statics": "Total count 57 - Distinct count 9 - Null count 0"
+    },
+    "Lanes": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "01-02"
+        ],
+        [
+          "03-04"
+        ],
+        [
+          "05-06"
+        ],
+        [
+          "07-08"
+        ],
+        [
+          "21-22"
+        ],
+        [
+          "23-24"
+        ],
+        [
+          "25-26"
+        ],
+        [
+          "17-18"
+        ],
+        [
+          "11-12"
+        ],
+        [
+          "13-14"
+        ],
+        [
+          "15-16"
+        ],
+        [
+          "19-20"
+        ],
+        [
+          "09-10"
+        ],
+        [
+          "27-28"
+        ]
+      ],
+      "value_statics": "Total count 57 - Distinct count 14 - Null count 0"
+    },
+    "TourneyID": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          9
+        ],
+        [
+          11
+        ],
+        [
+          13
+        ],
+        [
+          14
+        ],
+        [
+          8
+        ],
+        [
+          10
+        ],
+        [
+          12
+        ]
+      ],
+      "value_statics": "Total count 57 - Distinct count 14 - Null count 0"
+    },
+    "EvenLaneTeamID": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          6
+        ],
+        [
+          1
+        ],
+        [
+          7
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          9
+        ],
+        [
+          8
+        ]
+      ],
+      "value_statics": "Total count 57 - Distinct count 9 - Null count 0"
+    },
+    "MatchID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 57 - Distinct count 57 - Null count 0"
+    }
+  },
+  "TOURNEY_MATCHES_ARCHIVE": {
+    "EvenLaneTeamID": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "MatchID": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "TourneyID": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "OddLaneTeamID": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "Lanes": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    }
+  },
+  "WAZIPS": {
+    "State": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "WA"
+        ]
+      ],
+      "value_statics": "Total count 523 - Distinct count 1 - Null count 0"
+    },
+    "ZIP": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 523 - Distinct count 523 - Null count 0"
+    },
+    "City": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 523 - Distinct count 385 - Null count 0"
+    }
+  },
+  "TEAMS": {
+    "TeamName": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Marlins"
+        ],
+        [
+          "Sharks"
+        ],
+        [
+          "Terrapins"
+        ],
+        [
+          "Barracudas"
+        ],
+        [
+          "Dolphins"
+        ],
+        [
+          "Orcas"
+        ],
+        [
+          "Manatees"
+        ],
+        [
+          "Swordfish"
+        ],
+        [
+          "Huckleberrys"
+        ],
+        [
+          "Never Show Ups"
+        ]
+      ],
+      "value_statics": "Total count 10 - Distinct count 10 - Null count 0"
+    },
+    "TeamID": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          9
+        ],
+        [
+          8
+        ],
+        [
+          10
+        ]
+      ],
+      "value_statics": "Total count 10 - Distinct count 10 - Null count 0"
+    },
+    "CaptainID": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          2
+        ],
+        [
+          5
+        ],
+        [
+          16
+        ],
+        [
+          20
+        ],
+        [
+          24
+        ],
+        [
+          28
+        ],
+        [
+          7
+        ],
+        [
+          22
+        ],
+        [
+          12
+        ],
+        [
+          32
+        ]
+      ],
+      "value_statics": "Total count 10 - Distinct count 10 - Null count 0"
+    }
+  }
+}

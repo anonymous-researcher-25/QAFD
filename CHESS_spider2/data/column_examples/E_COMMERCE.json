@@ -1,0 +1,514 @@
+{
+  "CUSTOMERS": {
+    "customer_id": [
+      "83aec5c557978975ccf546bfd82eaf45",
+      "47243423ec024f4ded9bfa67e8ac66b9",
+      "6d523e3d78e642485876b7692d747d2c",
+      "5299b9f29f522644081a8249407ede3c",
+      "4f2d8ab171c80ec8364f7c12e35b23ad"
+    ],
+    "customer_unique_id": [
+      "ced05597ec7e942e23b8f474802c218d",
+      "769de7c55f035c3f3575750bcc242c87",
+      "9efde9b883e5c09c03f5585ddd74fd95",
+      "0047f3e16441284d757a8963344f6c59",
+      "345ecd01c38d18a9036ed96c73b8d066"
+    ],
+    "customer_zip_code_prefix": [
+      13360,
+      30640,
+      21235,
+      18680,
+      13056
+    ],
+    "customer_city": [
+      "capivari",
+      "belo horizonte",
+      "rio de janeiro",
+      "lencois paulista",
+      "campinas"
+    ],
+    "customer_state": [
+      "SP",
+      "MG",
+      "RJ",
+      "SP",
+      "SP"
+    ]
+  },
+  "GEOLOCATION": {
+    "geolocation_zip_code_prefix": [
+      50721,
+      48904,
+      79621,
+      95270,
+      95560
+    ],
+    "geolocation_lat": [
+      -8.046693649460433,
+      -9.416809699929402,
+      -20.799933094450992,
+      -29.033410903970736,
+      -29.369642983209506
+    ],
+    "geolocation_lng": [
+      -34.929686813347594,
+      -40.49925112567203,
+      -51.71863721492444,
+      -51.16791803060631,
+      -49.81812240176066
+    ],
+    "geolocation_city": [
+      "recife",
+      "juazeiro",
+      "tres lagoas",
+      "flores da cunha",
+      "torres"
+    ],
+    "geolocation_state": [
+      "PE",
+      "BA",
+      "MS",
+      "RS",
+      "RS"
+    ]
+  },
+  "LEADS_CLOSED": {
+    "mql_id": [
+      "7f95cccd5ccfb40b086d93e209d08ebf",
+      "a555fb36b9368110ede0f043dfc3b9a0",
+      "9e7c75dad869b2691a339a70cf105f0e",
+      "5f1a8a8fddbc8a5ff4bf0f111dc69ff4",
+      "820f7970418d010d52a1c1db2d3c1d65"
+    ],
+    "seller_id": [
+      "b28c0625f1f26655cfa0f370be1164ac",
+      "bbb7d7893a450660432ea6652310ebb7",
+      "f4d969837a2957bb052a71af7d39fc91",
+      "43402bdf22aa2310e8f99e2f94f78628",
+      "28c7d8743fbc8679f484868cc0fcaefb"
+    ],
+    "sdr_id": [
+      "370c9f455f93a9a96cbe9bea48e70033",
+      "09285259593c61296eef10c734121d5b",
+      "56bf83c4bb35763a51c2baab501b4c67",
+      "a8387c01a09e99ce014107505b92388c",
+      "9d12ef1a7eca3ec58c545c678af7869c"
+    ],
+    "sr_id": [
+      "b90f87164b5f8c2cfa5c8572834dbe3f",
+      "d3d1e91a157ea7f90548eef82f1955e3",
+      "9ae085775a198122c5586fa830ff7f2b",
+      "85fc447d336637ba1df43e793199fbc8",
+      "4ef15afb4b2723d8f3d81e51ec7afefe"
+    ],
+    "won_date": [
+      "2018-09-05 14:32:37",
+      "2018-05-08 20:17:59",
+      "2018-03-26 14:03:55",
+      "2018-04-05 18:45:56",
+      "2018-03-23 19:52:00"
+    ],
+    "business_segment": [
+      "food_supplement",
+      "car_accessories",
+      "bed_bath_table",
+      "home_office_furniture",
+      "health_beauty"
+    ],
+    "lead_type": [
+      "online_medium",
+      "industry",
+      "online_beginner",
+      "industry",
+      "offline"
+    ],
+    "lead_behaviour_profile": [
+      "eagle",
+      "eagle",
+      "cat",
+      "cat",
+      "wolf"
+    ],
+    "has_company": [
+      1.0,
+      null,
+      null,
+      null,
+      null
+    ],
+    "has_gtin": [
+      1.0,
+      null,
+      null,
+      null,
+      null
+    ],
+    "average_stock": [
+      "1-5",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "business_type": [
+      "reseller",
+      "reseller",
+      "reseller",
+      "manufacturer",
+      "reseller"
+    ],
+    "declared_product_catalog_size": [
+      1000.0,
+      null,
+      null,
+      null,
+      null
+    ],
+    "declared_monthly_revenue": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "LEADS_QUALIFIED": {
+    "mql_id": [
+      "0a69873505351b9ef0f5f8dec2752e0b",
+      "e820c40d01568fe53566d73d84c80b50",
+      "a80801c054c1304263f8310a4e1b044e",
+      "5499df60b3f5b017d19ba4f03165deda",
+      "065940d7612634b4e81f593f6ce19418"
+    ],
+    "first_contact_date": [
+      "2017-08-17",
+      "2018-05-26",
+      "2018-01-06",
+      "2018-04-19",
+      "2018-01-27"
+    ],
+    "landing_page_id": [
+      "65d9f9d71e562365e8b44037c2888d98",
+      "22c29808c4f815213303f8933030604c",
+      "ce1a65abd0973638f1c887a6efcfa82d",
+      "d83b0d0e48c8447d1d5507a44027a955",
+      "40dec9f3d5259a3d2dbcdab2114fae47"
+    ],
+    "origin": [
+      "organic_search",
+      "organic_search",
+      "paid_search",
+      "referral",
+      "paid_search"
+    ]
+  },
+  "ORDERS": {
+    "order_id": [
+      "60e6f7ddb40a12b4b2b272b60f8db990",
+      "146bfe4003096bc16316672e59c6fb2e",
+      "5e8dbd59abee490ba3f319a92089c668",
+      "3ecc3a4cbe43e1e70c4f20956250fdde",
+      "0464277e582666bde336336fd5fb9ff8"
+    ],
+    "customer_id": [
+      "1a8eb043bc13de00b3d39495190dade0",
+      "47443a10c52e727aeab6b6cae75dbdb6",
+      "4581c014bf50140e2b6b7f4969261b57",
+      "7e7297e4778e198ea50440f10f9a7b07",
+      "f9c989b75558c119a7ce8e9f3c2b8f45"
+    ],
+    "order_status": [
+      "delivered",
+      "delivered",
+      "delivered",
+      "delivered",
+      "delivered"
+    ],
+    "order_purchase_timestamp": [
+      "2017-08-10 14:46:06",
+      "2017-01-26 23:08:52",
+      "2018-06-25 18:35:43",
+      "2017-08-16 22:47:29",
+      "2018-04-09 10:11:29"
+    ],
+    "order_approved_at": [
+      "2017-08-11 04:25:42",
+      "2017-01-26 23:21:57",
+      "2018-06-25 19:02:31",
+      "2017-08-16 23:45:14",
+      "2018-04-09 10:30:41"
+    ],
+    "order_delivered_carrier_date": [
+      "2017-08-17 17:38:32",
+      "2017-01-27 13:57:24",
+      "2018-06-26 09:27:00",
+      "2017-08-17 18:20:08",
+      "2018-04-09 20:48:38"
+    ],
+    "order_delivered_customer_date": [
+      "2017-08-28 20:20:04",
+      "2017-02-01 11:09:38",
+      "2018-07-03 22:54:34",
+      "2017-09-13 21:55:48",
+      "2018-04-16 21:07:45"
+    ],
+    "order_estimated_delivery_date": [
+      "2017-09-06 00:00:00",
+      "2017-02-20 00:00:00",
+      "2018-07-17 00:00:00",
+      "2017-09-14 00:00:00",
+      "2018-05-07 00:00:00"
+    ]
+  },
+  "ORDER_ITEMS": {
+    "order_id": [
+      "05cd156f0f47579a36d7a52724fc31b8",
+      "d19a87282922be2fe89f5234b1bb6c14",
+      "33c97c0983409cce4352fd750138e556",
+      "5fe8c7141808af2ac47d98ff8a006ac5",
+      "15a1cd1da2bcaccc711512ecb5701c5d"
+    ],
+    "order_item_id": [
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "product_id": [
+      "913580fde3e72c3b3e4ce0b79963bee6",
+      "ce9b5e2f3503d1142f9c9866db452633",
+      "9e65557e7ad596213400fc446f760f47",
+      "24776376f3b02d27ac141a1bdc46d628",
+      "361d8cb449a8b6a7c58b4a0c8ef23888"
+    ],
+    "seller_id": [
+      "b76dba6c951ab00dc4edf0a1aa88037e",
+      "d94ba08b99bedd6a5f6c875ecc4a6fac",
+      "659e8466eb3ff1b0e8740d74fb7bbedd",
+      "897060da8b9a21f655304d50fd935913",
+      "cac4e0bc1a3269fa2b6ea5e763f6115b"
+    ],
+    "shipping_limit_date": [
+      "2017-01-18 18:27:28",
+      "2017-07-20 19:15:16",
+      "2017-12-07 12:20:26",
+      "2018-02-12 02:52:46",
+      "2018-04-04 03:10:25"
+    ],
+    "price": [
+      10.99,
+      59.9,
+      69.8,
+      109.38,
+      17.8
+    ],
+    "freight_value": [
+      14.52,
+      14.15,
+      15.24,
+      15.52,
+      18.77
+    ]
+  },
+  "ORDER_PAYMENTS": {
+    "order_id": [
+      "42746b2bd175a9a00d415b3bb3393067",
+      "5a909d6376edac123359549cd82341df",
+      "429c8e72bb984330b65c6050435242d1",
+      "f201da96764d726364db850f2558f842",
+      "10a8ab52ea001eb59beb9c0f97d72eab"
+    ],
+    "payment_sequential": [
+      1,
+      3,
+      1,
+      1,
+      1
+    ],
+    "payment_type": [
+      "credit_card",
+      "voucher",
+      "credit_card",
+      "credit_card",
+      "credit_card"
+    ],
+    "payment_installments": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "payment_value": [
+      48.81,
+      18.96,
+      82.9,
+      82.33,
+      97.88
+    ]
+  },
+  "ORDER_REVIEWS": {
+    "review_id": [
+      "aa58ea838bbf45d79e4cb3f3745c2ea0",
+      "f7806e84643265609b2b6edeff314921",
+      "31aba12165d9cb977c77e46bd8423cc5",
+      "089c4a705870f87169be8f9ad6d0d8ae",
+      "7d7bdca26f6b40b1e86ab73ef5f27ddf"
+    ],
+    "order_id": [
+      "6f5287c7bb4cef1435b9666c23c54f9e",
+      "022e89c60857b5c81788e7e09d04b3ef",
+      "f4d812e53e87755d0f4210f23caef13c",
+      "a50d20f183503ea2b8aa1b506eee3d33",
+      "791694f9f32bf69188171d1c43b61019"
+    ],
+    "review_score": [
+      5,
+      3,
+      5,
+      4,
+      5
+    ],
+    "review_comment_title": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "review_comment_message": [
+      "",
+      "",
+      "Fiz uma \u00f3tima compra",
+      "",
+      ""
+    ],
+    "review_creation_date": [
+      "2018-08-18 00:00:00",
+      "2018-06-15 00:00:00",
+      "2017-05-23 00:00:00",
+      "2017-09-07 00:00:00",
+      "2017-07-02 00:00:00"
+    ],
+    "review_answer_timestamp": [
+      "2018-08-19 00:01:09",
+      "2018-06-21 11:36:21",
+      "2017-05-23 23:07:16",
+      "2017-09-11 19:43:20",
+      "2017-07-03 14:07:21"
+    ]
+  },
+  "PRODUCTS": {
+    "product_id": [
+      "1c6cf85f4af5c2787a812d273b836c01",
+      "48ee9be392f28ae3a64518a070f4d06a",
+      "db1e6fed56643b852af3132d255d9ddc",
+      "294d41c2e68c3452a16c269c5a969537",
+      "725bad83e6417f76bbc94b94e2d45875"
+    ],
+    "product_category_name": [
+      "utilidades_domesticas",
+      "cama_mesa_banho",
+      "cama_mesa_banho",
+      "perfumaria",
+      "fashion_bolsas_e_acessorios"
+    ],
+    "product_name_lenght": [
+      38.0,
+      52.0,
+      54.0,
+      57.0,
+      48.0
+    ],
+    "product_description_lenght": [
+      252.0,
+      534.0,
+      289.0,
+      1010.0,
+      350.0
+    ],
+    "product_photos_qty": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "product_weight_g": [
+      2300.0,
+      700.0,
+      4050.0,
+      550.0,
+      100.0
+    ],
+    "product_length_cm": [
+      44.0,
+      45.0,
+      40.0,
+      22.0,
+      16.0
+    ],
+    "product_height_cm": [
+      8.0,
+      15.0,
+      12.0,
+      16.0,
+      3.0
+    ],
+    "product_width_cm": [
+      32.0,
+      35.0,
+      38.0,
+      16.0,
+      12.0
+    ]
+  },
+  "PRODUCT_CATEGORY_NAME_TRANSLATION": {
+    "product_category_name": [
+      "beleza_saude",
+      "informatica_acessorios",
+      "automotivo",
+      "cama_mesa_banho",
+      "moveis_decoracao"
+    ],
+    "product_category_name_english": [
+      "health_beauty",
+      "computers_accessories",
+      "auto",
+      "bed_bath_table",
+      "furniture_decor"
+    ]
+  },
+  "SELLERS": {
+    "seller_id": [
+      "091065b789659bc3cd9af9cb3a6253ff",
+      "06532f10282704ef4c69168b914b77be",
+      "ea3ebea5317b0efbc663ecc8ce5e9bc2",
+      "5b07547f10dd980738a1a27f685af669",
+      "446cc09cdbb130904da114e807dbec40"
+    ],
+    "seller_zip_code_prefix": [
+      92120,
+      87140,
+      88036,
+      7013,
+      5615
+    ],
+    "seller_city": [
+      "canoas",
+      "paincandu",
+      "florianopolis",
+      "guarulhos",
+      "sao paulo"
+    ],
+    "seller_state": [
+      "RS",
+      "PR",
+      "SC",
+      "SP",
+      "SP"
+    ]
+  }
+}

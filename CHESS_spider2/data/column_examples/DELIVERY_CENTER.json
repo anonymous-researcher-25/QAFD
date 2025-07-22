@@ -1,0 +1,429 @@
+{
+  "CHANNELS": {
+    "channel_id": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "channel_name": [
+      "OTHER PLACE",
+      "PHONE PLACE",
+      "WHATS PLACE",
+      "FACE PLACE",
+      "FOOD PLACE"
+    ],
+    "channel_type": [
+      "OWN CHANNEL",
+      "OWN CHANNEL",
+      "OWN CHANNEL",
+      "OWN CHANNEL",
+      "MARKETPLACE"
+    ]
+  },
+  "DELIVERIES": {
+    "delivery_id": [
+      2255919,
+      2344139,
+      2338395,
+      3056452,
+      2714133
+    ],
+    "delivery_order_id": [
+      71521455,
+      74502277,
+      74366240,
+      92659270,
+      85057591
+    ],
+    "driver_id": [
+      14792.0,
+      21768.0,
+      217.0,
+      46171.0,
+      42838.0
+    ],
+    "delivery_distance_meters": [
+      1933.0,
+      792.0,
+      449.0,
+      744.0,
+      3142.0
+    ],
+    "delivery_status": [
+      "DELIVERED",
+      "DELIVERED",
+      "DELIVERED",
+      "DELIVERED",
+      "DELIVERED"
+    ]
+  },
+  "DRIVERS": {
+    "driver_id": [
+      33785,
+      16338,
+      43548,
+      1402,
+      4059
+    ],
+    "driver_modal": [
+      "MOTOBOY",
+      "BIKER",
+      "BIKER",
+      "BIKER",
+      "MOTOBOY"
+    ],
+    "driver_type": [
+      "FREELANCE",
+      "FREELANCE",
+      "FREELANCE",
+      "FREELANCE",
+      "FREELANCE"
+    ]
+  },
+  "HUBS": {
+    "hub_id": [
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "hub_name": [
+      "BLUE SHOPPING",
+      "GREEN SHOPPING",
+      "RED SHOPPING",
+      "FUNK SHOPPING",
+      "GOLDEN SHOPPING"
+    ],
+    "hub_city": [
+      "PORTO ALEGRE",
+      "PORTO ALEGRE",
+      "PORTO ALEGRE",
+      "RIO DE JANEIRO",
+      "RIO DE JANEIRO"
+    ],
+    "hub_state": [
+      "RS",
+      "RS",
+      "RS",
+      "RJ",
+      "RJ"
+    ],
+    "hub_latitude": [
+      -30.0474148,
+      -30.0374149,
+      -30.0219481,
+      -23.0007498,
+      -22.921475
+    ],
+    "hub_longitude": [
+      -51.21351,
+      -51.20352,
+      -51.2083816,
+      -43.318282,
+      -43.234774
+    ]
+  },
+  "ORDERS": {
+    "order_id": [
+      93013179,
+      92869902,
+      92771230,
+      92655083,
+      93103827
+    ],
+    "store_id": [
+      82,
+      53,
+      1106,
+      4302,
+      633
+    ],
+    "channel_id": [
+      5,
+      5,
+      46,
+      5,
+      5
+    ],
+    "payment_order_id": [
+      93013179,
+      92869902,
+      92771230,
+      92655083,
+      93103827
+    ],
+    "delivery_order_id": [
+      93013179,
+      92869902,
+      92771230,
+      92655083,
+      93103827
+    ],
+    "order_status": [
+      "FINISHED",
+      "FINISHED",
+      "FINISHED",
+      "FINISHED",
+      "FINISHED"
+    ],
+    "order_amount": [
+      25.8,
+      127.2,
+      342.5,
+      16.0,
+      68.8
+    ],
+    "order_delivery_fee": [
+      9.9,
+      6.9,
+      0.0,
+      0.0,
+      4.9
+    ],
+    "order_delivery_cost": [
+      5.0,
+      5.0,
+      9.65,
+      0.0,
+      9.28
+    ],
+    "order_created_hour": [
+      20,
+      15,
+      21,
+      23,
+      19
+    ],
+    "order_created_minute": [
+      22,
+      7,
+      25,
+      36,
+      46
+    ],
+    "order_created_day": [
+      28,
+      27,
+      26,
+      25,
+      29
+    ],
+    "order_created_month": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "order_created_year": [
+      2021,
+      2021,
+      2021,
+      2021,
+      2021
+    ],
+    "order_moment_created": [
+      "4/28/2021 8:22:10 PM",
+      "4/27/2021 3:07:26 PM",
+      "4/26/2021 9:25:12 PM",
+      "4/25/2021 11:36:38 PM",
+      "4/29/2021 7:46:40 PM"
+    ],
+    "order_moment_accepted": [
+      "4/28/2021 8:22:59 PM",
+      "4/27/2021 3:07:38 PM",
+      "4/26/2021 9:25:23 PM",
+      "4/25/2021 11:37:28 PM",
+      "4/29/2021 7:46:59 PM"
+    ],
+    "order_moment_ready": [
+      "4/28/2021 8:26:46 PM",
+      "4/27/2021 3:24:11 PM",
+      "4/26/2021 9:25:12 PM",
+      "4/25/2021 11:50:20 PM",
+      "4/29/2021 8:48:13 PM"
+    ],
+    "order_moment_collected": [
+      "4/28/2021 8:27:23 PM",
+      "4/27/2021 3:24:19 PM",
+      "",
+      "4/25/2021 11:52:49 PM",
+      "4/29/2021 8:52:08 PM"
+    ],
+    "order_moment_in_expedition": [
+      "4/28/2021 8:27:23 PM",
+      "4/27/2021 3:25:38 PM",
+      "",
+      "4/25/2021 11:59:17 PM",
+      "4/29/2021 8:54:06 PM"
+    ],
+    "order_moment_delivering": [
+      "4/28/2021 8:30:38 PM",
+      "4/27/2021 3:26:29 PM",
+      "4/27/2021 1:35:49 PM",
+      "4/26/2021 12:05:23 AM",
+      "4/29/2021 8:54:48 PM"
+    ],
+    "order_moment_delivered": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "order_moment_finished": [
+      "4/28/2021 8:52:31 PM",
+      "4/27/2021 3:46:40 PM",
+      "4/27/2021 2:25:14 PM",
+      "4/26/2021 12:39:42 AM",
+      "4/29/2021 9:12:44 PM"
+    ],
+    "order_metric_collected_time": [
+      0.62,
+      0.13,
+      null,
+      2.48,
+      3.92
+    ],
+    "order_metric_paused_time": [
+      3.25,
+      0.85,
+      null,
+      6.1,
+      0.7
+    ],
+    "order_metric_production_time": [
+      4.58,
+      16.75,
+      0.0,
+      13.72,
+      61.55
+    ],
+    "order_metric_walking_time": [
+      0.63,
+      1.45,
+      null,
+      8.95,
+      5.88
+    ],
+    "order_metric_expediton_speed_time": [
+      3.87,
+      2.3,
+      970.62,
+      15.05,
+      6.58
+    ],
+    "order_metric_transit_time": [
+      21.88,
+      20.18,
+      49.42,
+      34.32,
+      17.93
+    ],
+    "order_metric_cycle_time": [
+      30.33,
+      39.25,
+      1020.05,
+      63.07,
+      86.07
+    ]
+  },
+  "PAYMENTS": {
+    "payment_id": [
+      5199851,
+      4906231,
+      5383402,
+      4737883,
+      4901678
+    ],
+    "payment_order_id": [
+      87847585,
+      82259309,
+      91702887,
+      77906990,
+      82174992
+    ],
+    "payment_amount": [
+      133.0,
+      31.6,
+      101.8,
+      183.9,
+      95.7
+    ],
+    "payment_fee": [
+      2.66,
+      0.44,
+      1.53,
+      2.76,
+      2.58
+    ],
+    "payment_method": [
+      "ONLINE",
+      "PAYMENT_LINK",
+      "ONLINE",
+      "ONLINE",
+      "ONLINE"
+    ],
+    "payment_status": [
+      "PAID",
+      "PAID",
+      "PAID",
+      "PAID",
+      "PAID"
+    ]
+  },
+  "STORES": {
+    "store_id": [
+      2433,
+      2960,
+      3938,
+      3770,
+      977
+    ],
+    "hub_id": [
+      75,
+      27,
+      44,
+      51,
+      36
+    ],
+    "store_name": [
+      "MUMUO PIVIRAIM ",
+      "MICI PULA",
+      "SFAZI GRALA",
+      "OUR ZOLAI ",
+      "PRIMZURS RUSMIURIMA U PAZZIRAI "
+    ],
+    "store_segment": [
+      "FOOD",
+      "FOOD",
+      "FOOD",
+      "FOOD",
+      "FOOD"
+    ],
+    "store_plan_price": [
+      29.9,
+      0.0,
+      49.0,
+      49.0,
+      49.0
+    ],
+    "store_latitude": [
+      -25.477073,
+      -23.622995,
+      -25.4351398,
+      -22.927336,
+      -30.085743
+    ],
+    "store_longitude": [
+      -49.28966,
+      -46.699204,
+      -49.3167883,
+      -43.572533,
+      -51.245997
+    ]
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "BELTS": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 143 - Distinct count 143 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 143 - Distinct count 143 - Null count 0"
+    }
+  },
+  "CARDS": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 12639 - Distinct count 12639 - Null count 0"
+    },
+    "table_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 12639 - Distinct count 1270 - Null count 0"
+    },
+    "location_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 12639 - Distinct count 596 - Null count 0"
+    },
+    "promotion_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        230,
+        3211,
+        230,
+        9876,
+        3211,
+        3211,
+        230,
+        230,
+        10963,
+        10963
+      ],
+      "value_statics": "Total count 12639 - Distinct count 5 - Null count 0"
+    },
+    "event_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12639 - Distinct count 6782 - Null count 0"
+    },
+    "event_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 12639 - Distinct count 5020 - Null count 0"
+    },
+    "url": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12639 - Distinct count 12639 - Null count 0"
+    },
+    "info_html": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12639 - Distinct count 8705 - Null count 0"
+    },
+    "match_html": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12639 - Distinct count 12639 - Null count 0"
+    }
+  },
+  "EVENTS": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 5033 - Distinct count 5033 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 5033 - Distinct count 5033 - Null count 0"
+    }
+  },
+  "LOCATIONS": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 609 - Distinct count 609 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 609 - Distinct count 609 - Null count 0"
+    }
+  },
+  "MATCHES": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 540800 - Distinct count 540800 - Null count 0"
+    },
+    "card_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 540800 - Distinct count 12638 - Null count 0"
+    },
+    "winner_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 540800 - Distinct count 7668 - Null count 0"
+    },
+    "win_type": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 540800 - Distinct count 25 - Null count 0"
+    },
+    "loser_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 540800 - Distinct count 13409 - Null count 0"
+    },
+    "match_type_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 540800 - Distinct count 1208 - Null count 0"
+    },
+    "duration": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 540800 - Distinct count 1739 - Null count 0"
+    },
+    "title_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 540800 - Distinct count 143 - Null count 0"
+    },
+    "title_change": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 540800 - Distinct count 2 - Null count 0"
+    }
+  },
+  "MATCH_TYPES": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1208 - Distinct count 1208 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1208 - Distinct count 1208 - Null count 0"
+    }
+  },
+  "PROMOTIONS": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        230,
+        3211,
+        9876,
+        10963,
+        12682
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "WWWF",
+        "WWF",
+        "WWE",
+        "WCW",
+        "NXT",
+        "ECW"
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    }
+  },
+  "SQLITE_SEQUENCE": {
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Tables",
+        "Events",
+        "Locations",
+        "Promotions",
+        "Cards",
+        "Belts",
+        "Match_Types",
+        "Wrestlers",
+        "Matches"
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "seq": {
+      "type": "NUMBER",
+      "unique_values": [
+        14431,
+        14431,
+        14431,
+        14431,
+        14431,
+        540800,
+        540800,
+        1081600,
+        540800
+      ],
+      "value_statics": "Total count 9 - Distinct count 3 - Null count 0"
+    }
+  },
+  "TABLES": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1270 - Distinct count 1270 - Null count 0"
+    },
+    "html": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1270 - Distinct count 1270 - Null count 0"
+    },
+    "url": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1270 - Distinct count 1270 - Null count 0"
+    }
+  },
+  "WRESTLERS": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 17182 - Distinct count 17182 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 17182 - Distinct count 17182 - Null count 0"
+    }
+  }
+}

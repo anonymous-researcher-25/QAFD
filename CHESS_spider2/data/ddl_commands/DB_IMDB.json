@@ -1,0 +1,15 @@
+{
+  "COUNTRY": "create or replace TABLE COUNTRY (\n\t\"index\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216),\n\tCID NUMBER(38,0)\n);",
+  "GENRE": "create or replace TABLE GENRE (\n\t\"index\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216),\n\tGID NUMBER(38,0)\n);",
+  "LANGUAGE": "create or replace TABLE LANGUAGE (\n\t\"index\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216),\n\tLAID NUMBER(38,0)\n);",
+  "LOCATION": "create or replace TABLE LOCATION (\n\t\"index\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216),\n\tLID NUMBER(38,0)\n);",
+  "MOVIE": "create or replace TABLE MOVIE (\n\t\"index\" NUMBER(38,0),\n\tMID VARCHAR(16777216),\n\t\"title\" VARCHAR(16777216),\n\t\"year\" VARCHAR(16777216),\n\t\"rating\" FLOAT,\n\t\"num_votes\" NUMBER(38,0)\n);",
+  "M_CAST": "create or replace TABLE M_CAST (\n\t\"index\" NUMBER(38,0),\n\tMID VARCHAR(16777216),\n\tPID VARCHAR(16777216),\n\tID NUMBER(38,0)\n);",
+  "M_COUNTRY": "create or replace TABLE M_COUNTRY (\n\t\"index\" NUMBER(38,0),\n\tMID VARCHAR(16777216),\n\tCID FLOAT,\n\tID NUMBER(38,0)\n);",
+  "M_DIRECTOR": "create or replace TABLE M_DIRECTOR (\n\t\"index\" NUMBER(38,0),\n\tMID VARCHAR(16777216),\n\tPID VARCHAR(16777216),\n\tID NUMBER(38,0)\n);",
+  "M_GENRE": "create or replace TABLE M_GENRE (\n\t\"index\" NUMBER(38,0),\n\tMID VARCHAR(16777216),\n\tGID NUMBER(38,0),\n\tID NUMBER(38,0)\n);",
+  "M_LANGUAGE": "create or replace TABLE M_LANGUAGE (\n\t\"index\" NUMBER(38,0),\n\tMID VARCHAR(16777216),\n\tLAID NUMBER(38,0),\n\tID NUMBER(38,0)\n);",
+  "M_LOCATION": "create or replace TABLE M_LOCATION (\n\t\"index\" NUMBER(38,0),\n\tMID VARCHAR(16777216),\n\tLID FLOAT,\n\tID NUMBER(38,0)\n);",
+  "M_PRODUCER": "create or replace TABLE M_PRODUCER (\n\t\"index\" NUMBER(38,0),\n\tMID VARCHAR(16777216),\n\tPID VARCHAR(16777216),\n\tID NUMBER(38,0)\n);",
+  "PERSON": "create or replace TABLE PERSON (\n\t\"index\" NUMBER(38,0),\n\tPID VARCHAR(16777216),\n\t\"Name\" VARCHAR(16777216),\n\t\"Gender\" VARCHAR(16777216)\n);"
+}

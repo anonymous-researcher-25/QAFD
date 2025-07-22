@@ -1,0 +1,1242 @@
+{
+  "BREWERIES": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": [
+        518,
+        523,
+        536
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Balthazar Brauerei",
+        "Happy Hoppy Hippo",
+        "Brewing Barbarian"
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    }
+  },
+  "CHANNELS_DIM": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": [
+        42,
+        44
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Twitter",
+        "Facebook"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "shortcut": {
+      "type": "TEXT",
+      "unique_values": [
+        "tw",
+        "fb"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    }
+  },
+  "CONWAY_GEN_ZERO": {
+    "x": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "y": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "alive": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "CUSTOMERS": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": [
+        50042,
+        50741,
+        51007,
+        51069
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "The White Hart",
+        "Hygge og Humle",
+        "Boom Beer Bar",
+        "Der Wichtelmann"
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    }
+  },
+  "CUSTOMER_FAVORITES": {
+    "customer_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        50042,
+        50741,
+        51007,
+        51069
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    },
+    "favorite_list": {
+      "type": "TEXT",
+      "unique_values": [
+        "4040,5310",
+        "5430,7790,7870",
+        "",
+        "6520"
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    }
+  },
+  "CUSTOMER_REVIEWS": {
+    "customer_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        50042,
+        50741,
+        51007,
+        51069
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    },
+    "review_list": {
+      "type": "TEXT",
+      "unique_values": [
+        "4040:A,6600:C,7950:B",
+        "4160:A",
+        "",
+        "4280:B,7790:B"
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    }
+  },
+  "EMPLOYEES": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": [
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151
+      ],
+      "value_statics": "Total count 14 - Distinct count 14 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Harold King",
+        "Mogens Juel",
+        "Axel de Proef",
+        "Zoe Thorston",
+        "Lim Tok Lo",
+        "Ursula Mwbesi",
+        "Maria Juarez",
+        "Kurt Zollman",
+        "Laura Jensen",
+        "Jim Kronzki"
+      ],
+      "value_statics": "Total count 14 - Distinct count 14 - Null count 0"
+    },
+    "title": {
+      "type": "TEXT",
+      "unique_values": [
+        "Managing Director",
+        "IT Manager",
+        "Product Director",
+        "IT Developer",
+        "Warehouse Manager",
+        "Operations Chief",
+        "Purchaser",
+        "Forklift Operator",
+        "Bulk Salesman",
+        "Sales Manager"
+      ],
+      "value_statics": "Total count 14 - Distinct count 13 - Null count 0"
+    },
+    "supervisor_id": {
+      "type": "FLOAT",
+      "unique_values": [
+        null,
+        147.0,
+        142.0,
+        143.0,
+        147.0,
+        142.0,
+        144.0,
+        146.0,
+        151.0,
+        144.0
+      ],
+      "value_statics": "Total count 14 - Distinct count 6 - Null count 1"
+    }
+  },
+  "EMP_HIRE_PERIODS": {
+    "emp_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        142,
+        142,
+        143,
+        143,
+        143,
+        143,
+        144,
+        144,
+        145,
+        145
+      ],
+      "value_statics": "Total count 15 - Distinct count 6 - Null count 0"
+    },
+    "start_": {
+      "type": "TEXT",
+      "unique_values": [
+        "2010-07-01",
+        "2012-04-01",
+        "2010-07-01",
+        "2014-01-01",
+        "2014-04-01",
+        "2016-06-01",
+        "2010-07-01",
+        "2012-04-01",
+        "2014-02-01",
+        "2019-02-01"
+      ],
+      "value_statics": "Total count 15 - Distinct count 11 - Null count 0"
+    },
+    "end_": {
+      "type": "TEXT",
+      "unique_values": [
+        "2012-04-01",
+        "",
+        "2014-01-01",
+        "2016-06-01",
+        "2015-10-01",
+        "",
+        "2013-07-01",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 15 - Distinct count 9 - Null count 0"
+    },
+    "title": {
+      "type": "TEXT",
+      "unique_values": [
+        "Product Director",
+        "Managing Director",
+        "IT Technician",
+        "Sys Admin",
+        "Code Tester",
+        "IT Manager",
+        "Sales Manager",
+        "Product Director",
+        "IT Developer",
+        "Scrum Master"
+      ],
+      "value_statics": "Total count 15 - Distinct count 13 - Null count 0"
+    }
+  },
+  "FAVORITE_COLL_TYPE": {
+    "id": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "GENDER_DIM": {
+    "letter": {
+      "type": "TEXT",
+      "unique_values": [
+        "F",
+        "M"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Female",
+        "Male"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    }
+  },
+  "ID_NAME_COLL_ENTRIES": {
+    "collection_id": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "id": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "ID_NAME_COLL_TYPE": {
+    "collection_id": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "ID_NAME_TYPE": {
+    "id": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "INVENTORY": {
+    "PRODUCTID": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "WAREHOUSEID": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "AISLE": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "POSITION": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "PURCHASEDATE": {
+      "type": "DATE",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "QUANTITY": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "LOCATIONS": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 256 - Distinct count 256 - Null count 0"
+    },
+    "warehouse": {
+      "type": "NUMBER",
+      "unique_values": [
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "value_statics": "Total count 256 - Distinct count 2 - Null count 0"
+    },
+    "aisle": {
+      "type": "TEXT",
+      "unique_values": [
+        "D",
+        "D",
+        "A",
+        "A",
+        "B",
+        "D",
+        "C",
+        "B",
+        "B",
+        "A"
+      ],
+      "value_statics": "Total count 256 - Distinct count 4 - Null count 0"
+    },
+    "position": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 256 - Distinct count 32 - Null count 0"
+    }
+  },
+  "MONTHLY_BUDGET": {
+    "product_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        6520,
+        6520,
+        6520,
+        6520,
+        6520,
+        6520,
+        6520,
+        6520,
+        6520,
+        6520
+      ],
+      "value_statics": "Total count 48 - Distinct count 2 - Null count 0"
+    },
+    "mth": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 48 - Distinct count 24 - Null count 0"
+    },
+    "qty": {
+      "type": "FLOAT",
+      "unique_values": [
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        40.0,
+        50.0,
+        50.0,
+        40.0,
+        30.0,
+        30.0
+      ],
+      "value_statics": "Total count 48 - Distinct count 8 - Null count 0"
+    }
+  },
+  "MONTHLY_SALES": {
+    "product_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        6600,
+        4040,
+        5430,
+        7790,
+        7870,
+        7790,
+        4040,
+        4040,
+        6600,
+        6520
+      ],
+      "value_statics": "Total count 360 - Distinct count 10 - Null count 0"
+    },
+    "mth": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 360 - Distinct count 36 - Null count 0"
+    },
+    "qty": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 360 - Distinct count 80 - Null count 0"
+    }
+  },
+  "ORDERLINES": {
+    "ORDERID": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "PRODUCTID": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "QUANTITY": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "ORDERS": {
+    "ORDERID": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "PACKAGING": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": [
+        501,
+        502,
+        511,
+        521,
+        522,
+        523,
+        524,
+        531,
+        532,
+        533
+      ],
+      "value_statics": "Total count 11 - Distinct count 11 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Bottle 330cl",
+        "Bottle 500cl",
+        "Gift Carton",
+        "Box Large",
+        "Box Medium",
+        "Box Small",
+        "Gift Box",
+        "Pallet of L",
+        "Pallet of M",
+        "Pallet Mix MS"
+      ],
+      "value_statics": "Total count 11 - Distinct count 11 - Null count 0"
+    }
+  },
+  "PACKAGING_RELATIONS": {
+    "packaging_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        511,
+        511,
+        521,
+        522,
+        523,
+        524,
+        531,
+        532,
+        533,
+        533
+      ],
+      "value_statics": "Total count 12 - Distinct count 9 - Null count 0"
+    },
+    "contains_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        501,
+        502,
+        502,
+        501,
+        502,
+        511,
+        521,
+        522,
+        522,
+        523
+      ],
+      "value_statics": "Total count 12 - Distinct count 7 - Null count 0"
+    },
+    "qty": {
+      "type": "NUMBER",
+      "unique_values": [
+        3,
+        2,
+        72,
+        36,
+        30,
+        8,
+        12,
+        20,
+        10,
+        20
+      ],
+      "value_statics": "Total count 12 - Distinct count 10 - Null count 0"
+    }
+  },
+  "PICKING_LINE": {
+    "picklist_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        841,
+        841,
+        841,
+        841,
+        841,
+        841,
+        841,
+        841,
+        841,
+        842
+      ],
+      "value_statics": "Total count 21 - Distinct count 2 - Null count 0"
+    },
+    "line_no": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        1
+      ],
+      "value_statics": "Total count 21 - Distinct count 12 - Null count 0"
+    },
+    "location_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        16,
+        29,
+        77,
+        65,
+        114,
+        186,
+        165,
+        163,
+        233,
+        16
+      ],
+      "value_statics": "Total count 21 - Distinct count 10 - Null count 0"
+    },
+    "order_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        421,
+        421,
+        421,
+        421,
+        421,
+        421,
+        421,
+        421,
+        421,
+        423
+      ],
+      "value_statics": "Total count 21 - Distinct count 3 - Null count 0"
+    },
+    "product_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        6520,
+        6520,
+        6520,
+        4280,
+        4280,
+        6520,
+        6520,
+        4280,
+        6520,
+        6520
+      ],
+      "value_statics": "Total count 21 - Distinct count 2 - Null count 0"
+    },
+    "qty": {
+      "type": "FLOAT",
+      "unique_values": [
+        42.0,
+        14.0,
+        20.0,
+        36.0,
+        39.0,
+        24.0,
+        14.0,
+        35.0,
+        26.0,
+        22.0
+      ],
+      "value_statics": "Total count 21 - Distinct count 13 - Null count 0"
+    }
+  },
+  "PICKING_LIST": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": [
+        841,
+        842
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "created": {
+      "type": "TEXT",
+      "unique_values": [
+        "2019-01-16 14:03:41",
+        "2019-01-19 15:57:42"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "picker_emp_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        149,
+        152
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    }
+  },
+  "PICKING_LOG": {
+    "picklist_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        841,
+        841,
+        841,
+        841,
+        841,
+        841,
+        841,
+        841,
+        841,
+        841
+      ],
+      "value_statics": "Total count 63 - Distinct count 2 - Null count 0"
+    },
+    "log_time": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 63 - Distinct count 63 - Null count 0"
+    },
+    "activity": {
+      "type": "TEXT",
+      "unique_values": [
+        "D",
+        "A",
+        "P",
+        "D",
+        "A",
+        "P",
+        "D",
+        "A",
+        "P",
+        "D"
+      ],
+      "value_statics": "Total count 63 - Distinct count 3 - Null count 0"
+    },
+    "location_id": {
+      "type": "FLOAT",
+      "unique_values": [
+        null,
+        16.0,
+        16.0,
+        16.0,
+        29.0,
+        29.0,
+        29.0,
+        77.0,
+        77.0,
+        77.0
+      ],
+      "value_statics": "Total count 63 - Distinct count 10 - Null count 4"
+    },
+    "pickline_no": {
+      "type": "FLOAT",
+      "unique_values": [
+        null,
+        null,
+        1.0,
+        null,
+        null,
+        2.0,
+        null,
+        null,
+        3.0,
+        null
+      ],
+      "value_statics": "Total count 63 - Distinct count 12 - Null count 42"
+    }
+  },
+  "PRODUCTS": {
+    "PRODUCTID": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "PRODUCT_ALCOHOL": {
+    "product_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        4040,
+        4160,
+        4280,
+        5310,
+        5430,
+        6520,
+        6600,
+        7790,
+        7870,
+        7950
+      ],
+      "value_statics": "Total count 10 - Distinct count 10 - Null count 0"
+    },
+    "sales_volume": {
+      "type": "FLOAT",
+      "unique_values": [
+        330.0,
+        500.0,
+        330.0,
+        330.0,
+        330.0,
+        500.0,
+        500.0,
+        500.0,
+        330.0,
+        330.0
+      ],
+      "value_statics": "Total count 10 - Distinct count 2 - Null count 0"
+    },
+    "abv": {
+      "type": "FLOAT",
+      "unique_values": [
+        8.5,
+        6.0,
+        7.0,
+        5.0,
+        6.5,
+        4.5,
+        4.0,
+        5.5,
+        4.5,
+        5.0
+      ],
+      "value_statics": "Total count 10 - Distinct count 8 - Null count 0"
+    }
+  },
+  "PRODUCT_GROUPS": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": [
+        142,
+        152,
+        202,
+        232
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Stout",
+        "Belgian",
+        "Wheat",
+        "IPA"
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    }
+  },
+  "PRODUCT_MINIMUMS": {
+    "product_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        6520,
+        6600
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "qty_minimum": {
+      "type": "FLOAT",
+      "unique_values": [
+        100.0,
+        30.0
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "qty_purchase": {
+      "type": "FLOAT",
+      "unique_values": [
+        400.0,
+        100.0
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    }
+  },
+  "PURCHASES": {
+    "PRODUCTID": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "PURCHASEDATE": {
+      "type": "DATE",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "SERVER_HEARTBEAT": {
+    "server": {
+      "type": "TEXT",
+      "unique_values": [
+        "10.0.0.100",
+        "10.0.0.100",
+        "10.0.0.100",
+        "10.0.0.100",
+        "10.0.0.100",
+        "10.0.0.100",
+        "10.0.0.100",
+        "10.0.0.100",
+        "10.0.0.100",
+        "10.0.0.142"
+      ],
+      "value_statics": "Total count 14 - Distinct count 2 - Null count 0"
+    },
+    "beat_time": {
+      "type": "TEXT",
+      "unique_values": [
+        "2019-04-10 13:00",
+        "2019-04-10 13:05",
+        "2019-04-10 13:10",
+        "2019-04-10 13:15",
+        "2019-04-10 13:20",
+        "2019-04-10 13:35",
+        "2019-04-10 13:40",
+        "2019-04-10 13:45",
+        "2019-04-10 13:55",
+        "2019-04-10 13:00"
+      ],
+      "value_statics": "Total count 14 - Distinct count 11 - Null count 0"
+    }
+  },
+  "STOCK": {
+    "symbol": {
+      "type": "TEXT",
+      "unique_values": [
+        "BEER"
+      ],
+      "value_statics": "Total count 1 - Distinct count 1 - Null count 0"
+    },
+    "company": {
+      "type": "TEXT",
+      "unique_values": [
+        "Good Beer Trading Co"
+      ],
+      "value_statics": "Total count 1 - Distinct count 1 - Null count 0"
+    }
+  },
+  "TICKER": {
+    "symbol": {
+      "type": "TEXT",
+      "unique_values": [
+        "BEER",
+        "BEER",
+        "BEER",
+        "BEER",
+        "BEER",
+        "BEER",
+        "BEER",
+        "BEER",
+        "BEER",
+        "BEER"
+      ],
+      "value_statics": "Total count 15 - Distinct count 1 - Null count 0"
+    },
+    "day": {
+      "type": "TEXT",
+      "unique_values": [
+        "2019-04-01",
+        "2019-04-02",
+        "2019-04-03",
+        "2019-04-04",
+        "2019-04-05",
+        "2019-04-08",
+        "2019-04-09",
+        "2019-04-10",
+        "2019-04-11",
+        "2019-04-12"
+      ],
+      "value_statics": "Total count 15 - Distinct count 15 - Null count 0"
+    },
+    "price": {
+      "type": "FLOAT",
+      "unique_values": [
+        14.9,
+        14.2,
+        14.2,
+        15.7,
+        15.6,
+        14.8,
+        14.8,
+        14.0,
+        14.4,
+        15.2
+      ],
+      "value_statics": "Total count 15 - Distinct count 12 - Null count 0"
+    }
+  },
+  "WEB_APPS": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": [
+        542
+      ],
+      "value_statics": "Total count 1 - Distinct count 1 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Webshop"
+      ],
+      "value_statics": "Total count 1 - Distinct count 1 - Null count 0"
+    }
+  },
+  "WEB_COUNTER_HIST": {
+    "app_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        542,
+        542,
+        542,
+        542,
+        542,
+        542,
+        542,
+        542,
+        542,
+        542
+      ],
+      "value_statics": "Total count 120 - Distinct count 1 - Null count 0"
+    },
+    "page_no": {
+      "type": "NUMBER",
+      "unique_values": [
+        4,
+        1,
+        1,
+        1,
+        4,
+        1,
+        1,
+        1,
+        4,
+        1
+      ],
+      "value_statics": "Total count 120 - Distinct count 4 - Null count 0"
+    },
+    "day": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 120 - Distinct count 30 - Null count 0"
+    },
+    "counter": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 120 - Distinct count 112 - Null count 0"
+    }
+  },
+  "WEB_DEMOGRAPHICS": {
+    "day": {
+      "type": "TEXT",
+      "unique_values": [
+        "2019-05-01",
+        "2019-05-02"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "m_tw_cnt": {
+      "type": "NUMBER",
+      "unique_values": [
+        1232,
+        1438
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "m_tw_qty": {
+      "type": "NUMBER",
+      "unique_values": [
+        86,
+        142
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "m_fb_cnt": {
+      "type": "NUMBER",
+      "unique_values": [
+        1017,
+        1198
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "m_fb_qty": {
+      "type": "NUMBER",
+      "unique_values": [
+        64,
+        70
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "f_tw_cnt": {
+      "type": "NUMBER",
+      "unique_values": [
+        651,
+        840
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "f_tw_qty": {
+      "type": "NUMBER",
+      "unique_values": [
+        76,
+        92
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "f_fb_cnt": {
+      "type": "NUMBER",
+      "unique_values": [
+        564,
+        752
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "f_fb_qty": {
+      "type": "NUMBER",
+      "unique_values": [
+        68,
+        78
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    }
+  },
+  "WEB_DEVICES": {
+    "day": {
+      "type": "TEXT",
+      "unique_values": [
+        "2019-05-01",
+        "2019-05-02"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "pc": {
+      "type": "NUMBER",
+      "unique_values": [
+        1042,
+        967
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "tablet": {
+      "type": "NUMBER",
+      "unique_values": [
+        812,
+        1102
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "phone": {
+      "type": "NUMBER",
+      "unique_values": [
+        1610,
+        2159
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    }
+  },
+  "WEB_PAGES": {
+    "app_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        542,
+        542,
+        542,
+        542
+      ],
+      "value_statics": "Total count 4 - Distinct count 1 - Null count 0"
+    },
+    "page_no": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    },
+    "friendly_url": {
+      "type": "TEXT",
+      "unique_values": [
+        "/Shop",
+        "/Categories",
+        "/Breweries",
+        "/About"
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    }
+  },
+  "WEB_PAGE_VISITS": {
+    "client_ip": {
+      "type": "TEXT",
+      "unique_values": [
+        "104.130.89.12",
+        "104.130.89.12",
+        "104.130.89.12",
+        "104.130.89.12",
+        "104.130.89.12",
+        "104.130.89.12",
+        "104.130.89.12",
+        "104.130.89.12",
+        "104.130.89.12",
+        "104.130.89.12"
+      ],
+      "value_statics": "Total count 23 - Distinct count 2 - Null count 0"
+    },
+    "visit_time": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 23 - Distinct count 23 - Null count 0"
+    },
+    "app_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        542,
+        542,
+        542,
+        542,
+        542,
+        542,
+        542,
+        542,
+        542,
+        542
+      ],
+      "value_statics": "Total count 23 - Distinct count 1 - Null count 0"
+    },
+    "page_no": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        3,
+        4,
+        3,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2
+      ],
+      "value_statics": "Total count 23 - Distinct count 4 - Null count 0"
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "ALIENS": [
+    "id",
+    "first_name",
+    "last_name",
+    "email",
+    "gender",
+    "type",
+    "birth_year"
+  ],
+  "ALIENS_DETAILS": [
+    "detail_id",
+    "favorite_food",
+    "feeding_frequency",
+    "aggressive"
+  ],
+  "ALIENS_LOCATION": [
+    "loc_id",
+    "current_location",
+    "state",
+    "country",
+    "occupation"
+  ],
+  "ALIEN_DATA": [
+    "id",
+    "first_name",
+    "last_name",
+    "email",
+    "gender",
+    "type",
+    "birth_year",
+    "age",
+    "favorite_food",
+    "feeding_frequency",
+    "aggressive",
+    "occupation",
+    "current_location",
+    "state",
+    "us_region",
+    "country"
+  ],
+  "CITIES": [
+    "city_id",
+    "city_name",
+    "latitude",
+    "longitude",
+    "country_code_2",
+    "capital",
+    "population",
+    "insert_date"
+  ],
+  "CITIES_COUNTRIES": [
+    "country_id",
+    "country_name",
+    "country_code_2",
+    "country_code_3",
+    "region",
+    "sub_region",
+    "intermediate_region",
+    "created_on"
+  ],
+  "CITIES_CURRENCIES": [
+    "currency_id",
+    "country_code_2",
+    "currency_name",
+    "currency_code"
+  ],
+  "CITIES_LANGUAGES": [
+    "language_id",
+    "language",
+    "country_code_2"
+  ],
+  "JOB_COMPANY": [
+    "company_id",
+    "name",
+    "link",
+    "link_google",
+    "thumbnail"
+  ],
+  "JOB_POSTINGS_FACT": [
+    "job_id",
+    "company_id",
+    "job_title_short",
+    "job_title",
+    "job_location",
+    "job_via",
+    "job_schedule_type",
+    "job_work_from_home",
+    "search_location",
+    "job_posted_date",
+    "job_no_degree_mention",
+    "job_health_insurance",
+    "job_country",
+    "salary_rate",
+    "salary_year_avg",
+    "salary_hour_avg"
+  ],
+  "LEGISLATION_DATE_DIM": [
+    "date",
+    "month_name",
+    "day_of_month"
+  ],
+  "LEGISLATORS": [
+    "full_name",
+    "first_name",
+    "last_name",
+    "middle_name",
+    "nickname",
+    "suffix",
+    "other_names_end",
+    "other_names_middle",
+    "other_names_last",
+    "birthday",
+    "gender",
+    "id_bioguide",
+    "id_bioguide_previous_0",
+    "id_govtrack",
+    "id_icpsr",
+    "id_wikipedia",
+    "id_wikidata",
+    "id_google_entity_id",
+    "id_house_history",
+    "id_house_history_alternate",
+    "id_thomas",
+    "id_cspan",
+    "id_votesmart",
+    "id_lis",
+    "id_ballotpedia",
+    "id_opensecrets",
+    "id_fec_0",
+    "id_fec_1",
+    "id_fec_2"
+  ],
+  "LEGISLATORS_TERMS": [
+    "id_bioguide",
+    "term_number",
+    "term_id",
+    "term_type",
+    "term_start",
+    "term_end",
+    "state",
+    "district",
+    "class",
+    "party",
+    "how",
+    "url",
+    "address",
+    "phone",
+    "fax",
+    "contact_form",
+    "office",
+    "state_rank",
+    "rss_url",
+    "caucus"
+  ],
+  "SKILLS_DIM": [
+    "skill_id",
+    "skills",
+    "type"
+  ],
+  "SKILLS_JOB_DIM": [
+    "job_id",
+    "skill_id"
+  ]
+}

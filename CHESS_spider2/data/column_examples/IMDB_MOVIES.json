@@ -1,0 +1,282 @@
+{
+  "DIRECTOR_MAPPING": {
+    "movie_id": [
+      "tt6619188",
+      "tt5912150",
+      "tt4489562",
+      "tt8443704",
+      "tt6985200"
+    ],
+    "name_id": [
+      "nm0333983",
+      "nm1598347",
+      "nm1319499",
+      "nm8069001",
+      "nm7187927"
+    ]
+  },
+  "ERD": {
+    "table": [
+      "movie",
+      "movie",
+      "movie",
+      "movie",
+      "movie"
+    ],
+    "column": [
+      "id",
+      "title",
+      "year",
+      "date_published",
+      "duration"
+    ],
+    "Unnamed: 2": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "Unnamed: 3": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "Unnamed: 4": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "Unnamed: 5": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "Unnamed: 6": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "Unnamed: 7": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "Unnamed: 8": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "Unnamed: 9": [
+      "genre",
+      "* movie_id",
+      "* genre",
+      "",
+      ""
+    ],
+    "Unnamed: 10": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "Unnamed: 11": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "Unnamed: 12": [
+      "ratings",
+      "* movie_id",
+      "avg_rating",
+      "total_votes",
+      "median_rating"
+    ]
+  },
+  "GENRE": {
+    "movie_id": [
+      "tt7201558",
+      "tt5996682",
+      "tt6165936",
+      "tt9174602",
+      "tt5446444"
+    ],
+    "genre": [
+      "Comedy",
+      "Mystery",
+      "Drama",
+      "Horror",
+      "Drama"
+    ]
+  },
+  "MOVIES": {
+    "id": [
+      "tt6165792",
+      "tt7945822",
+      "tt5969846",
+      "tt6830716",
+      "tt7730492"
+    ],
+    "title": [
+      "Hikari",
+      "Dangerous Matrimony",
+      "Sous le m\u00eame toit",
+      "Expo",
+      "Una festa esagerata"
+    ],
+    "year": [
+      2017,
+      2018,
+      2017,
+      2019,
+      2018
+    ],
+    "date_published": [
+      "2017-05-27 00:00:00",
+      "2018-10-26 00:00:00",
+      "2017-04-19 00:00:00",
+      "2019-08-03 00:00:00",
+      "2018-03-22 00:00:00"
+    ],
+    "duration": [
+      101,
+      82,
+      97,
+      80,
+      90
+    ],
+    "country": [
+      "Japan, France",
+      "USA",
+      "France",
+      "USA",
+      "Italy"
+    ],
+    "worlwide_gross_income": [
+      "$ 380560",
+      "",
+      "$ 4855506",
+      "",
+      "$ 2477497"
+    ],
+    "languages": [
+      "Japanese",
+      "English",
+      "French",
+      "English",
+      "Italian"
+    ],
+    "production_company": [
+      "Comme des Cin\u00e9mas",
+      "Feifer Worldwide",
+      "EuropaCorp",
+      "Paradox Universe",
+      "Medusa Film"
+    ]
+  },
+  "NAMES": {
+    "id": [
+      "nm5792733",
+      "nm1350587",
+      "nm2445419",
+      "nm0000382",
+      "nm5252352"
+    ],
+    "name": [
+      "Pete Nata",
+      "Rasmus Heide",
+      "Lena",
+      "Atom Egoyan",
+      "Alexandra Corin Johnston"
+    ],
+    "height": [
+      200.0,
+      null,
+      null,
+      170.0,
+      null
+    ],
+    "date_of_birth": [
+      "",
+      "",
+      "",
+      "1960-07-19",
+      ""
+    ],
+    "known_for_movies": [
+      "tt8484370",
+      "tt4942270",
+      "tt6109124",
+      "",
+      "tt5224356"
+    ]
+  },
+  "RATINGS": {
+    "movie_id": [
+      "tt7890408",
+      "tt5160954",
+      "tt6974196",
+      "tt6237268",
+      "tt2671706"
+    ],
+    "avg_rating": [
+      5.9,
+      7.1,
+      5.9,
+      5.5,
+      7.2
+    ],
+    "total_votes": [
+      470,
+      578,
+      217,
+      1702,
+      89760
+    ],
+    "median_rating": [
+      6.0,
+      8.0,
+      6.0,
+      6.0,
+      7.0
+    ]
+  },
+  "ROLE_MAPPING": {
+    "movie_id": [
+      "tt3548276",
+      "tt5655222",
+      "tt6514010",
+      "tt7036332",
+      "tt6972140"
+    ],
+    "name_id": [
+      "nm0575140",
+      "nm0696059",
+      "nm6277581",
+      "nm0844012",
+      "nm0451234"
+    ],
+    "category": [
+      "actress",
+      "actress",
+      "actress",
+      "actor",
+      "actor"
+    ]
+  }
+}

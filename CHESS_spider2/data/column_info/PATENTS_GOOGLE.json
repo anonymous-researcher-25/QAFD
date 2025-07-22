@@ -1,0 +1,803 @@
+{
+  "ABS_AND_EMB": {
+    "cpc_inventive_low": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 54682 - Null count 0"
+    },
+    "title_translated": {
+      "type": "BOOLEAN",
+      "unique_values": [
+        [
+          true
+        ],
+        [
+          false
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 2 - Null count 0"
+    },
+    "cpc_low": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 53071 - Null count 0"
+    },
+    "cited_by": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 25468 - Null count 0"
+    },
+    "abstract_translated": {
+      "type": "BOOLEAN",
+      "unique_values": [
+        [
+          true
+        ],
+        [
+          false
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 2 - Null count 0"
+    },
+    "abstract": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 59415 - Null count 0"
+    },
+    "url": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 100000 - Null count 0"
+    },
+    "embedding_v1": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 86164 - Null count 0"
+    },
+    "publication_number": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 99995 - Null count 0"
+    },
+    "country": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "RUSSIAN FEDERATION"
+        ],
+        [
+          "CANADA"
+        ],
+        [
+          "NETHERLANDS"
+        ],
+        [
+          "JAPAN"
+        ],
+        [
+          "FRANCE"
+        ],
+        [
+          "WIPO (PCT)"
+        ],
+        [
+          "FEDERAL REPUBLIC GERMANY"
+        ],
+        [
+          "SPAIN"
+        ],
+        [
+          "DENMARK"
+        ],
+        [
+          "FINLAND"
+        ],
+        [
+          "USA"
+        ],
+        [
+          "UNITED KINGDOM"
+        ],
+        [
+          "REPUBLIC OF KOREA"
+        ],
+        [
+          "EUROPEAN PATENT OFFICE"
+        ],
+        [
+          "BELGIUM"
+        ],
+        [
+          "LUXEMBOURG"
+        ],
+        [
+          "CHINA"
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 17 - Null count 0"
+    },
+    "publication_description": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 171 - Null count 0"
+    },
+    "cpc": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 53337 - Null count 0"
+    },
+    "top_terms": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 64329 - Null count 0"
+    },
+    "title": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 82399 - Null count 0"
+    },
+    "similar": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 85755 - Null count 0"
+    }
+  },
+  "CPC_DEFINITION": {
+    "residualReferences": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 147 - Null count 0"
+    },
+    "dateRevised": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 54 - Null count 0"
+    },
+    "parents": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 21034 - Null count 0"
+    },
+    "childGroups": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 687 - Null count 0"
+    },
+    "synonyms": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 577 - Null count 0"
+    },
+    "status": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "published"
+        ],
+        [
+          "frozen"
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 2 - Null count 0"
+    },
+    "breakdownCode": {
+      "type": "BOOLEAN",
+      "unique_values": [
+        [
+          true
+        ],
+        [
+          false
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 2 - Null count 0"
+    },
+    "rules": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 4332 - Null count 0"
+    },
+    "precedenceLimitingReferences": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 5221 - Null count 0"
+    },
+    "limitingReferences": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 7781 - Null count 0"
+    },
+    "level": {
+      "type": "FLOAT",
+      "unique_values": [
+        [
+          11.0
+        ],
+        [
+          12.0
+        ],
+        [
+          13.0
+        ],
+        [
+          14.0
+        ],
+        [
+          15.0
+        ],
+        [
+          16.0
+        ],
+        [
+          4.0
+        ],
+        [
+          7.0
+        ],
+        [
+          8.0
+        ],
+        [
+          10.0
+        ],
+        [
+          17.0
+        ],
+        [
+          18.0
+        ],
+        [
+          19.0
+        ],
+        [
+          2.0
+        ],
+        [
+          5.0
+        ],
+        [
+          9.0
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 6 - Null count 0"
+    },
+    "titlePart": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 90385 - Null count 0"
+    },
+    "scopeLimitingReferences": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 12036 - Null count 0"
+    },
+    "symbol": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 100000 - Null count 0"
+    },
+    "informativeReferences": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 13430 - Null count 0"
+    },
+    "ipcConcordant": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 52902 - Null count 0"
+    },
+    "definition": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 16739 - Null count 0"
+    },
+    "children": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 41053 - Null count 0"
+    },
+    "titleFull": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 94197 - Null count 0"
+    },
+    "applicationReferences": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 938 - Null count 0"
+    },
+    "glossary": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 1558 - Null count 0"
+    },
+    "notAllocatable": {
+      "type": "BOOLEAN",
+      "unique_values": [
+        [
+          true
+        ],
+        [
+          false
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 2 - Null count 0"
+    }
+  },
+  "DISCLOSURES_13": {
+    "blanket_type": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "0"
+        ],
+        [
+          "2"
+        ],
+        [
+          "1"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "value_statics": "Total count 45349 - Distinct count 4 - Null count 0"
+    },
+    "disclosure_event": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 4970 - Null count 0"
+    },
+    "sc_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 78 - Null count 0"
+    },
+    "third_party": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "value_statics": "Total count 45349 - Distinct count 2 - Null count 0"
+    },
+    "reciprocity": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ],
+        [
+          ""
+        ]
+      ],
+      "value_statics": "Total count 45349 - Distinct count 3 - Null count 0"
+    },
+    "record_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 45349 - Null count 0"
+    },
+    "standard": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 3606 - Null count 0"
+    },
+    "family_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 5332 - Null count 0"
+    },
+    "tc_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 60 - Null count 0"
+    },
+    "pub_cleaned": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 6504 - Null count 0"
+    },
+    "sso": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "ANSI"
+        ],
+        [
+          "ATIS"
+        ],
+        [
+          "BBF"
+        ],
+        [
+          "ETSI"
+        ],
+        [
+          "IETF"
+        ],
+        [
+          "IEC"
+        ],
+        [
+          "OMA"
+        ],
+        [
+          "TIA"
+        ],
+        [
+          "ITU"
+        ],
+        [
+          "IEEE"
+        ],
+        [
+          "ISO"
+        ],
+        [
+          "CENELEC"
+        ],
+        [
+          "IEC - JTC1"
+        ],
+        [
+          "CEN"
+        ],
+        [
+          "ISO - JTC1"
+        ]
+      ],
+      "value_statics": "Total count 45349 - Distinct count 15 - Null count 0"
+    },
+    "patent_owner_harmonized": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 940 - Null count 0"
+    },
+    "date": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 2788 - Null count 0"
+    },
+    "copyright": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          ""
+        ],
+        [
+          "1"
+        ]
+      ],
+      "value_statics": "Total count 45349 - Distinct count 2 - Null count 0"
+    },
+    "blanket_scope": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 2066 - Null count 0"
+    },
+    "patent_owner_unharmonized": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 1687 - Null count 0"
+    },
+    "committee_project": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 400 - Null count 0"
+    },
+    "licensing_commitment": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "FRAND"
+        ],
+        [
+          "None"
+        ],
+        [
+          "Specific Terms"
+        ],
+        [
+          "FREE"
+        ],
+        [
+          "NO LIC"
+        ],
+        [
+          "FRAND if reciprocal"
+        ],
+        [
+          ""
+        ],
+        [
+          "No LIC"
+        ],
+        [
+          "Non-assert"
+        ]
+      ],
+      "value_statics": "Total count 45349 - Distinct count 9 - Null count 0"
+    },
+    "wg_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 39 - Null count 0"
+    },
+    "serial_cleaned": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 45349 - Distinct count 5150 - Null count 0"
+    }
+  },
+  "PUBLICATIONS": {
+    "country_code": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "JP"
+        ],
+        [
+          "GB"
+        ],
+        [
+          "DK"
+        ],
+        [
+          "FI"
+        ],
+        [
+          "KR"
+        ],
+        [
+          "EP"
+        ],
+        [
+          "WO"
+        ],
+        [
+          "NL"
+        ],
+        [
+          "ES"
+        ],
+        [
+          "US"
+        ],
+        [
+          "DE"
+        ],
+        [
+          "BE"
+        ],
+        [
+          "RU"
+        ],
+        [
+          "LU"
+        ],
+        [
+          "CA"
+        ],
+        [
+          "CN"
+        ],
+        [
+          "FR"
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 17 - Null count 0"
+    },
+    "description_localized": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 16291 - Null count 0"
+    },
+    "priority_claim": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 95764 - Null count 0"
+    },
+    "inventor_harmonized": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 69072 - Null count 0"
+    },
+    "assignee_harmonized": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 47352 - Null count 0"
+    },
+    "ipc": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 78809 - Null count 0"
+    },
+    "examiner": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 7866 - Null count 0"
+    },
+    "grant_date": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 14462 - Null count 0"
+    },
+    "inventor": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 70361 - Null count 0"
+    },
+    "claims_localized": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 12808 - Null count 0"
+    },
+    "publication_number": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 100000 - Null count 0"
+    },
+    "filing_date": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 20859 - Null count 0"
+    },
+    "abstract_localized": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 63964 - Null count 0"
+    },
+    "citation": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 35487 - Null count 0"
+    },
+    "assignee": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 57029 - Null count 0"
+    },
+    "art_unit": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 736 - Null count 0"
+    },
+    "application_number_formatted": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 90176 - Null count 0"
+    },
+    "fi": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 24344 - Null count 0"
+    },
+    "application_kind": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "B"
+        ],
+        [
+          "H"
+        ],
+        [
+          "U"
+        ],
+        [
+          "A"
+        ],
+        [
+          "T"
+        ],
+        [
+          ""
+        ],
+        [
+          "D"
+        ],
+        [
+          "W"
+        ],
+        [
+          "F"
+        ],
+        [
+          "E"
+        ],
+        [
+          "K"
+        ],
+        [
+          "M"
+        ],
+        [
+          "V"
+        ],
+        [
+          "C"
+        ],
+        [
+          "Q"
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 13 - Null count 0"
+    },
+    "uspc": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 14057 - Null count 0"
+    },
+    "kind_code": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 65 - Null count 0"
+    },
+    "entity_status": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "small"
+        ],
+        [
+          "micro"
+        ],
+        [
+          ""
+        ],
+        [
+          "large"
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 4 - Null count 0"
+    },
+    "application_number": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 97784 - Null count 0"
+    },
+    "pct_number": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 12899 - Null count 0"
+    },
+    "title_localized": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 85814 - Null count 0"
+    },
+    "publication_date": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 19161 - Null count 0"
+    },
+    "cpc": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 55332 - Null count 0"
+    },
+    "priority_date": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 21211 - Null count 0"
+    },
+    "fterm": {
+      "type": "VARIANT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 21495 - Null count 0"
+    },
+    "family_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 99649 - Null count 0"
+    }
+  }
+}

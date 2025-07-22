@@ -1,0 +1,1512 @@
+{
+  "CASE_IDS": {
+    "case_id": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 94242 - Null count 0"
+    },
+    "db_year": {
+      "type": "NUMBER",
+      "unique_values": [
+        2021,
+        2018,
+        2018,
+        2021,
+        2021,
+        2018,
+        2018,
+        2021,
+        2018,
+        2021
+      ],
+      "value_statics": "Total count 94243 - Distinct count 4 - Null count 0"
+    }
+  },
+  "COLLISIONS": {
+    "case_id": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 94243 - Null count 0"
+    },
+    "jurisdiction": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 467 - Null count 121"
+    },
+    "officer_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 30278 - Null count 0"
+    },
+    "reporting_district": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 6260 - Null count 0"
+    },
+    "chp_shift": {
+      "type": "TEXT",
+      "unique_values": [
+        "0600 thru 1359",
+        "not chp",
+        "not chp",
+        "not chp",
+        "1400 thru 2159",
+        "not chp",
+        "not chp",
+        "1400 thru 2159",
+        "not chp",
+        "1400 thru 2159"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 5 - Null count 0"
+    },
+    "population": {
+      "type": "TEXT",
+      "unique_values": [
+        "50000 to 100000",
+        "25000 to 50000",
+        ">250000",
+        ">250000",
+        "unincorporated",
+        "25000 to 50000",
+        "25000 to 50000",
+        ">250000",
+        "10000 to 25000",
+        "50000 to 100000"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 9 - Null count 0"
+    },
+    "county_city_location": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 525 - Null count 0"
+    },
+    "county_location": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 58 - Null count 0"
+    },
+    "special_condition": {
+      "type": "FLOAT",
+      "unique_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 2 - Null count 5196"
+    },
+    "beat_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "chp state highway",
+        "not chp",
+        "not chp",
+        "not chp",
+        "chp county roadarea",
+        "not chp",
+        "not chp",
+        "chp state highway",
+        "not chp",
+        "chp state highway"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 5 - Null count 0"
+    },
+    "chp_beat_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "interstate",
+        "not chp",
+        "not chp",
+        "not chp",
+        "county road area",
+        "not chp",
+        "not chp",
+        "us highway",
+        "not chp",
+        "state route"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 8 - Null count 0"
+    },
+    "city_division_lapd": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 94243 - Distinct count 19 - Null count 0"
+    },
+    "chp_beat_class": {
+      "type": "TEXT",
+      "unique_values": [
+        "chp other",
+        "not chp",
+        "not chp",
+        "not chp",
+        "chp other",
+        "not chp",
+        "not chp",
+        "chp other",
+        "not chp",
+        "chp other"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 4 - Null count 0"
+    },
+    "beat_number": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 5050 - Null count 0"
+    },
+    "primary_road": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 21661 - Null count 0"
+    },
+    "secondary_road": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 33561 - Null count 0"
+    },
+    "distance": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 2121 - Null count 0"
+    },
+    "direction": {
+      "type": "TEXT",
+      "unique_values": [
+        "north",
+        "south",
+        "",
+        "",
+        "north",
+        "east",
+        "",
+        "east",
+        "",
+        "west"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 5 - Null count 0"
+    },
+    "intersection": {
+      "type": "FLOAT",
+      "unique_values": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 2 - Null count 942"
+    },
+    "weather_1": {
+      "type": "TEXT",
+      "unique_values": [
+        "clear",
+        "clear",
+        "clear",
+        "clear",
+        "clear",
+        "clear",
+        "cloudy",
+        "clear",
+        "clear",
+        "clear"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 8 - Null count 0"
+    },
+    "weather_2": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 94243 - Distinct count 7 - Null count 0"
+    },
+    "state_highway_indicator": {
+      "type": "FLOAT",
+      "unique_values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 2 - Null count 29"
+    },
+    "caltrans_county": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 59 - Null count 0"
+    },
+    "caltrans_district": {
+      "type": "FLOAT",
+      "unique_values": [
+        11.0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4.0,
+        3.0,
+        null,
+        null
+      ],
+      "value_statics": "Total count 94243 - Distinct count 13 - Null count 65442"
+    },
+    "state_route": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 227 - Null count 65442"
+    },
+    "route_suffix": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 94243 - Distinct count 4 - Null count 0"
+    },
+    "postmile_prefix": {
+      "type": "TEXT",
+      "unique_values": [
+        "R",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "R",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 94243 - Distinct count 11 - Null count 0"
+    },
+    "postmile": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 8755 - Null count 65442"
+    },
+    "location_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "highway",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "intersection",
+        "highway",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 94243 - Distinct count 4 - Null count 0"
+    },
+    "ramp_intersection": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "intersection",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 94243 - Distinct count 9 - Null count 0"
+    },
+    "side_of_highway": {
+      "type": "TEXT",
+      "unique_values": [
+        "northbound",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "southbound",
+        "eastbound",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 94243 - Distinct count 5 - Null count 0"
+    },
+    "tow_away": {
+      "type": "FLOAT",
+      "unique_values": [
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 2 - Null count 668"
+    },
+    "collision_severity": {
+      "type": "TEXT",
+      "unique_values": [
+        "pain",
+        "property damage only",
+        "pain",
+        "pain",
+        "fatal",
+        "property damage only",
+        "property damage only",
+        "pain",
+        "property damage only",
+        "property damage only"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 5 - Null count 0"
+    },
+    "killed_victims": {
+      "type": "FLOAT",
+      "unique_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 6 - Null count 23"
+    },
+    "injured_victims": {
+      "type": "FLOAT",
+      "unique_values": [
+        1.0,
+        0.0,
+        2.0,
+        1.0,
+        3.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 16 - Null count 23"
+    },
+    "party_count": {
+      "type": "FLOAT",
+      "unique_values": [
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 10 - Null count 0"
+    },
+    "primary_collision_factor": {
+      "type": "TEXT",
+      "unique_values": [
+        "vehicle code violation",
+        "vehicle code violation",
+        "vehicle code violation",
+        "vehicle code violation",
+        "vehicle code violation",
+        "vehicle code violation",
+        "other than driver",
+        "vehicle code violation",
+        "vehicle code violation",
+        "vehicle code violation"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 6 - Null count 0"
+    },
+    "pcf_violation_code": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 94243 - Distinct count 6 - Null count 0"
+    },
+    "pcf_violation_category": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 24 - Null count 0"
+    },
+    "pcf_violation": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 193 - Null count 6595"
+    },
+    "pcf_violation_subsection": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "A",
+        "A",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 94243 - Distinct count 14 - Null count 0"
+    },
+    "hit_and_run": {
+      "type": "TEXT",
+      "unique_values": [
+        "not hit and run",
+        "misdemeanor",
+        "not hit and run",
+        "not hit and run",
+        "not hit and run",
+        "not hit and run",
+        "not hit and run",
+        "not hit and run",
+        "misdemeanor",
+        "not hit and run"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 3 - Null count 0"
+    },
+    "type_of_collision": {
+      "type": "TEXT",
+      "unique_values": [
+        "hit object",
+        "rear end",
+        "broadside",
+        "broadside",
+        "hit object",
+        "rear end",
+        "hit object",
+        "rear end",
+        "head-on",
+        "rear end"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 9 - Null count 0"
+    },
+    "motor_vehicle_involved_with": {
+      "type": "TEXT",
+      "unique_values": [
+        "fixed object",
+        "other motor vehicle",
+        "other motor vehicle",
+        "other motor vehicle",
+        "fixed object",
+        "other motor vehicle",
+        "animal",
+        "other motor vehicle",
+        "parked motor vehicle",
+        "other motor vehicle"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 12 - Null count 0"
+    },
+    "pedestrian_action": {
+      "type": "TEXT",
+      "unique_values": [
+        "no pedestrian involved",
+        "no pedestrian involved",
+        "no pedestrian involved",
+        "no pedestrian involved",
+        "no pedestrian involved",
+        "no pedestrian involved",
+        "no pedestrian involved",
+        "no pedestrian involved",
+        "no pedestrian involved",
+        "no pedestrian involved"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 8 - Null count 0"
+    },
+    "road_surface": {
+      "type": "TEXT",
+      "unique_values": [
+        "dry",
+        "dry",
+        "dry",
+        "dry",
+        "dry",
+        "dry",
+        "dry",
+        "dry",
+        "dry",
+        "dry"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 6 - Null count 0"
+    },
+    "road_condition_1": {
+      "type": "TEXT",
+      "unique_values": [
+        "normal",
+        "normal",
+        "normal",
+        "normal",
+        "normal",
+        "normal",
+        "normal",
+        "normal",
+        "normal",
+        "normal"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 9 - Null count 0"
+    },
+    "road_condition_2": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 94243 - Distinct count 9 - Null count 0"
+    },
+    "lighting": {
+      "type": "TEXT",
+      "unique_values": [
+        "daylight",
+        "daylight",
+        "dark with street lights",
+        "daylight",
+        "dark with no street lights",
+        "daylight",
+        "dark with no street lights",
+        "dark with no street lights",
+        "dusk or dawn",
+        "daylight"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 6 - Null count 0"
+    },
+    "control_device": {
+      "type": "TEXT",
+      "unique_values": [
+        "none",
+        "functioning",
+        "functioning",
+        "functioning",
+        "functioning",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 5 - Null count 0"
+    },
+    "chp_road_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 11 - Null count 0"
+    },
+    "pedestrian_collision": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 2 - Null count 0"
+    },
+    "bicycle_collision": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 2 - Null count 0"
+    },
+    "motorcycle_collision": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 2 - Null count 0"
+    },
+    "truck_collision": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 2 - Null count 0"
+    },
+    "not_private_property": {
+      "type": "FLOAT",
+      "unique_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 1 - Null count 0"
+    },
+    "alcohol_involved": {
+      "type": "FLOAT",
+      "unique_values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "value_statics": "Total count 94243 - Distinct count 1 - Null count 84832"
+    },
+    "statewide_vehicle_type_at_fault": {
+      "type": "TEXT",
+      "unique_values": [
+        "passenger car",
+        "passenger car",
+        "",
+        "passenger car",
+        "passenger car",
+        "",
+        "",
+        "passenger car",
+        "pickup or panel truck",
+        "passenger car"
+      ],
+      "value_statics": "Total count 94243 - Distinct count 16 - Null count 0"
+    },
+    "chp_vehicle_type_at_fault": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 77 - Null count 0"
+    },
+    "severe_injury_count": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 8 - Null count 0"
+    },
+    "other_visible_injury_count": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 10 - Null count 0"
+    },
+    "complaint_of_pain_injury_count": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 11 - Null count 0"
+    },
+    "pedestrian_killed_count": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 4 - Null count 0"
+    },
+    "pedestrian_injured_count": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 7 - Null count 0"
+    },
+    "bicyclist_killed_count": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 2 - Null count 0"
+    },
+    "bicyclist_injured_count": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 5 - Null count 0"
+    },
+    "motorcyclist_killed_count": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 3 - Null count 0"
+    },
+    "motorcyclist_injured_count": {
+      "type": "FLOAT",
+      "unique_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "value_statics": "Total count 94243 - Distinct count 5 - Null count 0"
+    },
+    "primary_ramp": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 94243 - Distinct count 14 - Null count 0"
+    },
+    "secondary_ramp": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 94243 - Distinct count 14 - Null count 0"
+    },
+    "latitude": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 24977 - Null count 67280"
+    },
+    "longitude": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 25670 - Null count 67280"
+    },
+    "collision_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 7454 - Null count 0"
+    },
+    "collision_time": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 1441 - Null count 0"
+    },
+    "process_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 94243 - Distinct count 5432 - Null count 0"
+    }
+  },
+  "PARTIES": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 186692 - Distinct count 185858 - Null count 0"
+    },
+    "case_id": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 186692 - Distinct count 185584 - Null count 0"
+    },
+    "party_number": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2
+      ],
+      "value_statics": "Total count 186692 - Distinct count 17 - Null count 0"
+    },
+    "party_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "driver",
+        "driver",
+        "bicyclist",
+        "driver",
+        "driver",
+        "driver",
+        "driver",
+        "parked vehicle",
+        "driver",
+        "driver"
+      ],
+      "value_statics": "Total count 186692 - Distinct count 6 - Null count 0"
+    },
+    "at_fault": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "value_statics": "Total count 186692 - Distinct count 2 - Null count 0"
+    },
+    "party_sex": {
+      "type": "TEXT",
+      "unique_values": [
+        "male",
+        "female",
+        "male",
+        "male",
+        "male",
+        "male",
+        "male",
+        "",
+        "female",
+        "female"
+      ],
+      "value_statics": "Total count 186692 - Distinct count 4 - Null count 0"
+    },
+    "party_age": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 186692 - Distinct count 107 - Null count 29143"
+    },
+    "party_sobriety": {
+      "type": "TEXT",
+      "unique_values": [
+        "impairment unknown",
+        "had not been drinking",
+        "not applicable",
+        "had not been drinking",
+        "had been drinking, under influence",
+        "had not been drinking",
+        "had not been drinking",
+        "not applicable",
+        "had not been drinking",
+        "had not been drinking"
+      ],
+      "value_statics": "Total count 186692 - Distinct count 7 - Null count 0"
+    },
+    "party_drug_physical": {
+      "type": "TEXT",
+      "unique_values": [
+        "G",
+        "sleepy/fatigued",
+        "not applicable",
+        "",
+        "",
+        "",
+        "",
+        "not applicable",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 186692 - Distinct count 6 - Null count 0"
+    },
+    "direction_of_travel": {
+      "type": "TEXT",
+      "unique_values": [
+        "north",
+        "south",
+        "south",
+        "south",
+        "west",
+        "west",
+        "north",
+        "west",
+        "west",
+        "east"
+      ],
+      "value_statics": "Total count 186692 - Distinct count 5 - Null count 0"
+    },
+    "party_safety_equipment_1": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 186692 - Distinct count 24 - Null count 0"
+    },
+    "party_safety_equipment_2": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 186692 - Distinct count 24 - Null count 0"
+    },
+    "financial_responsibility": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "proof of insurance obtained",
+        "not applicable",
+        "proof of insurance obtained",
+        "proof of insurance obtained",
+        "proof of insurance obtained",
+        "proof of insurance obtained",
+        "not applicable",
+        "proof of insurance obtained",
+        "proof of insurance obtained"
+      ],
+      "value_statics": "Total count 186692 - Distinct count 5 - Null count 0"
+    },
+    "hazardous_materials": {
+      "type": "FLOAT",
+      "unique_values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "value_statics": "Total count 186692 - Distinct count 1 - Null count 186331"
+    },
+    "cellphone_in_use": {
+      "type": "FLOAT",
+      "unique_values": [
+        null,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        null,
+        0.0,
+        0.0
+      ],
+      "value_statics": "Total count 186692 - Distinct count 2 - Null count 56934"
+    },
+    "cellphone_use_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "cellphone not in use",
+        "cellphone not in use",
+        "cellphone not in use",
+        "cellphone not in use",
+        "cellphone not in use",
+        "cellphone not in use",
+        "no cellphone/unknown",
+        "cellphone not in use",
+        "cellphone not in use"
+      ],
+      "value_statics": "Total count 186692 - Distinct count 7 - Null count 0"
+    },
+    "school_bus_related": {
+      "type": "FLOAT",
+      "unique_values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "value_statics": "Total count 186692 - Distinct count 1 - Null count 186163"
+    },
+    "oaf_violation_code": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 186692 - Distinct count 5 - Null count 0"
+    },
+    "oaf_violation_category": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 186692 - Distinct count 29 - Null count 0"
+    },
+    "oaf_violation_section": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 186692 - Distinct count 161 - Null count 164317"
+    },
+    "oaf_violation_suffix": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 186692 - Distinct count 17 - Null count 0"
+    },
+    "other_associate_factor_1": {
+      "type": "TEXT",
+      "unique_values": [
+        "none apparent",
+        "none apparent",
+        "none apparent",
+        "none apparent",
+        "violation",
+        "none apparent",
+        "none apparent",
+        "other",
+        "none apparent",
+        "none apparent"
+      ],
+      "value_statics": "Total count 186692 - Distinct count 19 - Null count 0"
+    },
+    "other_associate_factor_2": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 186692 - Distinct count 14 - Null count 0"
+    },
+    "party_number_killed": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 186692 - Distinct count 5 - Null count 0"
+    },
+    "party_number_injured": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 186692 - Distinct count 13 - Null count 0"
+    },
+    "movement_preceding_collision": {
+      "type": "TEXT",
+      "unique_values": [
+        "stopped",
+        "ran off road",
+        "proceeding straight",
+        "slowing/stopping",
+        "proceeding straight",
+        "proceeding straight",
+        "proceeding straight",
+        "parked",
+        "changing lanes",
+        "proceeding straight"
+      ],
+      "value_statics": "Total count 186692 - Distinct count 20 - Null count 0"
+    },
+    "vehicle_year": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 186692 - Distinct count 96 - Null count 17757"
+    },
+    "vehicle_make": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 186692 - Distinct count 350 - Null count 0"
+    },
+    "statewide_vehicle_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "passenger car",
+        "bicycle",
+        "pickup or panel truck",
+        "passenger car",
+        "passenger car",
+        "passenger car",
+        "passenger car",
+        "passenger car",
+        "passenger car"
+      ],
+      "value_statics": "Total count 186692 - Distinct count 16 - Null count 0"
+    },
+    "chp_vehicle_type_towing": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 186692 - Distinct count 83 - Null count 0"
+    },
+    "chp_vehicle_type_towed": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 186692 - Distinct count 51 - Null count 0"
+    },
+    "party_race": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "white",
+        "black",
+        "hispanic",
+        "hispanic",
+        "white",
+        "hispanic",
+        "",
+        "asian",
+        "black"
+      ],
+      "value_statics": "Total count 186692 - Distinct count 6 - Null count 0"
+    }
+  },
+  "VICTIMS": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 96393 - Distinct count 95894 - Null count 0"
+    },
+    "case_id": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 96393 - Distinct count 95458 - Null count 0"
+    },
+    "party_number": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "value_statics": "Total count 96393 - Distinct count 14 - Null count 0"
+    },
+    "victim_role": {
+      "type": "TEXT",
+      "unique_values": [
+        "driver",
+        "passenger",
+        "driver",
+        "non-injured party",
+        "passenger",
+        "driver",
+        "passenger",
+        "driver",
+        "driver",
+        "driver"
+      ],
+      "value_statics": "Total count 96393 - Distinct count 7 - Null count 0"
+    },
+    "victim_sex": {
+      "type": "TEXT",
+      "unique_values": [
+        "female",
+        "female",
+        "male",
+        "male",
+        "male",
+        "male",
+        "male",
+        "male",
+        "male",
+        "male"
+      ],
+      "value_statics": "Total count 96393 - Distinct count 5 - Null count 0"
+    },
+    "victim_age": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 96393 - Distinct count 109 - Null count 3191"
+    },
+    "victim_degree_of_injury": {
+      "type": "TEXT",
+      "unique_values": [
+        "other visible injury",
+        "no injury",
+        "other visible injury",
+        "no injury",
+        "no injury",
+        "severe injury",
+        "severe injury",
+        "complaint of pain",
+        "complaint of pain",
+        "complaint of pain"
+      ],
+      "value_statics": "Total count 96393 - Distinct count 8 - Null count 0"
+    },
+    "victim_seating_position": {
+      "type": "TEXT",
+      "unique_values": [
+        "driver",
+        "station wagon rear",
+        "driver",
+        "passenger seat 5",
+        "position unknown",
+        "driver",
+        "passenger seat 3",
+        "driver",
+        "driver",
+        "driver"
+      ],
+      "value_statics": "Total count 96393 - Distinct count 11 - Null count 0"
+    },
+    "victim_safety_equipment_1": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 96393 - Distinct count 24 - Null count 0"
+    },
+    "victim_safety_equipment_2": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 96393 - Distinct count 25 - Null count 0"
+    },
+    "victim_ejected": {
+      "type": "TEXT",
+      "unique_values": [
+        "not ejected",
+        "not ejected",
+        "not ejected",
+        "not ejected",
+        "not ejected",
+        "unknown",
+        "not ejected",
+        "not ejected",
+        "not ejected",
+        "not ejected"
+      ],
+      "value_statics": "Total count 96393 - Distinct count 5 - Null count 0"
+    }
+  }
+}

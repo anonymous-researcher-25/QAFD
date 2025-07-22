@@ -1,0 +1,40 @@
+{
+  "FULLTEXT": {
+    "title": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 2225 - Distinct count 2096 - Null count 0"
+    },
+    "filename": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 2225 - Distinct count 2225 - Null count 0"
+    },
+    "category": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "tech"
+        ],
+        [
+          "sport"
+        ],
+        [
+          "business"
+        ],
+        [
+          "politics"
+        ],
+        [
+          "entertainment"
+        ]
+      ],
+      "value_statics": "Total count 2225 - Distinct count 5 - Null count 0"
+    },
+    "body": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 2225 - Distinct count 2092 - Null count 0"
+    }
+  }
+}

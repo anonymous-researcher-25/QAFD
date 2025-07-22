@@ -1,0 +1,1035 @@
+{
+  "AGENTS": {
+    "AgentID": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "AgtFirstName": {
+      "type": "TEXT",
+      "unique_values": [
+        "William",
+        "Scott",
+        "Carol",
+        "Karen",
+        "Marianne",
+        "John",
+        "Caleb",
+        "Maria",
+        "Daffy"
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "AgtLastName": {
+      "type": "TEXT",
+      "unique_values": [
+        "Thompson",
+        "Bishop",
+        "Viescas",
+        "Smith",
+        "Wier",
+        "Kennedy",
+        "Viescas",
+        "Patterson",
+        "Dumbwit"
+      ],
+      "value_statics": "Total count 9 - Distinct count 8 - Null count 0"
+    },
+    "AgtStreetAddress": {
+      "type": "TEXT",
+      "unique_values": [
+        "122 Spring River Drive",
+        "66 Spring Valley Drive",
+        "667 Red River Road",
+        "30301 - 166th Ave. N.E.",
+        "908 W. Capital Way",
+        "16679 NE 41st Court",
+        "4501 Wetland Road",
+        "3445 Cheyenne Road",
+        "1234 Main Street"
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "AgtCity": {
+      "type": "TEXT",
+      "unique_values": [
+        "Redmond",
+        "Seattle",
+        "Bellevue",
+        "Seattle",
+        "Tacoma",
+        "Seattle",
+        "Redmond",
+        "Bellevue",
+        "Kirkland"
+      ],
+      "value_statics": "Total count 9 - Distinct count 5 - Null count 0"
+    },
+    "AgtState": {
+      "type": "TEXT",
+      "unique_values": [
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA"
+      ],
+      "value_statics": "Total count 9 - Distinct count 1 - Null count 0"
+    },
+    "AgtZipCode": {
+      "type": "TEXT",
+      "unique_values": [
+        "98053",
+        "98125",
+        "98006",
+        "98125",
+        "98413",
+        "98125",
+        "98052",
+        "98006",
+        "98033"
+      ],
+      "value_statics": "Total count 9 - Distinct count 6 - Null count 0"
+    },
+    "AgtPhoneNumber": {
+      "type": "TEXT",
+      "unique_values": [
+        "555-2681",
+        "555-2666",
+        "555-2571",
+        "555-2551",
+        "555-2606",
+        "555-2621",
+        "555-0037",
+        "555-2291",
+        "555-1234"
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "DateHired": {
+      "type": "TEXT",
+      "unique_values": [
+        "1997-05-15",
+        "1998-02-05",
+        "1997-11-19",
+        "1998-03-05",
+        "1998-02-02",
+        "1997-05-15",
+        "1998-02-16",
+        "1997-09-03",
+        "2000-02-05"
+      ],
+      "value_statics": "Total count 9 - Distinct count 8 - Null count 0"
+    },
+    "Salary": {
+      "type": "NUMBER",
+      "unique_values": [
+        35000,
+        27000,
+        30000,
+        22000,
+        24500,
+        33000,
+        22100,
+        30000,
+        50
+      ],
+      "value_statics": "Total count 9 - Distinct count 8 - Null count 0"
+    },
+    "CommissionRate": {
+      "type": "FLOAT",
+      "unique_values": [
+        0.04,
+        0.04,
+        0.05,
+        0.055,
+        0.045,
+        0.06,
+        0.035,
+        0.04,
+        0.01
+      ],
+      "value_statics": "Total count 9 - Distinct count 7 - Null count 0"
+    }
+  },
+  "CUSTOMERS": {
+    "CustomerID": {
+      "type": "NUMBER",
+      "unique_values": [
+        10001,
+        10002,
+        10003,
+        10004,
+        10005,
+        10006,
+        10007,
+        10008,
+        10009,
+        10010
+      ],
+      "value_statics": "Total count 15 - Distinct count 15 - Null count 0"
+    },
+    "CustFirstName": {
+      "type": "TEXT",
+      "unique_values": [
+        "Doris",
+        "Deb",
+        "Peter",
+        "Dean",
+        "Elizabeth",
+        "Matt",
+        "Liz",
+        "Darren",
+        "Sarah",
+        "Zachary"
+      ],
+      "value_statics": "Total count 15 - Distinct count 15 - Null count 0"
+    },
+    "CustLastName": {
+      "type": "TEXT",
+      "unique_values": [
+        "Hartwig",
+        "Waldal",
+        "Brehm",
+        "McCrae",
+        "Hallmark",
+        "Berg",
+        "Keyser",
+        "Gehring",
+        "Thompson",
+        "Ehrlich"
+      ],
+      "value_statics": "Total count 15 - Distinct count 15 - Null count 0"
+    },
+    "CustStreetAddress": {
+      "type": "TEXT",
+      "unique_values": [
+        "4726 - 11th Ave. N.E.",
+        "908 W. Capital Way",
+        "722 Moss Bay Blvd.",
+        "4110 Old Redmond Rd.",
+        "Route 2, Box 203B",
+        "908 W. Capital Way",
+        "13920 S.E. 40th Street",
+        "2601 Seaview Lane",
+        "2222 Springer Road",
+        "12330 Kingman Drive"
+      ],
+      "value_statics": "Total count 15 - Distinct count 14 - Null count 0"
+    },
+    "CustCity": {
+      "type": "TEXT",
+      "unique_values": [
+        "Seattle",
+        "Tacoma",
+        "Kirkland",
+        "Redmond",
+        "Auburn",
+        "Tacoma",
+        "Bellevue",
+        "Kirkland",
+        "Bellevue",
+        "Kirkland"
+      ],
+      "value_statics": "Total count 15 - Distinct count 6 - Null count 0"
+    },
+    "CustState": {
+      "type": "TEXT",
+      "unique_values": [
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA"
+      ],
+      "value_statics": "Total count 15 - Distinct count 1 - Null count 0"
+    },
+    "CustZipCode": {
+      "type": "TEXT",
+      "unique_values": [
+        "98105",
+        "98413",
+        "98033",
+        "98052",
+        "98002",
+        "98413",
+        "98006",
+        "98033",
+        "98006",
+        "98033"
+      ],
+      "value_statics": "Total count 15 - Distinct count 7 - Null count 0"
+    },
+    "CustPhoneNumber": {
+      "type": "TEXT",
+      "unique_values": [
+        "555-2671",
+        "555-2496",
+        "555-2501",
+        "555-2506",
+        "555-2521",
+        "555-2581",
+        "555-2556",
+        "555-2616",
+        "555-2626",
+        "555-2721"
+      ],
+      "value_statics": "Total count 15 - Distinct count 15 - Null count 0"
+    }
+  },
+  "ENGAGEMENTS": {
+    "EngagementNumber": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 111 - Distinct count 111 - Null count 0"
+    },
+    "StartDate": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 111 - Distinct count 64 - Null count 0"
+    },
+    "EndDate": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 111 - Distinct count 77 - Null count 0"
+    },
+    "StartTime": {
+      "type": "TEXT",
+      "unique_values": [
+        "13:00:00",
+        "13:00:00",
+        "20:00:00",
+        "16:00:00",
+        "15:00:00",
+        "17:00:00",
+        "20:00:00",
+        "16:00:00",
+        "13:00:00",
+        "18:00:00"
+      ],
+      "value_statics": "Total count 111 - Distinct count 9 - Null count 0"
+    },
+    "StopTime": {
+      "type": "TEXT",
+      "unique_values": [
+        "15:00:00",
+        "15:00:00",
+        "00:00:00",
+        "19:00:00",
+        "21:00:00",
+        "20:00:00",
+        "23:00:00",
+        "20:00:00",
+        "17:00:00",
+        "00:00:00"
+      ],
+      "value_statics": "Total count 111 - Distinct count 13 - Null count 0"
+    },
+    "ContractPrice": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 111 - Distinct count 48 - Null count 0"
+    },
+    "CustomerID": {
+      "type": "NUMBER",
+      "unique_values": [
+        10006,
+        10001,
+        10007,
+        10006,
+        10014,
+        10004,
+        10006,
+        10013,
+        10005,
+        10005
+      ],
+      "value_statics": "Total count 111 - Distinct count 13 - Null count 0"
+    },
+    "AgentID": {
+      "type": "NUMBER",
+      "unique_values": [
+        4,
+        3,
+        3,
+        5,
+        7,
+        4,
+        3,
+        1,
+        3,
+        4
+      ],
+      "value_statics": "Total count 111 - Distinct count 8 - Null count 0"
+    },
+    "EntertainerID": {
+      "type": "NUMBER",
+      "unique_values": [
+        1004,
+        1005,
+        1004,
+        1003,
+        1008,
+        1002,
+        1007,
+        1001,
+        1003,
+        1008
+      ],
+      "value_statics": "Total count 111 - Distinct count 12 - Null count 0"
+    }
+  },
+  "ENTERTAINERS": {
+    "EntertainerID": {
+      "type": "NUMBER",
+      "unique_values": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010
+      ],
+      "value_statics": "Total count 13 - Distinct count 13 - Null count 0"
+    },
+    "EntStageName": {
+      "type": "TEXT",
+      "unique_values": [
+        "Carol Peacock Trio",
+        "Topazz",
+        "JV & the Deep Six",
+        "Jim Glynn",
+        "Jazz Persuasion",
+        "Modern Dance",
+        "Coldwater Cattle Company",
+        "Country Feeling",
+        "Katherine Ehrlich",
+        "Saturday Revue"
+      ],
+      "value_statics": "Total count 13 - Distinct count 13 - Null count 0"
+    },
+    "EntSSN": {
+      "type": "TEXT",
+      "unique_values": [
+        "888-90-1121",
+        "888-50-1061",
+        "888-18-1013",
+        "888-26-1025",
+        "888-30-1031",
+        "888-66-1085",
+        "888-38-1043",
+        "888-98-1133",
+        "888-61-1103",
+        "888-64-1109"
+      ],
+      "value_statics": "Total count 13 - Distinct count 13 - Null count 0"
+    },
+    "EntStreetAddress": {
+      "type": "TEXT",
+      "unique_values": [
+        "4110 Old Redmond Rd.",
+        "16 Maple Lane",
+        "15127 NE 24th, #383",
+        "13920 S.E. 40th Street",
+        "233 West Valley Hwy",
+        "Route 2, Box 203B",
+        "4726 - 11th Ave. N.E.",
+        "PO Box 223311",
+        "777 Fenexet Blvd",
+        "3887 Easy Street"
+      ],
+      "value_statics": "Total count 13 - Distinct count 13 - Null count 0"
+    },
+    "EntCity": {
+      "type": "TEXT",
+      "unique_values": [
+        "Redmond",
+        "Auburn",
+        "Redmond",
+        "Bellevue",
+        "Bellevue",
+        "Woodinville",
+        "Seattle",
+        "Seattle",
+        "Woodinville",
+        "Seattle"
+      ],
+      "value_statics": "Total count 13 - Distinct count 5 - Null count 0"
+    },
+    "EntState": {
+      "type": "TEXT",
+      "unique_values": [
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "WA"
+      ],
+      "value_statics": "Total count 13 - Distinct count 1 - Null count 0"
+    },
+    "EntZipCode": {
+      "type": "TEXT",
+      "unique_values": [
+        "98052",
+        "98002",
+        "98052",
+        "98009",
+        "98005",
+        "98072",
+        "98105",
+        "98125",
+        "98072",
+        "98125"
+      ],
+      "value_statics": "Total count 13 - Distinct count 9 - Null count 0"
+    },
+    "EntPhoneNumber": {
+      "type": "TEXT",
+      "unique_values": [
+        "555-2691",
+        "555-2591",
+        "555-2511",
+        "555-2531",
+        "555-2541",
+        "555-2631",
+        "555-2561",
+        "555-2711",
+        "555-0399",
+        "555-0039"
+      ],
+      "value_statics": "Total count 13 - Distinct count 13 - Null count 0"
+    },
+    "EntWebPage": {
+      "type": "TEXT",
+      "unique_values": [
+        "www.cptrio.com",
+        "www.topazz.com",
+        "www.jvd6.com",
+        "",
+        "www.jazzper.com",
+        "www.moderndance.com",
+        "www.coldwatercows.com",
+        "",
+        "",
+        "www.satrevue.com"
+      ],
+      "value_statics": "Total count 13 - Distinct count 9 - Null count 0"
+    },
+    "EntEMailAddress": {
+      "type": "TEXT",
+      "unique_values": [
+        "carolp@cptrio.com",
+        "",
+        "jv@myspring.com",
+        "",
+        "",
+        "mikeh@moderndance.com",
+        "",
+        "",
+        "ke@mzo.com",
+        "edz@coolness.com"
+      ],
+      "value_statics": "Total count 13 - Distinct count 8 - Null count 0"
+    },
+    "DateEntered": {
+      "type": "TEXT",
+      "unique_values": [
+        "1997-05-24",
+        "1996-02-14",
+        "1998-03-18",
+        "1996-04-01",
+        "1997-05-12",
+        "1995-05-16",
+        "1995-11-30",
+        "1996-02-28",
+        "1998-09-13",
+        "1995-01-20"
+      ],
+      "value_statics": "Total count 13 - Distinct count 13 - Null count 0"
+    }
+  },
+  "ENTERTAINER_MEMBERS": {
+    "EntertainerID": {
+      "type": "NUMBER",
+      "unique_values": [
+        1001,
+        1001,
+        1001,
+        1002,
+        1002,
+        1003,
+        1003,
+        1003,
+        1003,
+        1003
+      ],
+      "value_statics": "Total count 40 - Distinct count 13 - Null count 0"
+    },
+    "MemberID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 40 - Distinct count 25 - Null count 0"
+    },
+    "Status": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "value_statics": "Total count 40 - Distinct count 2 - Null count 0"
+    }
+  },
+  "ENTERTAINER_STYLES": {
+    "EntertainerID": {
+      "type": "NUMBER",
+      "unique_values": [
+        1001,
+        1001,
+        1001,
+        1002,
+        1002,
+        1002,
+        1003,
+        1003,
+        1004,
+        1005
+      ],
+      "value_statics": "Total count 32 - Distinct count 13 - Null count 0"
+    },
+    "StyleID": {
+      "type": "NUMBER",
+      "unique_values": [
+        10,
+        20,
+        21,
+        17,
+        19,
+        23,
+        3,
+        8,
+        13,
+        15
+      ],
+      "value_statics": "Total count 32 - Distinct count 17 - Null count 0"
+    },
+    "StyleStrength": {
+      "type": "NUMBER",
+      "unique_values": [
+        2,
+        1,
+        3,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        3
+      ],
+      "value_statics": "Total count 32 - Distinct count 3 - Null count 0"
+    }
+  },
+  "MEMBERS": {
+    "MemberID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 25 - Distinct count 25 - Null count 0"
+    },
+    "MbrFirstName": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25 - Distinct count 24 - Null count 0"
+    },
+    "MbrLastName": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25 - Distinct count 21 - Null count 0"
+    },
+    "MbrPhoneNumber": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25 - Distinct count 25 - Null count 0"
+    },
+    "Gender": {
+      "type": "TEXT",
+      "unique_values": [
+        "M",
+        "F",
+        "M",
+        "M",
+        "M",
+        "F",
+        "F",
+        "F",
+        "M",
+        "F"
+      ],
+      "value_statics": "Total count 25 - Distinct count 3 - Null count 0"
+    }
+  },
+  "MUSICAL_PREFERENCES": {
+    "CustomerID": {
+      "type": "NUMBER",
+      "unique_values": [
+        10001,
+        10001,
+        10002,
+        10002,
+        10003,
+        10003,
+        10004,
+        10004,
+        10005,
+        10005
+      ],
+      "value_statics": "Total count 36 - Distinct count 15 - Null count 0"
+    },
+    "StyleID": {
+      "type": "NUMBER",
+      "unique_values": [
+        10,
+        22,
+        3,
+        8,
+        17,
+        19,
+        15,
+        21,
+        7,
+        14
+      ],
+      "value_statics": "Total count 36 - Distinct count 20 - Null count 0"
+    },
+    "PreferenceSeq": {
+      "type": "NUMBER",
+      "unique_values": [
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "value_statics": "Total count 36 - Distinct count 3 - Null count 0"
+    }
+  },
+  "MUSICAL_STYLES": {
+    "StyleID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 25 - Distinct count 25 - Null count 0"
+    },
+    "StyleName": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25 - Distinct count 25 - Null count 0"
+    }
+  },
+  "ZTBLDAYS": {
+    "DateField": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1096 - Distinct count 1096 - Null count 0"
+    }
+  },
+  "ZTBLMONTHS": {
+    "MonthYear": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 36 - Distinct count 36 - Null count 0"
+    },
+    "YearNumber": {
+      "type": "NUMBER",
+      "unique_values": [
+        2017,
+        2017,
+        2017,
+        2017,
+        2017,
+        2017,
+        2017,
+        2017,
+        2017,
+        2017
+      ],
+      "value_statics": "Total count 36 - Distinct count 3 - Null count 0"
+    },
+    "MonthNumber": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "value_statics": "Total count 36 - Distinct count 12 - Null count 0"
+    },
+    "MonthStart": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 36 - Distinct count 36 - Null count 0"
+    },
+    "MonthEnd": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 36 - Distinct count 36 - Null count 0"
+    },
+    "January": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 36 - Distinct count 2 - Null count 0"
+    },
+    "February": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 36 - Distinct count 2 - Null count 0"
+    },
+    "March": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 36 - Distinct count 2 - Null count 0"
+    },
+    "April": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 36 - Distinct count 2 - Null count 0"
+    },
+    "May": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 36 - Distinct count 2 - Null count 0"
+    },
+    "June": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 36 - Distinct count 2 - Null count 0"
+    },
+    "July": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 36 - Distinct count 2 - Null count 0"
+    },
+    "August": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "value_statics": "Total count 36 - Distinct count 2 - Null count 0"
+    },
+    "September": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "value_statics": "Total count 36 - Distinct count 2 - Null count 0"
+    },
+    "October": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "value_statics": "Total count 36 - Distinct count 2 - Null count 0"
+    },
+    "November": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 36 - Distinct count 2 - Null count 0"
+    },
+    "December": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 36 - Distinct count 2 - Null count 0"
+    }
+  },
+  "ZTBLSKIPLABELS": {
+    "LabelCount": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 60 - Distinct count 60 - Null count 0"
+    }
+  },
+  "ZTBLWEEKS": {
+    "WeekStart": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 156 - Distinct count 156 - Null count 0"
+    },
+    "WeekEnd": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 156 - Distinct count 156 - Null count 0"
+    }
+  }
+}

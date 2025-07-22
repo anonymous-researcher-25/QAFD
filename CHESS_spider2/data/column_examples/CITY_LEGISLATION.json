@@ -1,0 +1,963 @@
+{
+  "ALIENS": {
+    "id": [
+      20896,
+      7374,
+      18890,
+      33382,
+      43459
+    ],
+    "first_name": [
+      "Lydon",
+      "Harri",
+      "Eada",
+      "Doralyn",
+      "Rivalee"
+    ],
+    "last_name": [
+      "Oneill",
+      "O'Sherrin",
+      "McNysche",
+      "Crowcum",
+      "Styles"
+    ],
+    "email": [
+      "loneillg4f@pinterest.com",
+      "hosherrin5ot@example.com",
+      "emcnyscheekp@mayoclinic.com",
+      "dcrowcumpr9@shareasale.com",
+      "rstylesxj6@paypal.com"
+    ],
+    "gender": [
+      "Male",
+      "Female",
+      "Female",
+      "Female",
+      "Female"
+    ],
+    "type": [
+      "Flatwoods",
+      "Grey",
+      "Reptile",
+      "Grey",
+      "Flatwoods"
+    ],
+    "birth_year": [
+      1684,
+      1739,
+      1809,
+      1906,
+      1901
+    ]
+  },
+  "ALIENS_DETAILS": {
+    "detail_id": [
+      17589,
+      45938,
+      10712,
+      8973,
+      19747
+    ],
+    "favorite_food": [
+      "Russian dragonfly",
+      "Bushpig",
+      "Stone sheep",
+      "Fork-tailed drongo",
+      "Southern ground hornbill"
+    ],
+    "feeding_frequency": [
+      "Seldom",
+      "Often",
+      "Yearly",
+      "Daily",
+      "Weekly"
+    ],
+    "aggressive": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  "ALIENS_LOCATION": {
+    "loc_id": [
+      37971,
+      40432,
+      49705,
+      6711,
+      41641
+    ],
+    "current_location": [
+      "Sterling",
+      "Atlanta",
+      "Cumming",
+      "Washington",
+      "Washington"
+    ],
+    "state": [
+      "Virginia",
+      "Georgia",
+      "Georgia",
+      "District of Columbia",
+      "District of Columbia"
+    ],
+    "country": [
+      "United States",
+      "United States",
+      "United States",
+      "United States",
+      "United States"
+    ],
+    "occupation": [
+      "Quality Engineer",
+      "Software Test Engineer I",
+      "Human Resources Manager",
+      "Health Coach I",
+      "Programmer Analyst II"
+    ]
+  },
+  "ALIEN_DATA": {
+    "id": [
+      12383,
+      43453,
+      36405,
+      5710,
+      18672
+    ],
+    "first_name": [
+      "rosie",
+      "norine",
+      "mar",
+      "tabor",
+      "golda"
+    ],
+    "last_name": [
+      "lemanu",
+      "heindl",
+      "corradeschi",
+      "theze",
+      "van velden"
+    ],
+    "email": [
+      "rlemanu9jy@mail.ru",
+      "nheindlxj0@amazon.co.uk",
+      "mcorradeschis38@columbia.edu",
+      "ttheze4el@mail.ru",
+      "gvanveldeneen@cbc.ca"
+    ],
+    "gender": [
+      "female",
+      "female",
+      "male",
+      "male",
+      "female"
+    ],
+    "type": [
+      "green",
+      "nordic",
+      "flatwoods",
+      "grey",
+      "flatwoods"
+    ],
+    "birth_year": [
+      1914,
+      1891,
+      1829,
+      1888,
+      1946
+    ],
+    "age": [
+      110,
+      133,
+      195,
+      136,
+      78
+    ],
+    "favorite_food": [
+      "lemming, arctic",
+      "african wild cat",
+      "southern right whale",
+      "tamandua, southern",
+      "paca"
+    ],
+    "feeding_frequency": [
+      "never",
+      "once",
+      "monthly",
+      "yearly",
+      "seldom"
+    ],
+    "aggressive": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "occupation": [
+      "help desk operator",
+      "legal assistant",
+      "assistant media planner",
+      "chemical engineer",
+      "web developer iii"
+    ],
+    "current_location": [
+      "tulsa",
+      "jacksonville",
+      "charleston",
+      "lincoln",
+      "wichita"
+    ],
+    "state": [
+      "oklahoma",
+      "florida",
+      "west virginia",
+      "nebraska",
+      "kansas"
+    ],
+    "us_region": [
+      "southwest",
+      "southeast",
+      "southeast",
+      "plains",
+      "plains"
+    ],
+    "country": [
+      "united states",
+      "united states",
+      "united states",
+      "united states",
+      "united states"
+    ]
+  },
+  "CITIES": {
+    "city_id": [
+      6652,
+      27978,
+      39868,
+      19930,
+      19386
+    ],
+    "city_name": [
+      "buynaksk",
+      "schwalbach",
+      "kenafif",
+      "neuruppin",
+      "cranberry"
+    ],
+    "latitude": [
+      47.1167,
+      6.8167,
+      -9.0333,
+      12.8,
+      -80.1059
+    ],
+    "longitude": [
+      42.8167,
+      49.2833,
+      30.4167,
+      52.9331,
+      40.7104
+    ],
+    "country_code_2": [
+      "ru",
+      "de",
+      "ma",
+      "de",
+      "us"
+    ],
+    "capital": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "population": [
+      65080.0,
+      17218.0,
+      9936.0,
+      31002.0,
+      32594.0
+    ],
+    "insert_date": [
+      "2022-12-20",
+      "2022-05-07",
+      "2022-07-22",
+      "2021-12-27",
+      "2023-01-07"
+    ]
+  },
+  "CITIES_COUNTRIES": {
+    "country_id": [
+      251,
+      113,
+      187,
+      136,
+      6
+    ],
+    "country_name": [
+      "viet nam",
+      "isle of man",
+      "poland",
+      "luxembourg",
+      "andorra"
+    ],
+    "country_code_2": [
+      "vn",
+      "im",
+      "pl",
+      "lu",
+      "ad"
+    ],
+    "country_code_3": [
+      "vnm",
+      "imn",
+      "pol",
+      "lux",
+      "and"
+    ],
+    "region": [
+      "asia",
+      "europe",
+      "europe",
+      "europe",
+      "europe"
+    ],
+    "sub_region": [
+      "southeastern asia",
+      "northern europe",
+      "eastern europe",
+      "western europe",
+      "southern europe"
+    ],
+    "intermediate_region": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "created_on": [
+      "2024-07-18",
+      "2024-07-18",
+      "2024-07-18",
+      "2024-07-18",
+      "2024-07-18"
+    ]
+  },
+  "CITIES_CURRENCIES": {
+    "currency_id": [
+      1,
+      104,
+      158,
+      210,
+      178
+    ],
+    "country_code_2": [
+      "af",
+      "in",
+      "na",
+      "so",
+      "pe"
+    ],
+    "currency_name": [
+      "afghani",
+      "indian rupee",
+      "rand",
+      "somali shilling",
+      "sol"
+    ],
+    "currency_code": [
+      "afn",
+      "inr",
+      "zar",
+      "sos",
+      "pen"
+    ]
+  },
+  "CITIES_LANGUAGES": {
+    "language_id": [
+      221,
+      473,
+      214,
+      253,
+      147
+    ],
+    "language": [
+      "portuguese",
+      "english",
+      "english",
+      "punjabi",
+      "spanish"
+    ],
+    "country_code_2": [
+      "gw",
+      "sg",
+      "gd",
+      "in",
+      "do"
+    ]
+  },
+  "JOB_COMPANY": {
+    "company_id": [
+      551760,
+      45235,
+      443490,
+      16069,
+      464717
+    ],
+    "name": [
+      "Resemble AI",
+      "\u0e1a\u0e23\u0e34\u0e29\u0e31\u0e17 \u0e08\u0e31\u0e14\u0e2b\u0e32\u0e07\u0e32\u0e19\u0e2d\u0e40\u0e14\u0e47\u0e04\u0e42\u0e01\u0e49 \u0e1e\u0e2b\u0e25\u0e42\u0e22\u0e18\u0e34\u0e19 \u0e08\u0e33\u0e01\u0e31\u0e14",
+      "Le Meas Executive Search",
+      "Snippet Canada",
+      "ReadyCT"
+    ],
+    "link": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "link_google": [
+      "https://www.google.com/search?sca_esv=566027130&hl=en&gl=us&q=Resemble+AI&sa=X&ved=0ahUKEwiZyIWX_...",
+      "https://www.google.com/search?q=%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97+%E0%B8%88%...",
+      "https://www.google.com/search?gl=us&hl=en&q=Le+Meas+Executive+Search&sa=X&ved=0ahUKEwih8K6UsJL_Ah...",
+      "https://www.google.com/search?sca_esv=ad4519687b070faa&hl=en&gl=us&q=Snippet+Canada&sa=X&ved=0ahU...",
+      "https://www.google.com/search?gl=us&hl=en&q=ReadyCT&sa=X&ved=0ahUKEwjT-uTUzIj9AhVPl2oFHcYXBC04UBC..."
+    ],
+    "thumbnail": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQinLtvSZmH81FSjRxyNRypOGKnHvgxSFNn0NoZ7vU&s",
+      "",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd3tOFOxo5HsqW0PC8xIJex0io_4EpJXlL9ve3OpI&s",
+      "",
+      ""
+    ]
+  },
+  "JOB_POSTINGS_FACT": {
+    "job_id": [
+      831617,
+      6692,
+      1185712,
+      805814,
+      545916
+    ],
+    "company_id": [
+      55660,
+      139872,
+      36180,
+      5854,
+      121188
+    ],
+    "job_title_short": [
+      "Data Analyst",
+      "Software Engineer",
+      "Cloud Engineer",
+      "Data Scientist",
+      "Senior Data Engineer"
+    ],
+    "job_title": [
+      "(Junior) Data Analyst (f/m/d) 100%",
+      "Software Engineer",
+      "Customer Experience Analyst",
+      "Forecaster \u2013 Data Analysis/ Data Science (m/w)",
+      "Senior Data Engineer (EE)"
+    ],
+    "job_location": [
+      "Switzerland",
+      "London, UK",
+      "Prague, Czechia",
+      "Marignane, France",
+      "Johannesburg, South Africa"
+    ],
+    "job_via": [
+      "via LinkedIn",
+      "via Indeed",
+      "via BeBee",
+      "via Indeed",
+      "via LinkedIn"
+    ],
+    "job_schedule_type": [
+      "Full-time",
+      "Full-time",
+      "Full-time",
+      "Full-time",
+      "Full-time"
+    ],
+    "job_work_from_home": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "search_location": [
+      "Switzerland",
+      "United Kingdom",
+      "Czechia",
+      "France",
+      "South Africa"
+    ],
+    "job_posted_date": [
+      "2023-01-26 14:37:56",
+      "2023-10-19 16:37:09",
+      "2023-08-12 08:24:04",
+      "2023-11-08 21:37:26",
+      "2023-10-17 06:31:58"
+    ],
+    "job_no_degree_mention": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "job_health_insurance": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "job_country": [
+      "Switzerland",
+      "United Kingdom",
+      "Czechia",
+      "France",
+      "South Africa"
+    ],
+    "salary_rate": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "salary_year_avg": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "salary_hour_avg": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "LEGISLATION_DATE_DIM": {
+    "date": [
+      "1991-11-03",
+      "1988-12-23",
+      "1991-06-29",
+      "1959-04-14",
+      "1942-12-26"
+    ],
+    "month_name": [
+      "November",
+      "December",
+      "June",
+      "April",
+      "December"
+    ],
+    "day_of_month": [
+      3,
+      23,
+      29,
+      14,
+      26
+    ]
+  },
+  "LEGISLATORS": {
+    "full_name": [
+      "James Porter",
+      "Wade Hampton",
+      "Calvin Stewart Brice",
+      "Benjamin Reifel",
+      "William Widgery"
+    ],
+    "first_name": [
+      "James",
+      "Wade",
+      "Calvin",
+      "Benjamin",
+      "William"
+    ],
+    "last_name": [
+      "Porter",
+      "Hampton",
+      "Brice",
+      "Reifel",
+      "Widgery"
+    ],
+    "middle_name": [
+      "",
+      "",
+      "Stewart",
+      "",
+      ""
+    ],
+    "nickname": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "suffix": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "other_names_end": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "other_names_middle": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "other_names_last": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "birthday": [
+      "1787-04-18",
+      "1818-03-28",
+      "1845-09-17",
+      "1906-09-19",
+      ""
+    ],
+    "gender": [
+      "M",
+      "M",
+      "M",
+      "M",
+      "M"
+    ],
+    "id_bioguide": [
+      "P000442",
+      "H000141",
+      "B000818",
+      "R000152",
+      "W000444"
+    ],
+    "id_bioguide_previous_0": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "id_govtrack": [
+      408833,
+      405023,
+      401775,
+      409129,
+      412184
+    ],
+    "id_icpsr": [
+      7536.0,
+      4020.0,
+      1022.0,
+      10548.0,
+      10090.0
+    ],
+    "id_wikipedia": [
+      "James Porter (New York politician)",
+      "Wade Hampton III",
+      "Calvin S. Brice",
+      "Ben Reifel",
+      "William Widgery"
+    ],
+    "id_wikidata": [
+      "Q4249798",
+      "Q881227",
+      "Q1027729",
+      "Q816585",
+      "Q948337"
+    ],
+    "id_google_entity_id": [
+      "kg:/m/03ckym9",
+      "kg:/m/01ssll",
+      "kg:/m/034_s4",
+      "kg:/m/026qs0n",
+      "kg:/m/02rkrst"
+    ],
+    "id_house_history": [
+      19828.0,
+      null,
+      null,
+      20273.0,
+      23742.0
+    ],
+    "id_house_history_alternate": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "id_thomas": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "id_cspan": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "id_votesmart": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "id_lis": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "id_ballotpedia": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "id_opensecrets": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "id_fec_0": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "id_fec_1": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "id_fec_2": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "LEGISLATORS_TERMS": {
+    "id_bioguide": [
+      "B000419",
+      "T000327",
+      "P000542",
+      "D000496",
+      "H001078"
+    ],
+    "term_number": [
+      0,
+      1,
+      0,
+      4,
+      0
+    ],
+    "term_id": [
+      "B000419-0",
+      "T000327-1",
+      "P000542-0",
+      "D000496-4",
+      "H001078-0"
+    ],
+    "term_type": [
+      "rep",
+      "rep",
+      "rep",
+      "rep",
+      "rep"
+    ],
+    "term_start": [
+      "1873-12-01",
+      "1837-09-04",
+      "1921-04-11",
+      "1927-12-05",
+      "2017-06-26"
+    ],
+    "term_end": [
+      "1875-03-03",
+      "1839-03-03",
+      "1923-03-03",
+      "1929-03-03",
+      "2019-01-03"
+    ],
+    "state": [
+      "OH",
+      "GA",
+      "OK",
+      "VA",
+      "GA"
+    ],
+    "district": [
+      14.0,
+      -1.0,
+      4.0,
+      4.0,
+      6.0
+    ],
+    "class": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "party": [
+      "Democrat",
+      "Democrat",
+      "Republican",
+      "Democrat",
+      "Republican"
+    ],
+    "how": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "url": [
+      "",
+      "",
+      "",
+      "",
+      "https://handel.house.gov"
+    ],
+    "address": [
+      "",
+      "",
+      "",
+      "",
+      "1211 Longworth House Office Building; Washington DC 20515-1006"
+    ],
+    "phone": [
+      "",
+      "",
+      "",
+      "",
+      "202-225-4501"
+    ],
+    "fax": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "contact_form": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "office": [
+      "",
+      "",
+      "",
+      "",
+      "1211 Longworth House Office Building"
+    ],
+    "state_rank": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rss_url": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "caucus": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "SKILLS_DIM": {
+    "skill_id": [
+      195,
+      201,
+      164,
+      7,
+      250
+    ],
+    "skills": [
+      "sharepoint",
+      "alteryx",
+      "asp.netcore",
+      "sas",
+      "twilio"
+    ],
+    "type": [
+      "analyst_tools",
+      "analyst_tools",
+      "webframeworks",
+      "programming",
+      "sync"
+    ]
+  },
+  "SKILLS_JOB_DIM": {
+    "job_id": [
+      737717,
+      969186,
+      524881,
+      707659,
+      1023396
+    ],
+    "skill_id": [
+      5,
+      74,
+      214,
+      0,
+      110
+    ]
+  }
+}

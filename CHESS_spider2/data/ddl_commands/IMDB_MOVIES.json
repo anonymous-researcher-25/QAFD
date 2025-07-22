@@ -1,0 +1,9 @@
+{
+  "DIRECTOR_MAPPING": "create or replace TABLE DIRECTOR_MAPPING (\n\t\"movie_id\" VARCHAR(16777216),\n\t\"name_id\" VARCHAR(16777216)\n);",
+  "ERD": "create or replace TABLE ERD (\n\t\"table\" VARCHAR(16777216),\n\t\"column\" VARCHAR(16777216),\n\t\"Unnamed: 2\" VARCHAR(16777216),\n\t\"Unnamed: 3\" VARCHAR(16777216),\n\t\"Unnamed: 4\" VARCHAR(16777216),\n\t\"Unnamed: 5\" VARCHAR(16777216),\n\t\"Unnamed: 6\" VARCHAR(16777216),\n\t\"Unnamed: 7\" VARCHAR(16777216),\n\t\"Unnamed: 8\" VARCHAR(16777216),\n\t\"Unnamed: 9\" VARCHAR(16777216),\n\t\"Unnamed: 10\" VARCHAR(16777216),\n\t\"Unnamed: 11\" VARCHAR(16777216),\n\t\"Unnamed: 12\" VARCHAR(16777216)\n);",
+  "GENRE": "create or replace TABLE GENRE (\n\t\"movie_id\" VARCHAR(16777216),\n\t\"genre\" VARCHAR(16777216)\n);",
+  "MOVIES": "create or replace TABLE MOVIES (\n\t\"id\" VARCHAR(16777216),\n\t\"title\" VARCHAR(16777216),\n\t\"year\" NUMBER(38,0),\n\t\"date_published\" VARCHAR(16777216),\n\t\"duration\" NUMBER(38,0),\n\t\"country\" VARCHAR(16777216),\n\t\"worlwide_gross_income\" VARCHAR(16777216),\n\t\"languages\" VARCHAR(16777216),\n\t\"production_company\" VARCHAR(16777216)\n);",
+  "NAMES": "create or replace TABLE NAMES (\n\t\"id\" VARCHAR(16777216),\n\t\"name\" VARCHAR(16777216),\n\t\"height\" FLOAT,\n\t\"date_of_birth\" VARCHAR(16777216),\n\t\"known_for_movies\" VARCHAR(16777216)\n);",
+  "RATINGS": "create or replace TABLE RATINGS (\n\t\"movie_id\" VARCHAR(16777216),\n\t\"avg_rating\" FLOAT,\n\t\"total_votes\" NUMBER(38,0),\n\t\"median_rating\" FLOAT\n);",
+  "ROLE_MAPPING": "create or replace TABLE ROLE_MAPPING (\n\t\"movie_id\" VARCHAR(16777216),\n\t\"name_id\" VARCHAR(16777216),\n\t\"category\" VARCHAR(16777216)\n);"
+}

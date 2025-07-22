@@ -1,0 +1,13 @@
+{
+  "ALBUM": "create or replace TABLE ALBUM (\n\t\"AlbumId\" NUMBER(38,0),\n\t\"Title\" VARCHAR(16777216),\n\t\"ArtistId\" NUMBER(38,0)\n);",
+  "ARTIST": "create or replace TABLE ARTIST (\n\t\"ArtistId\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216)\n);",
+  "CUSTOMER": "create or replace TABLE CUSTOMER (\n\t\"CustomerId\" NUMBER(38,0),\n\t\"FirstName\" VARCHAR(16777216),\n\t\"LastName\" VARCHAR(16777216),\n\t\"Company\" VARCHAR(16777216),\n\t\"Address\" VARCHAR(16777216),\n\t\"City\" VARCHAR(16777216),\n\t\"State\" VARCHAR(16777216),\n\t\"Country\" VARCHAR(16777216),\n\t\"PostalCode\" VARCHAR(16777216),\n\t\"Phone\" VARCHAR(16777216),\n\t\"Fax\" VARCHAR(16777216),\n\t\"Email\" VARCHAR(16777216),\n\t\"SupportRepId\" NUMBER(38,0)\n);",
+  "EMPLOYEE": "create or replace TABLE EMPLOYEE (\n\t\"EmployeeId\" NUMBER(38,0),\n\t\"LastName\" VARCHAR(16777216),\n\t\"FirstName\" VARCHAR(16777216),\n\t\"Title\" VARCHAR(16777216),\n\t\"ReportsTo\" FLOAT,\n\t\"BirthDate\" VARCHAR(16777216),\n\t\"HireDate\" VARCHAR(16777216),\n\t\"Address\" VARCHAR(16777216),\n\t\"City\" VARCHAR(16777216),\n\t\"State\" VARCHAR(16777216),\n\t\"Country\" VARCHAR(16777216),\n\t\"PostalCode\" VARCHAR(16777216),\n\t\"Phone\" VARCHAR(16777216),\n\t\"Fax\" VARCHAR(16777216),\n\t\"Email\" VARCHAR(16777216)\n);",
+  "GENRE": "create or replace TABLE GENRE (\n\t\"GenreId\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216)\n);",
+  "INVOICE": "create or replace TABLE INVOICE (\n\t\"InvoiceId\" NUMBER(38,0),\n\t\"CustomerId\" NUMBER(38,0),\n\t\"InvoiceDate\" VARCHAR(16777216),\n\t\"BillingAddress\" VARCHAR(16777216),\n\t\"BillingCity\" VARCHAR(16777216),\n\t\"BillingState\" VARCHAR(16777216),\n\t\"BillingCountry\" VARCHAR(16777216),\n\t\"BillingPostalCode\" VARCHAR(16777216),\n\t\"Total\" FLOAT\n);",
+  "INVOICELINE": "create or replace TABLE INVOICELINE (\n\t\"InvoiceLineId\" NUMBER(38,0),\n\t\"InvoiceId\" NUMBER(38,0),\n\t\"TrackId\" NUMBER(38,0),\n\t\"UnitPrice\" FLOAT,\n\t\"Quantity\" NUMBER(38,0)\n);",
+  "MEDIATYPE": "create or replace TABLE MEDIATYPE (\n\t\"MediaTypeId\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216)\n);",
+  "PLAYLIST": "create or replace TABLE PLAYLIST (\n\t\"PlaylistId\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216)\n);",
+  "PLAYLISTTRACK": "create or replace TABLE PLAYLISTTRACK (\n\t\"PlaylistId\" NUMBER(38,0),\n\t\"TrackId\" NUMBER(38,0)\n);",
+  "TRACK": "create or replace TABLE TRACK (\n\t\"TrackId\" NUMBER(38,0),\n\t\"Name\" VARCHAR(16777216),\n\t\"AlbumId\" NUMBER(38,0),\n\t\"MediaTypeId\" NUMBER(38,0),\n\t\"GenreId\" NUMBER(38,0),\n\t\"Composer\" VARCHAR(16777216),\n\t\"Milliseconds\" NUMBER(38,0),\n\t\"Bytes\" NUMBER(38,0),\n\t\"UnitPrice\" FLOAT\n);"
+}

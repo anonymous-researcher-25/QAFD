@@ -1,0 +1,82 @@
+{
+  "BOWLERS": [
+    "BowlerState",
+    "BowlerPhoneNumber",
+    "BowlerGamesBowled",
+    "BowlerCity",
+    "BowlerID",
+    "BowlerCurrentHcp",
+    "BowlerFirstName",
+    "BowlerAddress",
+    "TeamID",
+    "BowlerMiddleInit",
+    "BowlerLastName",
+    "BowlerZip",
+    "BowlerTotalPins",
+    "BowlerCurrentAverage"
+  ],
+  "BOWLER_SCORES": [
+    "HandiCapScore",
+    "BowlerID",
+    "MatchID",
+    "RawScore",
+    "GameNumber",
+    "WonGame"
+  ],
+  "BOWLER_SCORES_ARCHIVE": [
+    "BowlerID",
+    "WonGame",
+    "GameNumber",
+    "HandiCapScore",
+    "RawScore",
+    "MatchID"
+  ],
+  "MATCH_GAMES": [
+    "MatchID",
+    "WinningTeamID",
+    "GameNumber"
+  ],
+  "MATCH_GAMES_ARCHIVE": [
+    "GameNumber",
+    "WinningTeamID",
+    "MatchID"
+  ],
+  "SQLITE_SEQUENCE": [
+    "seq",
+    "name"
+  ],
+  "TOURNAMENTS": [
+    "TourneyDate",
+    "TourneyLocation",
+    "TourneyID"
+  ],
+  "TOURNAMENTS_ARCHIVE": [
+    "TourneyLocation",
+    "TourneyDate",
+    "TourneyID"
+  ],
+  "TOURNEY_MATCHES": [
+    "OddLaneTeamID",
+    "Lanes",
+    "TourneyID",
+    "EvenLaneTeamID",
+    "MatchID"
+  ],
+  "TOURNEY_MATCHES_ARCHIVE": [
+    "EvenLaneTeamID",
+    "MatchID",
+    "TourneyID",
+    "OddLaneTeamID",
+    "Lanes"
+  ],
+  "WAZIPS": [
+    "State",
+    "ZIP",
+    "City"
+  ],
+  "TEAMS": [
+    "TeamName",
+    "TeamID",
+    "CaptainID"
+  ]
+}

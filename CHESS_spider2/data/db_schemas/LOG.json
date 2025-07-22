@@ -1,0 +1,128 @@
+{
+  "ACCESS_LOG": [
+    "session",
+    "user_id",
+    "action",
+    "stamp"
+  ],
+  "ACTION_LOG": [
+    "session",
+    "user_id",
+    "action",
+    "category",
+    "products",
+    "amount",
+    "stamp"
+  ],
+  "ACTION_LOG_WITH_IP": [
+    "session",
+    "user_id",
+    "action",
+    "ip",
+    "stamp"
+  ],
+  "ACTION_LOG_WITH_NOISE": [
+    "stamp",
+    "session",
+    "action",
+    "products",
+    "url",
+    "ip",
+    "user_agent"
+  ],
+  "ACTIVITY_LOG": [
+    "stamp",
+    "session",
+    "action",
+    "option",
+    "path",
+    "search_type"
+  ],
+  "APP1_MST_USERS": [
+    "user_id",
+    "name",
+    "email"
+  ],
+  "APP2_MST_USERS": [
+    "user_id",
+    "name",
+    "phone"
+  ],
+  "DUP_ACTION_LOG": [
+    "stamp",
+    "session",
+    "user_id",
+    "action",
+    "products"
+  ],
+  "FORM_ERROR_LOG": [
+    "stamp",
+    "session",
+    "form",
+    "field",
+    "error_type",
+    "value"
+  ],
+  "FORM_LOG": [
+    "stamp",
+    "session",
+    "action",
+    "path",
+    "status"
+  ],
+  "INVALID_ACTION_LOG": [
+    "stamp",
+    "session",
+    "user_id",
+    "action",
+    "category",
+    "products",
+    "amount"
+  ],
+  "MST_CATEGORIES": [
+    "id",
+    "name",
+    "stamp"
+  ],
+  "MST_PRODUCTS_20161201": [
+    "product_id",
+    "name",
+    "price",
+    "updated_at"
+  ],
+  "MST_PRODUCTS_20170101": [
+    "product_id",
+    "name",
+    "price",
+    "updated_at"
+  ],
+  "MST_USERS": [
+    "user_id",
+    "sex",
+    "birth_date",
+    "register_date",
+    "register_device",
+    "withdraw_date"
+  ],
+  "MST_USERS_WITH_CARD_NUMBER": [
+    "user_id",
+    "card_number"
+  ],
+  "PRODUCT_SALES": [
+    "category_name",
+    "product_id",
+    "sales"
+  ],
+  "PURCHASE_LOG": [
+    "purchase_id",
+    "user_id",
+    "amount",
+    "stamp"
+  ],
+  "READ_LOG": [
+    "stamp",
+    "session",
+    "action",
+    "url"
+  ]
+}

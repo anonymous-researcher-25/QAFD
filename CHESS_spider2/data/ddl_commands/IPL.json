@@ -1,0 +1,10 @@
+{
+  "BALL_BY_BALL": "create or replace TABLE BALL_BY_BALL (\n\t\"match_id\" NUMBER(38,0),\n\t\"over_id\" NUMBER(38,0),\n\t\"ball_id\" NUMBER(38,0),\n\t\"innings_no\" NUMBER(38,0),\n\t\"team_batting\" NUMBER(38,0),\n\t\"team_bowling\" NUMBER(38,0),\n\t\"striker_batting_position\" NUMBER(38,0),\n\t\"striker\" NUMBER(38,0),\n\t\"non_striker\" NUMBER(38,0),\n\t\"bowler\" NUMBER(38,0)\n);",
+  "BATSMAN_SCORED": "create or replace TABLE BATSMAN_SCORED (\n\t\"match_id\" NUMBER(38,0),\n\t\"over_id\" NUMBER(38,0),\n\t\"ball_id\" NUMBER(38,0),\n\t\"runs_scored\" NUMBER(38,0),\n\t\"innings_no\" NUMBER(38,0)\n);",
+  "EXTRA_RUNS": "create or replace TABLE EXTRA_RUNS (\n\t\"match_id\" NUMBER(38,0),\n\t\"over_id\" NUMBER(38,0),\n\t\"ball_id\" NUMBER(38,0),\n\t\"extra_type\" VARCHAR(16777216),\n\t\"extra_runs\" NUMBER(38,0),\n\t\"innings_no\" NUMBER(38,0)\n);",
+  "MATCH": "create or replace TABLE MATCH (\n\t\"match_id\" NUMBER(38,0),\n\t\"team_1\" NUMBER(38,0),\n\t\"team_2\" NUMBER(38,0),\n\t\"match_date\" VARCHAR(16777216),\n\t\"season_id\" NUMBER(38,0),\n\t\"venue\" VARCHAR(16777216),\n\t\"toss_winner\" NUMBER(38,0),\n\t\"toss_decision\" VARCHAR(16777216),\n\t\"win_type\" VARCHAR(16777216),\n\t\"win_margin\" NUMBER(38,0),\n\t\"outcome_type\" VARCHAR(16777216),\n\t\"match_winner\" NUMBER(38,0),\n\t\"man_of_the_match\" NUMBER(38,0)\n);",
+  "PLAYER": "create or replace TABLE PLAYER (\n\t\"player_id\" NUMBER(38,0),\n\t\"player_name\" VARCHAR(16777216),\n\t\"dob\" VARCHAR(16777216),\n\t\"batting_hand\" VARCHAR(16777216),\n\t\"bowling_skill\" VARCHAR(16777216),\n\t\"country_name\" VARCHAR(16777216)\n);",
+  "PLAYER_MATCH": "create or replace TABLE PLAYER_MATCH (\n\t\"match_id\" NUMBER(38,0),\n\t\"player_id\" NUMBER(38,0),\n\t\"role\" VARCHAR(16777216),\n\t\"team_id\" NUMBER(38,0)\n);",
+  "TEAM": "create or replace TABLE TEAM (\n\t\"team_id\" NUMBER(38,0),\n\t\"name\" VARCHAR(16777216)\n);",
+  "WICKET_TAKEN": "create or replace TABLE WICKET_TAKEN (\n\t\"match_id\" NUMBER(38,0),\n\t\"over_id\" NUMBER(38,0),\n\t\"ball_id\" NUMBER(38,0),\n\t\"player_out\" NUMBER(38,0),\n\t\"kind_out\" VARCHAR(16777216),\n\t\"innings_no\" NUMBER(38,0)\n);"
+}

@@ -1,0 +1,70 @@
+{
+  "BALL_BY_BALL": [
+    "match_id",
+    "over_id",
+    "ball_id",
+    "innings_no",
+    "team_batting",
+    "team_bowling",
+    "striker_batting_position",
+    "striker",
+    "non_striker",
+    "bowler"
+  ],
+  "BATSMAN_SCORED": [
+    "match_id",
+    "over_id",
+    "ball_id",
+    "runs_scored",
+    "innings_no"
+  ],
+  "EXTRA_RUNS": [
+    "match_id",
+    "over_id",
+    "ball_id",
+    "extra_type",
+    "extra_runs",
+    "innings_no"
+  ],
+  "MATCH": [
+    "match_id",
+    "team_1",
+    "team_2",
+    "match_date",
+    "season_id",
+    "venue",
+    "toss_winner",
+    "toss_decision",
+    "win_type",
+    "win_margin",
+    "outcome_type",
+    "match_winner",
+    "man_of_the_match"
+  ],
+  "PLAYER": [
+    "player_id",
+    "player_name",
+    "dob",
+    "batting_hand",
+    "bowling_skill",
+    "country_name"
+  ],
+  "PLAYER_MATCH": [
+    "match_id",
+    "player_id",
+    "role",
+    "team_id"
+  ],
+  "TEAM": [
+    "team_id",
+    "name"
+  ],
+  "WICKET_TAKEN": [
+    "match_id",
+    "over_id",
+    "ball_id",
+    "player_out",
+    "kind_out",
+    "innings_no"
+  ]
+}

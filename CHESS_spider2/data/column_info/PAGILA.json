@@ -1,0 +1,853 @@
+{
+  "ACTOR": {
+    "actor_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 200 - Distinct count 200 - Null count 0"
+    },
+    "first_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 200 - Distinct count 128 - Null count 0"
+    },
+    "last_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 200 - Distinct count 121 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:51:59",
+        "2021-03-06 15:51:59",
+        "2021-03-06 15:51:59",
+        "2021-03-06 15:51:59",
+        "2021-03-06 15:51:59",
+        "2021-03-06 15:51:59",
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:51:59"
+      ],
+      "value_statics": "Total count 200 - Distinct count 2 - Null count 0"
+    }
+  },
+  "ADDRESS": {
+    "address_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 603 - Distinct count 603 - Null count 0"
+    },
+    "address": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 603 - Distinct count 603 - Null count 0"
+    },
+    "address2": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 603 - Distinct count 1 - Null count 0"
+    },
+    "district": {
+      "type": "TEXT",
+      "unique_values": [
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " "
+      ],
+      "value_statics": "Total count 603 - Distinct count 1 - Null count 0"
+    },
+    "city_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 603 - Distinct count 599 - Null count 0"
+    },
+    "postal_code": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 603 - Distinct count 597 - Null count 0"
+    },
+    "phone": {
+      "type": "TEXT",
+      "unique_values": [
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " ",
+        " "
+      ],
+      "value_statics": "Total count 603 - Distinct count 1 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-03-06 15:51:57",
+        "2021-03-06 15:51:56",
+        "2021-03-06 15:51:59",
+        "2021-03-06 15:51:56",
+        "2021-03-06 15:51:54",
+        "2021-03-06 15:51:56",
+        "2021-03-06 15:51:58",
+        "2021-03-06 15:51:54",
+        "2021-03-06 15:51:56",
+        "2021-03-06 15:51:58"
+      ],
+      "value_statics": "Total count 603 - Distinct count 6 - Null count 0"
+    }
+  },
+  "CATEGORY": {
+    "category_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "value_statics": "Total count 16 - Distinct count 16 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Action",
+        "Animation",
+        "Children",
+        "Classics",
+        "Comedy",
+        "Documentary",
+        "Drama",
+        "Family",
+        "Foreign",
+        "Games"
+      ],
+      "value_statics": "Total count 16 - Distinct count 16 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:00"
+      ],
+      "value_statics": "Total count 16 - Distinct count 1 - Null count 0"
+    }
+  },
+  "CITY": {
+    "city_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 600 - Distinct count 600 - Null count 0"
+    },
+    "city": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 600 - Distinct count 599 - Null count 0"
+    },
+    "country_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 600 - Distinct count 109 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-03-06 15:51:51",
+        "2021-03-06 15:51:52",
+        "2021-03-06 15:51:49",
+        "2021-03-06 15:51:54",
+        "2021-03-06 15:51:54",
+        "2021-03-06 15:51:51",
+        "2021-03-06 15:51:54",
+        "2021-03-06 15:51:51",
+        "2021-03-06 15:51:51",
+        "2021-03-06 15:51:53"
+      ],
+      "value_statics": "Total count 600 - Distinct count 6 - Null count 0"
+    }
+  },
+  "COUNTRY": {
+    "country_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 109 - Distinct count 109 - Null count 0"
+    },
+    "country": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 109 - Distinct count 109 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-03-06 15:51:49",
+        "2021-03-06 15:51:49",
+        "2021-03-06 15:51:49",
+        "2021-03-06 15:51:49",
+        "2021-03-06 15:51:49",
+        "2021-03-06 15:51:49",
+        "2021-03-06 15:51:49",
+        "2021-03-06 15:51:49",
+        "2021-03-06 15:51:49",
+        "2021-03-06 15:51:49"
+      ],
+      "value_statics": "Total count 109 - Distinct count 1 - Null count 0"
+    }
+  },
+  "CUSTOMER": {
+    "customer_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 599 - Distinct count 599 - Null count 0"
+    },
+    "store_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "value_statics": "Total count 599 - Distinct count 2 - Null count 0"
+    },
+    "first_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 599 - Distinct count 591 - Null count 0"
+    },
+    "last_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 599 - Distinct count 599 - Null count 0"
+    },
+    "email": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 599 - Distinct count 599 - Null count 0"
+    },
+    "address_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 599 - Distinct count 599 - Null count 0"
+    },
+    "active": {
+      "type": "TEXT",
+      "unique_values": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "value_statics": "Total count 599 - Distinct count 2 - Null count 0"
+    },
+    "create_date": {
+      "type": "TEXT",
+      "unique_values": [
+        "2006-02-14 22:04:37.000",
+        "2006-02-14 22:04:37.000",
+        "2006-02-14 22:04:36.000",
+        "2006-02-14 22:04:36.000",
+        "2006-02-14 22:04:36.000",
+        "2006-02-14 22:04:37.000",
+        "2006-02-14 22:04:37.000",
+        "2006-02-14 22:04:36.000",
+        "2006-02-14 22:04:37.000",
+        "2006-02-14 22:04:37.000"
+      ],
+      "value_statics": "Total count 599 - Distinct count 2 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-03-06 15:53:39",
+        "2021-03-06 15:53:40",
+        "2021-03-06 15:53:36",
+        "2021-03-06 15:53:37",
+        "2021-03-06 15:53:37",
+        "2021-03-06 15:53:39",
+        "2021-03-06 15:53:38",
+        "2021-03-06 15:53:37",
+        "2021-03-06 15:53:38",
+        "2021-03-06 15:53:39"
+      ],
+      "value_statics": "Total count 599 - Distinct count 6 - Null count 0"
+    }
+  },
+  "FILM": {
+    "film_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1000 - Distinct count 1000 - Null count 0"
+    },
+    "title": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1000 - Distinct count 1000 - Null count 0"
+    },
+    "description": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1000 - Distinct count 1000 - Null count 0"
+    },
+    "release_year": {
+      "type": "TEXT",
+      "unique_values": [
+        "2006",
+        "2006",
+        "2006",
+        "2006",
+        "2006",
+        "2006",
+        "2006",
+        "2006",
+        "2006",
+        "2006"
+      ],
+      "value_statics": "Total count 1000 - Distinct count 1 - Null count 0"
+    },
+    "language_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "value_statics": "Total count 1000 - Distinct count 1 - Null count 0"
+    },
+    "original_language_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 1000 - Distinct count 1 - Null count 0"
+    },
+    "rental_duration": {
+      "type": "NUMBER",
+      "unique_values": [
+        4,
+        7,
+        3,
+        5,
+        3,
+        3,
+        7,
+        5,
+        5,
+        4
+      ],
+      "value_statics": "Total count 1000 - Distinct count 5 - Null count 0"
+    },
+    "rental_rate": {
+      "type": "FLOAT",
+      "unique_values": [
+        4.99,
+        4.99,
+        4.99,
+        2.99,
+        2.99,
+        4.99,
+        2.99,
+        4.99,
+        0.99,
+        4.99
+      ],
+      "value_statics": "Total count 1000 - Distinct count 3 - Null count 0"
+    },
+    "length": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1000 - Distinct count 140 - Null count 0"
+    },
+    "replacement_cost": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 1000 - Distinct count 21 - Null count 0"
+    },
+    "rating": {
+      "type": "TEXT",
+      "unique_values": [
+        "R",
+        "NC-17",
+        "NC-17",
+        "G",
+        "PG-13",
+        "R",
+        "PG-13",
+        "PG-13",
+        "PG-13",
+        "NC-17"
+      ],
+      "value_statics": "Total count 1000 - Distinct count 5 - Null count 0"
+    },
+    "special_features": {
+      "type": "TEXT",
+      "unique_values": [
+        "Trailers,Commentaries,Deleted Scenes,Behind the Scenes",
+        "Trailers,Behind the Scenes",
+        "Commentaries,Deleted Scenes",
+        "Commentaries,Behind the Scenes",
+        "Trailers,Behind the Scenes",
+        "Trailers",
+        "Trailers,Commentaries,Behind the Scenes",
+        "Behind the Scenes",
+        "Commentaries",
+        "Commentaries,Behind the Scenes"
+      ],
+      "value_statics": "Total count 1000 - Distinct count 15 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-03-06 15:52:01",
+        "2021-03-06 15:52:03",
+        "2021-03-06 15:52:01",
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:04",
+        "2021-03-06 15:52:04",
+        "2021-03-06 15:52:03",
+        "2021-03-06 15:52:07",
+        "2021-03-06 15:52:04",
+        "2021-03-06 15:52:07"
+      ],
+      "value_statics": "Total count 1000 - Distinct count 9 - Null count 0"
+    }
+  },
+  "FILM_ACTOR": {
+    "actor_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 5462 - Distinct count 200 - Null count 0"
+    },
+    "film_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 5462 - Distinct count 997 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 5462 - Distinct count 44 - Null count 0"
+    }
+  },
+  "FILM_CATEGORY": {
+    "film_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1000 - Distinct count 1000 - Null count 0"
+    },
+    "category_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        13,
+        16,
+        5,
+        6,
+        9,
+        2,
+        15,
+        4,
+        16,
+        8
+      ],
+      "value_statics": "Total count 1000 - Distinct count 16 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-03-06 15:53:29",
+        "2021-03-06 15:53:33",
+        "2021-03-06 15:53:29",
+        "2021-03-06 15:53:32",
+        "2021-03-06 15:53:32",
+        "2021-03-06 15:53:30",
+        "2021-03-06 15:53:33",
+        "2021-03-06 15:53:34",
+        "2021-03-06 15:53:32",
+        "2021-03-06 15:53:31"
+      ],
+      "value_statics": "Total count 1000 - Distinct count 9 - Null count 0"
+    }
+  },
+  "FILM_TEXT": {
+    "film_id": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "title": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "description": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "INVENTORY": {
+    "inventory_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 4581 - Distinct count 4581 - Null count 0"
+    },
+    "film_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 4581 - Distinct count 958 - Null count 0"
+    },
+    "store_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "value_statics": "Total count 4581 - Distinct count 2 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 4581 - Distinct count 38 - Null count 0"
+    }
+  },
+  "LANGUAGE": {
+    "language_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "English",
+        "Italian",
+        "Japanese",
+        "Mandarin",
+        "French",
+        "German"
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-03-06 15:51:48",
+        "2021-03-06 15:51:48",
+        "2021-03-06 15:51:48",
+        "2021-03-06 15:51:48",
+        "2021-03-06 15:51:48",
+        "2021-03-06 15:51:48"
+      ],
+      "value_statics": "Total count 6 - Distinct count 1 - Null count 0"
+    }
+  },
+  "PAYMENT": {
+    "payment_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 16049 - Distinct count 16049 - Null count 0"
+    },
+    "customer_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 16049 - Distinct count 599 - Null count 0"
+    },
+    "staff_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "value_statics": "Total count 16049 - Distinct count 2 - Null count 0"
+    },
+    "rental_id": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 16049 - Distinct count 16044 - Null count 5"
+    },
+    "amount": {
+      "type": "FLOAT",
+      "unique_values": [
+        0.99,
+        0.99,
+        7.99,
+        0.99,
+        2.99,
+        1.99,
+        0.99,
+        0.99,
+        0.99,
+        0.99
+      ],
+      "value_statics": "Total count 16049 - Distinct count 19 - Null count 0"
+    },
+    "payment_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 16049 - Distinct count 15819 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 16049 - Distinct count 133 - Null count 0"
+    }
+  },
+  "RENTAL": {
+    "rental_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 16044 - Distinct count 16044 - Null count 0"
+    },
+    "rental_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 16044 - Distinct count 15815 - Null count 0"
+    },
+    "inventory_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 16044 - Distinct count 4580 - Null count 0"
+    },
+    "customer_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 16044 - Distinct count 599 - Null count 0"
+    },
+    "return_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 16044 - Distinct count 15837 - Null count 0"
+    },
+    "staff_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "value_statics": "Total count 16044 - Distinct count 2 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 16044 - Distinct count 137 - Null count 0"
+    }
+  },
+  "STAFF": {
+    "staff_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "first_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Mike",
+        "Jon"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "last_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Hillyer",
+        "Stephens"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "address_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        3,
+        4
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "picture": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        ""
+      ],
+      "value_statics": "Total count 2 - Distinct count 1 - Null count 0"
+    },
+    "email": {
+      "type": "TEXT",
+      "unique_values": [
+        "Mike.Hillyer@sakilastaff.com",
+        "Jon.Stephens@sakilastaff.com"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "store_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "active": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1
+      ],
+      "value_statics": "Total count 2 - Distinct count 1 - Null count 0"
+    },
+    "username": {
+      "type": "TEXT",
+      "unique_values": [
+        "Mike",
+        "Jon"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "password": {
+      "type": "TEXT",
+      "unique_values": [
+        "8cb2237d0679ca88db6464eac60da96345513964",
+        "8cb2237d0679ca88db6464eac60da96345513964"
+      ],
+      "value_statics": "Total count 2 - Distinct count 1 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:00"
+      ],
+      "value_statics": "Total count 2 - Distinct count 1 - Null count 0"
+    }
+  },
+  "STORE": {
+    "store_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "manager_staff_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "address_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "last_update": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-03-06 15:52:00",
+        "2021-03-06 15:52:00"
+      ],
+      "value_statics": "Total count 2 - Distinct count 1 - Null count 0"
+    }
+  }
+}

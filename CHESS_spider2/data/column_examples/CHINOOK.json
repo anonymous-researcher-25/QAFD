@@ -1,0 +1,511 @@
+{
+  "ALBUMS": {
+    "AlbumId": [
+      1,
+      237,
+      322,
+      330,
+      140
+    ],
+    "Title": [
+      "For Those About To Rock We Salute You",
+      "Rattle And Hum",
+      "Frank",
+      "G\u00f3recki: Symphony No. 3",
+      "Mais Do Mesmo"
+    ],
+    "ArtistId": [
+      1,
+      150,
+      252,
+      260,
+      99
+    ]
+  },
+  "ARTISTS": {
+    "ArtistId": [
+      104,
+      2,
+      140,
+      112,
+      234
+    ],
+    "Name": [
+      "Marvin Gaye",
+      "Accept",
+      "The Doors",
+      "Olodum",
+      "Orchestra of The Age of Enlightenment"
+    ]
+  },
+  "CUSTOMERS": {
+    "CustomerId": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "FirstName": [
+      "Lu\u00eds",
+      "Leonie",
+      "Fran\u00e7ois",
+      "Bj\u00f8rn",
+      "Franti\u0161ek"
+    ],
+    "LastName": [
+      "Gon\u00e7alves",
+      "K\u00f6hler",
+      "Tremblay",
+      "Hansen",
+      "Wichterlov\u00e1"
+    ],
+    "Company": [
+      "Embraer - Empresa Brasileira de Aeron\u00e1utica S.A.",
+      "",
+      "",
+      "",
+      "JetBrains s.r.o."
+    ],
+    "Address": [
+      "Av. Brigadeiro Faria Lima, 2170",
+      "Theodor-Heuss-Stra\u00dfe 34",
+      "1498 rue B\u00e9langer",
+      "Ullev\u00e5lsveien 14",
+      "Klanova 9/506"
+    ],
+    "City": [
+      "S\u00e3o Jos\u00e9 dos Campos",
+      "Stuttgart",
+      "Montr\u00e9al",
+      "Oslo",
+      "Prague"
+    ],
+    "State": [
+      "SP",
+      "",
+      "QC",
+      "",
+      ""
+    ],
+    "Country": [
+      "Brazil",
+      "Germany",
+      "Canada",
+      "Norway",
+      "Czech Republic"
+    ],
+    "PostalCode": [
+      "12227-000",
+      "70174",
+      "H2G 1A7",
+      "0171",
+      "14700"
+    ],
+    "Phone": [
+      "+55 (12) 3923-5555",
+      "+49 0711 2842222",
+      "+1 (514) 721-4711",
+      "+47 22 44 22 22",
+      "+420 2 4172 5555"
+    ],
+    "Fax": [
+      "+55 (12) 3923-5566",
+      "",
+      "",
+      "",
+      "+420 2 4172 5555"
+    ],
+    "Email": [
+      "luisg@embraer.com.br",
+      "leonekohler@surfeu.de",
+      "ftremblay@gmail.com",
+      "bjorn.hansen@yahoo.no",
+      "frantisekw@jetbrains.com"
+    ],
+    "SupportRepId": [
+      3,
+      5,
+      3,
+      4,
+      4
+    ]
+  },
+  "EMPLOYEES": {
+    "EmployeeId": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "LastName": [
+      "Adams",
+      "Edwards",
+      "Peacock",
+      "Park",
+      "Johnson"
+    ],
+    "FirstName": [
+      "Andrew",
+      "Nancy",
+      "Jane",
+      "Margaret",
+      "Steve"
+    ],
+    "Title": [
+      "General Manager",
+      "Sales Manager",
+      "Sales Support Agent",
+      "Sales Support Agent",
+      "Sales Support Agent"
+    ],
+    "ReportsTo": [
+      null,
+      1.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "BirthDate": [
+      "1962-02-18 00:00:00",
+      "1958-12-08 00:00:00",
+      "1973-08-29 00:00:00",
+      "1947-09-19 00:00:00",
+      "1965-03-03 00:00:00"
+    ],
+    "HireDate": [
+      "2002-08-14 00:00:00",
+      "2002-05-01 00:00:00",
+      "2002-04-01 00:00:00",
+      "2003-05-03 00:00:00",
+      "2003-10-17 00:00:00"
+    ],
+    "Address": [
+      "11120 Jasper Ave NW",
+      "825 8 Ave SW",
+      "1111 6 Ave SW",
+      "683 10 Street SW",
+      "7727B 41 Ave"
+    ],
+    "City": [
+      "Edmonton",
+      "Calgary",
+      "Calgary",
+      "Calgary",
+      "Calgary"
+    ],
+    "State": [
+      "AB",
+      "AB",
+      "AB",
+      "AB",
+      "AB"
+    ],
+    "Country": [
+      "Canada",
+      "Canada",
+      "Canada",
+      "Canada",
+      "Canada"
+    ],
+    "PostalCode": [
+      "T5K 2N1",
+      "T2P 2T3",
+      "T2P 5M5",
+      "T2P 5G3",
+      "T3B 1Y7"
+    ],
+    "Phone": [
+      "+1 (780) 428-9482",
+      "+1 (403) 262-3443",
+      "+1 (403) 262-3443",
+      "+1 (403) 263-4423",
+      "1 (780) 836-9987"
+    ],
+    "Fax": [
+      "+1 (780) 428-3457",
+      "+1 (403) 262-3322",
+      "+1 (403) 262-6712",
+      "+1 (403) 263-4289",
+      "1 (780) 836-9543"
+    ],
+    "Email": [
+      "andrew@chinookcorp.com",
+      "nancy@chinookcorp.com",
+      "jane@chinookcorp.com",
+      "margaret@chinookcorp.com",
+      "steve@chinookcorp.com"
+    ]
+  },
+  "GENRES": {
+    "GenreId": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Name": [
+      "Rock",
+      "Jazz",
+      "Metal",
+      "Alternative & Punk",
+      "Rock And Roll"
+    ]
+  },
+  "INVOICES": {
+    "InvoiceId": [
+      198,
+      106,
+      117,
+      307,
+      397
+    ],
+    "CustomerId": [
+      6,
+      41,
+      41,
+      19,
+      27
+    ],
+    "InvoiceDate": [
+      "2011-05-20 00:00:00",
+      "2010-04-11 00:00:00",
+      "2010-05-22 00:00:00",
+      "2012-09-13 00:00:00",
+      "2013-10-13 00:00:00"
+    ],
+    "BillingAddress": [
+      "Rilsk\u00e1 3174/6",
+      "11, Place Bellecour",
+      "11, Place Bellecour",
+      "1 Infinite Loop",
+      "1033 N Park Ave"
+    ],
+    "BillingCity": [
+      "Prague",
+      "Lyon",
+      "Lyon",
+      "Cupertino",
+      "Tucson"
+    ],
+    "BillingState": [
+      "",
+      "",
+      "",
+      "CA",
+      "AZ"
+    ],
+    "BillingCountry": [
+      "Czech Republic",
+      "France",
+      "France",
+      "USA",
+      "USA"
+    ],
+    "BillingPostalCode": [
+      "14300",
+      "69002",
+      "69002",
+      "95014",
+      "85719"
+    ],
+    "Total": [
+      3.96,
+      1.98,
+      13.86,
+      1.99,
+      13.86
+    ]
+  },
+  "INVOICE_ITEMS": {
+    "InvoiceLineId": [
+      1754,
+      1983,
+      2008,
+      1220,
+      2088
+    ],
+    "InvoiceId": [
+      324,
+      367,
+      369,
+      226,
+      384
+    ],
+    "TrackId": [
+      175,
+      1571,
+      1744,
+      426,
+      2249
+    ],
+    "UnitPrice": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+    ],
+    "Quantity": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "MEDIA_TYPES": {
+    "MediaTypeId": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Name": [
+      "MPEG audio file",
+      "Protected AAC audio file",
+      "Protected MPEG-4 video file",
+      "Purchased AAC audio file",
+      "AAC audio file"
+    ]
+  },
+  "PLAYLISTS": {
+    "PlaylistId": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Name": [
+      "Music",
+      "Movies",
+      "TV Shows",
+      "Audiobooks",
+      "90\u2019s Music"
+    ]
+  },
+  "PLAYLIST_TRACK": {
+    "PlaylistId": [
+      8,
+      3,
+      8,
+      1,
+      1
+    ],
+    "TrackId": [
+      663,
+      2823,
+      427,
+      2158,
+      3392
+    ]
+  },
+  "SQLITE_SEQUENCE": {
+    "name": [
+      "genres",
+      "media_types",
+      "artists",
+      "albums",
+      "tracks"
+    ],
+    "seq": [
+      25,
+      5,
+      275,
+      347,
+      3503
+    ]
+  },
+  "SQLITE_STAT1": {
+    "tbl": [
+      "tracks",
+      "tracks",
+      "tracks",
+      "playlist_track",
+      "playlist_track"
+    ],
+    "idx": [
+      "IFK_TrackMediaTypeId",
+      "IFK_TrackGenreId",
+      "IFK_TrackAlbumId",
+      "IFK_PlaylistTrackTrackId",
+      "sqlite_autoindex_playlist_track_1"
+    ],
+    "stat": [
+      "3503 701",
+      "3503 141",
+      "3503 11",
+      "8715 3",
+      "8715 623 1"
+    ]
+  },
+  "TRACKS": {
+    "TrackId": [
+      1214,
+      138,
+      906,
+      362,
+      2763
+    ],
+    "Name": [
+      "Prowler",
+      "Bored To Tears",
+      "Let It Grow",
+      "Gavioes 2001",
+      "Compadre"
+    ],
+    "AlbumId": [
+      95,
+      14,
+      72,
+      32,
+      222
+    ],
+    "MediaTypeId": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "GenreId": [
+      3,
+      3,
+      6,
+      10,
+      7
+    ],
+    "Composer": [
+      "Steve Harris",
+      "",
+      "Clapton",
+      "",
+      "Tim Maia"
+    ],
+    "Milliseconds": [
+      255634,
+      247327,
+      297064,
+      282723,
+      171389
+    ],
+    "Bytes": [
+      4091904,
+      8130090,
+      9742568,
+      9616640,
+      5631446
+    ],
+    "UnitPrice": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+    ]
+  }
+}

@@ -1,0 +1,652 @@
+{
+  "BALL_BY_BALL": {
+    "match_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 134703 - Distinct count 568 - Null count 0"
+    },
+    "over_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        19,
+        15,
+        8,
+        11,
+        4,
+        11,
+        14,
+        15,
+        3,
+        3
+      ],
+      "value_statics": "Total count 134703 - Distinct count 20 - Null count 0"
+    },
+    "ball_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        6,
+        2,
+        1,
+        8,
+        6,
+        1,
+        2,
+        1,
+        6,
+        6
+      ],
+      "value_statics": "Total count 134703 - Distinct count 9 - Null count 0"
+    },
+    "innings_no": {
+      "type": "NUMBER",
+      "unique_values": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "value_statics": "Total count 134703 - Distinct count 2 - Null count 0"
+    },
+    "team_batting": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        7,
+        2,
+        5,
+        8,
+        2,
+        10,
+        5,
+        5,
+        3
+      ],
+      "value_statics": "Total count 134703 - Distinct count 13 - Null count 0"
+    },
+    "team_bowling": {
+      "type": "NUMBER",
+      "unique_values": [
+        3,
+        5,
+        3,
+        4,
+        6,
+        3,
+        8,
+        1,
+        4,
+        2
+      ],
+      "value_statics": "Total count 134703 - Distinct count 13 - Null count 0"
+    },
+    "striker_batting_position": {
+      "type": "NUMBER",
+      "unique_values": [
+        5,
+        2,
+        2,
+        6,
+        3,
+        4,
+        4,
+        5,
+        2,
+        2
+      ],
+      "value_statics": "Total count 134703 - Distinct count 11 - Null count 0"
+    },
+    "striker": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 134703 - Distinct count 434 - Null count 0"
+    },
+    "non_striker": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 134703 - Distinct count 429 - Null count 0"
+    },
+    "bowler": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 134703 - Distinct count 330 - Null count 0"
+    }
+  },
+  "BATSMAN_SCORED": {
+    "match_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 131259 - Distinct count 568 - Null count 0"
+    },
+    "over_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        14,
+        3,
+        18,
+        9,
+        15,
+        15,
+        13,
+        16,
+        6,
+        5
+      ],
+      "value_statics": "Total count 131259 - Distinct count 20 - Null count 0"
+    },
+    "ball_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        6,
+        1,
+        1,
+        4,
+        6,
+        2,
+        5,
+        3,
+        1,
+        2
+      ],
+      "value_statics": "Total count 131259 - Distinct count 9 - Null count 0"
+    },
+    "runs_scored": {
+      "type": "NUMBER",
+      "unique_values": [
+        4,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "value_statics": "Total count 131259 - Distinct count 7 - Null count 0"
+    },
+    "innings_no": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "value_statics": "Total count 131259 - Distinct count 2 - Null count 0"
+    }
+  },
+  "EXTRA_RUNS": {
+    "match_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 7349 - Distinct count 568 - Null count 0"
+    },
+    "over_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        5,
+        2,
+        10,
+        18,
+        4,
+        5,
+        17,
+        4,
+        5,
+        12
+      ],
+      "value_statics": "Total count 7349 - Distinct count 20 - Null count 0"
+    },
+    "ball_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        5,
+        6,
+        1,
+        3,
+        3,
+        2,
+        3,
+        6,
+        6
+      ],
+      "value_statics": "Total count 7349 - Distinct count 9 - Null count 0"
+    },
+    "extra_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "wides",
+        "wides",
+        "legbyes",
+        "byes",
+        "legbyes",
+        "legbyes",
+        "wides",
+        "byes",
+        "legbyes",
+        "wides"
+      ],
+      "value_statics": "Total count 7349 - Distinct count 5 - Null count 0"
+    },
+    "extra_runs": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        1
+      ],
+      "value_statics": "Total count 7349 - Distinct count 5 - Null count 0"
+    },
+    "innings_no": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "value_statics": "Total count 7349 - Distinct count 2 - Null count 0"
+    }
+  },
+  "MATCH": {
+    "match_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 567 - Distinct count 567 - Null count 0"
+    },
+    "team_1": {
+      "type": "NUMBER",
+      "unique_values": [
+        7,
+        1,
+        6,
+        3,
+        4,
+        4,
+        4,
+        10,
+        8,
+        3
+      ],
+      "value_statics": "Total count 567 - Distinct count 13 - Null count 0"
+    },
+    "team_2": {
+      "type": "NUMBER",
+      "unique_values": [
+        3,
+        12,
+        5,
+        7,
+        3,
+        1,
+        8,
+        6,
+        5,
+        1
+      ],
+      "value_statics": "Total count 567 - Distinct count 13 - Null count 0"
+    },
+    "match_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 567 - Distinct count 403 - Null count 0"
+    },
+    "season_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        5,
+        9,
+        1,
+        6,
+        8,
+        7,
+        4,
+        4,
+        1,
+        4
+      ],
+      "value_statics": "Total count 567 - Distinct count 9 - Null count 0"
+    },
+    "venue": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 567 - Distinct count 35 - Null count 0"
+    },
+    "toss_winner": {
+      "type": "NUMBER",
+      "unique_values": [
+        7,
+        12,
+        5,
+        3,
+        4,
+        1,
+        4,
+        6,
+        5,
+        3
+      ],
+      "value_statics": "Total count 567 - Distinct count 13 - Null count 0"
+    },
+    "toss_decision": {
+      "type": "TEXT",
+      "unique_values": [
+        "field",
+        "bat",
+        "bat",
+        "bat",
+        "bat",
+        "field",
+        "field",
+        "field",
+        "field",
+        "bat"
+      ],
+      "value_statics": "Total count 567 - Distinct count 2 - Null count 0"
+    },
+    "win_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "wickets",
+        "wickets",
+        "wickets",
+        "runs",
+        "wickets",
+        "wickets",
+        "runs",
+        "wickets",
+        "wickets",
+        "runs"
+      ],
+      "value_statics": "Total count 567 - Distinct count 2 - Null count 0"
+    },
+    "win_margin": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 567 - Distinct count 81 - Null count 0"
+    },
+    "outcome_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "Result",
+        "Result",
+        "Result",
+        "Result",
+        "Result",
+        "Result",
+        "Result",
+        "Result",
+        "Result",
+        "Result"
+      ],
+      "value_statics": "Total count 567 - Distinct count 1 - Null count 0"
+    },
+    "match_winner": {
+      "type": "NUMBER",
+      "unique_values": [
+        7,
+        1,
+        6,
+        3,
+        3,
+        1,
+        8,
+        6,
+        5,
+        3
+      ],
+      "value_statics": "Total count 567 - Distinct count 13 - Null count 0"
+    },
+    "man_of_the_match": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 567 - Distinct count 186 - Null count 0"
+    }
+  },
+  "PLAYER": {
+    "player_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 468 - Distinct count 468 - Null count 0"
+    },
+    "player_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 468 - Distinct count 468 - Null count 0"
+    },
+    "dob": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 468 - Distinct count 454 - Null count 0"
+    },
+    "batting_hand": {
+      "type": "TEXT",
+      "unique_values": [
+        "Right-hand bat",
+        "Right-hand bat",
+        "Right-hand bat",
+        "Left-hand bat",
+        "Right-hand bat",
+        "Left-hand bat",
+        "Right-hand bat",
+        "Right-hand bat",
+        "Right-hand bat",
+        "Right-hand bat"
+      ],
+      "value_statics": "Total count 468 - Distinct count 2 - Null count 0"
+    },
+    "bowling_skill": {
+      "type": "TEXT",
+      "unique_values": [
+        "Legbreak",
+        "Right-arm medium",
+        "Right-arm fast-medium",
+        "Right-arm medium",
+        "Legbreak googly",
+        "Left-arm medium-fast",
+        "Right-arm offbreak",
+        "Legbreak",
+        "Right-arm offbreak",
+        "Right-arm medium"
+      ],
+      "value_statics": "Total count 468 - Distinct count 14 - Null count 0"
+    },
+    "country_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "India",
+        "South Africa",
+        "South Africa",
+        "India",
+        "India",
+        "India",
+        "India",
+        "India",
+        "India",
+        "Australia"
+      ],
+      "value_statics": "Total count 468 - Distinct count 11 - Null count 0"
+    }
+  },
+  "PLAYER_MATCH": {
+    "match_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 12495 - Distinct count 568 - Null count 0"
+    },
+    "player_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 12495 - Distinct count 468 - Null count 0"
+    },
+    "role": {
+      "type": "TEXT",
+      "unique_values": [
+        "Player",
+        "Player",
+        "Player",
+        "Player",
+        "Player",
+        "Player",
+        "Player",
+        "Player",
+        "Player",
+        "Player"
+      ],
+      "value_statics": "Total count 12495 - Distinct count 4 - Null count 0"
+    },
+    "team_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        6,
+        1,
+        8,
+        5,
+        4,
+        3,
+        1,
+        5,
+        7
+      ],
+      "value_statics": "Total count 12495 - Distinct count 13 - Null count 0"
+    }
+  },
+  "TEAM": {
+    "team_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "value_statics": "Total count 12 - Distinct count 12 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Royal Challengers Bangalore",
+        "Chennai Super Kings",
+        "Kings XI Punjab",
+        "Rajasthan Royals",
+        "Delhi Daredevils",
+        "Mumbai Indians",
+        "Deccan Chargers",
+        "Kochi Tuskers Kerala",
+        "Pune Warriors",
+        "Sunrisers Hyderabad"
+      ],
+      "value_statics": "Total count 12 - Distinct count 12 - Null count 0"
+    }
+  },
+  "WICKET_TAKEN": {
+    "match_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 6618 - Distinct count 568 - Null count 0"
+    },
+    "over_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        14,
+        3,
+        17,
+        2,
+        17,
+        18,
+        14,
+        2,
+        17,
+        15
+      ],
+      "value_statics": "Total count 6618 - Distinct count 20 - Null count 0"
+    },
+    "ball_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        4,
+        6,
+        4,
+        2,
+        6,
+        4,
+        2,
+        5,
+        3,
+        5
+      ],
+      "value_statics": "Total count 6618 - Distinct count 9 - Null count 0"
+    },
+    "player_out": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 6618 - Distinct count 411 - Null count 0"
+    },
+    "kind_out": {
+      "type": "TEXT",
+      "unique_values": [
+        "caught",
+        "run out",
+        "bowled",
+        "caught",
+        "run out",
+        "caught",
+        "lbw",
+        "run out",
+        "stumped",
+        "run out"
+      ],
+      "value_statics": "Total count 6618 - Distinct count 9 - Null count 0"
+    },
+    "innings_no": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "value_statics": "Total count 6618 - Distinct count 2 - Null count 0"
+    }
+  }
+}

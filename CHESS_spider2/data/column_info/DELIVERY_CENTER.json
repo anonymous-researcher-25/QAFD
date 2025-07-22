@@ -1,0 +1,454 @@
+{
+  "CHANNELS": {
+    "channel_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 40 - Distinct count 40 - Null count 0"
+    },
+    "channel_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 40 - Distinct count 40 - Null count 0"
+    },
+    "channel_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "OWN CHANNEL",
+        "OWN CHANNEL",
+        "OWN CHANNEL",
+        "OWN CHANNEL",
+        "MARKETPLACE",
+        "OWN CHANNEL",
+        "OWN CHANNEL",
+        "OWN CHANNEL",
+        "OWN CHANNEL",
+        "OWN CHANNEL"
+      ],
+      "value_statics": "Total count 40 - Distinct count 2 - Null count 0"
+    }
+  },
+  "DELIVERIES": {
+    "delivery_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 378843 - Distinct count 378843 - Null count 0"
+    },
+    "delivery_order_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 378843 - Distinct count 358654 - Null count 0"
+    },
+    "driver_id": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 378843 - Distinct count 4583 - Null count 15886"
+    },
+    "delivery_distance_meters": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 378843 - Distinct count 16477 - Null count 73"
+    },
+    "delivery_status": {
+      "type": "TEXT",
+      "unique_values": [
+        "DELIVERED",
+        "DELIVERED",
+        "DELIVERED",
+        "DELIVERED",
+        "DELIVERED",
+        "DELIVERED",
+        "DELIVERED",
+        "CANCELLED",
+        "DELIVERED",
+        "DELIVERED"
+      ],
+      "value_statics": "Total count 378843 - Distinct count 3 - Null count 0"
+    }
+  },
+  "DRIVERS": {
+    "driver_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 4824 - Distinct count 4824 - Null count 0"
+    },
+    "driver_modal": {
+      "type": "TEXT",
+      "unique_values": [
+        "MOTOBOY",
+        "BIKER",
+        "BIKER",
+        "BIKER",
+        "MOTOBOY",
+        "BIKER",
+        "MOTOBOY",
+        "BIKER",
+        "MOTOBOY",
+        "MOTOBOY"
+      ],
+      "value_statics": "Total count 4824 - Distinct count 2 - Null count 0"
+    },
+    "driver_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "FREELANCE",
+        "FREELANCE",
+        "FREELANCE",
+        "FREELANCE",
+        "FREELANCE",
+        "FREELANCE",
+        "FREELANCE",
+        "FREELANCE",
+        "FREELANCE",
+        "FREELANCE"
+      ],
+      "value_statics": "Total count 4824 - Distinct count 2 - Null count 0"
+    }
+  },
+  "HUBS": {
+    "hub_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 32 - Distinct count 32 - Null count 0"
+    },
+    "hub_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 32 - Distinct count 32 - Null count 0"
+    },
+    "hub_city": {
+      "type": "TEXT",
+      "unique_values": [
+        "PORTO ALEGRE",
+        "PORTO ALEGRE",
+        "PORTO ALEGRE",
+        "RIO DE JANEIRO",
+        "RIO DE JANEIRO",
+        "RIO DE JANEIRO",
+        "RIO DE JANEIRO",
+        "S\u00c3O PAULO",
+        "RIO DE JANEIRO",
+        "RIO DE JANEIRO"
+      ],
+      "value_statics": "Total count 32 - Distinct count 4 - Null count 0"
+    },
+    "hub_state": {
+      "type": "TEXT",
+      "unique_values": [
+        "RS",
+        "RS",
+        "RS",
+        "RJ",
+        "RJ",
+        "RJ",
+        "RJ",
+        "SP",
+        "RJ",
+        "RJ"
+      ],
+      "value_statics": "Total count 32 - Distinct count 4 - Null count 0"
+    },
+    "hub_latitude": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32 - Distinct count 32 - Null count 0"
+    },
+    "hub_longitude": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32 - Distinct count 32 - Null count 0"
+    }
+  },
+  "ORDERS": {
+    "order_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 368999 - Null count 0"
+    },
+    "store_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 951 - Null count 0"
+    },
+    "channel_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 39 - Null count 0"
+    },
+    "payment_order_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 368999 - Null count 0"
+    },
+    "delivery_order_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 368999 - Null count 0"
+    },
+    "order_status": {
+      "type": "TEXT",
+      "unique_values": [
+        "FINISHED",
+        "FINISHED",
+        "FINISHED",
+        "FINISHED",
+        "FINISHED",
+        "FINISHED",
+        "FINISHED",
+        "FINISHED",
+        "FINISHED",
+        "FINISHED"
+      ],
+      "value_statics": "Total count 368999 - Distinct count 2 - Null count 0"
+    },
+    "order_amount": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 17444 - Null count 0"
+    },
+    "order_delivery_fee": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 520 - Null count 0"
+    },
+    "order_delivery_cost": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 3155 - Null count 7205"
+    },
+    "order_created_hour": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 24 - Null count 0"
+    },
+    "order_created_minute": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 60 - Null count 0"
+    },
+    "order_created_day": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 31 - Null count 0"
+    },
+    "order_created_month": {
+      "type": "NUMBER",
+      "unique_values": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "value_statics": "Total count 368999 - Distinct count 4 - Null count 0"
+    },
+    "order_created_year": {
+      "type": "NUMBER",
+      "unique_values": [
+        2021,
+        2021,
+        2021,
+        2021,
+        2021,
+        2021,
+        2021,
+        2021,
+        2021,
+        2021
+      ],
+      "value_statics": "Total count 368999 - Distinct count 1 - Null count 0"
+    },
+    "order_moment_created": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 340934 - Null count 0"
+    },
+    "order_moment_accepted": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 343901 - Null count 0"
+    },
+    "order_moment_ready": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 328459 - Null count 0"
+    },
+    "order_moment_collected": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 313260 - Null count 0"
+    },
+    "order_moment_in_expedition": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 290328 - Null count 0"
+    },
+    "order_moment_delivering": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 328728 - Null count 0"
+    },
+    "order_moment_delivered": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 19524 - Null count 0"
+    },
+    "order_moment_finished": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 336816 - Null count 0"
+    },
+    "order_metric_collected_time": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 2590 - Null count 51492"
+    },
+    "order_metric_paused_time": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 7653 - Null count 71405"
+    },
+    "order_metric_production_time": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 14918 - Null count 25107"
+    },
+    "order_metric_walking_time": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 3107 - Null count 74056"
+    },
+    "order_metric_expediton_speed_time": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 13259 - Null count 34582"
+    },
+    "order_metric_transit_time": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 12594 - Null count 25857"
+    },
+    "order_metric_cycle_time": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 368999 - Distinct count 27544 - Null count 15619"
+    }
+  },
+  "PAYMENTS": {
+    "payment_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 400834 - Distinct count 400834 - Null count 0"
+    },
+    "payment_order_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 400834 - Distinct count 350334 - Null count 0"
+    },
+    "payment_amount": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 400834 - Distinct count 20306 - Null count 0"
+    },
+    "payment_fee": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 400834 - Distinct count 2271 - Null count 175"
+    },
+    "payment_method": {
+      "type": "TEXT",
+      "unique_values": [
+        "ONLINE",
+        "PAYMENT_LINK",
+        "ONLINE",
+        "ONLINE",
+        "ONLINE",
+        "ONLINE",
+        "ONLINE",
+        "ONLINE",
+        "ONLINE",
+        "ONLINE"
+      ],
+      "value_statics": "Total count 400834 - Distinct count 15 - Null count 0"
+    },
+    "payment_status": {
+      "type": "TEXT",
+      "unique_values": [
+        "PAID",
+        "PAID",
+        "PAID",
+        "PAID",
+        "PAID",
+        "PAID",
+        "PAID",
+        "PAID",
+        "PAID",
+        "PAID"
+      ],
+      "value_statics": "Total count 400834 - Distinct count 3 - Null count 0"
+    }
+  },
+  "STORES": {
+    "store_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 951 - Distinct count 951 - Null count 0"
+    },
+    "hub_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 951 - Distinct count 32 - Null count 0"
+    },
+    "store_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 951 - Distinct count 480 - Null count 0"
+    },
+    "store_segment": {
+      "type": "TEXT",
+      "unique_values": [
+        "FOOD",
+        "FOOD",
+        "FOOD",
+        "FOOD",
+        "FOOD",
+        "FOOD",
+        "GOOD",
+        "GOOD",
+        "GOOD",
+        "FOOD"
+      ],
+      "value_statics": "Total count 951 - Distinct count 2 - Null count 0"
+    },
+    "store_plan_price": {
+      "type": "FLOAT",
+      "unique_values": [
+        29.9,
+        0.0,
+        49.0,
+        49.0,
+        49.0,
+        49.0,
+        null,
+        0.0,
+        29.9,
+        49.9
+      ],
+      "value_statics": "Total count 951 - Distinct count 10 - Null count 115"
+    },
+    "store_latitude": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 951 - Distinct count 92 - Null count 16"
+    },
+    "store_longitude": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 951 - Distinct count 87 - Null count 16"
+    }
+  }
+}

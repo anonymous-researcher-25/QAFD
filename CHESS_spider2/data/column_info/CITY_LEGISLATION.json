@@ -1,0 +1,1093 @@
+{
+  "ALIENS": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 50000 - Null count 0"
+    },
+    "first_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 8393 - Null count 0"
+    },
+    "last_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 31037 - Null count 0"
+    },
+    "email": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 50000 - Null count 0"
+    },
+    "gender": {
+      "type": "TEXT",
+      "unique_values": [
+        "Male",
+        "Female",
+        "Female",
+        "Female",
+        "Female",
+        "Female",
+        "Female",
+        "Male",
+        "Polygender",
+        "Female"
+      ],
+      "value_statics": "Total count 50000 - Distinct count 8 - Null count 0"
+    },
+    "type": {
+      "type": "TEXT",
+      "unique_values": [
+        "Flatwoods",
+        "Grey",
+        "Reptile",
+        "Grey",
+        "Flatwoods",
+        "Flatwoods",
+        "Grey",
+        "Reptile",
+        "Nordic",
+        "Green"
+      ],
+      "value_statics": "Total count 50000 - Distinct count 5 - Null count 0"
+    },
+    "birth_year": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 301 - Null count 0"
+    }
+  },
+  "ALIENS_DETAILS": {
+    "detail_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 50000 - Null count 0"
+    },
+    "favorite_food": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 1498 - Null count 0"
+    },
+    "feeding_frequency": {
+      "type": "TEXT",
+      "unique_values": [
+        "Seldom",
+        "Often",
+        "Yearly",
+        "Daily",
+        "Weekly",
+        "Often",
+        "Daily",
+        "Once",
+        "Often",
+        "Once"
+      ],
+      "value_statics": "Total count 50000 - Distinct count 8 - Null count 0"
+    },
+    "aggressive": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "value_statics": "Total count 50000 - Distinct count 2 - Null count 0"
+    }
+  },
+  "ALIENS_LOCATION": {
+    "loc_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 50000 - Null count 0"
+    },
+    "current_location": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 461 - Null count 0"
+    },
+    "state": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 51 - Null count 0"
+    },
+    "country": {
+      "type": "TEXT",
+      "unique_values": [
+        "United States",
+        "United States",
+        "United States",
+        "United States",
+        "United States",
+        "United States",
+        "United States",
+        "United States",
+        "United States",
+        "United States"
+      ],
+      "value_statics": "Total count 50000 - Distinct count 1 - Null count 0"
+    },
+    "occupation": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 195 - Null count 0"
+    }
+  },
+  "ALIEN_DATA": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 50000 - Null count 0"
+    },
+    "first_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 8393 - Null count 0"
+    },
+    "last_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 31034 - Null count 0"
+    },
+    "email": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 50000 - Null count 0"
+    },
+    "gender": {
+      "type": "TEXT",
+      "unique_values": [
+        "female",
+        "female",
+        "male",
+        "male",
+        "female",
+        "male",
+        "female",
+        "male",
+        "female",
+        "male"
+      ],
+      "value_statics": "Total count 50000 - Distinct count 3 - Null count 0"
+    },
+    "type": {
+      "type": "TEXT",
+      "unique_values": [
+        "green",
+        "nordic",
+        "flatwoods",
+        "grey",
+        "flatwoods",
+        "green",
+        "nordic",
+        "flatwoods",
+        "flatwoods",
+        "flatwoods"
+      ],
+      "value_statics": "Total count 50000 - Distinct count 5 - Null count 0"
+    },
+    "birth_year": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 301 - Null count 0"
+    },
+    "age": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 301 - Null count 0"
+    },
+    "favorite_food": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 1498 - Null count 0"
+    },
+    "feeding_frequency": {
+      "type": "TEXT",
+      "unique_values": [
+        "never",
+        "once",
+        "monthly",
+        "yearly",
+        "seldom",
+        "daily",
+        "daily",
+        "often",
+        "often",
+        "monthly"
+      ],
+      "value_statics": "Total count 50000 - Distinct count 8 - Null count 0"
+    },
+    "aggressive": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "value_statics": "Total count 50000 - Distinct count 2 - Null count 0"
+    },
+    "occupation": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 195 - Null count 0"
+    },
+    "current_location": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 461 - Null count 0"
+    },
+    "state": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 50000 - Distinct count 51 - Null count 0"
+    },
+    "us_region": {
+      "type": "TEXT",
+      "unique_values": [
+        "southwest",
+        "southeast",
+        "southeast",
+        "plains",
+        "plains",
+        "southeast",
+        "plains",
+        "far west",
+        "plains",
+        "southeast"
+      ],
+      "value_statics": "Total count 50000 - Distinct count 8 - Null count 0"
+    },
+    "country": {
+      "type": "TEXT",
+      "unique_values": [
+        "united states",
+        "united states",
+        "united states",
+        "united states",
+        "united states",
+        "united states",
+        "united states",
+        "united states",
+        "united states",
+        "united states"
+      ],
+      "value_statics": "Total count 50000 - Distinct count 1 - Null count 0"
+    }
+  },
+  "CITIES": {
+    "city_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 44622 - Distinct count 44622 - Null count 0"
+    },
+    "city_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44622 - Distinct count 41063 - Null count 0"
+    },
+    "latitude": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 44622 - Distinct count 37063 - Null count 0"
+    },
+    "longitude": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 44622 - Distinct count 34608 - Null count 0"
+    },
+    "country_code_2": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44622 - Distinct count 236 - Null count 0"
+    },
+    "capital": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 44622 - Distinct count 2 - Null count 0"
+    },
+    "population": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 44622 - Distinct count 29611 - Null count 305"
+    },
+    "insert_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44622 - Distinct count 943 - Null count 0"
+    }
+  },
+  "CITIES_COUNTRIES": {
+    "country_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 241 - Distinct count 241 - Null count 0"
+    },
+    "country_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 241 - Distinct count 241 - Null count 0"
+    },
+    "country_code_2": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 241 - Distinct count 241 - Null count 0"
+    },
+    "country_code_3": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 241 - Distinct count 241 - Null count 0"
+    },
+    "region": {
+      "type": "TEXT",
+      "unique_values": [
+        "asia",
+        "europe",
+        "europe",
+        "europe",
+        "europe",
+        "asia",
+        "africa",
+        "americas",
+        "antartica",
+        "americas"
+      ],
+      "value_statics": "Total count 241 - Distinct count 6 - Null count 0"
+    },
+    "sub_region": {
+      "type": "TEXT",
+      "unique_values": [
+        "southeastern asia",
+        "northern europe",
+        "eastern europe",
+        "western europe",
+        "southern europe",
+        "western asia",
+        "subsaharan africa",
+        "latin america and the caribbean",
+        "",
+        "latin america and the caribbean"
+      ],
+      "value_statics": "Total count 241 - Distinct count 18 - Null count 0"
+    },
+    "intermediate_region": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "middle africa",
+        "caribbean",
+        "",
+        "caribbean"
+      ],
+      "value_statics": "Total count 241 - Distinct count 9 - Null count 0"
+    },
+    "created_on": {
+      "type": "TEXT",
+      "unique_values": [
+        "2024-07-18",
+        "2024-07-18",
+        "2024-07-18",
+        "2024-07-18",
+        "2024-07-18",
+        "2024-07-18",
+        "2024-07-18",
+        "2024-07-18",
+        "2024-07-18",
+        "2024-07-18"
+      ],
+      "value_statics": "Total count 241 - Distinct count 1 - Null count 0"
+    }
+  },
+  "CITIES_CURRENCIES": {
+    "currency_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 254 - Distinct count 254 - Null count 0"
+    },
+    "country_code_2": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 254 - Distinct count 233 - Null count 0"
+    },
+    "currency_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 254 - Distinct count 165 - Null count 0"
+    },
+    "currency_code": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 254 - Distinct count 167 - Null count 0"
+    }
+  },
+  "CITIES_LANGUAGES": {
+    "language_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 608 - Distinct count 608 - Null count 0"
+    },
+    "language": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 608 - Distinct count 229 - Null count 0"
+    },
+    "country_code_2": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 608 - Distinct count 237 - Null count 0"
+    }
+  },
+  "JOB_COMPANY": {
+    "company_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 14003 - Distinct count 14003 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 14003 - Distinct count 14003 - Null count 0"
+    },
+    "link": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 14003 - Distinct count 5009 - Null count 0"
+    },
+    "link_google": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 14003 - Distinct count 13999 - Null count 0"
+    },
+    "thumbnail": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 14003 - Distinct count 6033 - Null count 0"
+    }
+  },
+  "JOB_POSTINGS_FACT": {
+    "job_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 78769 - Distinct count 78769 - Null count 0"
+    },
+    "company_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 78769 - Distinct count 34870 - Null count 0"
+    },
+    "job_title_short": {
+      "type": "TEXT",
+      "unique_values": [
+        "Data Analyst",
+        "Software Engineer",
+        "Cloud Engineer",
+        "Data Scientist",
+        "Senior Data Engineer",
+        "Data Analyst",
+        "Business Analyst",
+        "Data Analyst",
+        "Senior Data Engineer",
+        "Senior Data Engineer"
+      ],
+      "value_statics": "Total count 78769 - Distinct count 10 - Null count 0"
+    },
+    "job_title": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 78769 - Distinct count 37667 - Null count 0"
+    },
+    "job_location": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 78769 - Distinct count 6062 - Null count 0"
+    },
+    "job_via": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 78769 - Distinct count 2411 - Null count 0"
+    },
+    "job_schedule_type": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 78769 - Distinct count 34 - Null count 0"
+    },
+    "job_work_from_home": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 78769 - Distinct count 2 - Null count 0"
+    },
+    "search_location": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 78769 - Distinct count 159 - Null count 0"
+    },
+    "job_posted_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 78769 - Distinct count 75984 - Null count 0"
+    },
+    "job_no_degree_mention": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "value_statics": "Total count 78769 - Distinct count 2 - Null count 0"
+    },
+    "job_health_insurance": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 78769 - Distinct count 2 - Null count 0"
+    },
+    "job_country": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 78769 - Distinct count 151 - Null count 0"
+    },
+    "salary_rate": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 78769 - Distinct count 6 - Null count 0"
+    },
+    "salary_year_avg": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 78769 - Distinct count 618 - Null count 76595"
+    },
+    "salary_hour_avg": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 78769 - Distinct count 334 - Null count 77679"
+    }
+  },
+  "LEGISLATION_DATE_DIM": {
+    "date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 30315 - Distinct count 30315 - Null count 0"
+    },
+    "month_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "November",
+        "December",
+        "June",
+        "April",
+        "December",
+        "February",
+        "December",
+        "October",
+        "May",
+        "December"
+      ],
+      "value_statics": "Total count 30315 - Distinct count 12 - Null count 0"
+    },
+    "day_of_month": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 30315 - Distinct count 31 - Null count 0"
+    }
+  },
+  "LEGISLATORS": {
+    "full_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 12310 - Null count 0"
+    },
+    "first_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 1684 - Null count 0"
+    },
+    "last_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 5724 - Null count 0"
+    },
+    "middle_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 2915 - Null count 0"
+    },
+    "nickname": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 132 - Null count 0"
+    },
+    "suffix": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 12518 - Distinct count 6 - Null count 0"
+    },
+    "other_names_end": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 12518 - Distinct count 5 - Null count 0"
+    },
+    "other_names_middle": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 12518 - Distinct count 1 - Null count 0"
+    },
+    "other_names_last": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 12518 - Distinct count 6 - Null count 0"
+    },
+    "birthday": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 11039 - Null count 0"
+    },
+    "gender": {
+      "type": "TEXT",
+      "unique_values": [
+        "M",
+        "M",
+        "M",
+        "M",
+        "M",
+        "M",
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "value_statics": "Total count 12518 - Distinct count 2 - Null count 0"
+    },
+    "id_bioguide": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 12518 - Null count 0"
+    },
+    "id_bioguide_previous_0": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 12518 - Distinct count 4 - Null count 0"
+    },
+    "id_govtrack": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 12518 - Null count 0"
+    },
+    "id_icpsr": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 12298 - Null count 220"
+    },
+    "id_wikipedia": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 12517 - Null count 0"
+    },
+    "id_wikidata": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 12517 - Null count 0"
+    },
+    "id_google_entity_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 12450 - Null count 0"
+    },
+    "id_house_history": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 11026 - Null count 1492"
+    },
+    "id_house_history_alternate": {
+      "type": "FLOAT",
+      "unique_values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "value_statics": "Total count 12518 - Distinct count 1 - Null count 12517"
+    },
+    "id_thomas": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 2181 - Null count 10337"
+    },
+    "id_cspan": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 854 - Null count 11664"
+    },
+    "id_votesmart": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 1081 - Null count 11437"
+    },
+    "id_lis": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 293 - Null count 0"
+    },
+    "id_ballotpedia": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 521 - Null count 0"
+    },
+    "id_opensecrets": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 1210 - Null count 0"
+    },
+    "id_fec_0": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 1084 - Null count 0"
+    },
+    "id_fec_1": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12518 - Distinct count 111 - Null count 0"
+    },
+    "id_fec_2": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 12518 - Distinct count 7 - Null count 0"
+    }
+  },
+  "LEGISLATORS_TERMS": {
+    "id_bioguide": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 12518 - Null count 0"
+    },
+    "term_number": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 30 - Null count 0"
+    },
+    "term_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 44063 - Null count 0"
+    },
+    "term_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "rep",
+        "rep",
+        "rep",
+        "rep",
+        "rep",
+        "rep",
+        "rep",
+        "rep",
+        "rep",
+        "rep"
+      ],
+      "value_statics": "Total count 44063 - Distinct count 2 - Null count 0"
+    },
+    "term_start": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 721 - Null count 0"
+    },
+    "term_end": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 632 - Null count 0"
+    },
+    "state": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 59 - Null count 0"
+    },
+    "district": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 55 - Null count 3873"
+    },
+    "class": {
+      "type": "FLOAT",
+      "unique_values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "value_statics": "Total count 44063 - Distinct count 3 - Null count 40190"
+    },
+    "party": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 68 - Null count 0"
+    },
+    "how": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 44063 - Distinct count 2 - Null count 0"
+    },
+    "url": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 2082 - Null count 0"
+    },
+    "address": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 1808 - Null count 0"
+    },
+    "phone": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 555 - Null count 0"
+    },
+    "fax": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 576 - Null count 0"
+    },
+    "contact_form": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 954 - Null count 0"
+    },
+    "office": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 602 - Null count 0"
+    },
+    "state_rank": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 44063 - Distinct count 3 - Null count 0"
+    },
+    "rss_url": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 44063 - Distinct count 512 - Null count 0"
+    },
+    "caucus": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 44063 - Distinct count 2 - Null count 0"
+    }
+  },
+  "SKILLS_DIM": {
+    "skill_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 26 - Distinct count 26 - Null count 0"
+    },
+    "skills": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 26 - Distinct count 26 - Null count 0"
+    },
+    "type": {
+      "type": "TEXT",
+      "unique_values": [
+        "analyst_tools",
+        "analyst_tools",
+        "webframeworks",
+        "programming",
+        "sync",
+        "cloud",
+        "async",
+        "analyst_tools",
+        "cloud",
+        "webframeworks"
+      ],
+      "value_statics": "Total count 26 - Distinct count 7 - Null count 0"
+    }
+  },
+  "SKILLS_JOB_DIM": {
+    "job_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 366960 - Distinct count 266553 - Null count 0"
+    },
+    "skill_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 366960 - Distinct count 244 - Null count 0"
+    }
+  }
+}

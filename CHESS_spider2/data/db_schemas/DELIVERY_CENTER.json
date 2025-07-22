@@ -1,0 +1,75 @@
+{
+  "CHANNELS": [
+    "channel_id",
+    "channel_name",
+    "channel_type"
+  ],
+  "DELIVERIES": [
+    "delivery_id",
+    "delivery_order_id",
+    "driver_id",
+    "delivery_distance_meters",
+    "delivery_status"
+  ],
+  "DRIVERS": [
+    "driver_id",
+    "driver_modal",
+    "driver_type"
+  ],
+  "HUBS": [
+    "hub_id",
+    "hub_name",
+    "hub_city",
+    "hub_state",
+    "hub_latitude",
+    "hub_longitude"
+  ],
+  "ORDERS": [
+    "order_id",
+    "store_id",
+    "channel_id",
+    "payment_order_id",
+    "delivery_order_id",
+    "order_status",
+    "order_amount",
+    "order_delivery_fee",
+    "order_delivery_cost",
+    "order_created_hour",
+    "order_created_minute",
+    "order_created_day",
+    "order_created_month",
+    "order_created_year",
+    "order_moment_created",
+    "order_moment_accepted",
+    "order_moment_ready",
+    "order_moment_collected",
+    "order_moment_in_expedition",
+    "order_moment_delivering",
+    "order_moment_delivered",
+    "order_moment_finished",
+    "order_metric_collected_time",
+    "order_metric_paused_time",
+    "order_metric_production_time",
+    "order_metric_walking_time",
+    "order_metric_expediton_speed_time",
+    "order_metric_transit_time",
+    "order_metric_cycle_time"
+  ],
+  "PAYMENTS": [
+    "payment_id",
+    "payment_order_id",
+    "payment_amount",
+    "payment_fee",
+    "payment_method",
+    "payment_status"
+  ],
+  "STORES": [
+    "store_id",
+    "hub_id",
+    "store_name",
+    "store_segment",
+    "store_plan_price",
+    "store_latitude",
+    "store_longitude"
+  ]
+}

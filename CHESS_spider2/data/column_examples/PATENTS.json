@@ -1,0 +1,320 @@
+{
+  "CPC_DEFINITION": {
+    "status": [
+      "published",
+      "frozen"
+    ],
+    "limitingReferences": [
+      "[]",
+      "[\n  {\n    \"description\": \"Separation of grains or seeds from plants in the place where they grow\",\n    \"target\": [\n      \"A01D\"\n    ]\n  },\n  {\n    \"description\": \"Combines\",\n    \"target\": [\n      \"A01D41/00\",\n      \"A01D45/00\",\n      \"A01D57/00\",\n      \"A01D61/00\",\n      \"A01D61/002\",\n      \"A01D61/004\",\n      \"A01D61/006\",\n      \"A01D61/008\",\n      \"A01D61/02\",\n      \"A01D61/04\",\n      \"A01D63/00\",\n      \"A01D63/02\",\n      \"A01D63/04\",\n      \"A01D65/00\",\n      \"A01D65/02\",\n      \"A01D65/04\",\n      \"A01D65/06\",\n      \"A01D65/08\",\n      \"A01D67/00\",\n      \"A01D67/005\",\n      \"A01D67/02\",\n      \"A01D67/04\",\n      \"A01D69/00\",\n      \"A01D69/002\",\n      \"A01D69/005\",\n      \"A01D69/007\",\n      \"A01D69/02\",\n      \"A01D69/025\",\n      \"A01D69/03\",\n      \"A01D69/06\",\n      \"A01D69/08\",\n      \"A01D69/10\",\n      \"A01D69/12\",\n      \"A01D75/00\"\n    ]\n  },\n  {\n    \"description\": \"Combines with thresh before the stalk is cut, Harvesting of standing crops, Picking of fruits\",\n    \"target\": [\n      \"A01D41/08\",\n      \"A01D45/00\",\n      \"A01D46/00\"\n    ]\n  },\n  {\n    \"description\": \"Field threshers with windrow pick-up apparatus\",\n    \"target\": [\n      \"A01D41/10\"\n    ]\n  },\n  {\n    \"description\": \"Pick-ups for harvested crop\",\n    \"target\": [\n      \"A01D89/00\"\n    ]\n  },\n  {\n    \"description\": \"Coring or stoning of fruit\",\n    \"target\": [\n      \"A23N3/00\",\n      \"A23N4/00\",\n      \"A47J23/00\",\n      \"A47J25/00\"\n    ]\n  },\n  {\n    \"description\": \"Removing seed-containing sections from fruit\",\n    \"target\": [\n      \"A23N4/00\",\n      \"A23N7/08\"\n    ]\n  },\n  {\n    \"description\": \"Hulling, husking or cracking of nuts\",\n    \"target\": [\n      \"A23N5/00\",\n      \"A47J43/26\"\n    ]\n  },\n  {\n    \"description\": \"Arrangements for making or setting stacks\",\n    \"target\": [\n      \"A01D85/00\"\n    ]\n  },\n  {\n    \"description\": \"Pick-ups for harvested crop\",\n    \"target\": [\n      \"A01D89/00\"\n    ]\n  },\n  {\n    \"description\": \"Arrangements for making or setting stacks in connection with harvesting\",\n    \"target\": [\n      \"A01D85/00\"\n    ]\n  },\n  {\n    \"description\": \"Cutting or disintegrating in combination with mowing\",\n    \"target\": [\n      \"A01D43/08\"\n    ]\n  },\n  {\n    \"description\": \"Pick-ups for harvested crop\",\n    \"target\": [\n      \"A01D89/00\"\n    ]\n  },\n  {\n    \"description\": \"Shredding tea leaves\",\n    \"target\": [\n      \"A23F3/12\"\n    ]\n  },\n  {\n    \"description\": \"Fodder mashers for preparing animal feeding-stuff\",\n    \"target\": [\n      \"A23N17/02\"\n    ]\n  },\n  {\n    \"description\": \"Cutting tobacco\",\n    \"target\": [\n      \"A24B7/00\"\n    ]\n  },\n  {\n    \"description\": \"Spice mills\",\n    \"target\": [\n      \"A47J42/00\"\n    ]\n  },\n  {\n    \"description\": \"Arrangements for making or setting stacks, used in connection with harvesting\",\n    \"target\": [\n      \"A01D85/00\"\n    ]\n  },\n  {\n    \"description\": \"Devices for preserving flowers\",\n    \"target\": [\n      \"A01G5/06\"\n    ]\n  },\n  {\n    \"description\": \"Arrangements in barns for treatment of tobacco\",\n    \"target\": [\n      \"A24B1/02\"\n    ]\n  },\n  {\n    \"description\": \"Suspending devices for tobacco leaves\",\n    \"target\": [\n      \"A24B1/08\"\n    ]\n  },\n  {\n    \"description\": \"Cabinets for perishable goods\",\n    \"target\": [\n      \"A47B71/00\"\n    ]\n  },\n  {\n    \"description\": \"Fruit or potato storage cabinets, racks or tray for domestic use\",\n    \"target\": [\n      \"A47B75/00\"\n    ]\n  },\n  {\n    \"description\": \"Closed containers for foodstuffs\",\n    \"target\": [\n      \"A47J47/02\"\n    ]\n  },\n  {\n    \"description\": \"Drying or storing hops\",\n    \"target\": [\n      \"C12C3/02\",\n      \"C12C3/04\"\n    ]\n  },\n  {\n    \"description\": \"Civil engineering aspects of bulk storage containers, e.g. silos\",\n    \"target\": [\n      \"E04H7/00\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"Tools or instruments for operating on the mouth portion of a human being (e.g. tooth saws)\",\n    \"target\": [\n      \"A61C3/00\"\n    ]\n  },\n  {\n    \"description\": \"Saliva removers combined with instruments for opening or keeping open the mouth (e.g. mouth props, tongue guards, tongue depressors, cheek spreaders)\",\n    \"target\": [\n      \"A61C17/00\"\n    ]\n  },\n  {\n    \"description\": \"Medical instruments, implements, tools, or methods specially adapted so as to limit their usefulness to only animals\",\n    \"target\": [\n      \"A61D\"\n    ]\n  },\n  {\n    \"description\": \"Methods or devices for treatment of eyes, putting in contact lenses, or correcting squinting\",\n    \"target\": [\n      \"A61F9/00\"\n    ]\n  },\n  {\n    \"description\": \"Eye surgery\",\n    \"target\": [\n      \"A61F9/007\"\n    ]\n  },\n  {\n    \"description\": \"Ear surgery\",\n    \"target\": [\n      \"A61F11/20\"\n    ]\n  },\n  {\n    \"description\": \"Physical therapy apparatus that includes diagnostic feedback means for influencing operation\",\n    \"target\": [\n      \"A61H\"\n    ]\n  },\n  {\n    \"description\": \"Syringes and suction, pumping or atomising devices for medical use (e.g. cups, breast relievers, irrigators, sprays, powder insufflators, atomisers, inhalers), apparatus for general or local anesthetics, devices or methods for causing a change in the state of consciousness, catheters, dilators, and apparatus for introducing medicines into the body other than orally\",\n    \"target\": [\n      \"A61M\"\n    ]\n  },\n  {\n    \"description\": \"Non-surgical treatment of medical conditions or physical injuries by utilisation of forms of energy not directly generated by mechanical apparatus, devices, or means that includes diagnostic feedback means for influencing its operation\",\n    \"target\": [\n      \"A61N\"\n    ]\n  },\n  {\n    \"description\": \"Protective devices for clinical contact thermometers\",\n    \"target\": [\n      \"G01K13/20\"\n    ]\n  },\n  {\n    \"description\": \"Recognizing, identifying, or verifying the identity of human beings by analyzing their voice or speech\",\n    \"target\": [\n      \"G10L17/00\"\n    ]\n  }\n]"
+    ],
+    "precedenceLimitingReferences": [
+      "[]",
+      "[\n  {\n    \"description\": \"takes precedence\",\n    \"target\": [\n      \"E04F11/00\"\n    ]\n  },\n  {\n    \"description\": \"takes precedence\",\n    \"target\": [\n      \"E04F11/00\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"takes precedence\",\n    \"target\": [\n      \"A01B39/00\"\n    ]\n  }\n]"
+    ],
+    "glossary": [
+      "[]",
+      "[\n  {\n    \"description\": \"Diagonally\",\n    \"target\": [\n      \"left arm with right leg\"\n    ]\n  },\n  {\n    \"description\": \"Anti-phase\",\n    \"target\": [\n      \"when the right leg moves forward, the left legs moves rearward\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"Abacus\",\n    \"target\": [\n      \"is a particular bead frame with the aim of (score) count ing, calculating.Not to mix up with \\\"abac\\\": the abacs (french \\\"abaques\\\" or \\\"abaques de calcul\\\") are classified in Indexing Code A63F2011/0067 \\\"score or tally sheet\\\".\"\n    ]\n  }\n]"
+    ],
+    "applicationReferences": [
+      "[]",
+      "[\n  {\n    \"description\": \"Backrest for disabled persons chairs\",\n    \"target\": [\n      \"A61G5/122\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"Delivery devices for annuloplasty implants or for inserts in the coronary sinus for correcting the valve shape or for implants for improving the function of a native heart valve\",\n    \"target\": [\n      \"A61F2/2466\"\n    ]\n  }\n]"
+    ],
+    "notAllocatable": [
+      "True",
+      "False"
+    ],
+    "titleFull": [
+      "BAKING; EDIBLE DOUGHS",
+      "NATURAL OR MAN-MADE THREADS OR FIBRES; SPINNING",
+      "DRYING"
+    ],
+    "rules": [
+      "[]",
+      "[\n  {\n    \"description\": \"For fastening glove in cuff area (but not to another garment), classify only in A41F1/06.\",\n    \"target\": [\n      \"A41F1/06\"\n    ]\n  },\n  {\n    \"description\": \"For fastening glove in other area, classify only in A41F1/06.\",\n    \"target\": [\n      \"A41F1/06\"\n    ]\n  },\n  {\n    \"description\": \"For fastening glove to another garment classify in A41D19/0041 or A41D19/0089.\",\n    \"target\": [\n      \"A41D19/0041\",\n      \"A41D19/0089\"\n    ]\n  },\n  {\n    \"description\": \"For sealing attachments of glove and sleeve from protective garment classify in A41D13/0005.\",\n    \"target\": [\n      \"A41D13/0005\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"When stitch and weld combined it should be classed in A41D27/24 and A41D27/245.\",\n    \"target\": [\n      \"A41D27/24\",\n      \"A41D27/245\"\n    ]\n  },\n  {\n    \"description\": \"For methods of joining or sewing machines with adhesive without thread, always consult/forward to B29C65/00.\",\n    \"target\": [\n      \"B29C65/00\"\n    ]\n  },\n  {\n    \"description\": \"For seams of gloves, where the seam is not relevant, class in A41D2300/50 or A41D2300/52.\",\n    \"target\": [\n      \"A41D2300/50\",\n      \"A41D2300/52\"\n    ]\n  },\n  {\n    \"description\": \"For seams in general, class in A41D27/24 or A41D27/245.\",\n    \"target\": [\n      \"A41D27/24\",\n      \"A41D27/245\"\n    ]\n  }\n]"
+    ],
+    "dateRevised": [
+      20130101.0,
+      20220201.0,
+      20161101.0
+    ],
+    "informativeReferences": [
+      "[]",
+      "[\n  {\n    \"description\": \"Masks/eye protectors for welders\",\n    \"target\": [\n      \"A61F9/06\"\n    ]\n  },\n  {\n    \"description\": \"Welding protection for head\",\n    \"target\": [\n      \"B23K9/322\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"Vibration electric or magnetic driving means\",\n    \"target\": [\n      \"A61H23/02\"\n    ]\n  }\n]"
+    ],
+    "symbol": [
+      "A63",
+      "B81",
+      "C05"
+    ],
+    "childGroups": [
+      "[]",
+      "[\n  {\n    \"description\": \"\",\n    \"symbols\": [\n      \"H01\",\n      \"H02\",\n      \"H03\",\n      \"H04\",\n      \"H05\",\n      \"H10\",\n      \"H99\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"\",\n    \"symbols\": [\n      \"A62C2/00\",\n      \"A62C3/00\",\n      \"A62C4/00\",\n      \"A62C5/00\"\n    ]\n  },\n  {\n    \"description\": \"Hand fire-extinguishers\",\n    \"symbols\": [\n      \"A62C8/00\",\n      \"A62C11/00\",\n      \"A62C13/00\",\n      \"A62C15/00\",\n      \"A62C17/00\",\n      \"A62C19/00\",\n      \"A62C25/00\"\n    ]\n  },\n  {\n    \"description\": \"Fire-fighting vehicles\",\n    \"symbols\": [\n      \"A62C27/00\",\n      \"A62C29/00\",\n      \"A62C31/00\",\n      \"A62C33/00\"\n    ]\n  },\n  {\n    \"description\": \"Permanently-installed equipment\",\n    \"symbols\": [\n      \"A62C35/00\",\n      \"A62C37/00\"\n    ]\n  },\n  {\n    \"description\": \"\",\n    \"symbols\": [\n      \"A62C99/00\"\n    ]\n  }\n]"
+    ],
+    "scopeLimitingReferences": [
+      "[]",
+      "[\n  {\n    \"description\": \"mincing machines\",\n    \"target\": [\n      \"B02C18/30\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"chemical aspects\",\n    \"target\": [\n      \"A22C13/0016\"\n    ]\n  }\n]"
+    ],
+    "level": [
+      "11.0",
+      "12.0",
+      "13.0",
+      "14.0",
+      "15.0"
+    ],
+    "synonyms": [
+      "[]",
+      "[\n  {\n    \"description\": \"English\",\n    \"target\": [\n      \"Hood-type dishwasher\"\n    ]\n  },\n  {\n    \"description\": \"German\",\n    \"target\": [\n      \"Haubengeschirrsp\u00fclmaschine\"\n    ]\n  },\n  {\n    \"description\": \"French\",\n    \"target\": [\n      \"Lave-vaisselle type capot\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"\\\"sheath\\\"\",\n    \"target\": [\n      \"\\\"oversleeve\\\"\"\n    ]\n  }\n]"
+    ],
+    "titlePart": [],
+    "definition": [
+      "[]",
+      "[\n  \"Lures comprising a body with plural flexible elements or appendages attached intermediate its ends.\",\n  \"Illustrative example of subject matter classified in this group.\",\n  \"Fishing lure 1 comprises a body 2 with plural flexible side attached appendages 3 attached intermediate the ends of the fishing lure 1.\"\n]",
+      "[\n  \"Lures comprising a body having one or more elongated members of flexible material at or near its rear end to be trailed rearwardly in its passage through the water.\",\n  \"Illustrative example of subject matter classified in this group.\",\n  \"Fishing lure 1 comprises a body 2 with elongated members 3 of flexible material at its rear end to be trailed rearwardly in its passage through the water.\"\n]"
+    ],
+    "children": [
+      "[]",
+      "[\n  \"A01K2267/0356\",\n  \"A01K2267/0362\",\n  \"A01K2267/0368\",\n  \"A01K2267/0375\",\n  \"A01K2267/0381\",\n  \"A01K2267/0387\"\n]",
+      "[\n  \"A01K2267/0312\",\n  \"A01K2267/0318\",\n  \"A01K2267/0325\"\n]"
+    ],
+    "residualReferences": [],
+    "parents": [
+      "[]",
+      "[\n  \"A\"\n]",
+      "[\n  \"B\"\n]"
+    ],
+    "breakdownCode": [
+      "True",
+      "False"
+    ],
+    "ipcConcordant": [
+      "CPCONLY",
+      "A01K85/00",
+      "A22C13/00"
+    ]
+  },
+  "DISCLOSURES_13": {
+    "serial_cleaned": [
+      "",
+      "US09/906,531",
+      "US60/052,126"
+    ],
+    "blanket_type": [
+      "0",
+      "2",
+      "3",
+      "1"
+    ],
+    "sc_name": [
+      "",
+      "Broadband Remote Access Server (BRAS) Requirements Document",
+      "Migration to Ethernet-Based Broadband Aggregation"
+    ],
+    "sso": [
+      "ANSI",
+      "ATIS",
+      "BBF",
+      "CEN",
+      "CENELEC"
+    ],
+    "disclosure_event": [
+      "DE0001",
+      "DE0002",
+      "DE0003"
+    ],
+    "reciprocity": [
+      "0",
+      "1",
+      ""
+    ],
+    "patent_owner_harmonized": [
+      "3M",
+      "Addison Fischer",
+      "Agilent Technologies"
+    ],
+    "pub_cleaned": [
+      "US3692255",
+      "US3861619",
+      "US4868877"
+    ],
+    "record_id": [
+      "REC00002",
+      "REC00001",
+      "REC00004"
+    ],
+    "family_id": [
+      "22549751",
+      "23170520",
+      "22555559"
+    ],
+    "third_party": [
+      "0",
+      "1"
+    ],
+    "wg_name": [
+      "",
+      "Domestic washing and drying",
+      "Identification"
+    ],
+    "blanket_scope": [
+      "",
+      "X3.250 INCITS 250;NCITS",
+      "INCITS 452"
+    ],
+    "patent_owner_unharmonized": [
+      "3M",
+      "Addison Fischer",
+      "Agilent Technologies"
+    ],
+    "date": [
+      19751124,
+      19751229,
+      19890711
+    ],
+    "tc_name": [
+      "",
+      "End to End Architecture",
+      "Industrial-process measurement"
+    ],
+    "copyright": [
+      "",
+      "1"
+    ],
+    "standard": [
+      "X3.55;X3.56",
+      "X3.55;X3.56;X3.72;X3.116;X3.127;X3.136",
+      "INCITS 414; INCITS 433; INCITS 432; INCITS 424; INCITS 427"
+    ],
+    "licensing_commitment": [
+      "FRAND",
+      "None",
+      "Specific Terms",
+      "FREE",
+      "NO LIC"
+    ],
+    "committee_project": [
+      "",
+      "IEEE",
+      "INCITS"
+    ]
+  },
+  "PUBLICATIONS": {
+    "examiner": [],
+    "entity_status": [
+      "small",
+      "micro",
+      "",
+      "large"
+    ],
+    "filing_date": [
+      19771012,
+      19830111,
+      19070906
+    ],
+    "fterm": [],
+    "abstract_localized": [],
+    "assignee": [],
+    "description_localized": [],
+    "application_number_formatted": [
+      "DE201410102787",
+      "DE200710028125",
+      "US13189966"
+    ],
+    "citation": [],
+    "fi": [],
+    "application_number": [
+      "DE-102015001039-A",
+      "US-201514678620-A",
+      "IT-202200013315-A"
+    ],
+    "grant_date": [
+      19680809,
+      20050531,
+      0
+    ],
+    "inventor_harmonized": [],
+    "inventor": [],
+    "cpc": [
+      "[]",
+      "[\n  {\n    \"code\": \"F21Y2115/10\",\n    \"first\": false,\n    \"inventive\": false,\n    \"tree\": []\n  },\n  {\n    \"code\": \"F21W2111/06\",\n    \"first\": false,\n    \"inventive\": false,\n    \"tree\": []\n  },\n  {\n    \"code\": \"F21V5/008\",\n    \"first\": false,\n    \"inventive\": true,\n    \"tree\": []\n  },\n  {\n    \"code\": \"B64F1/20\",\n    \"first\": true,\n    \"inventive\": true,\n    \"tree\": []\n  },\n  {\n    \"code\": \"F21Y2101/00\",\n    \"first\": false,\n    \"inventive\": false,\n    \"tree\": []\n  },\n  {\n    \"code\": \"F21V13/04\",\n    \"first\": false,\n    \"inventive\": false,\n    \"tree\": []\n  },\n  {\n    \"code\": \"F21Y2113/13\",\n    \"first\": false,\n    \"inventive\": false,\n    \"tree\": []\n  },\n  {\n    \"code\": \"F21V5/048\",\n    \"first\": false,\n    \"inventive\": true,\n    \"tree\": []\n  },\n  {\n    \"code\": \"F21V5/008\",\n    \"first\": false,\n    \"inventive\": true,\n    \"tree\": []\n  },\n  {\n    \"code\": \"B64F1/20\",\n    \"first\": true,\n    \"inventive\": true,\n    \"tree\": []\n  },\n  {\n    \"code\": \"F21V5/048\",\n    \"first\": false,\n    \"inventive\": true,\n    \"tree\": []\n  }\n]",
+      "[\n  {\n    \"code\": \"C12P7/40\",\n    \"first\": false,\n    \"inventive\": true,\n    \"tree\": []\n  },\n  {\n    \"code\": \"C12P7/46\",\n    \"first\": true,\n    \"inventive\": true,\n    \"tree\": []\n  },\n  {\n    \"code\": \"C12P7/46\",\n    \"first\": true,\n    \"inventive\": true,\n    \"tree\": []\n  },\n  {\n    \"code\": \"Y10S435/939\",\n    \"first\": false,\n    \"inventive\": false,\n    \"tree\": []\n  },\n  {\n    \"code\": \"Y10S435/939\",\n    \"first\": false,\n    \"inventive\": false,\n    \"tree\": []\n  },\n  {\n    \"code\": \"C12P7/40\",\n    \"first\": false,\n    \"inventive\": true,\n    \"tree\": []\n  }\n]"
+    ],
+    "locarno": [],
+    "claims_localized_html": [],
+    "description_localized_html": [],
+    "publication_date": [
+      20210518,
+      20211123,
+      20211001
+    ],
+    "claims_localized": [],
+    "priority_date": [
+      20100622,
+      20070816,
+      20180523
+    ],
+    "application_kind": [
+      "P",
+      "B",
+      "U",
+      "A",
+      "T"
+    ],
+    "title_localized": [],
+    "kind_code": [
+      "A1",
+      "Y",
+      "A0"
+    ],
+    "priority_claim": [],
+    "assignee_harmonized": [],
+    "spif_publication_number": [
+      "US20110220191A1",
+      "US20110266991A1",
+      "US20170037414A1"
+    ],
+    "art_unit": [
+      "",
+      "156",
+      "135"
+    ],
+    "child": [],
+    "uspc": [],
+    "spif_application_number": [
+      "US200913063018",
+      "US201514730089",
+      "US201514715284"
+    ],
+    "ipc": [],
+    "family_id": [
+      "79871359",
+      "78458785",
+      "78620539"
+    ],
+    "pct_number": [
+      "PCT/KR2012/011739",
+      "PCT/US2014/053958",
+      "PCT/US2009/055143"
+    ],
+    "publication_number": [
+      "CN-2663992-Y",
+      "IT-MO20020053-A0",
+      "AU-PP310698-A0"
+    ],
+    "country_code": [
+      "GR",
+      "RO",
+      "CN"
+    ],
+    "parent": []
+  }
+}

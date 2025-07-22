@@ -1,0 +1,472 @@
+{
+  "ALBUM": {
+    "AlbumId": [
+      281,
+      149,
+      211,
+      4,
+      185
+    ],
+    "Title": [
+      "Sir Neville Marriner: A Celebration",
+      "Garage Inc. (Disc 2)",
+      "The Singles",
+      "Let There Be Rock",
+      "Greatest Hits I"
+    ],
+    "ArtistId": [
+      215,
+      50,
+      138,
+      1,
+      51
+    ]
+  },
+  "ARTIST": {
+    "ArtistId": [
+      272,
+      2,
+      219,
+      262,
+      110
+    ],
+    "Name": [
+      "Emerson String Quartet",
+      "Accept",
+      "Britten Sinfonia, Ivor Bolton & Lesley Garrett",
+      "Charles Dutoit & L'Orchestre Symphonique de Montr\u00e9al",
+      "Nirvana"
+    ]
+  },
+  "CUSTOMER": {
+    "CustomerId": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "FirstName": [
+      "Lu\u00eds",
+      "Leonie",
+      "Fran\u00e7ois",
+      "Bj\u00f8rn",
+      "Franti\u0161ek"
+    ],
+    "LastName": [
+      "Gon\u00e7alves",
+      "K\u00f6hler",
+      "Tremblay",
+      "Hansen",
+      "Wichterlov\u00e1"
+    ],
+    "Company": [
+      "Embraer - Empresa Brasileira de Aeron\u00e1utica S.A.",
+      "",
+      "",
+      "",
+      "JetBrains s.r.o."
+    ],
+    "Address": [
+      "Av. Brigadeiro Faria Lima, 2170",
+      "Theodor-Heuss-Stra\u00dfe 34",
+      "1498 rue B\u00e9langer",
+      "Ullev\u00e5lsveien 14",
+      "Klanova 9/506"
+    ],
+    "City": [
+      "S\u00e3o Jos\u00e9 dos Campos",
+      "Stuttgart",
+      "Montr\u00e9al",
+      "Oslo",
+      "Prague"
+    ],
+    "State": [
+      "SP",
+      "",
+      "QC",
+      "",
+      ""
+    ],
+    "Country": [
+      "Brazil",
+      "Germany",
+      "Canada",
+      "Norway",
+      "Czech Republic"
+    ],
+    "PostalCode": [
+      "12227-000",
+      "70174",
+      "H2G 1A7",
+      "0171",
+      "14700"
+    ],
+    "Phone": [
+      "+55 (12) 3923-5555",
+      "+49 0711 2842222",
+      "+1 (514) 721-4711",
+      "+47 22 44 22 22",
+      "+420 2 4172 5555"
+    ],
+    "Fax": [
+      "+55 (12) 3923-5566",
+      "",
+      "",
+      "",
+      "+420 2 4172 5555"
+    ],
+    "Email": [
+      "luisg@embraer.com.br",
+      "leonekohler@surfeu.de",
+      "ftremblay@gmail.com",
+      "bjorn.hansen@yahoo.no",
+      "frantisekw@jetbrains.com"
+    ],
+    "SupportRepId": [
+      3,
+      5,
+      3,
+      4,
+      4
+    ]
+  },
+  "EMPLOYEE": {
+    "EmployeeId": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "LastName": [
+      "Adams",
+      "Edwards",
+      "Peacock",
+      "Park",
+      "Johnson"
+    ],
+    "FirstName": [
+      "Andrew",
+      "Nancy",
+      "Jane",
+      "Margaret",
+      "Steve"
+    ],
+    "Title": [
+      "General Manager",
+      "Sales Manager",
+      "Sales Support Agent",
+      "Sales Support Agent",
+      "Sales Support Agent"
+    ],
+    "ReportsTo": [
+      null,
+      1.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "BirthDate": [
+      "1962-02-18 00:00:00",
+      "1958-12-08 00:00:00",
+      "1973-08-29 00:00:00",
+      "1947-09-19 00:00:00",
+      "1965-03-03 00:00:00"
+    ],
+    "HireDate": [
+      "2002-08-14 00:00:00",
+      "2002-05-01 00:00:00",
+      "2002-04-01 00:00:00",
+      "2003-05-03 00:00:00",
+      "2003-10-17 00:00:00"
+    ],
+    "Address": [
+      "11120 Jasper Ave NW",
+      "825 8 Ave SW",
+      "1111 6 Ave SW",
+      "683 10 Street SW",
+      "7727B 41 Ave"
+    ],
+    "City": [
+      "Edmonton",
+      "Calgary",
+      "Calgary",
+      "Calgary",
+      "Calgary"
+    ],
+    "State": [
+      "AB",
+      "AB",
+      "AB",
+      "AB",
+      "AB"
+    ],
+    "Country": [
+      "Canada",
+      "Canada",
+      "Canada",
+      "Canada",
+      "Canada"
+    ],
+    "PostalCode": [
+      "T5K 2N1",
+      "T2P 2T3",
+      "T2P 5M5",
+      "T2P 5G3",
+      "T3B 1Y7"
+    ],
+    "Phone": [
+      "+1 (780) 428-9482",
+      "+1 (403) 262-3443",
+      "+1 (403) 262-3443",
+      "+1 (403) 263-4423",
+      "1 (780) 836-9987"
+    ],
+    "Fax": [
+      "+1 (780) 428-3457",
+      "+1 (403) 262-3322",
+      "+1 (403) 262-6712",
+      "+1 (403) 263-4289",
+      "1 (780) 836-9543"
+    ],
+    "Email": [
+      "andrew@chinookcorp.com",
+      "nancy@chinookcorp.com",
+      "jane@chinookcorp.com",
+      "margaret@chinookcorp.com",
+      "steve@chinookcorp.com"
+    ]
+  },
+  "GENRE": {
+    "GenreId": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Name": [
+      "Rock",
+      "Jazz",
+      "Metal",
+      "Alternative & Punk",
+      "Rock And Roll"
+    ]
+  },
+  "INVOICE": {
+    "InvoiceId": [
+      1,
+      337,
+      221,
+      318,
+      288
+    ],
+    "CustomerId": [
+      2,
+      56,
+      12,
+      7,
+      26
+    ],
+    "InvoiceDate": [
+      "2009-01-01 00:00:00",
+      "2013-01-28 00:00:00",
+      "2011-08-25 00:00:00",
+      "2012-10-29 00:00:00",
+      "2012-06-25 00:00:00"
+    ],
+    "BillingAddress": [
+      "Theodor-Heuss-Stra\u00dfe 34",
+      "307 Macacha G\u00fcemes",
+      "Pra\u00e7a Pio X, 119",
+      "Rotenturmstra\u00dfe 4, 1010 Innere Stadt",
+      "2211 W Berry Street"
+    ],
+    "BillingCity": [
+      "Stuttgart",
+      "Buenos Aires",
+      "Rio de Janeiro",
+      "Vienne",
+      "Fort Worth"
+    ],
+    "BillingState": [
+      "",
+      "",
+      "RJ",
+      "",
+      "TX"
+    ],
+    "BillingCountry": [
+      "Germany",
+      "Argentina",
+      "Brazil",
+      "Austria",
+      "USA"
+    ],
+    "BillingPostalCode": [
+      "70174",
+      "1106",
+      "20040-020",
+      "1010",
+      "76110"
+    ],
+    "Total": [
+      1.98,
+      1.98,
+      8.91,
+      5.94,
+      1.98
+    ]
+  },
+  "INVOICELINE": {
+    "InvoiceLineId": [
+      929,
+      1128,
+      183,
+      214,
+      1082
+    ],
+    "InvoiceId": [
+      172,
+      208,
+      33,
+      40,
+      200
+    ],
+    "TrackId": [
+      2131,
+      3360,
+      1108,
+      1277,
+      3065
+    ],
+    "UnitPrice": [
+      0.99,
+      1.99,
+      0.99,
+      0.99,
+      0.99
+    ],
+    "Quantity": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "MEDIATYPE": {
+    "MediaTypeId": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Name": [
+      "MPEG audio file",
+      "Protected AAC audio file",
+      "Protected MPEG-4 video file",
+      "Purchased AAC audio file",
+      "AAC audio file"
+    ]
+  },
+  "PLAYLIST": {
+    "PlaylistId": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Name": [
+      "Music",
+      "Movies",
+      "TV Shows",
+      "Audiobooks",
+      "90\u2019s Music"
+    ]
+  },
+  "PLAYLISTTRACK": {
+    "PlaylistId": [
+      8,
+      1,
+      8,
+      5,
+      17
+    ],
+    "TrackId": [
+      434,
+      542,
+      1766,
+      1870,
+      1278
+    ]
+  },
+  "TRACK": {
+    "TrackId": [
+      2271,
+      2565,
+      254,
+      1972,
+      5
+    ],
+    "Name": [
+      "We Will Rock You",
+      "The Sun Road",
+      "O Encontro De Isaac Asimov Com Santos Dumont No C\u00e9u",
+      "Kickstart My Heart",
+      "Princess of the Dawn"
+    ],
+    "AlbumId": [
+      186,
+      208,
+      24,
+      162,
+      3
+    ],
+    "MediaTypeId": [
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "GenreId": [
+      1,
+      1,
+      7,
+      3,
+      1
+    ],
+    "Composer": [
+      "May",
+      "Terry Bozzio, Steve Stevens, Tony Levin",
+      "Chico Science",
+      "Nikki Sixx",
+      "Deaffy & R.A. Smith-Diesel"
+    ],
+    "Milliseconds": [
+      122671,
+      880640,
+      99108,
+      283559,
+      375418
+    ],
+    "Bytes": [
+      4026815,
+      29008407,
+      3240816,
+      9237736,
+      6290521
+    ],
+    "UnitPrice": [
+      0.99,
+      0.99,
+      0.99,
+      0.99,
+      0.99
+    ]
+  }
+}

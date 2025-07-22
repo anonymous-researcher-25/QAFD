@@ -1,0 +1,53 @@
+{
+  "AIRCRAFTS_DATA": [
+    "aircraft_code",
+    "model",
+    "range"
+  ],
+  "AIRPORTS_DATA": [
+    "airport_code",
+    "airport_name",
+    "city",
+    "coordinates",
+    "timezone"
+  ],
+  "BOARDING_PASSES": [
+    "ticket_no",
+    "flight_id",
+    "boarding_no",
+    "seat_no"
+  ],
+  "BOOKINGS": [
+    "book_ref",
+    "book_date",
+    "total_amount"
+  ],
+  "FLIGHTS": [
+    "flight_id",
+    "flight_no",
+    "scheduled_departure",
+    "scheduled_arrival",
+    "departure_airport",
+    "arrival_airport",
+    "status",
+    "aircraft_code",
+    "actual_departure",
+    "actual_arrival"
+  ],
+  "SEATS": [
+    "aircraft_code",
+    "seat_no",
+    "fare_conditions"
+  ],
+  "TICKETS": [
+    "ticket_no",
+    "book_ref",
+    "passenger_id"
+  ],
+  "TICKET_FLIGHTS": [
+    "ticket_no",
+    "flight_id",
+    "fare_conditions",
+    "amount"
+  ]
+}

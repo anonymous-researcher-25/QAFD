@@ -1,0 +1,136 @@
+{
+  "HARDWARE_DIM_CUSTOMER": [
+    "customer_code",
+    "customer",
+    "platform",
+    "channel",
+    "market",
+    "sub_zone",
+    "region"
+  ],
+  "HARDWARE_DIM_PRODUCT": [
+    "product_code",
+    "division",
+    "segment",
+    "category",
+    "product",
+    "variant"
+  ],
+  "HARDWARE_FACT_GROSS_PRICE": [
+    "product_code",
+    "fiscal_year",
+    "gross_price"
+  ],
+  "HARDWARE_FACT_MANUFACTURING_COST": [
+    "product_code",
+    "cost_year",
+    "manufacturing_cost"
+  ],
+  "HARDWARE_FACT_PRE_INVOICE_DEDUCTIONS": [
+    "customer_code",
+    "fiscal_year",
+    "pre_invoice_discount_pct"
+  ],
+  "HARDWARE_FACT_SALES_MONTHLY": [
+    "date",
+    "product_code",
+    "customer_code",
+    "sold_quantity",
+    "fiscal_year"
+  ],
+  "SALARYDATASET": [
+    "index",
+    "CompanyName",
+    "JobTitle",
+    "SalariesReported",
+    "Location",
+    "Salary"
+  ],
+  "STAFFHOURS": [
+    "StaffMember",
+    "EventDate",
+    "EventTime",
+    "EventType"
+  ],
+  "UNIVERSITY_COURSE": [
+    "CourseNo",
+    "CrsDesc",
+    "CrsUnits"
+  ],
+  "UNIVERSITY_ENROLLMENT": [
+    "OfferNo",
+    "StdNo",
+    "EnrGrade"
+  ],
+  "UNIVERSITY_FACULTY": [
+    "FacNo",
+    "FacFirstName",
+    "FacLastName",
+    "FacCity",
+    "FacState",
+    "FacDept",
+    "FacRank",
+    "FacSalary",
+    "FacSupervisor",
+    "FacHireDate",
+    "FacZipCode"
+  ],
+  "UNIVERSITY_OFFERING": [
+    "OfferNo",
+    "CourseNo",
+    "OffTerm",
+    "OffYear",
+    "OffLocation",
+    "OffTime",
+    "FacNo",
+    "OffDays"
+  ],
+  "UNIVERSITY_STUDENT": [
+    "StdNo",
+    "StdFirstName",
+    "StdLastName",
+    "StdCity",
+    "StdState",
+    "StdZip",
+    "StdMajor",
+    "StdClass",
+    "StdGPA"
+  ],
+  "WEB_ACCOUNTS": [
+    "id",
+    "name",
+    "website",
+    "lat",
+    "long",
+    "primary_poc",
+    "sales_rep_id"
+  ],
+  "WEB_EVENTS": [
+    "id",
+    "account_id",
+    "occurred_at",
+    "channel"
+  ],
+  "WEB_ORDERS": [
+    "id",
+    "account_id",
+    "occurred_at",
+    "standard_qty",
+    "gloss_qty",
+    "poster_qty",
+    "total",
+    "standard_amt_usd",
+    "gloss_amt_usd",
+    "poster_amt_usd",
+    "total_amt_usd"
+  ],
+  "WEB_REGION": [
+    "id",
+    "name"
+  ],
+  "WEB_SALES_REPS": [
+    "id",
+    "name",
+    "region_id"
+  ]
+}

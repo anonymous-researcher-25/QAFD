@@ -1,0 +1,15 @@
+{
+  "COUNTRY": "DB_IMDB",
+  "GENRE": "DB_IMDB",
+  "LANGUAGE": "DB_IMDB",
+  "LOCATION": "DB_IMDB",
+  "MOVIE": "DB_IMDB",
+  "M_CAST": "DB_IMDB",
+  "M_COUNTRY": "DB_IMDB",
+  "M_DIRECTOR": "DB_IMDB",
+  "M_GENRE": "DB_IMDB",
+  "M_LANGUAGE": "DB_IMDB",
+  "M_LOCATION": "DB_IMDB",
+  "M_PRODUCER": "DB_IMDB",
+  "PERSON": "DB_IMDB"
+}

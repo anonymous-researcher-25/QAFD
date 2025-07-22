@@ -1,0 +1,97 @@
+{
+  "ALBUMS": [
+    "AlbumId",
+    "Title",
+    "ArtistId"
+  ],
+  "ARTISTS": [
+    "ArtistId",
+    "Name"
+  ],
+  "CUSTOMERS": [
+    "CustomerId",
+    "FirstName",
+    "LastName",
+    "Company",
+    "Address",
+    "City",
+    "State",
+    "Country",
+    "PostalCode",
+    "Phone",
+    "Fax",
+    "Email",
+    "SupportRepId"
+  ],
+  "EMPLOYEES": [
+    "EmployeeId",
+    "LastName",
+    "FirstName",
+    "Title",
+    "ReportsTo",
+    "BirthDate",
+    "HireDate",
+    "Address",
+    "City",
+    "State",
+    "Country",
+    "PostalCode",
+    "Phone",
+    "Fax",
+    "Email"
+  ],
+  "GENRES": [
+    "GenreId",
+    "Name"
+  ],
+  "INVOICES": [
+    "InvoiceId",
+    "CustomerId",
+    "InvoiceDate",
+    "BillingAddress",
+    "BillingCity",
+    "BillingState",
+    "BillingCountry",
+    "BillingPostalCode",
+    "Total"
+  ],
+  "INVOICE_ITEMS": [
+    "InvoiceLineId",
+    "InvoiceId",
+    "TrackId",
+    "UnitPrice",
+    "Quantity"
+  ],
+  "MEDIA_TYPES": [
+    "MediaTypeId",
+    "Name"
+  ],
+  "PLAYLISTS": [
+    "PlaylistId",
+    "Name"
+  ],
+  "PLAYLIST_TRACK": [
+    "PlaylistId",
+    "TrackId"
+  ],
+  "SQLITE_SEQUENCE": [
+    "name",
+    "seq"
+  ],
+  "SQLITE_STAT1": [
+    "tbl",
+    "idx",
+    "stat"
+  ],
+  "TRACKS": [
+    "TrackId",
+    "Name",
+    "AlbumId",
+    "MediaTypeId",
+    "GenreId",
+    "Composer",
+    "Milliseconds",
+    "Bytes",
+    "UnitPrice"
+  ]
+}

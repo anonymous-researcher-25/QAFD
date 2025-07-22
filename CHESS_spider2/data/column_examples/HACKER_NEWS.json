@@ -1,0 +1,58 @@
+{
+  "FULL": {
+    "deleted": [],
+    "descendants": [
+      1,
+      0,
+      2
+    ],
+    "by": [
+      "joshmarlow",
+      "josephturnip",
+      "josephvbraedgia"
+    ],
+    "title": [
+      "Best Arts of Spillink Art Gallery",
+      "An Indian takes over East India Co",
+      "Online \u2018Sextortion\u2019 Of Teens \u00ab Yours Buzz"
+    ],
+    "time": [
+      1579975867,
+      1580083826,
+      1579662563
+    ],
+    "text": [],
+    "type": [
+      "pollopt",
+      "job",
+      "poll",
+      "story",
+      "comment"
+    ],
+    "id": [
+      6902238,
+      6888027,
+      689015
+    ],
+    "timestamp": [
+      1453684363000000,
+      1453482793000000,
+      1453483558000000
+    ],
+    "parent": [
+      1805,
+      2207,
+      363
+    ],
+    "score": [
+      4,
+      1,
+      5
+    ],
+    "ranking": [],
+    "dead": [
+      "True"
+    ],
+    "url": []
+  }
+}

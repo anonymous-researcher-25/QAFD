@@ -1,0 +1,967 @@
+{
+  "CATEGORIES": {
+    "categoryid": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "value_statics": "Total count 8 - Distinct count 8 - Null count 0"
+    },
+    "categoryname": {
+      "type": "TEXT",
+      "unique_values": [
+        "Beverages",
+        "Condiments",
+        "Confections",
+        "Dairy Products",
+        "Grains/Cereals",
+        "Meat/Poultry",
+        "Produce",
+        "Seafood"
+      ],
+      "value_statics": "Total count 8 - Distinct count 8 - Null count 0"
+    },
+    "description": {
+      "type": "TEXT",
+      "unique_values": [
+        "Soft drinks, coffees, teas, beers, and ales",
+        "Sweet and savory sauces, relishes, spreads, and seasonings",
+        "Desserts, candies, and sweet breads",
+        "Cheeses",
+        "Breads, crackers, pasta, and cereal",
+        "Prepared meats",
+        "Dried fruit and bean curd",
+        "Seaweed and fish"
+      ],
+      "value_statics": "Total count 8 - Distinct count 8 - Null count 0"
+    },
+    "picture": {
+      "type": "TEXT",
+      "unique_values": [
+        "\\x",
+        "\\x",
+        "\\x",
+        "\\x",
+        "\\x",
+        "\\x",
+        "\\x",
+        "\\x"
+      ],
+      "value_statics": "Total count 8 - Distinct count 1 - Null count 0"
+    }
+  },
+  "CUSTOMERCUSTOMERDEMO": {
+    "customerid": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "customertypeid": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "CUSTOMERDEMOGRAPHICS": {
+    "customertypeid": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "customerdesc": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "CUSTOMERGROUPTHRESHOLD": {
+    "groupname": {
+      "type": "TEXT",
+      "unique_values": [
+        "Low",
+        "Medium",
+        "High",
+        "Very High"
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    },
+    "rangebottom": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        1000,
+        5000,
+        10000
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    },
+    "rangetop": {
+      "type": "FLOAT",
+      "unique_values": [
+        999.9999,
+        4999.9999,
+        9999.9999,
+        922337203685477.6
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    }
+  },
+  "CUSTOMERS": {
+    "customerid": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 91 - Distinct count 91 - Null count 0"
+    },
+    "companyname": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 91 - Distinct count 91 - Null count 0"
+    },
+    "contactname": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 91 - Distinct count 91 - Null count 0"
+    },
+    "contacttitle": {
+      "type": "TEXT",
+      "unique_values": [
+        "Sales Representative",
+        "Owner",
+        "Owner",
+        "Sales Representative",
+        "Order Administrator",
+        "Sales Representative",
+        "Marketing Manager",
+        "Owner",
+        "Owner",
+        "Accounting Manager"
+      ],
+      "value_statics": "Total count 91 - Distinct count 12 - Null count 0"
+    },
+    "address": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 91 - Distinct count 91 - Null count 0"
+    },
+    "city": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 91 - Distinct count 69 - Null count 0"
+    },
+    "region": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "BC"
+      ],
+      "value_statics": "Total count 91 - Distinct count 19 - Null count 0"
+    },
+    "postalcode": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 91 - Distinct count 87 - Null count 0"
+    },
+    "country": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 91 - Distinct count 21 - Null count 0"
+    },
+    "phone": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 91 - Distinct count 91 - Null count 0"
+    },
+    "fax": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 91 - Distinct count 70 - Null count 0"
+    }
+  },
+  "EMPLOYEES": {
+    "employeeid": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "lastname": {
+      "type": "TEXT",
+      "unique_values": [
+        "Davolio",
+        "Fuller",
+        "Leverling",
+        "Peacock",
+        "Buchanan",
+        "Suyama",
+        "King",
+        "Callahan",
+        "Dodsworth"
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "firstname": {
+      "type": "TEXT",
+      "unique_values": [
+        "Nancy",
+        "Andrew",
+        "Janet",
+        "Margaret",
+        "Steven",
+        "Michael",
+        "Robert",
+        "Laura",
+        "Anne"
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "title": {
+      "type": "TEXT",
+      "unique_values": [
+        "Sales Representative",
+        "Vice President, Sales",
+        "Sales Representative",
+        "Sales Representative",
+        "Sales Manager",
+        "Sales Representative",
+        "Sales Representative",
+        "Inside Sales Coordinator",
+        "Sales Representative"
+      ],
+      "value_statics": "Total count 9 - Distinct count 4 - Null count 0"
+    },
+    "titleofcourtesy": {
+      "type": "TEXT",
+      "unique_values": [
+        "Ms.",
+        "Dr.",
+        "Ms.",
+        "Mrs.",
+        "Mr.",
+        "Mr.",
+        "Mr.",
+        "Ms.",
+        "Ms."
+      ],
+      "value_statics": "Total count 9 - Distinct count 4 - Null count 0"
+    },
+    "birthdate": {
+      "type": "TEXT",
+      "unique_values": [
+        "1948-12-08",
+        "1952-02-19",
+        "1963-08-30",
+        "1937-09-19",
+        "1955-03-04",
+        "1963-07-02",
+        "1960-05-29",
+        "1958-01-09",
+        "1966-01-27"
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "hiredate": {
+      "type": "TEXT",
+      "unique_values": [
+        "1992-05-01",
+        "1992-08-14",
+        "1992-04-01",
+        "1993-05-03",
+        "1993-10-17",
+        "1993-10-17",
+        "1994-01-02",
+        "1994-03-05",
+        "1994-11-15"
+      ],
+      "value_statics": "Total count 9 - Distinct count 8 - Null count 0"
+    },
+    "address": {
+      "type": "TEXT",
+      "unique_values": [
+        "507 - 20th Ave. E.\\nApt. 2A",
+        "908 W. Capital Way",
+        "722 Moss Bay Blvd.",
+        "4110 Old Redmond Rd.",
+        "14 Garrett Hill",
+        "Coventry House\\nMiner Rd.",
+        "Edgeham Hollow\\nWinchester Way",
+        "4726 - 11th Ave. N.E.",
+        "7 Houndstooth Rd."
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "city": {
+      "type": "TEXT",
+      "unique_values": [
+        "Seattle",
+        "Tacoma",
+        "Kirkland",
+        "Redmond",
+        "London",
+        "London",
+        "London",
+        "Seattle",
+        "London"
+      ],
+      "value_statics": "Total count 9 - Distinct count 5 - Null count 0"
+    },
+    "region": {
+      "type": "TEXT",
+      "unique_values": [
+        "WA",
+        "WA",
+        "WA",
+        "WA",
+        "",
+        "",
+        "",
+        "WA",
+        ""
+      ],
+      "value_statics": "Total count 9 - Distinct count 2 - Null count 0"
+    },
+    "postalcode": {
+      "type": "TEXT",
+      "unique_values": [
+        "98122",
+        "98401",
+        "98033",
+        "98052",
+        "SW1 8JR",
+        "EC2 7JR",
+        "RG1 9SP",
+        "98105",
+        "WG2 7LT"
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "country": {
+      "type": "TEXT",
+      "unique_values": [
+        "USA",
+        "USA",
+        "USA",
+        "USA",
+        "UK",
+        "UK",
+        "UK",
+        "USA",
+        "UK"
+      ],
+      "value_statics": "Total count 9 - Distinct count 2 - Null count 0"
+    },
+    "homephone": {
+      "type": "TEXT",
+      "unique_values": [
+        "(206) 555-9857",
+        "(206) 555-9482",
+        "(206) 555-3412",
+        "(206) 555-8122",
+        "(71) 555-4848",
+        "(71) 555-7773",
+        "(71) 555-5598",
+        "(206) 555-1189",
+        "(71) 555-4444"
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "extension": {
+      "type": "TEXT",
+      "unique_values": [
+        "5467",
+        "3457",
+        "3355",
+        "5176",
+        "3453",
+        "428",
+        "465",
+        "2344",
+        "452"
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "photo": {
+      "type": "TEXT",
+      "unique_values": [
+        "\\x",
+        "\\x",
+        "\\x",
+        "\\x",
+        "\\x",
+        "\\x",
+        "\\x",
+        "\\x",
+        "\\x"
+      ],
+      "value_statics": "Total count 9 - Distinct count 1 - Null count 0"
+    },
+    "notes": {
+      "type": "TEXT",
+      "unique_values": [
+        "Education includes a BA in psychology from Colorado State University in 1970.  She also completed...",
+        "Andrew received his BTS commercial in 1974 and a Ph.D. in international marketing from the Univer...",
+        "Janet has a BS degree in chemistry from Boston College (1984).  She has also completed a certific...",
+        "Margaret holds a BA in English literature from Concordia College (1958) and an MA from the Americ...",
+        "Steven Buchanan graduated from St. Andrews University, Scotland, with a BSC degree in 1976.  Upon...",
+        "Michael is a graduate of Sussex University (MA, economics, 1983) and the University of California...",
+        "Robert King served in the Peace Corps and traveled extensively before completing his degree in En...",
+        "Laura received a BA in psychology from the University of Washington.  She has also completed a co...",
+        "Anne has a BA degree in English from St. Lawrence College.  She is fluent in French and German."
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "reportsto": {
+      "type": "FLOAT",
+      "unique_values": [
+        2.0,
+        null,
+        2.0,
+        2.0,
+        2.0,
+        5.0,
+        5.0,
+        2.0,
+        5.0
+      ],
+      "value_statics": "Total count 9 - Distinct count 2 - Null count 1"
+    },
+    "photopath": {
+      "type": "TEXT",
+      "unique_values": [
+        "http://accweb/emmployees/davolio.bmp",
+        "http://accweb/emmployees/fuller.bmp",
+        "http://accweb/emmployees/leverling.bmp",
+        "http://accweb/emmployees/peacock.bmp",
+        "http://accweb/emmployees/buchanan.bmp",
+        "http://accweb/emmployees/davolio.bmp",
+        "http://accweb/emmployees/davolio.bmp",
+        "http://accweb/emmployees/davolio.bmp",
+        "http://accweb/emmployees/davolio.bmp"
+      ],
+      "value_statics": "Total count 9 - Distinct count 5 - Null count 0"
+    }
+  },
+  "EMPLOYEETERRITORIES": {
+    "employeeid": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "value_statics": "Total count 49 - Distinct count 9 - Null count 0"
+    },
+    "territoryid": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 49 - Distinct count 49 - Null count 0"
+    }
+  },
+  "ORDERS": {
+    "orderid": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 830 - Distinct count 830 - Null count 0"
+    },
+    "customerid": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 830 - Distinct count 89 - Null count 0"
+    },
+    "employeeid": {
+      "type": "NUMBER",
+      "unique_values": [
+        5,
+        8,
+        4,
+        4,
+        4,
+        7,
+        5,
+        2,
+        4,
+        2
+      ],
+      "value_statics": "Total count 830 - Distinct count 9 - Null count 0"
+    },
+    "orderdate": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 830 - Distinct count 480 - Null count 0"
+    },
+    "requireddate": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 830 - Distinct count 454 - Null count 0"
+    },
+    "shippeddate": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 830 - Distinct count 388 - Null count 0"
+    },
+    "shipvia": {
+      "type": "NUMBER",
+      "unique_values": [
+        3,
+        1,
+        3,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "value_statics": "Total count 830 - Distinct count 3 - Null count 0"
+    },
+    "freight": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 830 - Distinct count 799 - Null count 0"
+    },
+    "shipname": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 830 - Distinct count 90 - Null count 0"
+    },
+    "shipaddress": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 830 - Distinct count 89 - Null count 0"
+    },
+    "shipcity": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 830 - Distinct count 70 - Null count 0"
+    },
+    "shipregion": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "NM",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 830 - Distinct count 20 - Null count 0"
+    },
+    "shippostalcode": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 830 - Distinct count 85 - Null count 0"
+    },
+    "shipcountry": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 830 - Distinct count 21 - Null count 0"
+    }
+  },
+  "ORDER_DETAILS": {
+    "orderid": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 2155 - Distinct count 830 - Null count 0"
+    },
+    "productid": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 2155 - Distinct count 77 - Null count 0"
+    },
+    "unitprice": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 2155 - Distinct count 116 - Null count 0"
+    },
+    "quantity": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 2155 - Distinct count 55 - Null count 0"
+    },
+    "discount": {
+      "type": "FLOAT",
+      "unique_values": [
+        0.100000001,
+        0.0,
+        0.0,
+        0.100000001,
+        0.0500000007,
+        0.0500000007,
+        0.0500000007,
+        0.0,
+        0.0500000007,
+        0.0
+      ],
+      "value_statics": "Total count 2155 - Distinct count 11 - Null count 0"
+    }
+  },
+  "PRODUCTS": {
+    "productid": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 77 - Distinct count 77 - Null count 0"
+    },
+    "productname": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 77 - Distinct count 77 - Null count 0"
+    },
+    "supplierid": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 77 - Distinct count 29 - Null count 0"
+    },
+    "categoryid": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        7,
+        2,
+        6,
+        8
+      ],
+      "value_statics": "Total count 77 - Distinct count 8 - Null count 0"
+    },
+    "quantityperunit": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 77 - Distinct count 70 - Null count 0"
+    },
+    "unitprice": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 77 - Distinct count 61 - Null count 0"
+    },
+    "unitsinstock": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 77 - Distinct count 51 - Null count 0"
+    },
+    "unitsonorder": {
+      "type": "NUMBER",
+      "unique_values": [
+        0,
+        40,
+        70,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 77 - Distinct count 10 - Null count 0"
+    },
+    "reorderlevel": {
+      "type": "NUMBER",
+      "unique_values": [
+        10,
+        25,
+        25,
+        0,
+        0,
+        25,
+        10,
+        0,
+        0,
+        0
+      ],
+      "value_statics": "Total count 77 - Distinct count 7 - Null count 0"
+    },
+    "discontinued": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "value_statics": "Total count 77 - Distinct count 2 - Null count 0"
+    }
+  },
+  "REGION": {
+    "regionid": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    },
+    "regiondescription": {
+      "type": "TEXT",
+      "unique_values": [
+        "Eastern",
+        "Western",
+        "Northern",
+        "Southern"
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    }
+  },
+  "SHIPPERS": {
+    "shipperid": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    },
+    "companyname": {
+      "type": "TEXT",
+      "unique_values": [
+        "Speedy Express",
+        "United Package",
+        "Federal Shipping",
+        "Alliance Shippers",
+        "UPS",
+        "DHL"
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    },
+    "phone": {
+      "type": "TEXT",
+      "unique_values": [
+        "(503) 555-9831",
+        "(503) 555-3199",
+        "(503) 555-9931",
+        "1-800-222-0451",
+        "1-800-782-7892",
+        "1-800-225-5345"
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    }
+  },
+  "SUPPLIERS": {
+    "supplierid": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 29 - Distinct count 29 - Null count 0"
+    },
+    "companyname": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 29 - Distinct count 29 - Null count 0"
+    },
+    "contactname": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 29 - Distinct count 29 - Null count 0"
+    },
+    "contacttitle": {
+      "type": "TEXT",
+      "unique_values": [
+        "Purchasing Manager",
+        "Order Administrator",
+        "Sales Representative",
+        "Marketing Manager",
+        "Export Administrator",
+        "Marketing Representative",
+        "Marketing Manager",
+        "Sales Representative",
+        "Sales Agent",
+        "Marketing Manager"
+      ],
+      "value_statics": "Total count 29 - Distinct count 15 - Null count 0"
+    },
+    "address": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 29 - Distinct count 29 - Null count 0"
+    },
+    "city": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 29 - Distinct count 29 - Null count 0"
+    },
+    "region": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "LA",
+        "MI",
+        "",
+        "Asturias",
+        "",
+        "Victoria",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 29 - Distinct count 9 - Null count 0"
+    },
+    "postalcode": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 29 - Distinct count 29 - Null count 0"
+    },
+    "country": {
+      "type": "TEXT",
+      "unique_values": [
+        "UK",
+        "USA",
+        "USA",
+        "Japan",
+        "Spain",
+        "Japan",
+        "Australia",
+        "UK",
+        "Sweden",
+        "Brazil"
+      ],
+      "value_statics": "Total count 29 - Distinct count 16 - Null count 0"
+    },
+    "phone": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 29 - Distinct count 29 - Null count 0"
+    },
+    "fax": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "(313) 555-3349",
+        "",
+        "",
+        "",
+        "(03) 444-6588",
+        "",
+        "031-987 65 91",
+        ""
+      ],
+      "value_statics": "Total count 29 - Distinct count 14 - Null count 0"
+    },
+    "homepage": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "#CAJUN.HTM#",
+        "",
+        "",
+        "",
+        "Mayumi's (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/mayumi.htm#",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 29 - Distinct count 6 - Null count 0"
+    }
+  },
+  "TERRITORIES": {
+    "territoryid": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 53 - Distinct count 53 - Null count 0"
+    },
+    "territorydescription": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 53 - Distinct count 52 - Null count 0"
+    },
+    "regionid": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "value_statics": "Total count 53 - Distinct count 4 - Null count 0"
+    }
+  },
+  "USSTATES": {
+    "stateid": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 51 - Distinct count 51 - Null count 0"
+    },
+    "statename": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 51 - Distinct count 51 - Null count 0"
+    },
+    "stateabbr": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 51 - Distinct count 51 - Null count 0"
+    },
+    "stateregion": {
+      "type": "TEXT",
+      "unique_values": [
+        "south",
+        "north",
+        "west",
+        "south",
+        "west",
+        "west",
+        "east",
+        "east",
+        "east",
+        "south"
+      ],
+      "value_statics": "Total count 51 - Distinct count 5 - Null count 0"
+    }
+  }
+}

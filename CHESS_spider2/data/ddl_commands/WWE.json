@@ -1,0 +1,12 @@
+{
+  "BELTS": "create or replace TABLE BELTS (\n\t\"id\" NUMBER(38,0),\n\t\"name\" VARCHAR(16777216)\n);",
+  "CARDS": "create or replace TABLE CARDS (\n\t\"id\" NUMBER(38,0),\n\t\"table_id\" NUMBER(38,0),\n\t\"location_id\" NUMBER(38,0),\n\t\"promotion_id\" NUMBER(38,0),\n\t\"event_date\" VARCHAR(16777216),\n\t\"event_id\" NUMBER(38,0),\n\t\"url\" VARCHAR(16777216),\n\t\"info_html\" VARCHAR(16777216),\n\t\"match_html\" VARCHAR(16777216)\n);",
+  "EVENTS": "create or replace TABLE EVENTS (\n\t\"id\" NUMBER(38,0),\n\t\"name\" VARCHAR(16777216)\n);",
+  "LOCATIONS": "create or replace TABLE LOCATIONS (\n\t\"id\" NUMBER(38,0),\n\t\"name\" VARCHAR(16777216)\n);",
+  "MATCHES": "create or replace TABLE MATCHES (\n\t\"id\" NUMBER(38,0),\n\t\"card_id\" NUMBER(38,0),\n\t\"winner_id\" VARCHAR(16777216),\n\t\"win_type\" VARCHAR(16777216),\n\t\"loser_id\" VARCHAR(16777216),\n\t\"match_type_id\" VARCHAR(16777216),\n\t\"duration\" VARCHAR(16777216),\n\t\"title_id\" VARCHAR(16777216),\n\t\"title_change\" NUMBER(38,0)\n);",
+  "MATCH_TYPES": "create or replace TABLE MATCH_TYPES (\n\t\"id\" NUMBER(38,0),\n\t\"name\" VARCHAR(16777216)\n);",
+  "PROMOTIONS": "create or replace TABLE PROMOTIONS (\n\t\"id\" NUMBER(38,0),\n\t\"name\" VARCHAR(16777216)\n);",
+  "SQLITE_SEQUENCE": "create or replace TABLE SQLITE_SEQUENCE (\n\t\"name\" VARCHAR(16777216),\n\t\"seq\" NUMBER(38,0)\n);",
+  "TABLES": "create or replace TABLE TABLES (\n\t\"id\" NUMBER(38,0),\n\t\"html\" VARCHAR(16777216),\n\t\"url\" VARCHAR(16777216)\n);",
+  "WRESTLERS": "create or replace TABLE WRESTLERS (\n\t\"id\" NUMBER(38,0),\n\t\"name\" VARCHAR(16777216)\n);"
+}

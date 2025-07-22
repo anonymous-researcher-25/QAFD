@@ -1,0 +1,2131 @@
+{
+  "ACTIVITYCODE": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "While engaged in sports activity"
+        ],
+        [
+          "While engaged in leisure activity"
+        ],
+        [
+          "While working for income"
+        ],
+        [
+          "While engaged in other types of work"
+        ],
+        [
+          "While resting, sleeping, eating (vital activities)"
+        ],
+        [
+          "While engaged in other specified activities"
+        ],
+        [
+          "Not applicable"
+        ],
+        [
+          "During unspecified activity"
+        ]
+      ],
+      "value_statics": "Total count 8 - Distinct count 8 - Null count 0"
+    },
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          8
+        ],
+        [
+          9
+        ],
+        [
+          99
+        ]
+      ],
+      "value_statics": "Total count 8 - Distinct count 8 - Null count 0"
+    }
+  },
+  "AGERECODE27": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 27 - Distinct count 27 - Null count 0"
+    },
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 27 - Distinct count 27 - Null count 0"
+    }
+  },
+  "AGETYPE": {
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          9
+        ]
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    },
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Years"
+        ],
+        [
+          "Months"
+        ],
+        [
+          "Days"
+        ],
+        [
+          "Hours"
+        ],
+        [
+          "Age not stated"
+        ],
+        [
+          "Minutes"
+        ]
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    }
+  },
+  "BRIDGEDRACEFLAG": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Race is not bridged"
+        ],
+        [
+          "Race is bridged"
+        ]
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    }
+  },
+  "DEATHRECORDS": {
+    "ResidentStatus": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 4 - Null count 0"
+    },
+    "Autopsy": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "N"
+        ],
+        [
+          "U"
+        ],
+        [
+          "n"
+        ],
+        [
+          "y"
+        ],
+        [
+          "Y"
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 3 - Null count 0"
+    },
+    "PlaceOfDeathAndDecedentsStatus": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          7
+        ],
+        [
+          5
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          9
+        ],
+        [
+          6
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 8 - Null count 0"
+    },
+    "CurrentDataYear": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          2014
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 1 - Null count 0"
+    },
+    "AgeRecode27": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 22 - Null count 0"
+    },
+    "RaceRecode3": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 3 - Null count 0"
+    },
+    "Education2003Revision": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          5
+        ],
+        [
+          7
+        ],
+        [
+          4
+        ],
+        [
+          0
+        ],
+        [
+          8
+        ],
+        [
+          2
+        ],
+        [
+          9
+        ],
+        [
+          6
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 10 - Null count 0"
+    },
+    "Icd10Code": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 1909 - Null count 0"
+    },
+    "HispanicOrigin": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 41 - Null count 0"
+    },
+    "ActivityCode": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          4
+        ],
+        [
+          0
+        ],
+        [
+          8
+        ],
+        [
+          2
+        ],
+        [
+          9
+        ],
+        [
+          99
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 7 - Null count 0"
+    },
+    "Education1989Revision": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          5
+        ],
+        [
+          7
+        ],
+        [
+          4
+        ],
+        [
+          0
+        ],
+        [
+          17
+        ],
+        [
+          8
+        ],
+        [
+          12
+        ],
+        [
+          2
+        ],
+        [
+          10
+        ],
+        [
+          14
+        ],
+        [
+          9
+        ],
+        [
+          99
+        ],
+        [
+          15
+        ],
+        [
+          16
+        ],
+        [
+          13
+        ],
+        [
+          6
+        ],
+        [
+          3
+        ],
+        [
+          11
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 19 - Null count 0"
+    },
+    "CauseRecode113": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 105 - Null count 0"
+    },
+    "PlaceOfInjury": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          5
+        ],
+        [
+          1
+        ],
+        [
+          7
+        ],
+        [
+          4
+        ],
+        [
+          0
+        ],
+        [
+          8
+        ],
+        [
+          2
+        ],
+        [
+          9
+        ],
+        [
+          99
+        ],
+        [
+          6
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 11 - Null count 0"
+    },
+    "Age": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 83 - Null count 0"
+    },
+    "EducationReportingFlag": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 2 - Null count 0"
+    },
+    "InfantAgeRecode22": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 23 - Null count 0"
+    },
+    "MannerOfDeath": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          7
+        ],
+        [
+          5
+        ],
+        [
+          1
+        ],
+        [
+          4
+        ],
+        [
+          0
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 7 - Null count 0"
+    },
+    "NumberOfEntityAxisConditions": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          5
+        ],
+        [
+          7
+        ],
+        [
+          4
+        ],
+        [
+          8
+        ],
+        [
+          12
+        ],
+        [
+          2
+        ],
+        [
+          10
+        ],
+        [
+          14
+        ],
+        [
+          9
+        ],
+        [
+          13
+        ],
+        [
+          15
+        ],
+        [
+          6
+        ],
+        [
+          3
+        ],
+        [
+          11
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 14 - Null count 0"
+    },
+    "InfantCauseRecode130": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 90 - Null count 0"
+    },
+    "CauseRecode358": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 317 - Null count 0"
+    },
+    "InjuryAtWork": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "N"
+        ],
+        [
+          "U"
+        ],
+        [
+          "Y"
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 3 - Null count 0"
+    },
+    "AgeRecode12": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          5
+        ],
+        [
+          7
+        ],
+        [
+          4
+        ],
+        [
+          8
+        ],
+        [
+          12
+        ],
+        [
+          2
+        ],
+        [
+          10
+        ],
+        [
+          9
+        ],
+        [
+          6
+        ],
+        [
+          3
+        ],
+        [
+          11
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 10 - Null count 0"
+    },
+    "AgeSubstitutionFlag": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 2 - Null count 0"
+    },
+    "CauseRecode39": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 39 - Null count 0"
+    },
+    "Race": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          7
+        ],
+        [
+          5
+        ],
+        [
+          4
+        ],
+        [
+          48
+        ],
+        [
+          68
+        ],
+        [
+          78
+        ],
+        [
+          2
+        ],
+        [
+          28
+        ],
+        [
+          38
+        ],
+        [
+          6
+        ],
+        [
+          58
+        ],
+        [
+          3
+        ],
+        [
+          18
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 14 - Null count 0"
+    },
+    "AgeRecode52": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 42 - Null count 0"
+    },
+    "NumberOfRecordAxisConditions": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          5
+        ],
+        [
+          7
+        ],
+        [
+          4
+        ],
+        [
+          8
+        ],
+        [
+          12
+        ],
+        [
+          2
+        ],
+        [
+          10
+        ],
+        [
+          14
+        ],
+        [
+          9
+        ],
+        [
+          13
+        ],
+        [
+          6
+        ],
+        [
+          3
+        ],
+        [
+          11
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 14 - Null count 0"
+    },
+    "HispanicOriginRaceRecode": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          7
+        ],
+        [
+          5
+        ],
+        [
+          4
+        ],
+        [
+          8
+        ],
+        [
+          2
+        ],
+        [
+          9
+        ],
+        [
+          6
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 9 - Null count 0"
+    },
+    "Sex": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "F"
+        ],
+        [
+          "M"
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 2 - Null count 0"
+    },
+    "RaceImputationFlag": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 3 - Null count 0"
+    },
+    "Id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 100000 - Null count 0"
+    },
+    "DayOfWeekOfDeath": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          5
+        ],
+        [
+          7
+        ],
+        [
+          1
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          9
+        ],
+        [
+          6
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 8 - Null count 0"
+    },
+    "BridgedRaceFlag": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 2 - Null count 0"
+    },
+    "RaceRecode5": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 4 - Null count 0"
+    },
+    "MonthOfDeath": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          5
+        ],
+        [
+          1
+        ],
+        [
+          7
+        ],
+        [
+          4
+        ],
+        [
+          12
+        ],
+        [
+          8
+        ],
+        [
+          2
+        ],
+        [
+          10
+        ],
+        [
+          9
+        ],
+        [
+          6
+        ],
+        [
+          3
+        ],
+        [
+          11
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 12 - Null count 0"
+    },
+    "MethodOfDisposition": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "B"
+        ],
+        [
+          "O"
+        ],
+        [
+          "U"
+        ],
+        [
+          "D"
+        ],
+        [
+          "E"
+        ],
+        [
+          "R"
+        ],
+        [
+          "C"
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 7 - Null count 0"
+    },
+    "MaritalStatus": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "S"
+        ],
+        [
+          "U"
+        ],
+        [
+          "D"
+        ],
+        [
+          "W"
+        ],
+        [
+          "M"
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 5 - Null count 0"
+    },
+    "AgeType": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          5
+        ],
+        [
+          4
+        ],
+        [
+          2
+        ],
+        [
+          9
+        ],
+        [
+          6
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 5 - Null count 0"
+    }
+  },
+  "EDUCATION1989REVISION": {
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          9
+        ],
+        [
+          11
+        ],
+        [
+          13
+        ],
+        [
+          14
+        ],
+        [
+          15
+        ],
+        [
+          16
+        ],
+        [
+          17
+        ],
+        [
+          99
+        ],
+        [
+          8
+        ],
+        [
+          10
+        ],
+        [
+          12
+        ]
+      ],
+      "value_statics": "Total count 19 - Distinct count 19 - Null count 0"
+    },
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "No formal education"
+        ],
+        [
+          "Years of elementary school"
+        ],
+        [
+          "1 year of high school"
+        ],
+        [
+          "2 years of high school"
+        ],
+        [
+          "3 years of high school"
+        ],
+        [
+          "4 years of high school"
+        ],
+        [
+          "2 years of college"
+        ],
+        [
+          "3 years of college"
+        ],
+        [
+          "4 years of college"
+        ],
+        [
+          "5 or more years of college"
+        ],
+        [
+          "Not stated"
+        ],
+        [
+          "1 year of college"
+        ]
+      ],
+      "value_statics": "Total count 19 - Distinct count 12 - Null count 0"
+    }
+  },
+  "EDUCATION2003REVISION": {
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          9
+        ],
+        [
+          8
+        ]
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "8th grade or less"
+        ],
+        [
+          "9 - 12th grade, no diploma"
+        ],
+        [
+          "high school graduate or GED completed"
+        ],
+        [
+          "some college credit, but no degree"
+        ],
+        [
+          "Associate degree"
+        ],
+        [
+          "Bachelor's degree"
+        ],
+        [
+          "Master's degree"
+        ],
+        [
+          "Doctorate or professional degree"
+        ],
+        [
+          "Unknown"
+        ]
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    }
+  },
+  "HISPANICORIGIN": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Non-Hispanic"
+        ],
+        [
+          "Spaniard"
+        ],
+        [
+          "Mexican"
+        ],
+        [
+          "Central and South American"
+        ],
+        [
+          "Central American"
+        ],
+        [
+          "South American"
+        ],
+        [
+          "Latin American"
+        ],
+        [
+          "Puerto Rican"
+        ],
+        [
+          "Dominican"
+        ],
+        [
+          "Unknown"
+        ],
+        [
+          "Cuban"
+        ],
+        [
+          "Other Hispanic"
+        ]
+      ],
+      "value_statics": "Total count 204 - Distinct count 12 - Null count 0"
+    },
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 204 - Distinct count 204 - Null count 0"
+    }
+  },
+  "HISPANICORIGINRACERECODE": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Mexican"
+        ],
+        [
+          "Puerto Rican"
+        ],
+        [
+          "Cuban"
+        ],
+        [
+          "Central or South American"
+        ],
+        [
+          "Other or unknown Hispanic"
+        ],
+        [
+          "Non-Hispanic white"
+        ],
+        [
+          "Non-Hispanic black"
+        ],
+        [
+          "Non-Hispanic other races"
+        ],
+        [
+          "Hispanic origin unknown"
+        ]
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    },
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          9
+        ],
+        [
+          8
+        ]
+      ],
+      "value_statics": "Total count 9 - Distinct count 9 - Null count 0"
+    }
+  },
+  "ICD10CODE": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12131 - Distinct count 12079 - Null count 0"
+    },
+    "Code": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 12131 - Distinct count 12131 - Null count 0"
+    }
+  },
+  "MARITALSTATUS": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Divorced"
+        ],
+        [
+          "Married"
+        ],
+        [
+          "Never married, single"
+        ],
+        [
+          "Marital Status unknown"
+        ],
+        [
+          "Widowed"
+        ]
+      ],
+      "value_statics": "Total count 15 - Distinct count 5 - Null count 0"
+    },
+    "Code": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "D"
+        ],
+        [
+          "M"
+        ],
+        [
+          "S"
+        ],
+        [
+          "U"
+        ],
+        [
+          "W"
+        ]
+      ],
+      "value_statics": "Total count 15 - Distinct count 5 - Null count 0"
+    }
+  },
+  "METHODOFDISPOSITION": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Burial"
+        ],
+        [
+          "Cremation"
+        ],
+        [
+          "Other"
+        ],
+        [
+          "Unknown"
+        ]
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    },
+    "Code": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "B"
+        ],
+        [
+          "C"
+        ],
+        [
+          "O"
+        ],
+        [
+          "U"
+        ]
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    }
+  },
+  "PLACEOFDEATHANDDECEDENTSSTATUS": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Hospital, clinic or Medical Center - Inpatient"
+        ],
+        [
+          "Hospital, Clinic or Medical Center - Outpatient or admitted to Emergency Room"
+        ],
+        [
+          "Hospital, Clinic or Medical Center - Dead on Arrival"
+        ],
+        [
+          "Hospice facility"
+        ],
+        [
+          "Nursing home/long term care"
+        ],
+        [
+          "Other"
+        ],
+        [
+          "Place of death unknown"
+        ],
+        [
+          "Decedent's home"
+        ]
+      ],
+      "value_statics": "Total count 8 - Distinct count 8 - Null count 0"
+    },
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          9
+        ]
+      ],
+      "value_statics": "Total count 8 - Distinct count 8 - Null count 0"
+    }
+  },
+  "RACE": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Other races"
+        ],
+        [
+          "White"
+        ],
+        [
+          "Black"
+        ],
+        [
+          "Chinese"
+        ],
+        [
+          "Japanese"
+        ],
+        [
+          "Hawaiian (includes Part-Hawaiian)"
+        ],
+        [
+          "Filipino"
+        ],
+        [
+          "Asian Indian"
+        ],
+        [
+          "Korean"
+        ],
+        [
+          "Guamanian"
+        ],
+        [
+          "Other Asian or Pacific Islander"
+        ],
+        [
+          "Vietnamese"
+        ],
+        [
+          "Other Asian or Pacific Islander in areas reporting codes 18-58"
+        ],
+        [
+          "American Indian (includes Aleuts and Eskimos)"
+        ],
+        [
+          "Samoan"
+        ],
+        [
+          "Combined other Asian or Pacific Islander, includes codes 18-68 for areas that do not report them separately"
+        ]
+      ],
+      "value_statics": "Total count 16 - Distinct count 16 - Null count 0"
+    },
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          18
+        ],
+        [
+          48
+        ],
+        [
+          68
+        ],
+        [
+          78
+        ],
+        [
+          38
+        ],
+        [
+          8
+        ],
+        [
+          28
+        ],
+        [
+          58
+        ]
+      ],
+      "value_statics": "Total count 16 - Distinct count 16 - Null count 0"
+    }
+  },
+  "RACEIMPUTATIONFLAG": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Race is not imputed"
+        ],
+        [
+          "Unknown race is imputed"
+        ],
+        [
+          "All other races is imputed"
+        ]
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    },
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    }
+  },
+  "RACERECODE3": {
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    },
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "White"
+        ],
+        [
+          "Black"
+        ],
+        [
+          "Races other than White or Black"
+        ]
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    }
+  },
+  "EDUCATIONREPORTINGFLAG": {
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    },
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "1989 revision of education item on certificate"
+        ],
+        [
+          "2003 revision of education item on certificate"
+        ],
+        [
+          "no education item on certificate"
+        ]
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    }
+  },
+  "ENTITYAXISCONDITIONS": {
+    "DeathRecordId": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 66657 - Null count 0"
+    },
+    "Sequence": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          5
+        ],
+        [
+          7
+        ],
+        [
+          4
+        ],
+        [
+          8
+        ],
+        [
+          9
+        ],
+        [
+          6
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 9 - Null count 0"
+    },
+    "Icd10Code": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 2494 - Null count 0"
+    },
+    "Id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 100000 - Null count 0"
+    },
+    "Part": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 2 - Null count 0"
+    },
+    "Line": {
+      "type": "FLOAT",
+      "unique_values": [
+        [
+          3.0
+        ],
+        [
+          2.0
+        ],
+        [
+          5.0
+        ],
+        [
+          4.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "value_statics": "Total count 4927 - Distinct count 1 - Null count 95073"
+    }
+  },
+  "INFANTAGERECODE22": {
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 23 - Distinct count 23 - Null count 0"
+    },
+    "Description": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 23 - Distinct count 23 - Null count 0"
+    }
+  },
+  "MANNEROFDEATH": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Not specified"
+        ],
+        [
+          "Suicide"
+        ],
+        [
+          "Homicide"
+        ],
+        [
+          "Pending investigation"
+        ],
+        [
+          "Self-Inflicted"
+        ],
+        [
+          "Natural"
+        ],
+        [
+          "Accident"
+        ],
+        [
+          "Could not determine"
+        ]
+      ],
+      "value_statics": "Total count 8 - Distinct count 8 - Null count 0"
+    },
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ]
+      ],
+      "value_statics": "Total count 8 - Distinct count 8 - Null count 0"
+    }
+  },
+  "RECORDAXISCONDITIONS": {
+    "Icd10Code": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 152 - Null count 0"
+    },
+    "Id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 100000 - Null count 0"
+    },
+    "DeathRecordId": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 97871 - Null count 0"
+    }
+  },
+  "RACERECODE5": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Other (Puerto Rico only)"
+        ],
+        [
+          "White"
+        ],
+        [
+          "Black"
+        ],
+        [
+          "Asian or Pacific Islander"
+        ],
+        [
+          "American Indian"
+        ]
+      ],
+      "value_statics": "Total count 5 - Distinct count 5 - Null count 0"
+    },
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "value_statics": "Total count 5 - Distinct count 5 - Null count 0"
+    }
+  },
+  "AGERECODE12": {
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          9
+        ],
+        [
+          11
+        ],
+        [
+          8
+        ],
+        [
+          10
+        ],
+        [
+          12
+        ]
+      ],
+      "value_statics": "Total count 12 - Distinct count 12 - Null count 0"
+    },
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Under 1 year (includes not stated infant ages)"
+        ],
+        [
+          "1 - 4 years"
+        ],
+        [
+          "5 - 14 years"
+        ],
+        [
+          "15 - 24 years"
+        ],
+        [
+          "25 - 34 years"
+        ],
+        [
+          "35 - 44 years"
+        ],
+        [
+          "45 - 54 years"
+        ],
+        [
+          "55 - 64 years"
+        ],
+        [
+          "75 - 84 years"
+        ],
+        [
+          "85 years and over"
+        ],
+        [
+          "65 - 74 years"
+        ],
+        [
+          "Age not stated"
+        ]
+      ],
+      "value_statics": "Total count 12 - Distinct count 12 - Null count 0"
+    }
+  },
+  "DAYOFWEEKOFDEATH": {
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          9
+        ]
+      ],
+      "value_statics": "Total count 8 - Distinct count 8 - Null count 0"
+    },
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Sunday"
+        ],
+        [
+          "Monday"
+        ],
+        [
+          "Tuesday"
+        ],
+        [
+          "Wednesday"
+        ],
+        [
+          "Thursday"
+        ],
+        [
+          "Friday"
+        ],
+        [
+          "Saturday"
+        ],
+        [
+          "Unknown"
+        ]
+      ],
+      "value_statics": "Total count 8 - Distinct count 8 - Null count 0"
+    }
+  },
+  "RESIDENTSTATUS": {
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    },
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "RESIDENTS"
+        ],
+        [
+          "INTRASTATE NONRESIDENTS"
+        ],
+        [
+          "INTERSTATE NONRESIDENTS"
+        ],
+        [
+          "FOREIGN RESIDENTS"
+        ]
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    }
+  },
+  "PLACEOFINJURY": {
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          9
+        ],
+        [
+          99
+        ],
+        [
+          8
+        ]
+      ],
+      "value_statics": "Total count 11 - Distinct count 11 - Null count 0"
+    },
+    "Description": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "Home"
+        ],
+        [
+          "Residential institution"
+        ],
+        [
+          "School, other institution and public administrative area"
+        ],
+        [
+          "Sports and athletics area"
+        ],
+        [
+          "Trade and service area"
+        ],
+        [
+          "Industrial and construction area"
+        ],
+        [
+          "Unspecified place"
+        ],
+        [
+          "Other Specified Places"
+        ],
+        [
+          "Causes other than W00-Y34, except Y06.- and Y07"
+        ],
+        [
+          "Street and highway"
+        ],
+        [
+          "Farm"
+        ]
+      ],
+      "value_statics": "Total count 11 - Distinct count 11 - Null count 0"
+    }
+  },
+  "TEMP_DEATHS": {
+    "Age": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "death_count": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "Icd10Code": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "None"
+    },
+    "Race": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "None"
+    }
+  },
+  "AGERECODE52": {
+    "Description": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 52 - Distinct count 52 - Null count 0"
+    },
+    "Code": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 52 - Distinct count 52 - Null count 0"
+    }
+  }
+}

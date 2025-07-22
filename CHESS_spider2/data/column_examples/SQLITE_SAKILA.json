@@ -1,0 +1,594 @@
+{
+  "ACTOR": {
+    "actor_id": [
+      118,
+      164,
+      124,
+      4,
+      146
+    ],
+    "first_name": [
+      "CUBA",
+      "HUMPHREY",
+      "SCARLETT",
+      "JENNIFER",
+      "ALBERT"
+    ],
+    "last_name": [
+      "ALLEN",
+      "WILLIS",
+      "BENING",
+      "DAVIS",
+      "JOHANSSON"
+    ],
+    "last_update": [
+      "2021-03-06 15:51:59",
+      "2021-03-06 15:52:00",
+      "2021-03-06 15:52:00",
+      "2021-03-06 15:51:59",
+      "2021-03-06 15:52:00"
+    ]
+  },
+  "ADDRESS": {
+    "address_id": [
+      568,
+      271,
+      530,
+      452,
+      5
+    ],
+    "address": [
+      "1342 Sharja Way",
+      "1587 Loja Manor",
+      "1003 Qinhuangdao Street",
+      "207 Cuernavaca Loop",
+      "1913 Hanoi Way"
+    ],
+    "address2": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "district": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ],
+    "city_id": [
+      488,
+      447,
+      419,
+      352,
+      463
+    ],
+    "postal_code": [
+      "93655",
+      "5410",
+      "25972",
+      "52671",
+      "35200"
+    ],
+    "phone": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ],
+    "last_update": [
+      "2021-03-06 15:51:58",
+      "2021-03-06 15:51:56",
+      "2021-03-06 15:51:58",
+      "2021-03-06 15:51:57",
+      "2021-03-06 15:51:54"
+    ]
+  },
+  "CATEGORY": {
+    "category_id": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "name": [
+      "Action",
+      "Animation",
+      "Children",
+      "Classics",
+      "Comedy"
+    ],
+    "last_update": [
+      "2021-03-06 15:52:00",
+      "2021-03-06 15:52:00",
+      "2021-03-06 15:52:00",
+      "2021-03-06 15:52:00",
+      "2021-03-06 15:52:00"
+    ]
+  },
+  "CITY": {
+    "city_id": [
+      365,
+      415,
+      403,
+      184,
+      5
+    ],
+    "city": [
+      "Nezahualcyotl",
+      "Probolinggo",
+      "Pemalang",
+      "Gorontalo",
+      "Adana"
+    ],
+    "country_id": [
+      60,
+      45,
+      45,
+      45,
+      97
+    ],
+    "last_update": [
+      "2021-03-06 15:51:52",
+      "2021-03-06 15:51:52",
+      "2021-03-06 15:51:52",
+      "2021-03-06 15:51:51",
+      "2021-03-06 15:51:49"
+    ]
+  },
+  "COUNTRY": {
+    "country_id": [
+      1,
+      2,
+      102,
+      4,
+      5
+    ],
+    "country": [
+      "Afghanistan",
+      "Algeria",
+      "United Kingdom",
+      "Angola",
+      "Anguilla"
+    ],
+    "last_update": [
+      "2021-03-06 15:51:49",
+      "2021-03-06 15:51:49",
+      "2021-03-06 15:51:49",
+      "2021-03-06 15:51:49",
+      "2021-03-06 15:51:49"
+    ]
+  },
+  "CUSTOMER": {
+    "customer_id": [
+      375,
+      177,
+      3,
+      268,
+      399
+    ],
+    "store_id": [
+      2,
+      2,
+      1,
+      1,
+      1
+    ],
+    "first_name": [
+      "AARON",
+      "SAMANTHA",
+      "LINDA",
+      "NINA",
+      "DANNY"
+    ],
+    "last_name": [
+      "SELBY",
+      "DUNCAN",
+      "WILLIAMS",
+      "SOTO",
+      "ISOM"
+    ],
+    "email": [
+      "AARON.SELBY@sakilacustomer.org",
+      "SAMANTHA.DUNCAN@sakilacustomer.org",
+      "LINDA.WILLIAMS@sakilacustomer.org",
+      "NINA.SOTO@sakilacustomer.org",
+      "DANNY.ISOM@sakilacustomer.org"
+    ],
+    "address_id": [
+      380,
+      181,
+      7,
+      273,
+      404
+    ],
+    "active": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "create_date": [
+      "2006-02-14 22:04:37.000",
+      "2006-02-14 22:04:36.000",
+      "2006-02-14 22:04:36.000",
+      "2006-02-14 22:04:36.000",
+      "2006-02-14 22:04:37.000"
+    ],
+    "last_update": [
+      "2021-03-06 15:53:39",
+      "2021-03-06 15:53:37",
+      "2021-03-06 15:53:36",
+      "2021-03-06 15:53:38",
+      "2021-03-06 15:53:39"
+    ]
+  },
+  "FILM": {
+    "film_id": [
+      1,
+      762,
+      858,
+      441,
+      5
+    ],
+    "title": [
+      "ACADEMY DINOSAUR",
+      "SASSY PACKER",
+      "SUBMARINE BED",
+      "HUNTER ALTER",
+      "AFRICAN EGG"
+    ],
+    "description": [
+      "A Epic Drama of a Feminist And a Mad Scientist who must Battle a Teacher in The Canadian Rockies",
+      "A Fast-Paced Documentary of a Dog And a Teacher who must Find a Moose in A Manhattan Penthouse",
+      "A Amazing Display of a Car And a Monkey who must Fight a Teacher in Soviet Georgia",
+      "A Emotional Drama of a Mad Cow And a Boat who must Redeem a Secret Agent in A Shark Tank",
+      "A Fast-Paced Documentary of a Pastry Chef And a Dentist who must Pursue a Forensic Psychologist i..."
+    ],
+    "release_year": [
+      "2006",
+      "2006",
+      "2006",
+      "2006",
+      "2006"
+    ],
+    "language_id": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "original_language_id": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rental_duration": [
+      6,
+      6,
+      5,
+      5,
+      6
+    ],
+    "rental_rate": [
+      0.99,
+      0.99,
+      4.99,
+      2.99,
+      2.99
+    ],
+    "length": [
+      86,
+      154,
+      127,
+      125,
+      130
+    ],
+    "replacement_cost": [
+      20.99,
+      29.99,
+      21.99,
+      21.99,
+      22.99
+    ],
+    "rating": [
+      "PG",
+      "G",
+      "R",
+      "PG-13",
+      "G"
+    ],
+    "special_features": [
+      "Deleted Scenes,Behind the Scenes",
+      "Deleted Scenes,Behind the Scenes",
+      "Trailers",
+      "Commentaries,Deleted Scenes,Behind the Scenes",
+      "Deleted Scenes"
+    ],
+    "last_update": [
+      "2021-03-06 15:52:00",
+      "2021-03-06 15:52:06",
+      "2021-03-06 15:52:07",
+      "2021-03-06 15:52:04",
+      "2021-03-06 15:52:00"
+    ]
+  },
+  "FILM_ACTOR": {
+    "actor_id": [
+      84,
+      114,
+      133,
+      134,
+      69
+    ],
+    "film_id": [
+      491,
+      68,
+      727,
+      861,
+      300
+    ],
+    "last_update": [
+      "2021-03-06 15:53:02",
+      "2021-03-06 15:53:09",
+      "2021-03-06 15:53:14",
+      "2021-03-06 15:53:14",
+      "2021-03-06 15:52:59"
+    ]
+  },
+  "FILM_CATEGORY": {
+    "film_id": [
+      728,
+      2,
+      242,
+      4,
+      285
+    ],
+    "category_id": [
+      7,
+      11,
+      5,
+      11,
+      14
+    ],
+    "last_update": [
+      "2021-03-06 15:53:33",
+      "2021-03-06 15:53:28",
+      "2021-03-06 15:53:29",
+      "2021-03-06 15:53:28",
+      "2021-03-06 15:53:30"
+    ]
+  },
+  "FILM_TEXT": {
+    "film_id": [],
+    "title": [],
+    "description": []
+  },
+  "INVENTORY": {
+    "inventory_id": [
+      4488,
+      940,
+      309,
+      1689,
+      4298
+    ],
+    "film_id": [
+      980,
+      208,
+      69,
+      368,
+      936
+    ],
+    "store_id": [
+      2,
+      1,
+      2,
+      1,
+      2
+    ],
+    "last_update": [
+      "2021-03-06 15:52:44",
+      "2021-03-06 15:52:16",
+      "2021-03-06 15:52:11",
+      "2021-03-06 15:52:22",
+      "2021-03-06 15:52:42"
+    ]
+  },
+  "LANGUAGE": {
+    "language_id": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "name": [
+      "English",
+      "Italian",
+      "Japanese",
+      "Mandarin",
+      "French"
+    ],
+    "last_update": [
+      "2021-03-06 15:51:48",
+      "2021-03-06 15:51:48",
+      "2021-03-06 15:51:48",
+      "2021-03-06 15:51:48",
+      "2021-03-06 15:51:48"
+    ]
+  },
+  "PAYMENT": {
+    "payment_id": [
+      5083,
+      13949,
+      3661,
+      1967,
+      7874
+    ],
+    "customer_id": [
+      187,
+      518,
+      135,
+      72,
+      291
+    ],
+    "staff_id": [
+      1,
+      2,
+      1,
+      1,
+      1
+    ],
+    "rental_id": [
+      4429.0,
+      7154.0,
+      13035.0,
+      14020.0,
+      1012.0
+    ],
+    "amount": [
+      4.99,
+      4.99,
+      0.99,
+      0.99,
+      2.99
+    ],
+    "payment_date": [
+      "2005-07-07 22:32:47.000",
+      "2005-07-27 07:16:17.000",
+      "2005-08-19 08:46:45.000",
+      "2005-08-20 20:59:43.000",
+      "2005-05-31 02:18:05.000"
+    ],
+    "last_update": [
+      "2021-03-06 15:56:40",
+      "2021-03-06 15:57:52",
+      "2021-03-06 15:56:28",
+      "2021-03-06 15:56:14",
+      "2021-03-06 15:57:02"
+    ]
+  },
+  "RENTAL": {
+    "rental_id": [
+      7106,
+      8638,
+      12495,
+      378,
+      11981
+    ],
+    "rental_date": [
+      "2005-07-27 05:21:24.000",
+      "2005-07-29 14:30:23.000",
+      "2005-08-18 12:56:37.000",
+      "2005-05-27 09:23:22.000",
+      "2005-08-17 18:10:40.000"
+    ],
+    "inventory_id": [
+      1415,
+      4060,
+      1225,
+      2242,
+      3228
+    ],
+    "customer_id": [
+      201,
+      571,
+      102,
+      53,
+      294
+    ],
+    "return_date": [
+      "2005-08-02 01:58:24.000",
+      "2005-08-01 10:32:23.000",
+      "2005-08-22 06:58:37.000",
+      "2005-05-29 15:20:22.000",
+      "2005-08-20 16:56:40.000"
+    ],
+    "staff_id": [
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "last_update": [
+      "2021-03-06 15:54:39",
+      "2021-03-06 15:54:52",
+      "2021-03-06 15:55:24",
+      "2021-03-06 15:53:44",
+      "2021-03-06 15:55:19"
+    ]
+  },
+  "STAFF": {
+    "staff_id": [
+      1,
+      2
+    ],
+    "first_name": [
+      "Mike",
+      "Jon"
+    ],
+    "last_name": [
+      "Hillyer",
+      "Stephens"
+    ],
+    "address_id": [
+      3,
+      4
+    ],
+    "picture": [
+      "",
+      ""
+    ],
+    "email": [
+      "Mike.Hillyer@sakilastaff.com",
+      "Jon.Stephens@sakilastaff.com"
+    ],
+    "store_id": [
+      1,
+      2
+    ],
+    "active": [
+      1,
+      1
+    ],
+    "username": [
+      "Mike",
+      "Jon"
+    ],
+    "password": [
+      "8cb2237d0679ca88db6464eac60da96345513964",
+      "8cb2237d0679ca88db6464eac60da96345513964"
+    ],
+    "last_update": [
+      "2021-03-06 15:52:00",
+      "2021-03-06 15:52:00"
+    ]
+  },
+  "STORE": {
+    "store_id": [
+      1,
+      2
+    ],
+    "manager_staff_id": [
+      1,
+      2
+    ],
+    "address_id": [
+      1,
+      2
+    ],
+    "last_update": [
+      "2021-03-06 15:52:00",
+      "2021-03-06 15:52:00"
+    ]
+  }
+}

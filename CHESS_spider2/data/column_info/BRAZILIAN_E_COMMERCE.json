@@ -1,0 +1,387 @@
+{
+  "OLIST_CUSTOMERS": {
+    "customer_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99441 - Distinct count 99441 - Null count 0"
+    },
+    "customer_unique_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99441 - Distinct count 96096 - Null count 0"
+    },
+    "customer_zip_code_prefix": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 99441 - Distinct count 14994 - Null count 0"
+    },
+    "customer_city": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99441 - Distinct count 4119 - Null count 0"
+    },
+    "customer_state": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99441 - Distinct count 27 - Null count 0"
+    }
+  },
+  "OLIST_GEOLOCATION": {
+    "geolocation_zip_code_prefix": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1000163 - Distinct count 19015 - Null count 0"
+    },
+    "geolocation_lat": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 1000163 - Distinct count 717360 - Null count 0"
+    },
+    "geolocation_lng": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 1000163 - Distinct count 717613 - Null count 0"
+    },
+    "geolocation_city": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1000163 - Distinct count 8011 - Null count 0"
+    },
+    "geolocation_state": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1000163 - Distinct count 27 - Null count 0"
+    }
+  },
+  "OLIST_ORDERS": {
+    "order_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99441 - Distinct count 99441 - Null count 0"
+    },
+    "customer_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99441 - Distinct count 99441 - Null count 0"
+    },
+    "order_status": {
+      "type": "TEXT",
+      "unique_values": [
+        "delivered",
+        "delivered",
+        "delivered",
+        "delivered",
+        "delivered",
+        "delivered",
+        "delivered",
+        "delivered",
+        "delivered",
+        "delivered"
+      ],
+      "value_statics": "Total count 99441 - Distinct count 8 - Null count 0"
+    },
+    "order_purchase_timestamp": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99441 - Distinct count 98875 - Null count 0"
+    },
+    "order_approved_at": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99441 - Distinct count 90734 - Null count 0"
+    },
+    "order_delivered_carrier_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99441 - Distinct count 81019 - Null count 0"
+    },
+    "order_delivered_customer_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99441 - Distinct count 95665 - Null count 0"
+    },
+    "order_estimated_delivery_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99441 - Distinct count 459 - Null count 0"
+    }
+  },
+  "OLIST_ORDER_ITEMS": {
+    "order_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 112650 - Distinct count 98666 - Null count 0"
+    },
+    "order_item_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 112650 - Distinct count 21 - Null count 0"
+    },
+    "product_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 112650 - Distinct count 32951 - Null count 0"
+    },
+    "seller_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 112650 - Distinct count 3095 - Null count 0"
+    },
+    "shipping_limit_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 112650 - Distinct count 93318 - Null count 0"
+    },
+    "price": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 112650 - Distinct count 5968 - Null count 0"
+    },
+    "freight_value": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 112650 - Distinct count 6999 - Null count 0"
+    }
+  },
+  "OLIST_ORDER_PAYMENTS": {
+    "order_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 103886 - Distinct count 99440 - Null count 0"
+    },
+    "payment_sequential": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 103886 - Distinct count 29 - Null count 0"
+    },
+    "payment_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "credit_card",
+        "credit_card",
+        "boleto",
+        "debit_card",
+        "credit_card",
+        "credit_card",
+        "credit_card",
+        "voucher",
+        "credit_card",
+        "credit_card"
+      ],
+      "value_statics": "Total count 103886 - Distinct count 5 - Null count 0"
+    },
+    "payment_installments": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 103886 - Distinct count 24 - Null count 0"
+    },
+    "payment_value": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 103886 - Distinct count 29077 - Null count 0"
+    }
+  },
+  "OLIST_ORDER_REVIEWS": {
+    "review_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99224 - Distinct count 98410 - Null count 0"
+    },
+    "order_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99224 - Distinct count 98673 - Null count 0"
+    },
+    "review_score": {
+      "type": "NUMBER",
+      "unique_values": [
+        5,
+        5,
+        5,
+        4,
+        5,
+        5,
+        2,
+        1,
+        4,
+        1
+      ],
+      "value_statics": "Total count 99224 - Distinct count 5 - Null count 0"
+    },
+    "review_comment_title": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99224 - Distinct count 4528 - Null count 0"
+    },
+    "review_comment_message": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99224 - Distinct count 36160 - Null count 0"
+    },
+    "review_creation_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99224 - Distinct count 636 - Null count 0"
+    },
+    "review_answer_timestamp": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 99224 - Distinct count 98248 - Null count 0"
+    }
+  },
+  "OLIST_PRODUCTS": {
+    "product_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 32951 - Null count 0"
+    },
+    "product_category_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 74 - Null count 0"
+    },
+    "product_name_lenght": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 66 - Null count 610"
+    },
+    "product_description_lenght": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 2960 - Null count 610"
+    },
+    "product_photos_qty": {
+      "type": "FLOAT",
+      "unique_values": [
+        2.0,
+        1.0,
+        6.0,
+        2.0,
+        1.0,
+        3.0,
+        1.0,
+        4.0,
+        2.0,
+        1.0
+      ],
+      "value_statics": "Total count 32951 - Distinct count 19 - Null count 610"
+    },
+    "product_weight_g": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 2204 - Null count 2"
+    },
+    "product_length_cm": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 99 - Null count 2"
+    },
+    "product_height_cm": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 102 - Null count 2"
+    },
+    "product_width_cm": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 95 - Null count 2"
+    }
+  },
+  "OLIST_PRODUCTS_DATASET": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 32951 - Null count 0"
+    },
+    "product_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 32951 - Null count 0"
+    },
+    "product_category_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 74 - Null count 0"
+    },
+    "product_name_lenght": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 66 - Null count 610"
+    },
+    "product_description_lenght": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 2960 - Null count 610"
+    },
+    "product_photos_qty": {
+      "type": "FLOAT",
+      "unique_values": [
+        2.0,
+        null,
+        5.0,
+        2.0,
+        2.0,
+        1.0,
+        6.0,
+        5.0,
+        2.0,
+        1.0
+      ],
+      "value_statics": "Total count 32951 - Distinct count 19 - Null count 610"
+    },
+    "product_weight_g": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 2204 - Null count 2"
+    },
+    "product_length_cm": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 99 - Null count 2"
+    },
+    "product_height_cm": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 102 - Null count 2"
+    },
+    "product_width_cm": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 32951 - Distinct count 95 - Null count 2"
+    }
+  },
+  "OLIST_SELLERS": {
+    "seller_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3095 - Distinct count 3095 - Null count 0"
+    },
+    "seller_zip_code_prefix": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3095 - Distinct count 2246 - Null count 0"
+    },
+    "seller_city": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3095 - Distinct count 611 - Null count 0"
+    },
+    "seller_state": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3095 - Distinct count 23 - Null count 0"
+    }
+  },
+  "PRODUCT_CATEGORY_NAME_TRANSLATION": {
+    "product_category_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 71 - Distinct count 71 - Null count 0"
+    },
+    "product_category_name_english": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 71 - Distinct count 71 - Null count 0"
+    }
+  }
+}

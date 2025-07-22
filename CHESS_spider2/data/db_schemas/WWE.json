@@ -1,0 +1,57 @@
+{
+  "BELTS": [
+    "id",
+    "name"
+  ],
+  "CARDS": [
+    "id",
+    "table_id",
+    "location_id",
+    "promotion_id",
+    "event_date",
+    "event_id",
+    "url",
+    "info_html",
+    "match_html"
+  ],
+  "EVENTS": [
+    "id",
+    "name"
+  ],
+  "LOCATIONS": [
+    "id",
+    "name"
+  ],
+  "MATCHES": [
+    "id",
+    "card_id",
+    "winner_id",
+    "win_type",
+    "loser_id",
+    "match_type_id",
+    "duration",
+    "title_id",
+    "title_change"
+  ],
+  "MATCH_TYPES": [
+    "id",
+    "name"
+  ],
+  "PROMOTIONS": [
+    "id",
+    "name"
+  ],
+  "SQLITE_SEQUENCE": [
+    "name",
+    "seq"
+  ],
+  "TABLES": [
+    "id",
+    "html",
+    "url"
+  ],
+  "WRESTLERS": [
+    "id",
+    "name"
+  ]
+}

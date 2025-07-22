@@ -1,0 +1,854 @@
+{
+  "COMPANIES_DATES": {
+    "company_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1085 - Distinct count 1074 - Null count 0"
+    },
+    "date_joined": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1085 - Distinct count 639 - Null count 0"
+    },
+    "year_founded": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1085 - Distinct count 35 - Null count 0"
+    }
+  },
+  "COMPANIES_FUNDING": {
+    "company_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1085 - Distinct count 1074 - Null count 0"
+    },
+    "valuation": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1085 - Distinct count 30 - Null count 0"
+    },
+    "funding": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1085 - Distinct count 538 - Null count 0"
+    },
+    "select_investors": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1085 - Distinct count 1059 - Null count 0"
+    }
+  },
+  "COMPANIES_INDUSTRIES": {
+    "company_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1085 - Distinct count 1074 - Null count 0"
+    },
+    "industry": {
+      "type": "TEXT",
+      "unique_values": [
+        "Hardware",
+        "Consumer & retail",
+        "Fintech",
+        "Edtech",
+        "Internet software & services",
+        "Data management & analytics",
+        "Fintech",
+        "Edtech",
+        "Auto & transportation",
+        "Cybersecurity"
+      ],
+      "value_statics": "Total count 1085 - Distinct count 15 - Null count 0"
+    }
+  },
+  "INCOME_TREES": {
+    "zipcode": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 220 - Distinct count 216 - Null count 0"
+    },
+    "Estimate_Total": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 220 - Distinct count 185 - Null count 0"
+    },
+    "Margin_of_Error_Total": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 220 - Distinct count 153 - Null count 0"
+    },
+    "Estimate_Median_income": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 220 - Distinct count 184 - Null count 0"
+    },
+    "Margin_of_Error_Median_income": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 220 - Distinct count 180 - Null count 0"
+    },
+    "Estimate_Mean_income": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 220 - Distinct count 185 - Null count 0"
+    },
+    "Margin_of_Error_Mean_income": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 220 - Distinct count 182 - Null count 0"
+    }
+  },
+  "PIZZA_CLEAN_CUSTOMER_ORDERS": {
+    "order_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7
+      ],
+      "value_statics": "Total count 14 - Distinct count 10 - Null count 0"
+    },
+    "customer_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        101,
+        101,
+        102,
+        102,
+        103,
+        103,
+        103,
+        104,
+        101,
+        105
+      ],
+      "value_statics": "Total count 14 - Distinct count 5 - Null count 0"
+    },
+    "pizza_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "value_statics": "Total count 14 - Distinct count 2 - Null count 0"
+    },
+    "exclusions": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "4",
+        "4",
+        "4",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 14 - Distinct count 3 - Null count 0"
+    },
+    "extras": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1",
+        "",
+        "1"
+      ],
+      "value_statics": "Total count 14 - Distinct count 4 - Null count 0"
+    },
+    "order_time": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-01-01 18:05:02",
+        "2021-01-01 19:00:52",
+        "2021-01-02 23:51:23",
+        "2021-01-02 23:51:23",
+        "2021-01-04 13:23:46",
+        "2021-01-04 13:23:46",
+        "2021-01-04 13:23:46",
+        "2021-01-08 21:00:29",
+        "2021-01-08 21:03:13",
+        "2021-01-08 21:20:29"
+      ],
+      "value_statics": "Total count 14 - Distinct count 10 - Null count 0"
+    }
+  },
+  "PIZZA_CLEAN_RUNNER_ORDERS": {
+    "order_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "value_statics": "Total count 10 - Distinct count 10 - Null count 0"
+    },
+    "runner_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3,
+        2,
+        2,
+        2,
+        1
+      ],
+      "value_statics": "Total count 10 - Distinct count 3 - Null count 0"
+    },
+    "pickup_time": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-01-01 18:15:34",
+        "2021-01-01 19:10:54",
+        "2021-01-03 00:12:37",
+        "2021-01-04 13:53:03",
+        "2021-01-08 21:10:57",
+        "",
+        "2021-01-08 21:30:45",
+        "2021-01-10 00:15:02",
+        "",
+        "2021-01-11 18:50:20"
+      ],
+      "value_statics": "Total count 10 - Distinct count 9 - Null count 0"
+    },
+    "distance": {
+      "type": "FLOAT",
+      "unique_values": [
+        20.0,
+        20.0,
+        13.4,
+        23.4,
+        10.0,
+        0.0,
+        25.0,
+        23.4,
+        0.0,
+        10.0
+      ],
+      "value_statics": "Total count 10 - Distinct count 6 - Null count 0"
+    },
+    "duration": {
+      "type": "FLOAT",
+      "unique_values": [
+        32.0,
+        27.0,
+        20.0,
+        40.0,
+        15.0,
+        0.0,
+        25.0,
+        15.0,
+        0.0,
+        10.0
+      ],
+      "value_statics": "Total count 10 - Distinct count 8 - Null count 0"
+    },
+    "cancellation": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Restaurant Cancellation",
+        "",
+        "",
+        "Customer Cancellation",
+        ""
+      ],
+      "value_statics": "Total count 10 - Distinct count 3 - Null count 0"
+    }
+  },
+  "PIZZA_CUSTOMER_ORDERS": {
+    "order_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        7
+      ],
+      "value_statics": "Total count 14 - Distinct count 10 - Null count 0"
+    },
+    "customer_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        101,
+        101,
+        102,
+        102,
+        103,
+        103,
+        103,
+        104,
+        101,
+        105
+      ],
+      "value_statics": "Total count 14 - Distinct count 5 - Null count 0"
+    },
+    "pizza_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "value_statics": "Total count 14 - Distinct count 2 - Null count 0"
+    },
+    "exclusions": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "4",
+        "4",
+        "4",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 14 - Distinct count 3 - Null count 0"
+    },
+    "extras": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1",
+        "",
+        "1"
+      ],
+      "value_statics": "Total count 14 - Distinct count 4 - Null count 0"
+    },
+    "order_time": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-01-01 18:05:02",
+        "2021-01-01 19:00:52",
+        "2021-01-02 23:51:23",
+        "2021-01-02 23:51:23",
+        "2021-01-04 13:23:46",
+        "2021-01-04 13:23:46",
+        "2021-01-04 13:23:46",
+        "2021-01-08 21:00:29",
+        "2021-01-08 21:03:13",
+        "2021-01-08 21:20:29"
+      ],
+      "value_statics": "Total count 14 - Distinct count 10 - Null count 0"
+    }
+  },
+  "PIZZA_GET_EXCLUSIONS": {
+    "row_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "value_statics": "Total count 4 - Distinct count 2 - Null count 0"
+    },
+    "order_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        4,
+        9,
+        10,
+        10
+      ],
+      "value_statics": "Total count 4 - Distinct count 3 - Null count 0"
+    },
+    "exclusions": {
+      "type": "NUMBER",
+      "unique_values": [
+        4,
+        4,
+        2,
+        6
+      ],
+      "value_statics": "Total count 4 - Distinct count 3 - Null count 0"
+    },
+    "total_exclusions": {
+      "type": "NUMBER",
+      "unique_values": [
+        3,
+        1,
+        2,
+        2
+      ],
+      "value_statics": "Total count 4 - Distinct count 3 - Null count 0"
+    }
+  },
+  "PIZZA_GET_EXTRAS": {
+    "row_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2
+      ],
+      "value_statics": "Total count 6 - Distinct count 2 - Null count 0"
+    },
+    "order_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        5,
+        7,
+        9,
+        9,
+        10,
+        10
+      ],
+      "value_statics": "Total count 6 - Distinct count 4 - Null count 0"
+    },
+    "extras": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        5,
+        1,
+        4
+      ],
+      "value_statics": "Total count 6 - Distinct count 3 - Null count 0"
+    },
+    "extras_count": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "value_statics": "Total count 6 - Distinct count 2 - Null count 0"
+    }
+  },
+  "PIZZA_NAMES": {
+    "pizza_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "pizza_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Meatlovers",
+        "Vegetarian"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    }
+  },
+  "PIZZA_RECIPES": {
+    "pizza_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "toppings": {
+      "type": "TEXT",
+      "unique_values": [
+        "1, 2, 3, 4, 5, 6, 8, 10",
+        "4, 6, 7, 9, 11, 12"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    }
+  },
+  "PIZZA_RUNNERS": {
+    "runner_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    },
+    "registration_date": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-01-01",
+        "2021-01-03",
+        "2021-01-08",
+        "2021-01-15"
+      ],
+      "value_statics": "Total count 4 - Distinct count 4 - Null count 0"
+    }
+  },
+  "PIZZA_RUNNER_ORDERS": {
+    "order_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "value_statics": "Total count 10 - Distinct count 10 - Null count 0"
+    },
+    "runner_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3,
+        2,
+        2,
+        2,
+        1
+      ],
+      "value_statics": "Total count 10 - Distinct count 3 - Null count 0"
+    },
+    "pickup_time": {
+      "type": "TEXT",
+      "unique_values": [
+        "2021-01-01 18:15:34",
+        "2021-01-01 19:10:54",
+        "2021-01-03 00:12:37",
+        "2021-01-04 13:53:03",
+        "2021-01-08 21:10:57",
+        "",
+        "2021-01-08 21:30:45",
+        "2021-01-10 00:15:02",
+        "",
+        "2021-01-11 18:50:20"
+      ],
+      "value_statics": "Total count 10 - Distinct count 9 - Null count 0"
+    },
+    "distance": {
+      "type": "TEXT",
+      "unique_values": [
+        "20km",
+        "20km",
+        "13.4km",
+        "23.4",
+        "10",
+        "",
+        "25km",
+        "23.4 km",
+        "",
+        "10km"
+      ],
+      "value_statics": "Total count 10 - Distinct count 8 - Null count 0"
+    },
+    "duration": {
+      "type": "TEXT",
+      "unique_values": [
+        "32 minutes",
+        "27 minutes",
+        "20 mins",
+        "40",
+        "15",
+        "",
+        "25mins",
+        "15 minute",
+        "",
+        "10minutes"
+      ],
+      "value_statics": "Total count 10 - Distinct count 9 - Null count 0"
+    },
+    "cancellation": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Restaurant Cancellation",
+        "",
+        "",
+        "Customer Cancellation",
+        ""
+      ],
+      "value_statics": "Total count 10 - Distinct count 3 - Null count 0"
+    }
+  },
+  "PIZZA_TOPPINGS": {
+    "topping_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "value_statics": "Total count 12 - Distinct count 12 - Null count 0"
+    },
+    "topping_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Bacon",
+        "BBQ Sauce",
+        "Beef",
+        "Cheese",
+        "Chicken",
+        "Mushrooms",
+        "Onions",
+        "Pepperoni",
+        "Peppers",
+        "Salami"
+      ],
+      "value_statics": "Total count 12 - Distinct count 12 - Null count 0"
+    }
+  },
+  "STATISTICS": {
+    "date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1010 - Distinct count 285 - Null count 0"
+    },
+    "state": {
+      "type": "TEXT",
+      "unique_values": [
+        "MA",
+        "NC",
+        "MA",
+        "MA",
+        "FL",
+        "FL",
+        "MA",
+        "MA",
+        "FL",
+        "MA"
+      ],
+      "value_statics": "Total count 1010 - Distinct count 4 - Null count 0"
+    },
+    "total_cases": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1010 - Distinct count 932 - Null count 0"
+    },
+    "total_deaths": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1010 - Distinct count 835 - Null count 0"
+    }
+  },
+  "TREES": {
+    "idx": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 690626 - Distinct count 683788 - Null count 0"
+    },
+    "tree_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 690626 - Distinct count 683788 - Null count 0"
+    },
+    "tree_dbh": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 690626 - Distinct count 146 - Null count 0"
+    },
+    "stump_diam": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 690626 - Distinct count 100 - Null count 0"
+    },
+    "status": {
+      "type": "TEXT",
+      "unique_values": [
+        "Alive",
+        "Alive",
+        "Alive",
+        "Alive",
+        "Alive",
+        "Alive",
+        "Alive",
+        "Alive",
+        "Alive",
+        "Alive"
+      ],
+      "value_statics": "Total count 690626 - Distinct count 3 - Null count 0"
+    },
+    "health": {
+      "type": "TEXT",
+      "unique_values": [
+        "Good",
+        "Fair",
+        "Good",
+        "Good",
+        "Good",
+        "Good",
+        "Good",
+        "Good",
+        "Good",
+        "Good"
+      ],
+      "value_statics": "Total count 690626 - Distinct count 4 - Null count 0"
+    },
+    "spc_latin": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 690626 - Distinct count 133 - Null count 0"
+    },
+    "spc_common": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 690626 - Distinct count 133 - Null count 0"
+    },
+    "address": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 690626 - Distinct count 408701 - Null count 0"
+    },
+    "zipcode": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 690626 - Distinct count 191 - Null count 0"
+    },
+    "borocode": {
+      "type": "NUMBER",
+      "unique_values": [
+        2,
+        4,
+        3,
+        4,
+        4,
+        4,
+        3,
+        4,
+        1,
+        4
+      ],
+      "value_statics": "Total count 690626 - Distinct count 5 - Null count 0"
+    },
+    "boroname": {
+      "type": "TEXT",
+      "unique_values": [
+        "Bronx",
+        "Queens",
+        "Brooklyn",
+        "Queens",
+        "Queens",
+        "Queens",
+        "Brooklyn",
+        "Queens",
+        "Manhattan",
+        "Queens"
+      ],
+      "value_statics": "Total count 690626 - Distinct count 5 - Null count 0"
+    },
+    "nta_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 690626 - Distinct count 188 - Null count 0"
+    },
+    "state": {
+      "type": "TEXT",
+      "unique_values": [
+        "New York",
+        "New York",
+        "New York",
+        "New York",
+        "New York",
+        "New York",
+        "New York",
+        "New York",
+        "New York",
+        "New York"
+      ],
+      "value_statics": "Total count 690626 - Distinct count 1 - Null count 0"
+    },
+    "latitude": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 690626 - Distinct count 676080 - Null count 0"
+    },
+    "longitude": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 690626 - Distinct count 677101 - Null count 0"
+    }
+  },
+  "WORD_LIST": {
+    "words": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 373804 - Distinct count 370102 - Null count 0"
+    }
+  }
+}

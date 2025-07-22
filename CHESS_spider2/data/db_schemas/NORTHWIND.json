@@ -1,0 +1,127 @@
+{
+  "CATEGORIES": [
+    "categoryid",
+    "categoryname",
+    "description",
+    "picture"
+  ],
+  "CUSTOMERCUSTOMERDEMO": [
+    "customerid",
+    "customertypeid"
+  ],
+  "CUSTOMERDEMOGRAPHICS": [
+    "customertypeid",
+    "customerdesc"
+  ],
+  "CUSTOMERGROUPTHRESHOLD": [
+    "groupname",
+    "rangebottom",
+    "rangetop"
+  ],
+  "CUSTOMERS": [
+    "customerid",
+    "companyname",
+    "contactname",
+    "contacttitle",
+    "address",
+    "city",
+    "region",
+    "postalcode",
+    "country",
+    "phone",
+    "fax"
+  ],
+  "EMPLOYEES": [
+    "employeeid",
+    "lastname",
+    "firstname",
+    "title",
+    "titleofcourtesy",
+    "birthdate",
+    "hiredate",
+    "address",
+    "city",
+    "region",
+    "postalcode",
+    "country",
+    "homephone",
+    "extension",
+    "photo",
+    "notes",
+    "reportsto",
+    "photopath"
+  ],
+  "EMPLOYEETERRITORIES": [
+    "employeeid",
+    "territoryid"
+  ],
+  "ORDERS": [
+    "orderid",
+    "customerid",
+    "employeeid",
+    "orderdate",
+    "requireddate",
+    "shippeddate",
+    "shipvia",
+    "freight",
+    "shipname",
+    "shipaddress",
+    "shipcity",
+    "shipregion",
+    "shippostalcode",
+    "shipcountry"
+  ],
+  "ORDER_DETAILS": [
+    "orderid",
+    "productid",
+    "unitprice",
+    "quantity",
+    "discount"
+  ],
+  "PRODUCTS": [
+    "productid",
+    "productname",
+    "supplierid",
+    "categoryid",
+    "quantityperunit",
+    "unitprice",
+    "unitsinstock",
+    "unitsonorder",
+    "reorderlevel",
+    "discontinued"
+  ],
+  "REGION": [
+    "regionid",
+    "regiondescription"
+  ],
+  "SHIPPERS": [
+    "shipperid",
+    "companyname",
+    "phone"
+  ],
+  "SUPPLIERS": [
+    "supplierid",
+    "companyname",
+    "contactname",
+    "contacttitle",
+    "address",
+    "city",
+    "region",
+    "postalcode",
+    "country",
+    "phone",
+    "fax",
+    "homepage"
+  ],
+  "TERRITORIES": [
+    "territoryid",
+    "territorydescription",
+    "regionid"
+  ],
+  "USSTATES": [
+    "stateid",
+    "statename",
+    "stateabbr",
+    "stateregion"
+  ]
+}

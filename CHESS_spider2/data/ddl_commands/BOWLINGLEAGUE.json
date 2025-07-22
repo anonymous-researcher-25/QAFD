@@ -1,0 +1,14 @@
+{
+  "BOWLERS": "create or replace TABLE BOWLERS (\n\t\"BowlerID\" NUMBER(38,0),\n\t\"BowlerLastName\" VARCHAR(16777216),\n\t\"BowlerFirstName\" VARCHAR(16777216),\n\t\"BowlerMiddleInit\" VARCHAR(16777216),\n\t\"BowlerAddress\" VARCHAR(16777216),\n\t\"BowlerCity\" VARCHAR(16777216),\n\t\"BowlerState\" VARCHAR(16777216),\n\t\"BowlerZip\" VARCHAR(16777216),\n\t\"BowlerPhoneNumber\" VARCHAR(16777216),\n\t\"TeamID\" NUMBER(38,0),\n\t\"BowlerTotalPins\" NUMBER(38,0),\n\t\"BowlerGamesBowled\" NUMBER(38,0),\n\t\"BowlerCurrentAverage\" NUMBER(38,0),\n\t\"BowlerCurrentHcp\" NUMBER(38,0)\n);",
+  "BOWLER_SCORES": "create or replace TABLE BOWLER_SCORES (\n\t\"MatchID\" NUMBER(38,0),\n\t\"GameNumber\" NUMBER(38,0),\n\t\"BowlerID\" NUMBER(38,0),\n\t\"RawScore\" NUMBER(38,0),\n\t\"HandiCapScore\" NUMBER(38,0),\n\t\"WonGame\" NUMBER(38,0)\n);",
+  "BOWLER_SCORES_ARCHIVE": "create or replace TABLE BOWLER_SCORES_ARCHIVE (\n\t\"MatchID\" VARCHAR(16777216),\n\t\"GameNumber\" VARCHAR(16777216),\n\t\"BowlerID\" VARCHAR(16777216),\n\t\"RawScore\" VARCHAR(16777216),\n\t\"HandiCapScore\" VARCHAR(16777216),\n\t\"WonGame\" VARCHAR(16777216)\n);",
+  "MATCH_GAMES": "create or replace TABLE MATCH_GAMES (\n\t\"MatchID\" NUMBER(38,0),\n\t\"GameNumber\" NUMBER(38,0),\n\t\"WinningTeamID\" NUMBER(38,0)\n);",
+  "MATCH_GAMES_ARCHIVE": "create or replace TABLE MATCH_GAMES_ARCHIVE (\n\t\"MatchID\" VARCHAR(16777216),\n\t\"GameNumber\" VARCHAR(16777216),\n\t\"WinningTeamID\" VARCHAR(16777216)\n);",
+  "SQLITE_SEQUENCE": "create or replace TABLE SQLITE_SEQUENCE (\n\t\"name\" VARCHAR(16777216),\n\t\"seq\" NUMBER(38,0)\n);",
+  "TOURNAMENTS": "create or replace TABLE TOURNAMENTS (\n\t\"TourneyID\" NUMBER(38,0),\n\t\"TourneyDate\" VARCHAR(16777216),\n\t\"TourneyLocation\" VARCHAR(16777216)\n);",
+  "TOURNAMENTS_ARCHIVE": "create or replace TABLE TOURNAMENTS_ARCHIVE (\n\t\"TourneyID\" VARCHAR(16777216),\n\t\"TourneyDate\" VARCHAR(16777216),\n\t\"TourneyLocation\" VARCHAR(16777216)\n);",
+  "TOURNEY_MATCHES": "create or replace TABLE TOURNEY_MATCHES (\n\t\"MatchID\" NUMBER(38,0),\n\t\"TourneyID\" NUMBER(38,0),\n\t\"Lanes\" VARCHAR(16777216),\n\t\"OddLaneTeamID\" NUMBER(38,0),\n\t\"EvenLaneTeamID\" NUMBER(38,0)\n);",
+  "TOURNEY_MATCHES_ARCHIVE": "create or replace TABLE TOURNEY_MATCHES_ARCHIVE (\n\t\"MatchID\" VARCHAR(16777216),\n\t\"TourneyID\" VARCHAR(16777216),\n\t\"Lanes\" VARCHAR(16777216),\n\t\"OddLaneTeamID\" VARCHAR(16777216),\n\t\"EvenLaneTeamID\" VARCHAR(16777216)\n);",
+  "WAZIPS": "create or replace TABLE WAZIPS (\n\tZIP VARCHAR(16777216),\n\t\"City\" VARCHAR(16777216),\n\t\"State\" VARCHAR(16777216)\n);",
+  "TEAMS": "create or replace TABLE TEAMS (\n\t\"TeamID\" NUMBER(38,0),\n\t\"TeamName\" VARCHAR(16777216),\n\t\"CaptainID\" NUMBER(38,0)\n);"
+}

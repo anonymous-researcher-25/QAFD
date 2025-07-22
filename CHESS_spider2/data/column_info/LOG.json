@@ -1,0 +1,1174 @@
+{
+  "ACCESS_LOG": {
+    "session": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 30 - Distinct count 22 - Null count 0"
+    },
+    "user_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "U001",
+        "U001",
+        "U001",
+        "U002",
+        "U002",
+        "U002",
+        "U001",
+        "U001",
+        "U001",
+        "U002"
+      ],
+      "value_statics": "Total count 30 - Distinct count 15 - Null count 0"
+    },
+    "action": {
+      "type": "TEXT",
+      "unique_values": [
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view"
+      ],
+      "value_statics": "Total count 30 - Distinct count 9 - Null count 0"
+    },
+    "stamp": {
+      "type": "TEXT",
+      "unique_values": [
+        "2016-01-01 18:00:00",
+        "2016-01-02 20:00:00",
+        "2016-01-03 22:00:00",
+        "2016-01-04 23:00:00",
+        "2016-01-05 00:30:00",
+        "2016-01-06 02:30:00",
+        "2016-01-07 03:30:00",
+        "2016-01-08 04:00:00",
+        "2016-01-09 12:00:00",
+        "2016-01-10 13:00:00"
+      ],
+      "value_statics": "Total count 30 - Distinct count 14 - Null count 0"
+    }
+  },
+  "ACTION_LOG": {
+    "session": {
+      "type": "TEXT",
+      "unique_values": [
+        "989004ea",
+        "989004ea",
+        "989004ea",
+        "989004ea",
+        "989004ea",
+        "47db0370",
+        "989004ea",
+        "989004ea",
+        "989004ea",
+        "989004ea"
+      ],
+      "value_statics": "Total count 120 - Distinct count 4 - Null count 0"
+    },
+    "user_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "U001",
+        "U001",
+        "U001",
+        "U001",
+        "U001",
+        "U002",
+        "U001",
+        "U001",
+        "U001",
+        "U001"
+      ],
+      "value_statics": "Total count 120 - Distinct count 2 - Null count 0"
+    },
+    "action": {
+      "type": "TEXT",
+      "unique_values": [
+        "purchase",
+        "view",
+        "favorite",
+        "review",
+        "purchase",
+        "add_cart",
+        "view",
+        "add_cart",
+        "add_cart",
+        "add_cart"
+      ],
+      "value_statics": "Total count 120 - Distinct count 5 - Null count 0"
+    },
+    "category": {
+      "type": "TEXT",
+      "unique_values": [
+        "drama",
+        "",
+        "drama",
+        "drama",
+        "drama",
+        "drama",
+        "",
+        "drama",
+        "drama",
+        "drama"
+      ],
+      "value_statics": "Total count 120 - Distinct count 3 - Null count 0"
+    },
+    "products": {
+      "type": "TEXT",
+      "unique_values": [
+        "D001,D002",
+        "",
+        "D001",
+        "D001",
+        "D001,D002",
+        "D002",
+        "",
+        "D001",
+        "D001",
+        "D002"
+      ],
+      "value_statics": "Total count 120 - Distinct count 8 - Null count 0"
+    },
+    "amount": {
+      "type": "FLOAT",
+      "unique_values": [
+        2000.0,
+        null,
+        null,
+        null,
+        2000.0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "value_statics": "Total count 120 - Distinct count 2 - Null count 90"
+    },
+    "stamp": {
+      "type": "TEXT",
+      "unique_values": [
+        "2016-11-03 18:10:00",
+        "2016-11-03 18:00:00",
+        "2016-11-03 18:00:00",
+        "2016-11-03 18:00:00",
+        "2016-11-03 18:10:00",
+        "2016-11-03 20:30:00",
+        "2016-11-03 18:00:00",
+        "2016-11-03 18:00:00",
+        "2016-11-03 18:00:00",
+        "2016-11-03 18:01:00"
+      ],
+      "value_statics": "Total count 120 - Distinct count 10 - Null count 0"
+    }
+  },
+  "ACTION_LOG_WITH_IP": {
+    "session": {
+      "type": "TEXT",
+      "unique_values": [
+        "0CVKaz",
+        "1QceiB",
+        "1hI43A",
+        "989004ea",
+        "47db0370",
+        "1cf7678e",
+        "5eb2e107",
+        "fe05e1d8",
+        "87b5725f",
+        "5d5b0997"
+      ],
+      "value_statics": "Total count 12 - Distinct count 12 - Null count 0"
+    },
+    "user_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "U001",
+        "U002",
+        "U003",
+        "U001",
+        "U002",
+        "U003",
+        "U004",
+        "U001",
+        "U005",
+        "U006"
+      ],
+      "value_statics": "Total count 12 - Distinct count 8 - Null count 0"
+    },
+    "action": {
+      "type": "TEXT",
+      "unique_values": [
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view"
+      ],
+      "value_statics": "Total count 12 - Distinct count 1 - Null count 0"
+    },
+    "ip": {
+      "type": "TEXT",
+      "unique_values": [
+        "216.58.220.238",
+        "98.139.183.24",
+        "210.154.149.63",
+        "216.58.220.238",
+        "98.139.183.24",
+        "210.154.149.63",
+        "127.0.0.1",
+        "216.58.220.238",
+        "10.0.0.3",
+        "172.16.0.5"
+      ],
+      "value_statics": "Total count 12 - Distinct count 8 - Null count 0"
+    },
+    "stamp": {
+      "type": "TEXT",
+      "unique_values": [
+        "2016-11-03 18:00:00",
+        "2016-11-03 19:00:00",
+        "2016-11-03 20:00:00",
+        "2016-11-03 18:00:00",
+        "2016-11-03 19:00:00",
+        "2016-11-03 20:00:00",
+        "2016-11-03 21:00:00",
+        "2016-11-04 18:00:00",
+        "2016-11-04 19:00:00",
+        "2016-11-04 20:00:00"
+      ],
+      "value_statics": "Total count 12 - Distinct count 9 - Null count 0"
+    }
+  },
+  "ACTION_LOG_WITH_NOISE": {
+    "stamp": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "session": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "action": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "products": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "url": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "ip": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    },
+    "user_agent": {
+      "type": "TEXT",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 0"
+    }
+  },
+  "ACTIVITY_LOG": {
+    "stamp": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 244 - Distinct count 21 - Null count 0"
+    },
+    "session": {
+      "type": "TEXT",
+      "unique_values": [
+        "8cc03a54",
+        "989004ea",
+        "989004ea",
+        "47db0370",
+        "1cf7678e",
+        "989004ea",
+        "5eb2e107",
+        "8cc03a54",
+        "87b5725f",
+        "5eb2e107"
+      ],
+      "value_statics": "Total count 244 - Distinct count 16 - Null count 0"
+    },
+    "action": {
+      "type": "TEXT",
+      "unique_values": [
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view"
+      ],
+      "value_statics": "Total count 244 - Distinct count 1 - Null count 0"
+    },
+    "option": {
+      "type": "TEXT",
+      "unique_values": [
+        "page",
+        "page",
+        "search",
+        "search",
+        "detail",
+        "search",
+        "detail",
+        "page",
+        "detail",
+        "detail"
+      ],
+      "value_statics": "Total count 244 - Distinct count 3 - Null count 0"
+    },
+    "path": {
+      "type": "TEXT",
+      "unique_values": [
+        "/input",
+        "/search_input/",
+        "/search_list/",
+        "/search_list/",
+        "/detail/",
+        "/search_list",
+        "/detail/",
+        "/confirm",
+        "/detail/",
+        "/detail"
+      ],
+      "value_statics": "Total count 244 - Distinct count 11 - Null count 0"
+    },
+    "search_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "Area-L",
+        "",
+        "Pref",
+        "Area-S",
+        "",
+        "Area-L-with-Job",
+        "",
+        "Area-L",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 244 - Distinct count 9 - Null count 0"
+    }
+  },
+  "APP1_MST_USERS": {
+    "user_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "U001",
+        "U002"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Sato",
+        "Suzuki"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "email": {
+      "type": "TEXT",
+      "unique_values": [
+        "sato@example.com",
+        "suzuki@example.com"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    }
+  },
+  "APP2_MST_USERS": {
+    "user_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "U001",
+        "U002"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Ito",
+        "Tanaka"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    },
+    "phone": {
+      "type": "TEXT",
+      "unique_values": [
+        "080-xxxx-xxxx",
+        "070-xxxx-xxxx"
+      ],
+      "value_statics": "Total count 2 - Distinct count 2 - Null count 0"
+    }
+  },
+  "DUP_ACTION_LOG": {
+    "stamp": {
+      "type": "TEXT",
+      "unique_values": [
+        "2016-11-03 18:00:00",
+        "2016-11-03 19:00:00",
+        "2016-11-03 20:00:00",
+        "2016-11-03 21:00:00",
+        "2016-11-03 21:00:00",
+        "2016-11-04 18:00:00",
+        "2016-11-04 19:00:00",
+        "2016-11-04 20:00:00",
+        "2016-11-04 21:00:00",
+        "2016-11-04 22:00:00"
+      ],
+      "value_statics": "Total count 11 - Distinct count 10 - Null count 0"
+    },
+    "session": {
+      "type": "TEXT",
+      "unique_values": [
+        "989004ea",
+        "47db0370",
+        "1cf7678e",
+        "5eb2e107",
+        "fe05e1d8",
+        "87b5725f",
+        "eee2bb21",
+        "5d5b0997",
+        "111f2996",
+        "3efe001c"
+      ],
+      "value_statics": "Total count 11 - Distinct count 10 - Null count 0"
+    },
+    "user_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "U001",
+        "U002",
+        "U003",
+        "U004",
+        "U004",
+        "U001",
+        "U005",
+        "U006",
+        "U007",
+        "U008"
+      ],
+      "value_statics": "Total count 11 - Distinct count 8 - Null count 0"
+    },
+    "action": {
+      "type": "TEXT",
+      "unique_values": [
+        "click",
+        "click",
+        "click",
+        "click",
+        "click",
+        "click",
+        "click",
+        "click",
+        "click",
+        "click"
+      ],
+      "value_statics": "Total count 11 - Distinct count 1 - Null count 0"
+    },
+    "products": {
+      "type": "TEXT",
+      "unique_values": [
+        "D001",
+        "D002",
+        "A001",
+        "A001",
+        "D001",
+        "D001",
+        "A001",
+        "D001",
+        "D002",
+        "A001"
+      ],
+      "value_statics": "Total count 11 - Distinct count 3 - Null count 0"
+    }
+  },
+  "FORM_ERROR_LOG": {
+    "stamp": {
+      "type": "TEXT",
+      "unique_values": [
+        "2016-12-30 00:56:08",
+        "2016-12-30 00:56:08",
+        "2016-12-30 00:57:21",
+        "2016-12-30 00:56:08",
+        "2016-12-30 00:56:09",
+        "2016-12-30 00:56:42",
+        "2016-12-30 00:56:09",
+        "2016-12-30 00:56:09"
+      ],
+      "value_statics": "Total count 8 - Distinct count 4 - Null count 0"
+    },
+    "session": {
+      "type": "TEXT",
+      "unique_values": [
+        "004dc3ef",
+        "004dc3ef",
+        "004dc3ef",
+        "00700be4",
+        "01061716",
+        "01061716",
+        "02596e8a",
+        "035a1ebb"
+      ],
+      "value_statics": "Total count 8 - Distinct count 5 - Null count 0"
+    },
+    "form": {
+      "type": "TEXT",
+      "unique_values": [
+        "regist",
+        "regist",
+        "regist",
+        "cart",
+        "regist",
+        "regist",
+        "regist",
+        "cart"
+      ],
+      "value_statics": "Total count 8 - Distinct count 2 - Null count 0"
+    },
+    "field": {
+      "type": "TEXT",
+      "unique_values": [
+        "email",
+        "kana",
+        "zip",
+        "email",
+        "email",
+        "kana",
+        "kana",
+        "tel"
+      ],
+      "value_statics": "Total count 8 - Distinct count 4 - Null count 0"
+    },
+    "error_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "require",
+        "require",
+        "format_error",
+        "format_error",
+        "format_error",
+        "not_kana",
+        "require",
+        "format_error"
+      ],
+      "value_statics": "Total count 8 - Distinct count 3 - Null count 0"
+    },
+    "value": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "101-",
+        "xxx---.co.jp",
+        "xxx@---cojp",
+        "\u5c71\u7530 \u592a\u90ce",
+        "",
+        "03-99999999"
+      ],
+      "value_statics": "Total count 8 - Distinct count 6 - Null count 0"
+    }
+  },
+  "FORM_LOG": {
+    "stamp": {
+      "type": "TEXT",
+      "unique_values": [
+        "2016-12-30 00:56:08",
+        "2016-12-30 00:56:08",
+        "2016-12-30 00:57:04",
+        "2016-12-30 00:57:56",
+        "2016-12-30 00:58:50",
+        "2016-12-30 01:00:19",
+        "2016-12-30 00:56:08",
+        "2016-12-30 00:56:08",
+        "2016-12-30 00:57:31",
+        "2016-12-30 00:56:08"
+      ],
+      "value_statics": "Total count 45 - Distinct count 9 - Null count 0"
+    },
+    "session": {
+      "type": "TEXT",
+      "unique_values": [
+        "647219c7",
+        "9b5f320f",
+        "9b5f320f",
+        "9b5f320f",
+        "9b5f320f",
+        "9b5f320f",
+        "8e9afadc",
+        "46b4c72c",
+        "46b4c72c",
+        "539eb753"
+      ],
+      "value_statics": "Total count 45 - Distinct count 7 - Null count 0"
+    },
+    "action": {
+      "type": "TEXT",
+      "unique_values": [
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view",
+        "view"
+      ],
+      "value_statics": "Total count 45 - Distinct count 1 - Null count 0"
+    },
+    "path": {
+      "type": "TEXT",
+      "unique_values": [
+        "/regist/input",
+        "/cart/input",
+        "/regist/confirm",
+        "/regist/confirm",
+        "/regist/confirm",
+        "/regist/confirm",
+        "/contact/input",
+        "/regist/input",
+        "/regist/confirm",
+        "/contact/input"
+      ],
+      "value_statics": "Total count 45 - Distinct count 6 - Null count 0"
+    },
+    "status": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "error",
+        "error",
+        "error",
+        "error",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 45 - Distinct count 2 - Null count 0"
+    }
+  },
+  "INVALID_ACTION_LOG": {
+    "stamp": {
+      "type": "TEXT",
+      "unique_values": [
+        "2016-11-03 18:10:00",
+        "2016-11-03 18:00:00",
+        "2016-11-03 18:00:00",
+        "2016-11-03 18:01:00",
+        "2016-11-03 18:02:00",
+        "2016-11-04 13:00:00",
+        ""
+      ],
+      "value_statics": "Total count 7 - Distinct count 6 - Null count 0"
+    },
+    "session": {
+      "type": "TEXT",
+      "unique_values": [
+        "0CVKaz",
+        "0CVKaz",
+        "0CVKaz",
+        "0CVKaz",
+        "0CVKaz",
+        "1QceiB",
+        "1QceiB"
+      ],
+      "value_statics": "Total count 7 - Distinct count 2 - Null count 0"
+    },
+    "user_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "U001",
+        "U001",
+        "U001",
+        "U001",
+        "U001",
+        "U002",
+        "U002"
+      ],
+      "value_statics": "Total count 7 - Distinct count 2 - Null count 0"
+    },
+    "action": {
+      "type": "TEXT",
+      "unique_values": [
+        "purchase",
+        "favorite",
+        "view",
+        "add_cart",
+        "add_cart",
+        "purchase",
+        "purchase"
+      ],
+      "value_statics": "Total count 7 - Distinct count 4 - Null count 0"
+    },
+    "category": {
+      "type": "TEXT",
+      "unique_values": [
+        "drama",
+        "drama",
+        "",
+        "drama",
+        "drama",
+        "drama",
+        "action"
+      ],
+      "value_statics": "Total count 7 - Distinct count 3 - Null count 0"
+    },
+    "products": {
+      "type": "TEXT",
+      "unique_values": [
+        "D001,D002",
+        "D001",
+        "",
+        "D002",
+        "",
+        "D002",
+        "A005,A006"
+      ],
+      "value_statics": "Total count 7 - Distinct count 5 - Null count 0"
+    },
+    "amount": {
+      "type": "FLOAT",
+      "unique_values": [
+        2000.0,
+        null,
+        null,
+        null,
+        null,
+        1000.0,
+        1000.0
+      ],
+      "value_statics": "Total count 7 - Distinct count 2 - Null count 4"
+    }
+  },
+  "MST_CATEGORIES": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        6
+      ],
+      "value_statics": "Total count 8 - Distinct count 7 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "ladys_fashion",
+        "mens_fashion",
+        "book",
+        "game",
+        "dvd",
+        "food",
+        "supplement",
+        "cooking"
+      ],
+      "value_statics": "Total count 8 - Distinct count 8 - Null count 0"
+    },
+    "stamp": {
+      "type": "TEXT",
+      "unique_values": [
+        "2016-01-01 10:00:00",
+        "2016-01-01 10:00:00",
+        "2016-01-01 10:00:00",
+        "2016-01-01 10:00:00",
+        "2016-01-01 10:00:00",
+        "2016-01-01 10:00:00",
+        "2016-01-01 10:00:00",
+        "2016-02-01 10:00:00"
+      ],
+      "value_statics": "Total count 8 - Distinct count 2 - Null count 0"
+    }
+  },
+  "MST_PRODUCTS_20161201": {
+    "product_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "A001",
+        "A002",
+        "B001",
+        "B002",
+        "C001",
+        "D001"
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "AAA",
+        "AAB",
+        "BBB",
+        "BBD",
+        "CCA",
+        "DAA"
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    },
+    "price": {
+      "type": "NUMBER",
+      "unique_values": [
+        3000,
+        4000,
+        5000,
+        3000,
+        4000,
+        5000
+      ],
+      "value_statics": "Total count 6 - Distinct count 3 - Null count 0"
+    },
+    "updated_at": {
+      "type": "TEXT",
+      "unique_values": [
+        "2016-11-03 18:00:00",
+        "2016-11-03 19:00:00",
+        "2016-11-03 20:00:00",
+        "2016-11-03 21:00:00",
+        "2016-11-04 18:00:00",
+        "2016-11-04 19:00:00"
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    }
+  },
+  "MST_PRODUCTS_20170101": {
+    "product_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "A001",
+        "A002",
+        "B002",
+        "C001",
+        "D001",
+        "D002"
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "AAA",
+        "AAB",
+        "BBD",
+        "CCA",
+        "DAA",
+        "DAD"
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    },
+    "price": {
+      "type": "NUMBER",
+      "unique_values": [
+        3000,
+        4000,
+        3000,
+        5000,
+        5000,
+        5000
+      ],
+      "value_statics": "Total count 6 - Distinct count 3 - Null count 0"
+    },
+    "updated_at": {
+      "type": "TEXT",
+      "unique_values": [
+        "2016-11-03 18:00:00",
+        "2016-11-03 19:00:00",
+        "2016-11-03 21:00:00",
+        "2016-12-04 18:00:00",
+        "2016-11-04 19:00:00",
+        "2016-12-04 19:00:00"
+      ],
+      "value_statics": "Total count 6 - Distinct count 6 - Null count 0"
+    }
+  },
+  "MST_USERS": {
+    "user_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 320 - Distinct count 30 - Null count 0"
+    },
+    "sex": {
+      "type": "TEXT",
+      "unique_values": [
+        "M",
+        "F",
+        "F",
+        "F",
+        "M",
+        "F",
+        "F",
+        "F",
+        "M",
+        "F"
+      ],
+      "value_statics": "Total count 320 - Distinct count 2 - Null count 0"
+    },
+    "birth_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 320 - Distinct count 30 - Null count 0"
+    },
+    "register_date": {
+      "type": "TEXT",
+      "unique_values": [
+        "2016-10-02",
+        "2016-10-01",
+        "2016-10-01",
+        "2016-10-05",
+        "2016-10-01",
+        "2016-10-10",
+        "2016-10-10",
+        "2016-10-02",
+        "2016-10-15",
+        "2016-10-01"
+      ],
+      "value_statics": "Total count 320 - Distinct count 16 - Null count 0"
+    },
+    "register_device": {
+      "type": "TEXT",
+      "unique_values": [
+        "sp",
+        "sp",
+        "sp",
+        "pc",
+        "app",
+        "pc",
+        "app",
+        "app",
+        "pc",
+        "sp"
+      ],
+      "value_statics": "Total count 320 - Distinct count 3 - Null count 0"
+    },
+    "withdraw_date": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "2016-10-10",
+        "",
+        "",
+        "",
+        "2016-10-10",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "value_statics": "Total count 320 - Distinct count 2 - Null count 0"
+    }
+  },
+  "MST_USERS_WITH_CARD_NUMBER": {
+    "user_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "U001",
+        "U002",
+        "U003"
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    },
+    "card_number": {
+      "type": "TEXT",
+      "unique_values": [
+        "1234-xxxx-xxxx-xxxx",
+        "",
+        "5678-xxxx-xxxx-xxxx"
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    }
+  },
+  "PRODUCT_SALES": {
+    "category_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "dvd",
+        "dvd",
+        "dvd",
+        "cd",
+        "cd",
+        "cd",
+        "book",
+        "book",
+        "book",
+        "book"
+      ],
+      "value_statics": "Total count 10 - Distinct count 3 - Null count 0"
+    },
+    "product_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "D001",
+        "D002",
+        "D003",
+        "C001",
+        "C002",
+        "C003",
+        "B001",
+        "B002",
+        "B003",
+        "B004"
+      ],
+      "value_statics": "Total count 10 - Distinct count 10 - Null count 0"
+    },
+    "sales": {
+      "type": "NUMBER",
+      "unique_values": [
+        50000,
+        20000,
+        10000,
+        30000,
+        20000,
+        10000,
+        20000,
+        15000,
+        10000,
+        5000
+      ],
+      "value_statics": "Total count 10 - Distinct count 6 - Null count 0"
+    }
+  },
+  "PURCHASE_LOG": {
+    "purchase_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        10001,
+        10002,
+        10003,
+        10004,
+        10005
+      ],
+      "value_statics": "Total count 5 - Distinct count 5 - Null count 0"
+    },
+    "user_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "U001",
+        "U001",
+        "U001",
+        "U002",
+        "U002"
+      ],
+      "value_statics": "Total count 5 - Distinct count 2 - Null count 0"
+    },
+    "amount": {
+      "type": "NUMBER",
+      "unique_values": [
+        200,
+        500,
+        200,
+        800,
+        400
+      ],
+      "value_statics": "Total count 5 - Distinct count 4 - Null count 0"
+    },
+    "stamp": {
+      "type": "TEXT",
+      "unique_values": [
+        "2017-01-30 10:00:00",
+        "2017-02-10 10:00:00",
+        "2017-02-12 10:00:00",
+        "2017-03-01 10:00:00",
+        "2017-03-02 10:00:00"
+      ],
+      "value_statics": "Total count 5 - Distinct count 5 - Null count 0"
+    }
+  },
+  "READ_LOG": {
+    "stamp": {
+      "type": "TEXT",
+      "unique_values": [
+        "2016-12-29 21:45:47",
+        "2016-12-29 21:45:47",
+        "2016-12-29 21:45:56",
+        "2016-12-29 21:46:05",
+        "2016-12-29 21:46:13",
+        "2016-12-29 21:46:22",
+        "2016-12-29 21:46:25",
+        "2016-12-29 21:45:47",
+        "2016-12-29 21:45:49",
+        "2016-12-29 21:45:47"
+      ],
+      "value_statics": "Total count 15 - Distinct count 10 - Null count 0"
+    },
+    "session": {
+      "type": "TEXT",
+      "unique_values": [
+        "afbd3d09",
+        "df6eb25d",
+        "df6eb25d",
+        "df6eb25d",
+        "df6eb25d",
+        "df6eb25d",
+        "df6eb25d",
+        "77d477cc",
+        "77d477cc",
+        "a80ded24"
+      ],
+      "value_statics": "Total count 15 - Distinct count 6 - Null count 0"
+    },
+    "action": {
+      "type": "TEXT",
+      "unique_values": [
+        "view",
+        "view",
+        "read-20%",
+        "read-40%",
+        "read-60%",
+        "read-80%",
+        "read-100%",
+        "view",
+        "read-20%",
+        "view"
+      ],
+      "value_statics": "Total count 15 - Distinct count 6 - Null count 0"
+    },
+    "url": {
+      "type": "TEXT",
+      "unique_values": [
+        "http://www.example.com/article?id=news341",
+        "http://www.example.com/article?id=news731",
+        "http://www.example.com/article?id=news731",
+        "http://www.example.com/article?id=news731",
+        "http://www.example.com/article?id=news731",
+        "http://www.example.com/article?id=news731",
+        "http://www.example.com/article?id=news731",
+        "http://www.example.com/article?id=it605",
+        "http://www.example.com/article?id=it605",
+        "http://www.example.com/article?id=trend925"
+      ],
+      "value_statics": "Total count 15 - Distinct count 5 - Null count 0"
+    }
+  }
+}

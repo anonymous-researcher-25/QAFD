@@ -1,0 +1,94 @@
+{
+  "CUSTOMERS": [
+    "customer_id",
+    "customer_unique_id",
+    "customer_zip_code_prefix",
+    "customer_city",
+    "customer_state"
+  ],
+  "GEOLOCATION": [
+    "geolocation_zip_code_prefix",
+    "geolocation_lat",
+    "geolocation_lng",
+    "geolocation_city",
+    "geolocation_state"
+  ],
+  "LEADS_CLOSED": [
+    "mql_id",
+    "seller_id",
+    "sdr_id",
+    "sr_id",
+    "won_date",
+    "business_segment",
+    "lead_type",
+    "lead_behaviour_profile",
+    "has_company",
+    "has_gtin",
+    "average_stock",
+    "business_type",
+    "declared_product_catalog_size",
+    "declared_monthly_revenue"
+  ],
+  "LEADS_QUALIFIED": [
+    "mql_id",
+    "first_contact_date",
+    "landing_page_id",
+    "origin"
+  ],
+  "ORDERS": [
+    "order_id",
+    "customer_id",
+    "order_status",
+    "order_purchase_timestamp",
+    "order_approved_at",
+    "order_delivered_carrier_date",
+    "order_delivered_customer_date",
+    "order_estimated_delivery_date"
+  ],
+  "ORDER_ITEMS": [
+    "order_id",
+    "order_item_id",
+    "product_id",
+    "seller_id",
+    "shipping_limit_date",
+    "price",
+    "freight_value"
+  ],
+  "ORDER_PAYMENTS": [
+    "order_id",
+    "payment_sequential",
+    "payment_type",
+    "payment_installments",
+    "payment_value"
+  ],
+  "ORDER_REVIEWS": [
+    "review_id",
+    "order_id",
+    "review_score",
+    "review_comment_title",
+    "review_comment_message",
+    "review_creation_date",
+    "review_answer_timestamp"
+  ],
+  "PRODUCTS": [
+    "product_id",
+    "product_category_name",
+    "product_name_lenght",
+    "product_description_lenght",
+    "product_photos_qty",
+    "product_weight_g",
+    "product_length_cm",
+    "product_height_cm",
+    "product_width_cm"
+  ],
+  "PRODUCT_CATEGORY_NAME_TRANSLATION": [
+    "product_category_name",
+    "product_category_name_english"
+  ],
+  "SELLERS": [
+    "seller_id",
+    "seller_zip_code_prefix",
+    "seller_city",
+    "seller_state"
+  ]
+}

@@ -1,0 +1,1010 @@
+{
+  "BITCOIN_MEMBERS": {
+    "member_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "c4ca42",
+        "c81e72",
+        "eccbc8",
+        "a87ff6",
+        "e4da3b",
+        "167909",
+        "8f14e4",
+        "c9f0f8",
+        "45c48c",
+        "d3d944"
+      ],
+      "value_statics": "Total count 14 - Distinct count 14 - Null count 0"
+    },
+    "first_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Danny",
+        "Vipul",
+        "Charlie",
+        "Nandita",
+        "Rowan",
+        "Ayush",
+        "Alex",
+        "Abe",
+        "Ben",
+        "Enoch"
+      ],
+      "value_statics": "Total count 14 - Distinct count 14 - Null count 0"
+    },
+    "region": {
+      "type": "TEXT",
+      "unique_values": [
+        "Australia",
+        "United States",
+        "United States",
+        "United States",
+        "United States",
+        "United States",
+        "United States",
+        "United States",
+        "Australia",
+        "Africa"
+      ],
+      "value_statics": "Total count 14 - Distinct count 5 - Null count 0"
+    }
+  },
+  "BITCOIN_PRICES": {
+    "ticker": {
+      "type": "TEXT",
+      "unique_values": [
+        "BTC",
+        "ETH",
+        "BTC",
+        "ETH",
+        "BTC",
+        "ETH",
+        "ETH",
+        "ETH",
+        "ETH",
+        "ETH"
+      ],
+      "value_statics": "Total count 3404 - Distinct count 2 - Null count 0"
+    },
+    "market_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3404 - Distinct count 1702 - Null count 0"
+    },
+    "price": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 3404 - Distinct count 3362 - Null count 0"
+    },
+    "open": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 3404 - Distinct count 3347 - Null count 0"
+    },
+    "high": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 3404 - Distinct count 3351 - Null count 0"
+    },
+    "low": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 3404 - Distinct count 3358 - Null count 0"
+    },
+    "volume": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3404 - Distinct count 2811 - Null count 0"
+    },
+    "change": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3404 - Distinct count 1496 - Null count 0"
+    }
+  },
+  "BITCOIN_TRANSACTIONS": {
+    "txn_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 22918 - Distinct count 22918 - Null count 0"
+    },
+    "member_id": {
+      "type": "TEXT",
+      "unique_values": [
+        "6512bd",
+        "aab323",
+        "167909",
+        "d3d944",
+        "167909",
+        "c81e72",
+        "6512bd",
+        "c20ad4",
+        "6512bd",
+        "a87ff6"
+      ],
+      "value_statics": "Total count 22918 - Distinct count 14 - Null count 0"
+    },
+    "ticker": {
+      "type": "TEXT",
+      "unique_values": [
+        "BTC",
+        "ETH",
+        "ETH",
+        "BTC",
+        "BTC",
+        "ETH",
+        "BTC",
+        "BTC",
+        "BTC",
+        "ETH"
+      ],
+      "value_statics": "Total count 22918 - Distinct count 2 - Null count 0"
+    },
+    "txn_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 22918 - Distinct count 1700 - Null count 0"
+    },
+    "txn_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "BUY",
+        "BUY",
+        "SELL",
+        "BUY",
+        "BUY",
+        "BUY",
+        "BUY",
+        "BUY",
+        "BUY",
+        "BUY"
+      ],
+      "value_statics": "Total count 22918 - Distinct count 2 - Null count 0"
+    },
+    "quantity": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 22918 - Distinct count 22891 - Null count 0"
+    },
+    "percentage_fee": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 22918 - Distinct count 31 - Null count 0"
+    },
+    "txn_time": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 22918 - Distinct count 22891 - Null count 0"
+    }
+  },
+  "CLEANED_WEEKLY_SALES": {
+    "week_date_formatted": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 17117 - Distinct count 72 - Null count 0"
+    },
+    "week_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 17117 - Distinct count 72 - Null count 0"
+    },
+    "region": {
+      "type": "TEXT",
+      "unique_values": [
+        "SOUTH AMERICA",
+        "CANADA",
+        "AFRICA",
+        "EUROPE",
+        "EUROPE",
+        "CANADA",
+        "AFRICA",
+        "SOUTH AMERICA",
+        "EUROPE",
+        "SOUTH AMERICA"
+      ],
+      "value_statics": "Total count 17117 - Distinct count 7 - Null count 0"
+    },
+    "platform": {
+      "type": "TEXT",
+      "unique_values": [
+        "Shopify",
+        "Retail",
+        "Retail",
+        "Shopify",
+        "Shopify",
+        "Retail",
+        "Retail",
+        "Retail",
+        "Shopify",
+        "Retail"
+      ],
+      "value_statics": "Total count 17117 - Distinct count 2 - Null count 0"
+    },
+    "segment": {
+      "type": "TEXT",
+      "unique_values": [
+        "F3",
+        "C4",
+        "C2",
+        "C3",
+        "unknown",
+        "F1",
+        "C2",
+        "F3",
+        "C1",
+        "F1"
+      ],
+      "value_statics": "Total count 17117 - Distinct count 8 - Null count 0"
+    },
+    "customer_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "Existing",
+        "New",
+        "New",
+        "Existing",
+        "Guest",
+        "New",
+        "Existing",
+        "New",
+        "Existing",
+        "Existing"
+      ],
+      "value_statics": "Total count 17117 - Distinct count 3 - Null count 0"
+    },
+    "transactions": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 17117 - Distinct count 9307 - Null count 0"
+    },
+    "sales": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 17117 - Distinct count 16559 - Null count 0"
+    },
+    "week_number": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 17117 - Distinct count 24 - Null count 0"
+    },
+    "month_number": {
+      "type": "NUMBER",
+      "unique_values": [
+        4,
+        8,
+        6,
+        4,
+        5,
+        5,
+        4,
+        4,
+        7,
+        6
+      ],
+      "value_statics": "Total count 17117 - Distinct count 7 - Null count 0"
+    },
+    "calendar_year": {
+      "type": "NUMBER",
+      "unique_values": [
+        2019,
+        2020,
+        2020,
+        2020,
+        2019,
+        2019,
+        2019,
+        2020,
+        2019,
+        2019
+      ],
+      "value_statics": "Total count 17117 - Distinct count 3 - Null count 0"
+    },
+    "age_band": {
+      "type": "TEXT",
+      "unique_values": [
+        "Retirees",
+        "Retirees",
+        "Middle Aged",
+        "Retirees",
+        "unknown",
+        "Young Adults",
+        "Middle Aged",
+        "Retirees",
+        "Young Adults",
+        "Young Adults"
+      ],
+      "value_statics": "Total count 17117 - Distinct count 4 - Null count 0"
+    },
+    "demographic": {
+      "type": "TEXT",
+      "unique_values": [
+        "Families",
+        "Couples",
+        "Couples",
+        "Couples",
+        "unknown",
+        "Families",
+        "Couples",
+        "Families",
+        "Couples",
+        "Families"
+      ],
+      "value_statics": "Total count 17117 - Distinct count 3 - Null count 0"
+    },
+    "avg_transaction": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 17117 - Distinct count 9539 - Null count 0"
+    }
+  },
+  "CUSTOMER_NODES": {
+    "customer_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3500 - Distinct count 500 - Null count 0"
+    },
+    "region_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        3,
+        1,
+        4,
+        2,
+        1,
+        1,
+        1,
+        5,
+        4,
+        4
+      ],
+      "value_statics": "Total count 3500 - Distinct count 5 - Null count 0"
+    },
+    "node_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        2,
+        5,
+        2,
+        4,
+        3,
+        4,
+        5,
+        3,
+        1,
+        5
+      ],
+      "value_statics": "Total count 3500 - Distinct count 5 - Null count 0"
+    },
+    "start_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3500 - Distinct count 161 - Null count 0"
+    },
+    "end_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3500 - Distinct count 160 - Null count 0"
+    }
+  },
+  "CUSTOMER_REGIONS": {
+    "region_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value_statics": "Total count 5 - Distinct count 5 - Null count 0"
+    },
+    "region_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Australia",
+        "America",
+        "Africa",
+        "Asia",
+        "Europe"
+      ],
+      "value_statics": "Total count 5 - Distinct count 5 - Null count 0"
+    }
+  },
+  "CUSTOMER_TRANSACTIONS": {
+    "customer_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 5868 - Distinct count 500 - Null count 0"
+    },
+    "txn_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 5868 - Distinct count 119 - Null count 0"
+    },
+    "txn_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "withdrawal",
+        "deposit",
+        "deposit",
+        "withdrawal",
+        "withdrawal",
+        "deposit",
+        "deposit",
+        "purchase",
+        "withdrawal",
+        "deposit"
+      ],
+      "value_statics": "Total count 5868 - Distinct count 3 - Null count 0"
+    },
+    "txn_amount": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 5868 - Distinct count 999 - Null count 0"
+    }
+  },
+  "INTEREST_MAP": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1209 - Distinct count 1209 - Null count 0"
+    },
+    "interest_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1209 - Distinct count 1208 - Null count 0"
+    },
+    "interest_summary": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1209 - Distinct count 1189 - Null count 0"
+    },
+    "created_at": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1209 - Distinct count 302 - Null count 0"
+    },
+    "last_modified": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1209 - Distinct count 256 - Null count 0"
+    }
+  },
+  "INTEREST_METRICS": {
+    "_month": {
+      "type": "FLOAT",
+      "unique_values": [
+        7.0,
+        7.0,
+        8.0,
+        4.0,
+        8.0,
+        11.0,
+        2.0,
+        7.0,
+        5.0,
+        4.0
+      ],
+      "value_statics": "Total count 14273 - Distinct count 12 - Null count 1194"
+    },
+    "_year": {
+      "type": "FLOAT",
+      "unique_values": [
+        2018.0,
+        2018.0,
+        2019.0,
+        2019.0,
+        2018.0,
+        2018.0,
+        2019.0,
+        2019.0,
+        2019.0,
+        2019.0
+      ],
+      "value_statics": "Total count 14273 - Distinct count 2 - Null count 1194"
+    },
+    "month_year": {
+      "type": "TEXT",
+      "unique_values": [
+        "07-2018",
+        "07-2018",
+        "08-2019",
+        "04-2019",
+        "08-2018",
+        "11-2018",
+        "02-2019",
+        "07-2019",
+        "05-2019",
+        "04-2019"
+      ],
+      "value_statics": "Total count 14273 - Distinct count 15 - Null count 0"
+    },
+    "interest_id": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 14273 - Distinct count 1202 - Null count 1193"
+    },
+    "composition": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 14273 - Distinct count 884 - Null count 0"
+    },
+    "index_value": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 14273 - Distinct count 345 - Null count 0"
+    },
+    "ranking": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 14273 - Distinct count 998 - Null count 0"
+    },
+    "percentile_ranking": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 14273 - Distinct count 2301 - Null count 0"
+    }
+  },
+  "SHOPPING_CART_CAMPAIGN_IDENTIFIER": {
+    "campaign_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    },
+    "products": {
+      "type": "TEXT",
+      "unique_values": [
+        "1-3",
+        "4-5",
+        "6-8"
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    },
+    "campaign_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "BOGOF - Fishing For Compliments",
+        "25% Off - Living The Lux Life",
+        "Half Off - Treat Your Shellf(ish)"
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    },
+    "start_date": {
+      "type": "TEXT",
+      "unique_values": [
+        "2020-01-01",
+        "2020-01-15",
+        "2020-02-01"
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    },
+    "end_date": {
+      "type": "TEXT",
+      "unique_values": [
+        "2020-01-14",
+        "2020-01-28",
+        "2020-03-31"
+      ],
+      "value_statics": "Total count 3 - Distinct count 3 - Null count 0"
+    }
+  },
+  "SHOPPING_CART_EVENTS": {
+    "visit_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 32734 - Distinct count 3564 - Null count 0"
+    },
+    "cookie_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 32734 - Distinct count 1782 - Null count 0"
+    },
+    "page_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        6,
+        8,
+        10,
+        2,
+        2,
+        3,
+        13,
+        9,
+        2,
+        8
+      ],
+      "value_statics": "Total count 32734 - Distinct count 13 - Null count 0"
+    },
+    "event_type": {
+      "type": "NUMBER",
+      "unique_values": [
+        2,
+        1,
+        1,
+        5,
+        5,
+        1,
+        3,
+        2,
+        1,
+        1
+      ],
+      "value_statics": "Total count 32734 - Distinct count 5 - Null count 0"
+    },
+    "sequence_number": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 32734 - Distinct count 23 - Null count 0"
+    },
+    "event_time": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 32734 - Distinct count 32734 - Null count 0"
+    }
+  },
+  "SHOPPING_CART_EVENT_IDENTIFIER": {
+    "event_type": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value_statics": "Total count 5 - Distinct count 5 - Null count 0"
+    },
+    "event_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Page View",
+        "Add to Cart",
+        "Purchase",
+        "Ad Impression",
+        "Ad Click"
+      ],
+      "value_statics": "Total count 5 - Distinct count 5 - Null count 0"
+    }
+  },
+  "SHOPPING_CART_PAGE_HIERARCHY": {
+    "page_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "value_statics": "Total count 13 - Distinct count 13 - Null count 0"
+    },
+    "page_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Home Page",
+        "All Products",
+        "Salmon",
+        "Kingfish",
+        "Tuna",
+        "Russian Caviar",
+        "Black Truffle",
+        "Abalone",
+        "Lobster",
+        "Crab"
+      ],
+      "value_statics": "Total count 13 - Distinct count 13 - Null count 0"
+    },
+    "product_category": {
+      "type": "TEXT",
+      "unique_values": [
+        "",
+        "",
+        "Fish",
+        "Fish",
+        "Fish",
+        "Luxury",
+        "Luxury",
+        "Shellfish",
+        "Shellfish",
+        "Shellfish"
+      ],
+      "value_statics": "Total count 13 - Distinct count 4 - Null count 0"
+    },
+    "product_id": {
+      "type": "FLOAT",
+      "unique_values": [
+        null,
+        null,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0
+      ],
+      "value_statics": "Total count 13 - Distinct count 9 - Null count 4"
+    }
+  },
+  "SHOPPING_CART_USERS": {
+    "user_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1782 - Distinct count 500 - Null count 0"
+    },
+    "cookie_id": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1782 - Distinct count 1782 - Null count 0"
+    },
+    "start_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 1782 - Distinct count 131 - Null count 0"
+    }
+  },
+  "VEG_CAT": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 251 - Distinct count 251 - Null count 0"
+    },
+    "item_code": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 251 - Distinct count 251 - Null count 0"
+    },
+    "item_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 251 - Distinct count 247 - Null count 0"
+    },
+    "category_code": {
+      "type": "NUMBER",
+      "unique_values": [
+        1011010504,
+        1011010504,
+        1011010101,
+        1011010504,
+        1011010504,
+        1011010801,
+        1011010504,
+        1011010504,
+        1011010101,
+        1011010801
+      ],
+      "value_statics": "Total count 251 - Distinct count 6 - Null count 0"
+    },
+    "category_name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Capsicum",
+        "Capsicum",
+        "Flower/Leaf\u00a0Vegetables",
+        "Capsicum",
+        "Capsicum",
+        "Edible Mushroom",
+        "Capsicum",
+        "Capsicum",
+        "Flower/Leaf\u00a0Vegetables",
+        "Edible Mushroom"
+      ],
+      "value_statics": "Total count 251 - Distinct count 6 - Null count 0"
+    }
+  },
+  "VEG_LOSS_RATE_DF": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 251 - Distinct count 251 - Null count 0"
+    },
+    "item_code": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 251 - Distinct count 251 - Null count 0"
+    },
+    "item_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 251 - Distinct count 247 - Null count 0"
+    },
+    "loss_rate_%": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 251 - Distinct count 126 - Null count 0"
+    }
+  },
+  "VEG_TXN_DF": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 878503 - Distinct count 878503 - Null count 0"
+    },
+    "txn_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 878503 - Distinct count 1085 - Null count 0"
+    },
+    "txn_time": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 878503 - Distinct count 46115 - Null count 0"
+    },
+    "item_code": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 878503 - Distinct count 246 - Null count 0"
+    },
+    "qty_sold(kg)": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 878503 - Distinct count 2794 - Null count 0"
+    },
+    "unit_selling_px_rmb/kg": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 878503 - Distinct count 264 - Null count 0"
+    },
+    "sale/return": {
+      "type": "TEXT",
+      "unique_values": [
+        "sale",
+        "sale",
+        "sale",
+        "sale",
+        "sale",
+        "sale",
+        "sale",
+        "sale",
+        "sale",
+        "sale"
+      ],
+      "value_statics": "Total count 878503 - Distinct count 2 - Null count 0"
+    },
+    "discount(%)": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "value_statics": "Total count 878503 - Distinct count 1 - Null count 0"
+    },
+    "day_of_week": {
+      "type": "TEXT",
+      "unique_values": [
+        "Tuesday",
+        "Tuesday",
+        "Saturday",
+        "Sunday",
+        "Friday",
+        "Sunday",
+        "Sunday",
+        "Saturday",
+        "Wednesday",
+        "Saturday"
+      ],
+      "value_statics": "Total count 878503 - Distinct count 7 - Null count 0"
+    }
+  },
+  "VEG_WHSLE_DF": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 55982 - Distinct count 55982 - Null count 0"
+    },
+    "whsle_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 55982 - Distinct count 1091 - Null count 0"
+    },
+    "item_code": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 55982 - Distinct count 251 - Null count 0"
+    },
+    "whsle_px_rmb-kg": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 55982 - Distinct count 2380 - Null count 0"
+    }
+  },
+  "WEEKLY_SALES": {
+    "week_date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 17117 - Distinct count 72 - Null count 0"
+    },
+    "region": {
+      "type": "TEXT",
+      "unique_values": [
+        "OCEANIA",
+        "AFRICA",
+        "AFRICA",
+        "OCEANIA",
+        "OCEANIA",
+        "AFRICA",
+        "CANADA",
+        "EUROPE",
+        "AFRICA",
+        "ASIA"
+      ],
+      "value_statics": "Total count 17117 - Distinct count 7 - Null count 0"
+    },
+    "platform": {
+      "type": "TEXT",
+      "unique_values": [
+        "Retail",
+        "Shopify",
+        "Shopify",
+        "Shopify",
+        "Shopify",
+        "Shopify",
+        "Shopify",
+        "Retail",
+        "Retail",
+        "Shopify"
+      ],
+      "value_statics": "Total count 17117 - Distinct count 2 - Null count 0"
+    },
+    "segment": {
+      "type": "TEXT",
+      "unique_values": [
+        "F1",
+        "F2",
+        "",
+        "C2",
+        "C3",
+        "F1",
+        "F1",
+        "F2",
+        "C1",
+        ""
+      ],
+      "value_statics": "Total count 17117 - Distinct count 8 - Null count 0"
+    },
+    "customer_type": {
+      "type": "TEXT",
+      "unique_values": [
+        "Existing",
+        "Existing",
+        "Guest",
+        "New",
+        "New",
+        "Existing",
+        "New",
+        "New",
+        "Existing",
+        "Existing"
+      ],
+      "value_statics": "Total count 17117 - Distinct count 3 - Null count 0"
+    },
+    "transactions": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 17117 - Distinct count 9307 - Null count 0"
+    },
+    "sales": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 17117 - Distinct count 16559 - Null count 0"
+    }
+  }
+}

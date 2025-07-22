@@ -1,0 +1,3 @@
+{
+  "FULLTEXT": "create or replace TABLE FULLTEXT (\n\t\"body\" VARCHAR(16777216),\n\t\"title\" VARCHAR(16777216),\n\t\"filename\" VARCHAR(16777216),\n\t\"category\" VARCHAR(16777216)\n);"
+}

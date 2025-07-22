@@ -1,0 +1,88 @@
+{
+  "ALBUM": [
+    "AlbumId",
+    "Title",
+    "ArtistId"
+  ],
+  "ARTIST": [
+    "ArtistId",
+    "Name"
+  ],
+  "CUSTOMER": [
+    "CustomerId",
+    "FirstName",
+    "LastName",
+    "Company",
+    "Address",
+    "City",
+    "State",
+    "Country",
+    "PostalCode",
+    "Phone",
+    "Fax",
+    "Email",
+    "SupportRepId"
+  ],
+  "EMPLOYEE": [
+    "EmployeeId",
+    "LastName",
+    "FirstName",
+    "Title",
+    "ReportsTo",
+    "BirthDate",
+    "HireDate",
+    "Address",
+    "City",
+    "State",
+    "Country",
+    "PostalCode",
+    "Phone",
+    "Fax",
+    "Email"
+  ],
+  "GENRE": [
+    "GenreId",
+    "Name"
+  ],
+  "INVOICE": [
+    "InvoiceId",
+    "CustomerId",
+    "InvoiceDate",
+    "BillingAddress",
+    "BillingCity",
+    "BillingState",
+    "BillingCountry",
+    "BillingPostalCode",
+    "Total"
+  ],
+  "INVOICELINE": [
+    "InvoiceLineId",
+    "InvoiceId",
+    "TrackId",
+    "UnitPrice",
+    "Quantity"
+  ],
+  "MEDIATYPE": [
+    "MediaTypeId",
+    "Name"
+  ],
+  "PLAYLIST": [
+    "PlaylistId",
+    "Name"
+  ],
+  "PLAYLISTTRACK": [
+    "PlaylistId",
+    "TrackId"
+  ],
+  "TRACK": [
+    "TrackId",
+    "Name",
+    "AlbumId",
+    "MediaTypeId",
+    "GenreId",
+    "Composer",
+    "Milliseconds",
+    "Bytes",
+    "UnitPrice"
+  ]
+}

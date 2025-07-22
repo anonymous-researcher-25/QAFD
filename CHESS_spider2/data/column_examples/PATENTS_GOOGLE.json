@@ -1,0 +1,324 @@
+{
+  "ABS_AND_EMB": {
+    "cpc_inventive_low": [],
+    "title_translated": [
+      "True",
+      "False"
+    ],
+    "cpc_low": [],
+    "cited_by": [],
+    "abstract_translated": [
+      "True",
+      "False"
+    ],
+    "abstract": [],
+    "url": [],
+    "embedding_v1": [],
+    "publication_number": [
+      "US-5248292-A",
+      "US-2007245673-A1",
+      "WO-2007096405-A1"
+    ],
+    "country": [
+      "RUSSIAN FEDERATION",
+      "CANADA",
+      "NETHERLANDS",
+      "JAPAN",
+      "FRANCE"
+    ],
+    "publication_description": [
+      "Domestic re-publication of PCT application",
+      "Separately published supplemental search report",
+      "Granted EP number in Bulletin"
+    ],
+    "cpc": [],
+    "top_terms": [],
+    "title": [],
+    "similar": []
+  },
+  "CPC_DEFINITION": {
+    "residualReferences": [
+      "[]",
+      "[\n  {\n    \"description\": \"Ignition devices using mechanical firing included in a camera\",\n    \"target\": [\n      \"G03B15/0489\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"Programme control using cams, discs, rods, drums or the like\",\n    \"target\": [\n      \"G05B19/06\"\n    ]\n  },\n  {\n    \"description\": \"Programme control where the programme is defined in the fixed connection of electrical elements, e.g. potentiometers, counters, transistors\",\n    \"target\": [\n      \"G05B19/07\"\n    ]\n  },\n  {\n    \"description\": \"Programme control using plugboards, cross-bar distributors, matrix switches or the like\",\n    \"target\": [\n      \"G05B19/08\"\n    ]\n  },\n  {\n    \"description\": \"Programme control using selector switches\",\n    \"target\": [\n      \"G05B19/10\"\n    ]\n  },\n  {\n    \"description\": \"Programme control using record carriers\",\n    \"target\": [\n      \"G05B19/12\"\n    ]\n  },\n  {\n    \"description\": \"Programme control using punched cards or tapes\",\n    \"target\": [\n      \"G05B19/14\"\n    ]\n  },\n  {\n    \"description\": \"Programme control using magnetic record carriers\",\n    \"target\": [\n      \"G05B19/16\"\n    ]\n  },\n  {\n    \"description\": \"Arrangements for machine tools, e.g. for copying or controlling\",\n    \"target\": [\n      \"B23Q\"\n    ]\n  }\n]"
+    ],
+    "dateRevised": [
+      20130101.0,
+      20160101.0,
+      20190501.0
+    ],
+    "childGroups": [
+      "[]",
+      "[\n  {\n    \"description\": \"TEXTILES OR FLEXIBLE MATERIALS NOT OTHERWISE PROVIDED FOR\",\n    \"symbols\": [\n      \"D01\",\n      \"D02\",\n      \"D03\",\n      \"D04\",\n      \"D05\",\n      \"D06\",\n      \"D07\",\n      \"D10\"\n    ]\n  },\n  {\n    \"description\": \"PAPER\",\n    \"symbols\": [\n      \"D21\"\n    ]\n  },\n  {\n    \"description\": \"\",\n    \"symbols\": [\n      \"D99\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"\",\n    \"symbols\": [\n      \"A41G1/00\",\n      \"A41G3/00\",\n      \"A41G5/00\",\n      \"A41G7/00\",\n      \"A41G9/00\",\n      \"A41G11/00\"\n    ]\n  }\n]"
+    ],
+    "synonyms": [
+      "[]",
+      "[\n  {\n    \"description\": \"TCAS\",\n    \"target\": [\n      \"Traffic Collision Avoidance System\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"LS\",\n    \"target\": [\n      \"Load sensing\"\n    ]\n  }\n]"
+    ],
+    "status": [
+      "published",
+      "frozen"
+    ],
+    "parents": [],
+    "breakdownCode": [
+      "True",
+      "False"
+    ],
+    "limitingReferences": [],
+    "rules": [],
+    "precedenceLimitingReferences": [],
+    "level": [
+      "11.0",
+      "12.0",
+      "13.0",
+      "14.0",
+      "15.0"
+    ],
+    "titlePart": [],
+    "scopeLimitingReferences": [],
+    "symbol": [
+      "E21D11/365",
+      "E21D15/12",
+      "E21D15/10"
+    ],
+    "informativeReferences": [
+      "[]",
+      "[\n  {\n    \"description\": \"Constructional aspects per se of such devices\",\n    \"target\": [\n      \"F01D17/00\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"Blade tip magnetic field sensors\",\n    \"target\": [\n      \"G01P3/487\"\n    ]\n  }\n]"
+    ],
+    "ipcConcordant": [
+      "E21D11/36",
+      "F01C1/077",
+      "F01L1/356"
+    ],
+    "children": [
+      "[\n  \"E21D15/26\"\n]",
+      "[\n  \"E21D15/303\",\n  \"E21D15/306\"\n]",
+      "[\n  \"F01L2001/34489\",\n  \"F01L2001/34493\",\n  \"F01L2001/34496\"\n]"
+    ],
+    "definition": [
+      "[]",
+      "[\n  \"Outer members cooperating with the rotary pistons of intermeshing engagement type machines.\"\n]",
+      "[\n  \"Illustrative example\",\n  \"DE19745908 A\"\n]"
+    ],
+    "titleFull": [],
+    "applicationReferences": [],
+    "glossary": [
+      "[]",
+      "[\n  {\n    \"description\": \"Memory\",\n    \"target\": [\n      \"solid state devices used as main memory which are either directly addressable by the associated CPU (meaning that they are located on the high speed bus), or are not addressable internal memories (such as registers and buffers). As such, memory is different from storage.\"\n    ]\n  },\n  {\n    \"description\": \"Storage\",\n    \"target\": [\n      \"media from which data needs first to be loaded before it can be used for computing.\"\n    ]\n  }\n]",
+      "[\n  {\n    \"description\": \"Page\",\n    \"target\": [\n      \"The unit of paging in virtual memory\"\n    ]\n  }\n]"
+    ],
+    "notAllocatable": [
+      "True",
+      "False"
+    ]
+  },
+  "DISCLOSURES_13": {
+    "blanket_type": [
+      "0",
+      "2",
+      "1",
+      "3"
+    ],
+    "disclosure_event": [
+      "DE0001",
+      "DE0002",
+      "DE0003"
+    ],
+    "sc_name": [
+      "",
+      "Broadband Remote Access Server (BRAS) Requirements Document",
+      "ADSL2/ADSL2plus Performance Test Plan"
+    ],
+    "third_party": [
+      "0",
+      "1"
+    ],
+    "reciprocity": [
+      "0",
+      "1",
+      ""
+    ],
+    "standard": [
+      "X3.55;X3.56",
+      "X3.55;X3.56;X3.72;X3.116;X3.127;X3.136",
+      "TIA/EIA 95;TIA/EIA 136A;IS683A;IS-2000"
+    ],
+    "record_id": [
+      "REC00001",
+      "REC00002",
+      "REC00003"
+    ],
+    "family_id": [
+      "23170520",
+      "22549751",
+      ""
+    ],
+    "tc_name": [
+      "",
+      "End to End Architecture",
+      "Metallic Transmission"
+    ],
+    "pub_cleaned": [
+      "US3861619",
+      "US3692255",
+      ""
+    ],
+    "patent_owner_harmonized": [
+      "3M",
+      "Actelis Networks",
+      "Actema"
+    ],
+    "sso": [
+      "ANSI",
+      "ATIS",
+      "BBF",
+      "ETSI",
+      "IETF"
+    ],
+    "copyright": [
+      "",
+      "1"
+    ],
+    "date": [
+      19751124,
+      19751229,
+      19890711
+    ],
+    "blanket_scope": [
+      "",
+      "X3.250 INCITS 250;NCITS",
+      "T1E1"
+    ],
+    "patent_owner_unharmonized": [
+      "3M",
+      "Actelis Networks Inc",
+      "Actema"
+    ],
+    "wg_name": [
+      "",
+      "Information Technology Standards",
+      "Drawing and writing instruments"
+    ],
+    "licensing_commitment": [
+      "FRAND",
+      "None",
+      "Specific Terms",
+      "FREE",
+      "NO LIC"
+    ],
+    "committee_project": [
+      "",
+      "E",
+      "G"
+    ],
+    "serial_cleaned": [
+      "",
+      "US60/052,126",
+      "US09/906,531"
+    ]
+  },
+  "PUBLICATIONS": {
+    "country_code": [
+      "JP",
+      "GB",
+      "DK",
+      "FI",
+      "KR"
+    ],
+    "description_localized": [],
+    "priority_claim": [],
+    "inventor_harmonized": [],
+    "assignee_harmonized": [],
+    "ipc": [],
+    "examiner": [],
+    "grant_date": [
+      20080723,
+      20041207,
+      19770215
+    ],
+    "inventor": [
+      "[\n  \"BOLOURI-SARANSAR, MASUD\"\n]",
+      "[\n  \"HODGSON, JOHN S.\"\n]",
+      "[\n  \"WANG PING\",\n  \"ZHANG ZHIYONG\"\n]"
+    ],
+    "filing_date": [
+      20110715,
+      20140417,
+      20010111
+    ],
+    "claims_localized": [],
+    "publication_number": [
+      "JP-S53112560-U",
+      "CN-104697263-B",
+      "EP-0085770-A1"
+    ],
+    "abstract_localized": [],
+    "citation": [],
+    "assignee": [
+      "[\n  \"The Rogosin Institute\"\n]",
+      "[\n  \"Olympus Corporation\"\n]",
+      "[\n  \"\u9752\u5c9b\u9752\u77e5\u4f01\u4e1a\u7ba1\u7406\u54a8\u8be2\u6709\u9650\u516c\u53f8\"\n]"
+    ],
+    "application_number_formatted": [
+      "US07679895",
+      "EP19950921836",
+      "US10297024"
+    ],
+    "art_unit": [
+      "315",
+      "1651",
+      "3673"
+    ],
+    "fi": [],
+    "application_kind": [
+      "B",
+      "H",
+      "U",
+      "A",
+      "T"
+    ],
+    "uspc": [],
+    "kind_code": [
+      "B1",
+      "C1",
+      "A1"
+    ],
+    "entity_status": [
+      "small",
+      "micro",
+      "",
+      "large"
+    ],
+    "application_number": [
+      "CN-201420587720-U",
+      "US-42726009-A",
+      "GB-4908175-A"
+    ],
+    "pct_number": [
+      "PCT/CN2016/092366",
+      "PCT/US2011/033354",
+      "PCT/KR2007/005985"
+    ],
+    "title_localized": [],
+    "publication_date": [
+      20130430,
+      19570404,
+      19771021
+    ],
+    "fterm": [],
+    "priority_date": [
+      20051209,
+      19910520,
+      19880421
+    ],
+    "family_id": [
+      "26704974",
+      "13705043",
+      "51539694"
+    ],
+    "cpc": []
+  }
+}

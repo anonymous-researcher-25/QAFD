@@ -1,0 +1,557 @@
+{
+  "COMPANIES_DATES": {
+    "company_id": [
+      295,
+      29,
+      281,
+      149,
+      780
+    ],
+    "date_joined": [
+      "2021-06-22T00:00:00.000",
+      "2019-07-12T00:00:00.000",
+      "2021-06-01T00:00:00.000",
+      "2018-08-31T00:00:00.000",
+      "2021-06-02T00:00:00.000"
+    ],
+    "year_founded": [
+      2014,
+      2016,
+      2014,
+      2015,
+      2013
+    ]
+  },
+  "COMPANIES_FUNDING": {
+    "company_id": [
+      635,
+      165,
+      560,
+      29,
+      5
+    ],
+    "valuation": [
+      1000000000,
+      5000000000,
+      2000000000,
+      12000000000,
+      40000000000
+    ],
+    "funding": [
+      164000000,
+      503000000,
+      475000000,
+      4000000000,
+      572000000
+    ],
+    "select_investors": [
+      "\"China Culture Industrial Investment Fund, We Capital, China Minsheng Investment Group\"",
+      "\"China Life Insurance, China Development Bank Capital, CITIC Securities International\"",
+      "\"Nexus Venture Partners, Tenaya Capital, Sequoia Capital\"",
+      "\"Volkswagen Group, Ford Autonomous Vehicles\"",
+      "\"Sequoia Capital China, Blackbird Ventures, Matrix Partners\""
+    ]
+  },
+  "COMPANIES_INDUSTRIES": {
+    "company_id": [
+      820,
+      950,
+      803,
+      46,
+      112
+    ],
+    "industry": [
+      "Hardware",
+      "Consumer & retail",
+      "Fintech",
+      "Edtech",
+      "Internet software & services"
+    ]
+  },
+  "INCOME_TREES": {
+    "zipcode": [
+      11357,
+      10172,
+      10451,
+      10452,
+      10168
+    ],
+    "Estimate_Total": [
+      14846,
+      0,
+      18140,
+      25432,
+      0
+    ],
+    "Margin_of_Error_Total": [
+      355,
+      11,
+      405,
+      368,
+      11
+    ],
+    "Estimate_Median_income": [
+      73750,
+      0,
+      26048,
+      24790,
+      0
+    ],
+    "Margin_of_Error_Median_income": [
+      5498,
+      0,
+      2140,
+      1337,
+      0
+    ],
+    "Estimate_Mean_income": [
+      91915,
+      0,
+      40836,
+      36083,
+      0
+    ],
+    "Margin_of_Error_Mean_income": [
+      4626,
+      0,
+      3424,
+      1578,
+      0
+    ]
+  },
+  "PIZZA_CLEAN_CUSTOMER_ORDERS": {
+    "order_id": [
+      1,
+      2,
+      3,
+      3,
+      4
+    ],
+    "customer_id": [
+      101,
+      101,
+      102,
+      102,
+      103
+    ],
+    "pizza_id": [
+      1,
+      1,
+      1,
+      2,
+      1
+    ],
+    "exclusions": [
+      "",
+      "",
+      "",
+      "",
+      "4"
+    ],
+    "extras": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "order_time": [
+      "2021-01-01 18:05:02",
+      "2021-01-01 19:00:52",
+      "2021-01-02 23:51:23",
+      "2021-01-02 23:51:23",
+      "2021-01-04 13:23:46"
+    ]
+  },
+  "PIZZA_CLEAN_RUNNER_ORDERS": {
+    "order_id": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "runner_id": [
+      1,
+      1,
+      1,
+      2,
+      3
+    ],
+    "pickup_time": [
+      "2021-01-01 18:15:34",
+      "2021-01-01 19:10:54",
+      "2021-01-03 00:12:37",
+      "2021-01-04 13:53:03",
+      "2021-01-08 21:10:57"
+    ],
+    "distance": [
+      20.0,
+      20.0,
+      13.4,
+      23.4,
+      10.0
+    ],
+    "duration": [
+      32.0,
+      27.0,
+      20.0,
+      40.0,
+      15.0
+    ],
+    "cancellation": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "PIZZA_CUSTOMER_ORDERS": {
+    "order_id": [
+      1,
+      2,
+      3,
+      3,
+      4
+    ],
+    "customer_id": [
+      101,
+      101,
+      102,
+      102,
+      103
+    ],
+    "pizza_id": [
+      1,
+      1,
+      1,
+      2,
+      1
+    ],
+    "exclusions": [
+      "",
+      "",
+      "",
+      "",
+      "4"
+    ],
+    "extras": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "order_time": [
+      "2021-01-01 18:05:02",
+      "2021-01-01 19:00:52",
+      "2021-01-02 23:51:23",
+      "2021-01-02 23:51:23",
+      "2021-01-04 13:23:46"
+    ]
+  },
+  "PIZZA_GET_EXCLUSIONS": {
+    "row_id": [
+      1,
+      1,
+      1,
+      2
+    ],
+    "order_id": [
+      4,
+      9,
+      10,
+      10
+    ],
+    "exclusions": [
+      4,
+      4,
+      2,
+      6
+    ],
+    "total_exclusions": [
+      3,
+      1,
+      2,
+      2
+    ]
+  },
+  "PIZZA_GET_EXTRAS": {
+    "row_id": [
+      1,
+      1,
+      1,
+      2,
+      1
+    ],
+    "order_id": [
+      5,
+      7,
+      9,
+      9,
+      10
+    ],
+    "extras": [
+      1,
+      1,
+      1,
+      5,
+      1
+    ],
+    "extras_count": [
+      1,
+      1,
+      2,
+      2,
+      2
+    ]
+  },
+  "PIZZA_NAMES": {
+    "pizza_id": [
+      1,
+      2
+    ],
+    "pizza_name": [
+      "Meatlovers",
+      "Vegetarian"
+    ]
+  },
+  "PIZZA_RECIPES": {
+    "pizza_id": [
+      1,
+      2
+    ],
+    "toppings": [
+      "1, 2, 3, 4, 5, 6, 8, 10",
+      "4, 6, 7, 9, 11, 12"
+    ]
+  },
+  "PIZZA_RUNNERS": {
+    "runner_id": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "registration_date": [
+      "2021-01-01",
+      "2021-01-03",
+      "2021-01-08",
+      "2021-01-15"
+    ]
+  },
+  "PIZZA_RUNNER_ORDERS": {
+    "order_id": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "runner_id": [
+      1,
+      1,
+      1,
+      2,
+      3
+    ],
+    "pickup_time": [
+      "2021-01-01 18:15:34",
+      "2021-01-01 19:10:54",
+      "2021-01-03 00:12:37",
+      "2021-01-04 13:53:03",
+      "2021-01-08 21:10:57"
+    ],
+    "distance": [
+      "20km",
+      "20km",
+      "13.4km",
+      "23.4",
+      "10"
+    ],
+    "duration": [
+      "32 minutes",
+      "27 minutes",
+      "20 mins",
+      "40",
+      "15"
+    ],
+    "cancellation": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "PIZZA_TOPPINGS": {
+    "topping_id": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "topping_name": [
+      "Bacon",
+      "BBQ Sauce",
+      "Beef",
+      "Cheese",
+      "Chicken"
+    ]
+  },
+  "STATISTICS": {
+    "date": [
+      "2020-04-17 00:00:00",
+      "2020-04-18 00:00:00",
+      "2020-04-03 00:00:00",
+      "2020-03-12 00:00:00",
+      "2020-05-29 00:00:00"
+    ],
+    "state": [
+      "MA",
+      "NC",
+      "MA",
+      "MA",
+      "FL"
+    ],
+    "total_cases": [
+      34402,
+      6140,
+      10402,
+      108,
+      53114
+    ],
+    "total_deaths": [
+      1404,
+      164,
+      192,
+      0,
+      2413
+    ]
+  },
+  "TREES": {
+    "idx": [
+      226119,
+      535606,
+      63122,
+      513248,
+      443751
+    ],
+    "tree_id": [
+      404098,
+      14541,
+      242708,
+      717905,
+      650570
+    ],
+    "tree_dbh": [
+      4,
+      11,
+      3,
+      38,
+      21
+    ],
+    "stump_diam": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "status": [
+      "Alive",
+      "Alive",
+      "Alive",
+      "Alive",
+      "Alive"
+    ],
+    "health": [
+      "Good",
+      "Fair",
+      "Good",
+      "Good",
+      "Good"
+    ],
+    "spc_latin": [
+      "Prunus virginiana",
+      "Platanus x acerifolia",
+      "Malus",
+      "Acer saccharinum",
+      "Ailanthus altissima"
+    ],
+    "spc_common": [
+      "'Schubert' chokecherry",
+      "London planetree",
+      "crab apple",
+      "silver maple",
+      "tree of heaven"
+    ],
+    "address": [
+      "2150 ELLIS AVENUE",
+      "141-015 SOUTH DRIVE",
+      "1075 OCEAN PARKWAY",
+      "137-030 94 STREET",
+      "107-055 100 STREET"
+    ],
+    "zipcode": [
+      10462,
+      11357,
+      11230,
+      11417,
+      11417
+    ],
+    "borocode": [
+      2,
+      4,
+      3,
+      4,
+      4
+    ],
+    "boroname": [
+      "Bronx",
+      "Queens",
+      "Brooklyn",
+      "Queens",
+      "Queens"
+    ],
+    "nta_name": [
+      "Westchester-Unionport",
+      "Whitestone",
+      "Ocean Parkway South",
+      "Ozone Park",
+      "South Ozone Park"
+    ],
+    "state": [
+      "New York",
+      "New York",
+      "New York",
+      "New York",
+      "New York"
+    ],
+    "latitude": [
+      40.83244579,
+      40.78961232,
+      40.62227448,
+      40.67142787,
+      40.67830193
+    ],
+    "longitude": [
+      -73.85228627,
+      -73.82859007,
+      -73.97044447,
+      -73.84194783,
+      -73.83875289
+    ]
+  },
+  "WORD_LIST": {
+    "words": [
+      "dizzily",
+      "subdit",
+      "unduteousness",
+      "slovene",
+      "shoptalks"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "FULL": {
+    "deleted": {
+      "type": "BOOLEAN",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 100000"
+    },
+    "descendants": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 100000"
+    },
+    "by": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 96975 - Distinct count 22064 - Null count 3025"
+    },
+    "title": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 100000"
+    },
+    "time": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 95724 - Null count 0"
+    },
+    "text": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 96972 - Distinct count 96668 - Null count 3028"
+    },
+    "type": {
+      "type": "TEXT",
+      "unique_values": [
+        [
+          "pollopt"
+        ],
+        [
+          "job"
+        ],
+        [
+          "poll"
+        ],
+        [
+          "story"
+        ],
+        [
+          "comment"
+        ]
+      ],
+      "value_statics": "Total count 100000 - Distinct count 2 - Null count 0"
+    },
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 100000 - Null count 0"
+    },
+    "timestamp": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 100000 - Distinct count 95724 - Null count 0"
+    },
+    "parent": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 99284 - Distinct count 49589 - Null count 716"
+    },
+    "score": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 100000"
+    },
+    "ranking": {
+      "type": "NUMBER",
+      "unique_values": [],
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 100000"
+    },
+    "dead": {
+      "type": "BOOLEAN",
+      "unique_values": [
+        [
+          true
+        ]
+      ],
+      "value_statics": "Total count 1831 - Distinct count 1 - Null count 98169"
+    },
+    "url": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 0 - Distinct count 0 - Null count 100000"
+    }
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "COUNTRY": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 34 - Distinct count 34 - Null count 0"
+    },
+    "Name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 34 - Distinct count 34 - Null count 0"
+    },
+    "CID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 34 - Distinct count 34 - Null count 0"
+    }
+  },
+  "GENRE": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 328 - Distinct count 328 - Null count 0"
+    },
+    "Name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 328 - Distinct count 328 - Null count 0"
+    },
+    "GID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 328 - Distinct count 328 - Null count 0"
+    }
+  },
+  "LANGUAGE": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 32 - Distinct count 32 - Null count 0"
+    },
+    "Name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 32 - Distinct count 32 - Null count 0"
+    },
+    "LAID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 32 - Distinct count 32 - Null count 0"
+    }
+  },
+  "LOCATION": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 559 - Distinct count 559 - Null count 0"
+    },
+    "Name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 559 - Distinct count 559 - Null count 0"
+    },
+    "LID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 559 - Distinct count 559 - Null count 0"
+    }
+  },
+  "MOVIE": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    },
+    "MID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    },
+    "title": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3344 - Null count 0"
+    },
+    "year": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 125 - Null count 0"
+    },
+    "rating": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 82 - Null count 0"
+    },
+    "num_votes": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 1763 - Null count 0"
+    }
+  },
+  "M_CAST": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 82837 - Distinct count 82837 - Null count 0"
+    },
+    "MID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 82837 - Distinct count 3475 - Null count 0"
+    },
+    "PID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 82837 - Distinct count 32128 - Null count 0"
+    },
+    "ID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 82837 - Distinct count 82837 - Null count 0"
+    }
+  },
+  "M_COUNTRY": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    },
+    "MID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    },
+    "CID": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 34 - Null count 5"
+    },
+    "ID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    }
+  },
+  "M_DIRECTOR": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    },
+    "MID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    },
+    "PID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 1464 - Null count 0"
+    },
+    "ID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    }
+  },
+  "M_GENRE": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    },
+    "MID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    },
+    "GID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 328 - Null count 0"
+    },
+    "ID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    }
+  },
+  "M_LANGUAGE": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    },
+    "MID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    },
+    "LAID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 32 - Null count 0"
+    },
+    "ID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    }
+  },
+  "M_LOCATION": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    },
+    "MID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    },
+    "LID": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 559 - Null count 1626"
+    },
+    "ID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 3475 - Distinct count 3475 - Null count 0"
+    }
+  },
+  "M_PRODUCER": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 11751 - Distinct count 11751 - Null count 0"
+    },
+    "MID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 11751 - Distinct count 3475 - Null count 0"
+    },
+    "PID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 11751 - Distinct count 5437 - Null count 0"
+    },
+    "ID": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 11751 - Distinct count 11751 - Null count 0"
+    }
+  },
+  "PERSON": {
+    "index": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 38285 - Distinct count 38285 - Null count 0"
+    },
+    "PID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 38285 - Distinct count 37566 - Null count 0"
+    },
+    "Name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 38285 - Distinct count 36313 - Null count 0"
+    },
+    "Gender": {
+      "type": "TEXT",
+      "unique_values": [
+        "Male",
+        "Male",
+        "Male",
+        "Male",
+        "",
+        "Female",
+        "Male",
+        "Female",
+        "Male",
+        ""
+      ],
+      "value_statics": "Total count 38285 - Distinct count 3 - Null count 0"
+    }
+  }
+}

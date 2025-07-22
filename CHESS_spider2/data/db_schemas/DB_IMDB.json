@@ -1,0 +1,78 @@
+{
+  "COUNTRY": [
+    "index",
+    "Name",
+    "CID"
+  ],
+  "GENRE": [
+    "index",
+    "Name",
+    "GID"
+  ],
+  "LANGUAGE": [
+    "index",
+    "Name",
+    "LAID"
+  ],
+  "LOCATION": [
+    "index",
+    "Name",
+    "LID"
+  ],
+  "MOVIE": [
+    "index",
+    "MID",
+    "title",
+    "year",
+    "rating",
+    "num_votes"
+  ],
+  "M_CAST": [
+    "index",
+    "MID",
+    "PID",
+    "ID"
+  ],
+  "M_COUNTRY": [
+    "index",
+    "MID",
+    "CID",
+    "ID"
+  ],
+  "M_DIRECTOR": [
+    "index",
+    "MID",
+    "PID",
+    "ID"
+  ],
+  "M_GENRE": [
+    "index",
+    "MID",
+    "GID",
+    "ID"
+  ],
+  "M_LANGUAGE": [
+    "index",
+    "MID",
+    "LAID",
+    "ID"
+  ],
+  "M_LOCATION": [
+    "index",
+    "MID",
+    "LID",
+    "ID"
+  ],
+  "M_PRODUCER": [
+    "index",
+    "MID",
+    "PID",
+    "ID"
+  ],
+  "PERSON": [
+    "index",
+    "PID",
+    "Name",
+    "Gender"
+  ]
+}

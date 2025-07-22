@@ -1,0 +1,1820 @@
+{
+  "COUNTRY": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1729,
+        4769,
+        7809,
+        10257,
+        13274,
+        15722,
+        17642,
+        19694,
+        21518
+      ],
+      "value_statics": "Total count 11 - Distinct count 11 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Belgium",
+        "England",
+        "France",
+        "Germany",
+        "Italy",
+        "Netherlands",
+        "Poland",
+        "Portugal",
+        "Scotland",
+        "Spain"
+      ],
+      "value_statics": "Total count 11 - Distinct count 11 - Null count 0"
+    }
+  },
+  "LEAGUE": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1729,
+        4769,
+        7809,
+        10257,
+        13274,
+        15722,
+        17642,
+        19694,
+        21518
+      ],
+      "value_statics": "Total count 11 - Distinct count 11 - Null count 0"
+    },
+    "country_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1729,
+        4769,
+        7809,
+        10257,
+        13274,
+        15722,
+        17642,
+        19694,
+        21518
+      ],
+      "value_statics": "Total count 11 - Distinct count 11 - Null count 0"
+    },
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Belgium Jupiler League",
+        "England Premier League",
+        "France Ligue 1",
+        "Germany 1. Bundesliga",
+        "Italy Serie A",
+        "Netherlands Eredivisie",
+        "Poland Ekstraklasa",
+        "Portugal Liga ZON Sagres",
+        "Scotland Premier League",
+        "Spain LIGA BBVA"
+      ],
+      "value_statics": "Total count 11 - Distinct count 11 - Null count 0"
+    }
+  },
+  "MATCH": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 25979 - Null count 0"
+    },
+    "country_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        21518,
+        24558,
+        17642,
+        24558,
+        15722,
+        21518,
+        21518,
+        17642,
+        21518,
+        15722
+      ],
+      "value_statics": "Total count 25979 - Distinct count 11 - Null count 0"
+    },
+    "league_id": {
+      "type": "NUMBER",
+      "unique_values": [
+        21518,
+        24558,
+        17642,
+        24558,
+        15722,
+        21518,
+        21518,
+        17642,
+        21518,
+        15722
+      ],
+      "value_statics": "Total count 25979 - Distinct count 11 - Null count 0"
+    },
+    "season": {
+      "type": "TEXT",
+      "unique_values": [
+        "2013/2014",
+        "2011/2012",
+        "2015/2016",
+        "2010/2011",
+        "2013/2014",
+        "2013/2014",
+        "2008/2009",
+        "2008/2009",
+        "2012/2013",
+        "2010/2011"
+      ],
+      "value_statics": "Total count 25979 - Distinct count 8 - Null count 0"
+    },
+    "stage": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 38 - Null count 0"
+    },
+    "date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 1694 - Null count 0"
+    },
+    "match_api_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 25979 - Null count 0"
+    },
+    "home_team_api_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 299 - Null count 0"
+    },
+    "away_team_api_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 299 - Null count 0"
+    },
+    "home_team_goal": {
+      "type": "NUMBER",
+      "unique_values": [
+        2,
+        1,
+        5,
+        2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      "value_statics": "Total count 25979 - Distinct count 11 - Null count 0"
+    },
+    "away_team_goal": {
+      "type": "NUMBER",
+      "unique_values": [
+        2,
+        0,
+        2,
+        1,
+        3,
+        0,
+        4,
+        4,
+        1,
+        0
+      ],
+      "value_statics": "Total count 25979 - Distinct count 10 - Null count 0"
+    },
+    "home_player_X1": {
+      "type": "FLOAT",
+      "unique_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 3 - Null count 1821"
+    },
+    "home_player_X2": {
+      "type": "FLOAT",
+      "unique_values": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        2.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1821"
+    },
+    "home_player_X3": {
+      "type": "FLOAT",
+      "unique_values": [
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 8 - Null count 1832"
+    },
+    "home_player_X4": {
+      "type": "FLOAT",
+      "unique_values": [
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        7.0,
+        6.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 7 - Null count 1832"
+    },
+    "home_player_X5": {
+      "type": "FLOAT",
+      "unique_values": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        1.0,
+        8.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1832"
+    },
+    "home_player_X6": {
+      "type": "FLOAT",
+      "unique_values": [
+        4.0,
+        3.0,
+        3.0,
+        2.0,
+        1.0,
+        3.0,
+        4.0,
+        3.0,
+        4.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1832"
+    },
+    "home_player_X7": {
+      "type": "FLOAT",
+      "unique_values": [
+        6.0,
+        5.0,
+        5.0,
+        4.0,
+        3.0,
+        5.0,
+        6.0,
+        5.0,
+        6.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1832"
+    },
+    "home_player_X8": {
+      "type": "FLOAT",
+      "unique_values": [
+        3.0,
+        7.0,
+        7.0,
+        6.0,
+        5.0,
+        7.0,
+        3.0,
+        7.0,
+        3.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1832"
+    },
+    "home_player_X9": {
+      "type": "FLOAT",
+      "unique_values": [
+        5.0,
+        3.0,
+        3.0,
+        8.0,
+        7.0,
+        3.0,
+        5.0,
+        9.0,
+        5.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1832"
+    },
+    "home_player_X10": {
+      "type": "FLOAT",
+      "unique_values": [
+        7.0,
+        5.0,
+        5.0,
+        4.0,
+        9.0,
+        5.0,
+        7.0,
+        4.0,
+        7.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1832"
+    },
+    "home_player_X11": {
+      "type": "FLOAT",
+      "unique_values": [
+        5.0,
+        7.0,
+        7.0,
+        6.0,
+        5.0,
+        7.0,
+        5.0,
+        6.0,
+        5.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 6 - Null count 1832"
+    },
+    "away_player_X1": {
+      "type": "FLOAT",
+      "unique_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 3 - Null count 1832"
+    },
+    "away_player_X2": {
+      "type": "FLOAT",
+      "unique_values": [
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        2.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 8 - Null count 1832"
+    },
+    "away_player_X3": {
+      "type": "FLOAT",
+      "unique_values": [
+        4.0,
+        4.0,
+        4.0,
+        5.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 8 - Null count 1832"
+    },
+    "away_player_X4": {
+      "type": "FLOAT",
+      "unique_values": [
+        6.0,
+        6.0,
+        6.0,
+        7.0,
+        6.0,
+        6.0,
+        6.0,
+        7.0,
+        6.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 8 - Null count 1832"
+    },
+    "away_player_X5": {
+      "type": "FLOAT",
+      "unique_values": [
+        8.0,
+        8.0,
+        8.0,
+        2.0,
+        8.0,
+        8.0,
+        8.0,
+        1.0,
+        8.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1832"
+    },
+    "away_player_X6": {
+      "type": "FLOAT",
+      "unique_values": [
+        4.0,
+        2.0,
+        2.0,
+        4.0,
+        1.0,
+        2.0,
+        2.0,
+        3.0,
+        4.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1832"
+    },
+    "away_player_X7": {
+      "type": "FLOAT",
+      "unique_values": [
+        6.0,
+        4.0,
+        4.0,
+        6.0,
+        3.0,
+        4.0,
+        4.0,
+        5.0,
+        6.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1832"
+    },
+    "away_player_X8": {
+      "type": "FLOAT",
+      "unique_values": [
+        3.0,
+        6.0,
+        6.0,
+        8.0,
+        5.0,
+        6.0,
+        6.0,
+        7.0,
+        3.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1832"
+    },
+    "away_player_X9": {
+      "type": "FLOAT",
+      "unique_values": [
+        5.0,
+        8.0,
+        8.0,
+        3.0,
+        7.0,
+        8.0,
+        8.0,
+        9.0,
+        5.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1833"
+    },
+    "away_player_X10": {
+      "type": "FLOAT",
+      "unique_values": [
+        7.0,
+        4.0,
+        4.0,
+        4.0,
+        9.0,
+        4.0,
+        4.0,
+        4.0,
+        7.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 9 - Null count 1833"
+    },
+    "away_player_X11": {
+      "type": "FLOAT",
+      "unique_values": [
+        5.0,
+        6.0,
+        6.0,
+        7.0,
+        5.0,
+        6.0,
+        6.0,
+        6.0,
+        5.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 6 - Null count 1839"
+    },
+    "home_player_Y1": {
+      "type": "FLOAT",
+      "unique_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 3 - Null count 1821"
+    },
+    "home_player_Y2": {
+      "type": "FLOAT",
+      "unique_values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 2 - Null count 1821"
+    },
+    "home_player_Y3": {
+      "type": "FLOAT",
+      "unique_values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 2 - Null count 1832"
+    },
+    "home_player_Y4": {
+      "type": "FLOAT",
+      "unique_values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 2 - Null count 1832"
+    },
+    "home_player_Y5": {
+      "type": "FLOAT",
+      "unique_values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        7.0,
+        3.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 5 - Null count 1832"
+    },
+    "home_player_Y6": {
+      "type": "FLOAT",
+      "unique_values": [
+        6.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        6.0,
+        7.0,
+        6.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 6 - Null count 1832"
+    },
+    "home_player_Y7": {
+      "type": "FLOAT",
+      "unique_values": [
+        6.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        6.0,
+        7.0,
+        6.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 6 - Null count 1832"
+    },
+    "home_player_Y8": {
+      "type": "FLOAT",
+      "unique_values": [
+        8.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        8.0,
+        7.0,
+        8.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 7 - Null count 1832"
+    },
+    "home_player_Y9": {
+      "type": "FLOAT",
+      "unique_values": [
+        8.0,
+        10.0,
+        10.0,
+        7.0,
+        7.0,
+        10.0,
+        8.0,
+        7.0,
+        8.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 6 - Null count 1832"
+    },
+    "home_player_Y10": {
+      "type": "FLOAT",
+      "unique_values": [
+        8.0,
+        10.0,
+        10.0,
+        10.0,
+        7.0,
+        10.0,
+        8.0,
+        10.0,
+        8.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 7 - Null count 1832"
+    },
+    "home_player_Y11": {
+      "type": "FLOAT",
+      "unique_values": [
+        11.0,
+        10.0,
+        10.0,
+        10.0,
+        11.0,
+        10.0,
+        11.0,
+        10.0,
+        11.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 4 - Null count 1832"
+    },
+    "away_player_Y1": {
+      "type": "FLOAT",
+      "unique_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 2 - Null count 1832"
+    },
+    "away_player_Y2": {
+      "type": "FLOAT",
+      "unique_values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 1 - Null count 1832"
+    },
+    "away_player_Y3": {
+      "type": "FLOAT",
+      "unique_values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 2 - Null count 1832"
+    },
+    "away_player_Y4": {
+      "type": "FLOAT",
+      "unique_values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 3 - Null count 1832"
+    },
+    "away_player_Y5": {
+      "type": "FLOAT",
+      "unique_values": [
+        3.0,
+        3.0,
+        3.0,
+        7.0,
+        3.0,
+        3.0,
+        3.0,
+        7.0,
+        3.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 5 - Null count 1832"
+    },
+    "away_player_Y6": {
+      "type": "FLOAT",
+      "unique_values": [
+        6.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        6.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 7 - Null count 1832"
+    },
+    "away_player_Y7": {
+      "type": "FLOAT",
+      "unique_values": [
+        6.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        6.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 7 - Null count 1832"
+    },
+    "away_player_Y8": {
+      "type": "FLOAT",
+      "unique_values": [
+        8.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        8.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 7 - Null count 1832"
+    },
+    "away_player_Y9": {
+      "type": "FLOAT",
+      "unique_values": [
+        8.0,
+        7.0,
+        7.0,
+        10.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        8.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 7 - Null count 1833"
+    },
+    "away_player_Y10": {
+      "type": "FLOAT",
+      "unique_values": [
+        8.0,
+        10.0,
+        10.0,
+        10.0,
+        7.0,
+        10.0,
+        10.0,
+        10.0,
+        8.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 6 - Null count 1833"
+    },
+    "away_player_Y11": {
+      "type": "FLOAT",
+      "unique_values": [
+        11.0,
+        10.0,
+        10.0,
+        10.0,
+        11.0,
+        10.0,
+        10.0,
+        10.0,
+        11.0,
+        null
+      ],
+      "value_statics": "Total count 25979 - Distinct count 4 - Null count 1839"
+    },
+    "home_player_1": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 906 - Null count 1224"
+    },
+    "home_player_2": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 2414 - Null count 1315"
+    },
+    "home_player_3": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 2375 - Null count 1281"
+    },
+    "home_player_4": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 2606 - Null count 1323"
+    },
+    "home_player_5": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 2769 - Null count 1316"
+    },
+    "home_player_6": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 3798 - Null count 1325"
+    },
+    "home_player_7": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 3422 - Null count 1227"
+    },
+    "home_player_8": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 4076 - Null count 1309"
+    },
+    "home_player_9": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 4114 - Null count 1273"
+    },
+    "home_player_10": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 3642 - Null count 1436"
+    },
+    "home_player_11": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 2890 - Null count 1555"
+    },
+    "away_player_1": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 926 - Null count 1234"
+    },
+    "away_player_2": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 2504 - Null count 1278"
+    },
+    "away_player_3": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 2470 - Null count 1293"
+    },
+    "away_player_4": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 2657 - Null count 1321"
+    },
+    "away_player_5": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 2884 - Null count 1335"
+    },
+    "away_player_6": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 3930 - Null count 1313"
+    },
+    "away_player_7": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 3620 - Null count 1235"
+    },
+    "away_player_8": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 4249 - Null count 1341"
+    },
+    "away_player_9": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 4319 - Null count 1328"
+    },
+    "away_player_10": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 3891 - Null count 1441"
+    },
+    "away_player_11": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 3040 - Null count 1554"
+    },
+    "goal": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 13226 - Null count 0"
+    },
+    "shoton": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 8465 - Null count 0"
+    },
+    "shotoff": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 8465 - Null count 0"
+    },
+    "foulcommit": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 8467 - Null count 0"
+    },
+    "card": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 13778 - Null count 0"
+    },
+    "cross": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 8467 - Null count 0"
+    },
+    "corner": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 8466 - Null count 0"
+    },
+    "possession": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 8421 - Null count 0"
+    },
+    "B365H": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 121 - Null count 3387"
+    },
+    "B365D": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 72 - Null count 3387"
+    },
+    "B365A": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 115 - Null count 3387"
+    },
+    "BWH": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 237 - Null count 3404"
+    },
+    "BWD": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 133 - Null count 3404"
+    },
+    "BWA": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 261 - Null count 3404"
+    },
+    "IWH": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 147 - Null count 3459"
+    },
+    "IWD": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 73 - Null count 3459"
+    },
+    "IWA": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 159 - Null count 3459"
+    },
+    "LBH": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 129 - Null count 3423"
+    },
+    "LBD": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 72 - Null count 3423"
+    },
+    "LBA": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 128 - Null count 3423"
+    },
+    "PSH": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 948 - Null count 14811"
+    },
+    "PSD": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 665 - Null count 14811"
+    },
+    "PSA": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 1475 - Null count 14811"
+    },
+    "WHH": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 125 - Null count 3408"
+    },
+    "WHD": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 78 - Null count 3408"
+    },
+    "WHA": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 136 - Null count 3408"
+    },
+    "SJH": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 137 - Null count 8882"
+    },
+    "SJD": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 79 - Null count 8882"
+    },
+    "SJA": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 132 - Null count 8882"
+    },
+    "VCH": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 160 - Null count 3411"
+    },
+    "VCD": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 82 - Null count 3411"
+    },
+    "VCA": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 151 - Null count 3411"
+    },
+    "GBH": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 159 - Null count 11817"
+    },
+    "GBD": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 84 - Null count 11817"
+    },
+    "GBA": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 172 - Null count 11817"
+    },
+    "BSH": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 101 - Null count 11818"
+    },
+    "BSD": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 59 - Null count 11818"
+    },
+    "BSA": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 25979 - Distinct count 96 - Null count 11818"
+    }
+  },
+  "PLAYER": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 11060 - Distinct count 11060 - Null count 0"
+    },
+    "player_api_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 11060 - Distinct count 11060 - Null count 0"
+    },
+    "player_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 11060 - Distinct count 10848 - Null count 0"
+    },
+    "player_fifa_api_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 11060 - Distinct count 11060 - Null count 0"
+    },
+    "birthday": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 11060 - Distinct count 5762 - Null count 0"
+    },
+    "height": {
+      "type": "FLOAT",
+      "unique_values": [
+        182.88,
+        180.34,
+        185.42,
+        182.88,
+        182.88,
+        175.26,
+        187.96,
+        177.8,
+        175.26,
+        180.34
+      ],
+      "value_statics": "Total count 11060 - Distinct count 20 - Null count 0"
+    },
+    "weight": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 11060 - Distinct count 50 - Null count 0"
+    }
+  },
+  "PLAYER_ATTRIBUTES": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 183978 - Null count 0"
+    },
+    "player_fifa_api_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 11062 - Null count 0"
+    },
+    "player_api_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 11060 - Null count 0"
+    },
+    "date": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 197 - Null count 0"
+    },
+    "overall_rating": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 61 - Null count 836"
+    },
+    "potential": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 56 - Null count 836"
+    },
+    "preferred_foot": {
+      "type": "TEXT",
+      "unique_values": [
+        "left",
+        "right",
+        "right",
+        "left",
+        "right",
+        "left",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "value_statics": "Total count 183978 - Distinct count 3 - Null count 0"
+    },
+    "attacking_work_rate": {
+      "type": "TEXT",
+      "unique_values": [
+        "medium",
+        "high",
+        "high",
+        "high",
+        "high",
+        "None",
+        "high",
+        "high",
+        "medium",
+        "medium"
+      ],
+      "value_statics": "Total count 183978 - Distinct count 9 - Null count 0"
+    },
+    "defensive_work_rate": {
+      "type": "TEXT",
+      "unique_values": [
+        "medium",
+        "medium",
+        "low",
+        "medium",
+        "high",
+        "o",
+        "medium",
+        "medium",
+        "medium",
+        "medium"
+      ],
+      "value_statics": "Total count 183978 - Distinct count 20 - Null count 0"
+    },
+    "crossing": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 95 - Null count 836"
+    },
+    "finishing": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 97 - Null count 836"
+    },
+    "heading_accuracy": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 96 - Null count 836"
+    },
+    "short_passing": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 95 - Null count 836"
+    },
+    "volleys": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 93 - Null count 2713"
+    },
+    "dribbling": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 97 - Null count 836"
+    },
+    "curve": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 92 - Null count 2713"
+    },
+    "free_kick_accuracy": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 97 - Null count 836"
+    },
+    "long_passing": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 95 - Null count 836"
+    },
+    "ball_control": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 93 - Null count 836"
+    },
+    "acceleration": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 86 - Null count 836"
+    },
+    "sprint_speed": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 85 - Null count 836"
+    },
+    "agility": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 81 - Null count 2713"
+    },
+    "reactions": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 78 - Null count 836"
+    },
+    "balance": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 81 - Null count 2713"
+    },
+    "shot_power": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 96 - Null count 836"
+    },
+    "jumping": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 79 - Null count 2713"
+    },
+    "stamina": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 84 - Null count 836"
+    },
+    "strength": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 82 - Null count 836"
+    },
+    "long_shots": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 96 - Null count 836"
+    },
+    "aggression": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 91 - Null count 836"
+    },
+    "interceptions": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 96 - Null count 836"
+    },
+    "positioning": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 95 - Null count 836"
+    },
+    "vision": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 97 - Null count 2713"
+    },
+    "penalties": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 94 - Null count 836"
+    },
+    "marking": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 95 - Null count 836"
+    },
+    "standing_tackle": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 95 - Null count 836"
+    },
+    "sliding_tackle": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 94 - Null count 2713"
+    },
+    "gk_diving": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 93 - Null count 836"
+    },
+    "gk_handling": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 90 - Null count 836"
+    },
+    "gk_kicking": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 97 - Null count 836"
+    },
+    "gk_positioning": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 94 - Null count 836"
+    },
+    "gk_reflexes": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 183978 - Distinct count 92 - Null count 836"
+    }
+  },
+  "SQLITE_SEQUENCE": {
+    "name": {
+      "type": "TEXT",
+      "unique_values": [
+        "Team",
+        "Country",
+        "League",
+        "Match",
+        "Player",
+        "Player_Attributes",
+        "Team_Attributes"
+      ],
+      "value_statics": "Total count 7 - Distinct count 7 - Null count 0"
+    },
+    "seq": {
+      "type": "NUMBER",
+      "unique_values": [
+        103916,
+        51958,
+        51958,
+        51958,
+        11075,
+        183978,
+        1458
+      ],
+      "value_statics": "Total count 7 - Distinct count 5 - Null count 0"
+    }
+  },
+  "TEAM": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 299 - Distinct count 299 - Null count 0"
+    },
+    "team_api_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 299 - Distinct count 299 - Null count 0"
+    },
+    "team_fifa_api_id": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 299 - Distinct count 285 - Null count 11"
+    },
+    "team_long_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 299 - Distinct count 296 - Null count 0"
+    },
+    "team_short_name": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 299 - Distinct count 259 - Null count 0"
+    }
+  },
+  "TEAM_ATTRIBUTES": {
+    "id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1458 - Distinct count 1458 - Null count 0"
+    },
+    "team_fifa_api_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1458 - Distinct count 285 - Null count 0"
+    },
+    "team_api_id": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1458 - Distinct count 288 - Null count 0"
+    },
+    "date": {
+      "type": "TEXT",
+      "unique_values": [
+        "2015-09-10 00:00:00",
+        "2013-09-20 00:00:00",
+        "2011-02-22 00:00:00",
+        "2012-02-22 00:00:00",
+        "2011-02-22 00:00:00",
+        "2013-09-20 00:00:00",
+        "2015-09-10 00:00:00",
+        "2011-02-22 00:00:00",
+        "2015-09-10 00:00:00",
+        "2014-09-19 00:00:00"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 6 - Null count 0"
+    },
+    "buildUpPlaySpeed": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1458 - Distinct count 57 - Null count 0"
+    },
+    "buildUpPlaySpeedClass": {
+      "type": "TEXT",
+      "unique_values": [
+        "Balanced",
+        "Balanced",
+        "Fast",
+        "Fast",
+        "Balanced",
+        "Balanced",
+        "Balanced",
+        "Balanced",
+        "Balanced",
+        "Balanced"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 3 - Null count 0"
+    },
+    "buildUpPlayDribbling": {
+      "type": "FLOAT",
+      "unique_values": null,
+      "value_statics": "Total count 1458 - Distinct count 49 - Null count 969"
+    },
+    "buildUpPlayDribblingClass": {
+      "type": "TEXT",
+      "unique_values": [
+        "Normal",
+        "Little",
+        "Little",
+        "Little",
+        "Little",
+        "Little",
+        "Normal",
+        "Little",
+        "Normal",
+        "Normal"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 3 - Null count 0"
+    },
+    "buildUpPlayPassing": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1458 - Distinct count 58 - Null count 0"
+    },
+    "buildUpPlayPassingClass": {
+      "type": "TEXT",
+      "unique_values": [
+        "Mixed",
+        "Mixed",
+        "Mixed",
+        "Long",
+        "Mixed",
+        "Mixed",
+        "Mixed",
+        "Mixed",
+        "Mixed",
+        "Mixed"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 3 - Null count 0"
+    },
+    "buildUpPlayPositioningClass": {
+      "type": "TEXT",
+      "unique_values": [
+        "Organised",
+        "Organised",
+        "Organised",
+        "Organised",
+        "Organised",
+        "Organised",
+        "Organised",
+        "Organised",
+        "Organised",
+        "Organised"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 2 - Null count 0"
+    },
+    "chanceCreationPassing": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1458 - Distinct count 50 - Null count 0"
+    },
+    "chanceCreationPassingClass": {
+      "type": "TEXT",
+      "unique_values": [
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Risky",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 3 - Null count 0"
+    },
+    "chanceCreationCrossing": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1458 - Distinct count 56 - Null count 0"
+    },
+    "chanceCreationCrossingClass": {
+      "type": "TEXT",
+      "unique_values": [
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Lots",
+        "Normal",
+        "Normal",
+        "Lots",
+        "Normal"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 3 - Null count 0"
+    },
+    "chanceCreationShooting": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1458 - Distinct count 57 - Null count 0"
+    },
+    "chanceCreationShootingClass": {
+      "type": "TEXT",
+      "unique_values": [
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 3 - Null count 0"
+    },
+    "chanceCreationPositioningClass": {
+      "type": "TEXT",
+      "unique_values": [
+        "Organised",
+        "Organised",
+        "Organised",
+        "Organised",
+        "Organised",
+        "Free Form",
+        "Organised",
+        "Organised",
+        "Organised",
+        "Organised"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 2 - Null count 0"
+    },
+    "defencePressure": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1458 - Distinct count 48 - Null count 0"
+    },
+    "defencePressureClass": {
+      "type": "TEXT",
+      "unique_values": [
+        "Medium",
+        "Medium",
+        "Medium",
+        "Medium",
+        "Medium",
+        "Medium",
+        "Medium",
+        "Medium",
+        "Medium",
+        "Medium"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 3 - Null count 0"
+    },
+    "defenceAggression": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1458 - Distinct count 47 - Null count 0"
+    },
+    "defenceAggressionClass": {
+      "type": "TEXT",
+      "unique_values": [
+        "Press",
+        "Press",
+        "Press",
+        "Press",
+        "Press",
+        "Press",
+        "Press",
+        "Press",
+        "Press",
+        "Press"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 3 - Null count 0"
+    },
+    "defenceTeamWidth": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 1458 - Distinct count 43 - Null count 0"
+    },
+    "defenceTeamWidthClass": {
+      "type": "TEXT",
+      "unique_values": [
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal",
+        "Normal"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 3 - Null count 0"
+    },
+    "defenceDefenderLineClass": {
+      "type": "TEXT",
+      "unique_values": [
+        "Cover",
+        "Cover",
+        "Cover",
+        "Cover",
+        "Cover",
+        "Offside Trap",
+        "Cover",
+        "Cover",
+        "Cover",
+        "Cover"
+      ],
+      "value_statics": "Total count 1458 - Distinct count 2 - Null count 0"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "ACCESS_LOG": "create or replace TABLE ACCESS_LOG (\n\t\"session\" VARCHAR(16777216),\n\t\"user_id\" VARCHAR(16777216),\n\t\"action\" VARCHAR(16777216),\n\t\"stamp\" VARCHAR(16777216)\n);",
+  "ACTION_LOG": "create or replace TABLE ACTION_LOG (\n\t\"session\" VARCHAR(16777216),\n\t\"user_id\" VARCHAR(16777216),\n\t\"action\" VARCHAR(16777216),\n\t\"category\" VARCHAR(16777216),\n\t\"products\" VARCHAR(16777216),\n\t\"amount\" FLOAT,\n\t\"stamp\" VARCHAR(16777216)\n);",
+  "ACTION_LOG_WITH_IP": "create or replace TABLE ACTION_LOG_WITH_IP (\n\t\"session\" VARCHAR(16777216),\n\t\"user_id\" VARCHAR(16777216),\n\t\"action\" VARCHAR(16777216),\n\t\"ip\" VARCHAR(16777216),\n\t\"stamp\" VARCHAR(16777216)\n);",
+  "ACTION_LOG_WITH_NOISE": "create or replace TABLE ACTION_LOG_WITH_NOISE (\n\t\"stamp\" VARCHAR(16777216),\n\t\"session\" VARCHAR(16777216),\n\t\"action\" VARCHAR(16777216),\n\t\"products\" VARCHAR(16777216),\n\t\"url\" VARCHAR(16777216),\n\t\"ip\" VARCHAR(16777216),\n\t\"user_agent\" VARCHAR(16777216)\n);",
+  "ACTIVITY_LOG": "create or replace TABLE ACTIVITY_LOG (\n\t\"stamp\" VARCHAR(16777216),\n\t\"session\" VARCHAR(16777216),\n\t\"action\" VARCHAR(16777216),\n\t\"option\" VARCHAR(16777216),\n\t\"path\" VARCHAR(16777216),\n\t\"search_type\" VARCHAR(16777216)\n);",
+  "APP1_MST_USERS": "create or replace TABLE APP1_MST_USERS (\n\t\"user_id\" VARCHAR(16777216),\n\t\"name\" VARCHAR(16777216),\n\t\"email\" VARCHAR(16777216)\n);",
+  "APP2_MST_USERS": "create or replace TABLE APP2_MST_USERS (\n\t\"user_id\" VARCHAR(16777216),\n\t\"name\" VARCHAR(16777216),\n\t\"phone\" VARCHAR(16777216)\n);",
+  "DUP_ACTION_LOG": "create or replace TABLE DUP_ACTION_LOG (\n\t\"stamp\" VARCHAR(16777216),\n\t\"session\" VARCHAR(16777216),\n\t\"user_id\" VARCHAR(16777216),\n\t\"action\" VARCHAR(16777216),\n\t\"products\" VARCHAR(16777216)\n);",
+  "FORM_ERROR_LOG": "create or replace TABLE FORM_ERROR_LOG (\n\t\"stamp\" VARCHAR(16777216),\n\t\"session\" VARCHAR(16777216),\n\t\"form\" VARCHAR(16777216),\n\t\"field\" VARCHAR(16777216),\n\t\"error_type\" VARCHAR(16777216),\n\t\"value\" VARCHAR(16777216)\n);",
+  "FORM_LOG": "create or replace TABLE FORM_LOG (\n\t\"stamp\" VARCHAR(16777216),\n\t\"session\" VARCHAR(16777216),\n\t\"action\" VARCHAR(16777216),\n\t\"path\" VARCHAR(16777216),\n\t\"status\" VARCHAR(16777216)\n);",
+  "INVALID_ACTION_LOG": "create or replace TABLE INVALID_ACTION_LOG (\n\t\"stamp\" VARCHAR(16777216),\n\t\"session\" VARCHAR(16777216),\n\t\"user_id\" VARCHAR(16777216),\n\t\"action\" VARCHAR(16777216),\n\t\"category\" VARCHAR(16777216),\n\t\"products\" VARCHAR(16777216),\n\t\"amount\" FLOAT\n);",
+  "MST_CATEGORIES": "create or replace TABLE MST_CATEGORIES (\n\t\"id\" NUMBER(38,0),\n\t\"name\" VARCHAR(16777216),\n\t\"stamp\" VARCHAR(16777216)\n);",
+  "MST_PRODUCTS_20161201": "create or replace TABLE MST_PRODUCTS_20161201 (\n\t\"product_id\" VARCHAR(16777216),\n\t\"name\" VARCHAR(16777216),\n\t\"price\" NUMBER(38,0),\n\t\"updated_at\" VARCHAR(16777216)\n);",
+  "MST_PRODUCTS_20170101": "create or replace TABLE MST_PRODUCTS_20170101 (\n\t\"product_id\" VARCHAR(16777216),\n\t\"name\" VARCHAR(16777216),\n\t\"price\" NUMBER(38,0),\n\t\"updated_at\" VARCHAR(16777216)\n);",
+  "MST_USERS": "create or replace TABLE MST_USERS (\n\t\"user_id\" VARCHAR(16777216),\n\t\"sex\" VARCHAR(16777216),\n\t\"birth_date\" VARCHAR(16777216),\n\t\"register_date\" VARCHAR(16777216),\n\t\"register_device\" VARCHAR(16777216),\n\t\"withdraw_date\" VARCHAR(16777216)\n);",
+  "MST_USERS_WITH_CARD_NUMBER": "create or replace TABLE MST_USERS_WITH_CARD_NUMBER (\n\t\"user_id\" VARCHAR(16777216),\n\t\"card_number\" VARCHAR(16777216)\n);",
+  "PRODUCT_SALES": "create or replace TABLE PRODUCT_SALES (\n\t\"category_name\" VARCHAR(16777216),\n\t\"product_id\" VARCHAR(16777216),\n\t\"sales\" NUMBER(38,0)\n);",
+  "PURCHASE_LOG": "create or replace TABLE PURCHASE_LOG (\n\t\"purchase_id\" NUMBER(38,0),\n\t\"user_id\" VARCHAR(16777216),\n\t\"amount\" NUMBER(38,0),\n\t\"stamp\" VARCHAR(16777216)\n);",
+  "READ_LOG": "create or replace TABLE READ_LOG (\n\t\"stamp\" VARCHAR(16777216),\n\t\"session\" VARCHAR(16777216),\n\t\"action\" VARCHAR(16777216),\n\t\"url\" VARCHAR(16777216)\n);"
+}

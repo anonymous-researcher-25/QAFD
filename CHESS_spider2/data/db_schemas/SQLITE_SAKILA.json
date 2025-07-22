@@ -1,0 +1,123 @@
+{
+  "ACTOR": [
+    "actor_id",
+    "first_name",
+    "last_name",
+    "last_update"
+  ],
+  "ADDRESS": [
+    "address_id",
+    "address",
+    "address2",
+    "district",
+    "city_id",
+    "postal_code",
+    "phone",
+    "last_update"
+  ],
+  "CATEGORY": [
+    "category_id",
+    "name",
+    "last_update"
+  ],
+  "CITY": [
+    "city_id",
+    "city",
+    "country_id",
+    "last_update"
+  ],
+  "COUNTRY": [
+    "country_id",
+    "country",
+    "last_update"
+  ],
+  "CUSTOMER": [
+    "customer_id",
+    "store_id",
+    "first_name",
+    "last_name",
+    "email",
+    "address_id",
+    "active",
+    "create_date",
+    "last_update"
+  ],
+  "FILM": [
+    "film_id",
+    "title",
+    "description",
+    "release_year",
+    "language_id",
+    "original_language_id",
+    "rental_duration",
+    "rental_rate",
+    "length",
+    "replacement_cost",
+    "rating",
+    "special_features",
+    "last_update"
+  ],
+  "FILM_ACTOR": [
+    "actor_id",
+    "film_id",
+    "last_update"
+  ],
+  "FILM_CATEGORY": [
+    "film_id",
+    "category_id",
+    "last_update"
+  ],
+  "FILM_TEXT": [
+    "film_id",
+    "title",
+    "description"
+  ],
+  "INVENTORY": [
+    "inventory_id",
+    "film_id",
+    "store_id",
+    "last_update"
+  ],
+  "LANGUAGE": [
+    "language_id",
+    "name",
+    "last_update"
+  ],
+  "PAYMENT": [
+    "payment_id",
+    "customer_id",
+    "staff_id",
+    "rental_id",
+    "amount",
+    "payment_date",
+    "last_update"
+  ],
+  "RENTAL": [
+    "rental_id",
+    "rental_date",
+    "inventory_id",
+    "customer_id",
+    "return_date",
+    "staff_id",
+    "last_update"
+  ],
+  "STAFF": [
+    "staff_id",
+    "first_name",
+    "last_name",
+    "address_id",
+    "picture",
+    "email",
+    "store_id",
+    "active",
+    "username",
+    "password",
+    "last_update"
+  ],
+  "STORE": [
+    "store_id",
+    "manager_staff_id",
+    "address_id",
+    "last_update"
+  ]
+}

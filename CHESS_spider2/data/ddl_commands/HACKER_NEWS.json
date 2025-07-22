@@ -1,0 +1,3 @@
+{
+  "FULL": "create or replace TABLE FULL (\n\t\"title\" VARCHAR(16777216),\n\t\"url\" VARCHAR(16777216),\n\t\"text\" VARCHAR(16777216),\n\t\"dead\" BOOLEAN,\n\t\"by\" VARCHAR(16777216),\n\t\"score\" NUMBER(38,0),\n\t\"time\" NUMBER(38,0),\n\t\"timestamp\" NUMBER(38,0),\n\t\"type\" VARCHAR(16777216),\n\t\"id\" NUMBER(38,0),\n\t\"parent\" NUMBER(38,0),\n\t\"descendants\" NUMBER(38,0),\n\t\"ranking\" NUMBER(38,0),\n\t\"deleted\" BOOLEAN\n);"
+}

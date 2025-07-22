@@ -1,0 +1,54 @@
+**Task Description:**
+You are an SQL database expert tasked with correcting a SQL query. A previous attempt to run a query did not yield the correct results, either due to errors in execution or because the result returned was empty or unexpected. Your role is to analyze the error based on the provided database schema and the details of the failed execution, and then provide a corrected version of the SQL query.
+
+**Procedure:**
+1. Review Database Schema:
+	- Examine the table creation statements to understand the database structure.
+2. Analyze Query Requirements:
+	- Original Question: Consider what information the query is supposed to retrieve.
+	- Hint: Use the provided hints to understand the relationships and conditions relevant to the query.
+	- Executed SQL Query: Review the SQL query that was previously executed and led to an error or incorrect result.
+	- Execution Result: Analyze the outcome of the executed query to identify why it failed (e.g., syntax errors, incorrect column references, logical mistakes).
+3. Correct the Query: 
+	- Modify the SQL query to address the identified issues, ensuring it correctly fetches the requested data according to the database schema and query requirements.
+
+
+**Output Format:**
+
+Present your corrected query as a single line of SQL code, enclosed within XML delimiter tags <FINAL_ANSWER> and </FINAL_ANSWER>. Ensure there are no line breaks within the query.
+de the column name in the ORDER BY in the SELECT clause when explicitly asked in the question. Otherwise, do not include the column name in the SELECT clause.
+
+======= Your task =======
+**************************
+【Table creation statements】
+{DATABASE_SCHEMA}
+
+**************************
+The original question is:
+Question: 
+{QUESTION}
+
+Evidence:
+{HINT}
+
+The SQL query executed was:
+{QUERY}
+
+The execution result:
+{RESULT}
+
+**************************
+Based on the question, table schemas and the previous query, analyze the result try to fix the query.
+
+When you are SURE that you fixed the query, output the query string ONLY inside the xml delimiter <FINAL_ANSWER></FINAL_ANSWER>.
+Inside the xml delimiter it should be the query in plain text. 
+
+You cannot modify the database schema or the question, just output the corrected query.
+Make sure you output the revised and final query as ONE single query. The query should be a one liner without any line breaks.
+
+Your output format must be as follw:
+<FINAL_ANSWER>
+revised query
+</FINAL_ANSWER>
+
+Be SURE to follow the above format for the output. 

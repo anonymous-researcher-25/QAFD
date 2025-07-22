@@ -1,0 +1,157 @@
+{
+  "ACTIVITYCODE": [
+    "Description",
+    "Code"
+  ],
+  "AGERECODE27": [
+    "Description",
+    "Code"
+  ],
+  "AGETYPE": [
+    "Code",
+    "Description"
+  ],
+  "BRIDGEDRACEFLAG": [
+    "Description",
+    "Code"
+  ],
+  "DEATHRECORDS": [
+    "Autopsy",
+    "PlaceOfDeathAndDecedentsStatus",
+    "CurrentDataYear",
+    "ResidentStatus",
+    "AgeRecode27",
+    "Education2003Revision",
+    "RaceRecode3",
+    "HispanicOrigin",
+    "CauseRecode113",
+    "ActivityCode",
+    "Education1989Revision",
+    "Icd10Code",
+    "Age",
+    "PlaceOfInjury",
+    "EducationReportingFlag",
+    "InfantAgeRecode22",
+    "MannerOfDeath",
+    "NumberOfEntityAxisConditions",
+    "InfantCauseRecode130",
+    "CauseRecode358",
+    "InjuryAtWork",
+    "AgeRecode12",
+    "CauseRecode39",
+    "AgeSubstitutionFlag",
+    "Race",
+    "NumberOfRecordAxisConditions",
+    "AgeRecode52",
+    "HispanicOriginRaceRecode",
+    "Sex",
+    "RaceImputationFlag",
+    "Id",
+    "DayOfWeekOfDeath",
+    "BridgedRaceFlag",
+    "MonthOfDeath",
+    "MethodOfDisposition",
+    "RaceRecode5",
+    "MaritalStatus",
+    "AgeType"
+  ],
+  "EDUCATION1989REVISION": [
+    "Code",
+    "Description"
+  ],
+  "EDUCATION2003REVISION": [
+    "Code",
+    "Description"
+  ],
+  "HISPANICORIGIN": [
+    "Description",
+    "Code"
+  ],
+  "HISPANICORIGINRACERECODE": [
+    "Description",
+    "Code"
+  ],
+  "ICD10CODE": [
+    "Description",
+    "Code"
+  ],
+  "MARITALSTATUS": [
+    "Description",
+    "Code"
+  ],
+  "METHODOFDISPOSITION": [
+    "Description",
+    "Code"
+  ],
+  "PLACEOFDEATHANDDECEDENTSSTATUS": [
+    "Description",
+    "Code"
+  ],
+  "RACE": [
+    "Description",
+    "Code"
+  ],
+  "RACEIMPUTATIONFLAG": [
+    "Description",
+    "Code"
+  ],
+  "RACERECODE3": [
+    "Description",
+    "Code"
+  ],
+  "EDUCATIONREPORTINGFLAG": [
+    "Code",
+    "Description"
+  ],
+  "ENTITYAXISCONDITIONS": [
+    "DeathRecordId",
+    "Sequence",
+    "Icd10Code",
+    "Id",
+    "Part",
+    "Line"
+  ],
+  "INFANTAGERECODE22": [
+    "Code",
+    "Description"
+  ],
+  "MANNEROFDEATH": [
+    "Description",
+    "Code"
+  ],
+  "RECORDAXISCONDITIONS": [
+    "Icd10Code",
+    "Id",
+    "DeathRecordId"
+  ],
+  "RACERECODE5": [
+    "Description",
+    "Code"
+  ],
+  "AGERECODE12": [
+    "Code",
+    "Description"
+  ],
+  "DAYOFWEEKOFDEATH": [
+    "Code",
+    "Description"
+  ],
+  "RESIDENTSTATUS": [
+    "Code",
+    "Description"
+  ],
+  "PLACEOFINJURY": [
+    "Code",
+    "Description"
+  ],
+  "TEMP_DEATHS": [
+    "Age",
+    "death_count",
+    "Icd10Code",
+    "Race"
+  ],
+  "AGERECODE52": [
+    "Description",
+    "Code"
+  ]
+}

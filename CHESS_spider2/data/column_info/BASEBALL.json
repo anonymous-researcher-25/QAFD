@@ -1,0 +1,313 @@
+{
+  "BATTING": {
+    "PLAYER_ID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 18659 - Null count 0"
+    },
+    "YEAR": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 145 - Null count 0"
+    },
+    "STINT": {
+      "type": "NUMBER",
+      "unique_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "value_statics": "Total count 101332 - Distinct count 5 - Null count 0"
+    },
+    "TEAM_ID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 149 - Null count 0"
+    },
+    "LEAGUE_ID": {
+      "type": "TEXT",
+      "unique_values": [
+        "AL",
+        "AL",
+        "AL",
+        "AL",
+        "AL",
+        "UA",
+        "NL",
+        "AL",
+        "NL",
+        "AL"
+      ],
+      "value_statics": "Total count 101332 - Distinct count 6 - Null count 737"
+    },
+    "G": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 166 - Null count 0"
+    },
+    "AB": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 699 - Null count 5149"
+    },
+    "R": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 167 - Null count 5149"
+    },
+    "H": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 250 - Null count 5149"
+    },
+    "DOUBLE": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 64 - Null count 5149"
+    },
+    "TRIPLE": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 32 - Null count 5149"
+    },
+    "HR": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 67 - Null count 5149"
+    },
+    "RBI": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 175 - Null count 5573"
+    },
+    "SB": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 114 - Null count 6449"
+    },
+    "CS": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 36 - Null count 28603"
+    },
+    "BB": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 155 - Null count 5149"
+    },
+    "SO": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 203 - Null count 12987"
+    },
+    "IBB": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 45 - Null count 41712"
+    },
+    "HBP": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 41 - Null count 7959"
+    },
+    "SH": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 54 - Null count 11487"
+    },
+    "SF": {
+      "type": "NUMBER",
+      "unique_values": [
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        0,
+        null,
+        null
+      ],
+      "value_statics": "Total count 101332 - Distinct count 20 - Null count 41181"
+    },
+    "G_IDP": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 101332 - Distinct count 35 - Null count 31257"
+    }
+  },
+  "PLAYER": {
+    "PLAYER_ID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 18846 - Null count 0"
+    },
+    "BIRTH_YEAR": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 165 - Null count 143"
+    },
+    "BIRTH_MONTH": {
+      "type": "NUMBER",
+      "unique_values": [
+        11,
+        11,
+        4,
+        4,
+        9,
+        8,
+        10,
+        11,
+        10,
+        10
+      ],
+      "value_statics": "Total count 18846 - Distinct count 12 - Null count 315"
+    },
+    "BIRTH_DAY": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 31 - Null count 464"
+    },
+    "BIRTH_COUNTRY": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 52 - Null count 73"
+    },
+    "BIRTH_STATE": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 245 - Null count 626"
+    },
+    "BIRTH_CITY": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 4713 - Null count 199"
+    },
+    "DEATH_YEAR": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 145 - Null count 9510"
+    },
+    "DEATH_MONTH": {
+      "type": "NUMBER",
+      "unique_values": [
+        4,
+        1,
+        3,
+        2,
+        11,
+        2,
+        11,
+        null,
+        7,
+        1
+      ],
+      "value_statics": "Total count 18846 - Distinct count 12 - Null count 9511"
+    },
+    "DEATH_DAY": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 31 - Null count 9512"
+    },
+    "DEATH_COUNTRY": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 23 - Null count 9517"
+    },
+    "DEATH_STATE": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 92 - Null count 9569"
+    },
+    "DEATH_CITY": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 2553 - Null count 9521"
+    },
+    "NAME_FIRST": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 2312 - Null count 39"
+    },
+    "NAME_LAST": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 9713 - Null count 0"
+    },
+    "NAME_GIVEN": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 12436 - Null count 39"
+    },
+    "WEIGHT": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 131 - Null count 871"
+    },
+    "HEIGHT": {
+      "type": "NUMBER",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 22 - Null count 805"
+    },
+    "BATS": {
+      "type": "TEXT",
+      "unique_values": [
+        "L",
+        "R",
+        "L",
+        null,
+        "L",
+        "R",
+        "B",
+        "B",
+        "R",
+        "R"
+      ],
+      "value_statics": "Total count 18846 - Distinct count 3 - Null count 1191"
+    },
+    "THROWS": {
+      "type": "TEXT",
+      "unique_values": [
+        "R",
+        "R",
+        "L",
+        null,
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R"
+      ],
+      "value_statics": "Total count 18846 - Distinct count 2 - Null count 978"
+    },
+    "DEBUT": {
+      "type": "DATE",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 10036 - Null count 193"
+    },
+    "FINAL_GAME": {
+      "type": "DATE",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 9028 - Null count 193"
+    },
+    "RETRO_ID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 18792 - Null count 54"
+    },
+    "BBREF_ID": {
+      "type": "TEXT",
+      "unique_values": null,
+      "value_statics": "Total count 18846 - Distinct count 18845 - Null count 1"
+    }
+  }
+}

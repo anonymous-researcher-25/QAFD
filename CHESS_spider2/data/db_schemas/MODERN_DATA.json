@@ -1,0 +1,113 @@
+{
+  "COMPANIES_DATES": [
+    "company_id",
+    "date_joined",
+    "year_founded"
+  ],
+  "COMPANIES_FUNDING": [
+    "company_id",
+    "valuation",
+    "funding",
+    "select_investors"
+  ],
+  "COMPANIES_INDUSTRIES": [
+    "company_id",
+    "industry"
+  ],
+  "INCOME_TREES": [
+    "zipcode",
+    "Estimate_Total",
+    "Margin_of_Error_Total",
+    "Estimate_Median_income",
+    "Margin_of_Error_Median_income",
+    "Estimate_Mean_income",
+    "Margin_of_Error_Mean_income"
+  ],
+  "PIZZA_CLEAN_CUSTOMER_ORDERS": [
+    "order_id",
+    "customer_id",
+    "pizza_id",
+    "exclusions",
+    "extras",
+    "order_time"
+  ],
+  "PIZZA_CLEAN_RUNNER_ORDERS": [
+    "order_id",
+    "runner_id",
+    "pickup_time",
+    "distance",
+    "duration",
+    "cancellation"
+  ],
+  "PIZZA_CUSTOMER_ORDERS": [
+    "order_id",
+    "customer_id",
+    "pizza_id",
+    "exclusions",
+    "extras",
+    "order_time"
+  ],
+  "PIZZA_GET_EXCLUSIONS": [
+    "row_id",
+    "order_id",
+    "exclusions",
+    "total_exclusions"
+  ],
+  "PIZZA_GET_EXTRAS": [
+    "row_id",
+    "order_id",
+    "extras",
+    "extras_count"
+  ],
+  "PIZZA_NAMES": [
+    "pizza_id",
+    "pizza_name"
+  ],
+  "PIZZA_RECIPES": [
+    "pizza_id",
+    "toppings"
+  ],
+  "PIZZA_RUNNERS": [
+    "runner_id",
+    "registration_date"
+  ],
+  "PIZZA_RUNNER_ORDERS": [
+    "order_id",
+    "runner_id",
+    "pickup_time",
+    "distance",
+    "duration",
+    "cancellation"
+  ],
+  "PIZZA_TOPPINGS": [
+    "topping_id",
+    "topping_name"
+  ],
+  "STATISTICS": [
+    "date",
+    "state",
+    "total_cases",
+    "total_deaths"
+  ],
+  "TREES": [
+    "idx",
+    "tree_id",
+    "tree_dbh",
+    "stump_diam",
+    "status",
+    "health",
+    "spc_latin",
+    "spc_common",
+    "address",
+    "zipcode",
+    "borocode",
+    "boroname",
+    "nta_name",
+    "state",
+    "latitude",
+    "longitude"
+  ],
+  "WORD_LIST": [
+    "words"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "BITCOIN_MEMBERS": [
+    "member_id",
+    "first_name",
+    "region"
+  ],
+  "BITCOIN_PRICES": [
+    "ticker",
+    "market_date",
+    "price",
+    "open",
+    "high",
+    "low",
+    "volume",
+    "change"
+  ],
+  "BITCOIN_TRANSACTIONS": [
+    "txn_id",
+    "member_id",
+    "ticker",
+    "txn_date",
+    "txn_type",
+    "quantity",
+    "percentage_fee",
+    "txn_time"
+  ],
+  "CLEANED_WEEKLY_SALES": [
+    "week_date_formatted",
+    "week_date",
+    "region",
+    "platform",
+    "segment",
+    "customer_type",
+    "transactions",
+    "sales",
+    "week_number",
+    "month_number",
+    "calendar_year",
+    "age_band",
+    "demographic",
+    "avg_transaction"
+  ],
+  "CUSTOMER_NODES": [
+    "customer_id",
+    "region_id",
+    "node_id",
+    "start_date",
+    "end_date"
+  ],
+  "CUSTOMER_REGIONS": [
+    "region_id",
+    "region_name"
+  ],
+  "CUSTOMER_TRANSACTIONS": [
+    "customer_id",
+    "txn_date",
+    "txn_type",
+    "txn_amount"
+  ],
+  "INTEREST_MAP": [
+    "id",
+    "interest_name",
+    "interest_summary",
+    "created_at",
+    "last_modified"
+  ],
+  "INTEREST_METRICS": [
+    "_month",
+    "_year",
+    "month_year",
+    "interest_id",
+    "composition",
+    "index_value",
+    "ranking",
+    "percentile_ranking"
+  ],
+  "SHOPPING_CART_CAMPAIGN_IDENTIFIER": [
+    "campaign_id",
+    "products",
+    "campaign_name",
+    "start_date",
+    "end_date"
+  ],
+  "SHOPPING_CART_EVENTS": [
+    "visit_id",
+    "cookie_id",
+    "page_id",
+    "event_type",
+    "sequence_number",
+    "event_time"
+  ],
+  "SHOPPING_CART_EVENT_IDENTIFIER": [
+    "event_type",
+    "event_name"
+  ],
+  "SHOPPING_CART_PAGE_HIERARCHY": [
+    "page_id",
+    "page_name",
+    "product_category",
+    "product_id"
+  ],
+  "SHOPPING_CART_USERS": [
+    "user_id",
+    "cookie_id",
+    "start_date"
+  ],
+  "VEG_CAT": [
+    "index",
+    "item_code",
+    "item_name",
+    "category_code",
+    "category_name"
+  ],
+  "VEG_LOSS_RATE_DF": [
+    "index",
+    "item_code",
+    "item_name",
+    "loss_rate_%"
+  ],
+  "VEG_TXN_DF": [
+    "index",
+    "txn_date",
+    "txn_time",
+    "item_code",
+    "qty_sold(kg)",
+    "unit_selling_px_rmb/kg",
+    "sale/return",
+    "discount(%)",
+    "day_of_week"
+  ],
+  "VEG_WHSLE_DF": [
+    "index",
+    "whsle_date",
+    "item_code",
+    "whsle_px_rmb-kg"
+  ],
+  "WEEKLY_SALES": [
+    "week_date",
+    "region",
+    "platform",
+    "segment",
+    "customer_type",
+    "transactions",
+    "sales"
+  ]
+}

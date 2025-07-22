@@ -1,0 +1,22 @@
+{
+  "FULLTEXT": {
+    "filename": [
+      "bbc/tech/016.txt",
+      "bbc/tech/033.txt",
+      "bbc/tech/056.txt"
+    ],
+    "category": [
+      "tech",
+      "sport",
+      "business",
+      "politics",
+      "entertainment"
+    ],
+    "title": [
+      "Global blogger action day called",
+      "Global digital divide 'narrowing'",
+      "Honour for UK games maker"
+    ],
+    "body": []
+  }
+}
