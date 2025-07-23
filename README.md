@@ -10,7 +10,16 @@ pip install -r requirements.txt
 
 ## 2. Basic Usage
 
-### 2.1. Import and Initialization
+### 2.1. Select LLM and Set API Key
+
+Before using QAFD-RAG, you need to select your LLM provider and set the corresponding API key. For example, to use OpenAI:
+
+```python
+import os
+os.environ["OPENAI_API_KEY"] = "your-openai-api-key"
+```
+
+### 2.2. Import and Initialization
 
 ```python
 from QAFDRAG import QAFDRAG, QueryParam
@@ -25,7 +34,7 @@ rag = QAFDRAG(
 )
 ```
 
-### 2.2. Ingest Documents
+### 2.3. Ingest Documents
 
 You can insert a single document or a list of documents (strings):
 
@@ -43,7 +52,7 @@ This will:
 - Extract entities and relationships
 - Build/update the knowledge graph and vector DB
 
-### 2.3. Querying
+### 2.4. Querying
 
 To ask a question, use the `query` method. You can control the retrieval mode and other options via `QueryParam`:
 
@@ -63,6 +72,9 @@ You can also adjust other parameters in `QueryParam` (see code for all options).
 ## 3. Example End-to-End Script
 
 ```python
+import os
+os.environ["OPENAI_API_KEY"] = "your-openai-api-key"
+
 from QAFDRAG import QAFDRAG, QueryParam
 
 rag = QAFDRAG(working_dir="./QAFDRAG_cache")
