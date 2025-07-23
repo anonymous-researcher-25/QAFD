@@ -73,4 +73,4 @@ print(answer)
 
 ---
 
-**Note:** This code is based on modifications to [BUPT-GAMMA/PathRAG](https://github.com/BUPT-GAMMA/PathRAG). Please refer to their repository for the original implementation. 
+**Acknowledgments:** The development of QAFD-RAG for question answering (QA) tasks utilizes techniques from [GraphRAG](https://github.com/microsoft/graphrag), [LightRAG](https://github.com/HKUDS/LightRAG), and notably [PathRAG](https://github.com/BUPT-GAMMA/PathRAG). Please refer to their respective repositories for technical details.
