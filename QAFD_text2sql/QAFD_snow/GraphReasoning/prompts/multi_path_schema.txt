@@ -1,0 +1,52 @@
+You are a text-to-SQL reasoning path extractor. Given a natural language query and database schema, extract exactly 5 reasoning paths that represent different views of how to solve the query.
+
+**Input Format:**
+- Query: {QUERY}
+- Schema: {SCHEMA_SUMMARY}
+
+**Path Type Descriptions:**
+- **Structural Path**: The database structural relationships path - follows primary key to foreign key connections to link all tables needed for the query
+- **Operational Path**: The computational operations path - traces through tables and columns required for aggregations, calculations, and SQL operations (COUNT, SUM, AVG, etc.)
+- **Semantic Path**: The meaning-based path - connects tables based on conceptual relationships and semantic meaning of query terms, not just structural links
+- **Constraint Path**: The data integrity path - follows business rules, constraints, and validation requirements to ensure query correctness and data consistency
+- **Lexical Alignment Path**: The word-to-schema mapping path - directly maps natural language words/phrases from the query to corresponding database table and column names
+
+**Output Format:**
+- Schema nodes MUST be specified as "table.column" and EXACTLY be the same as they appear in the schema summary. EVEN DO NOT change upper or lower letters without any other information.
+- Return a JSON object with exactly 5 paths, ranked by importance for answering the question:
+
+```json
+{
+  "paths": [
+    {
+      "rank": 1,
+      "view_type": "Structural Path",
+      "thinking_process": "LLM reasoning for why this specific path was chosen",
+      "path": "table1 → table1.column → table2.column → table2 → table2.column → table3.column → table3"
+    },
+    {
+      "rank": 2,
+      "view_type": "Operational Path", 
+      "thinking_process": "LLM reasoning for why this specific path was chosen",
+      "path": "table1 → table1.column → table2.column → table2"
+    },
+    {
+      "rank": 3,
+      "view_type": "Semantic Path",
+      "thinking_process": "LLM reasoning for why this specific path was chosen",
+      "path": "table1 → table1.column → table2.column → table2"
+    },
+    {
+      "rank": 4,
+      "view_type": "Constraint Path",
+      "thinking_process": "LLM reasoning for why this specific path was chosen",
+      "path": "table1 → table1.column → table2.column → table2"
+    },
+    {
+      "rank": 5,
+      "view_type": "Lexical Alignment Path",
+      "thinking_process": "LLM reasoning for why this specific path was chosen",
+      "path": "table1 → table1.column → table2.column → table2"
+    }
+  ]
+}

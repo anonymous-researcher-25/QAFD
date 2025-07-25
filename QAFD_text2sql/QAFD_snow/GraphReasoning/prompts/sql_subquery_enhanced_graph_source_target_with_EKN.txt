@@ -1,0 +1,69 @@
+## Task Definition
+You are a Text-to-SQL planner agent. 
+
+Given:
+- A user query: {QUERY}
+- A database schema summary in text format: {SCHEMA_SUMMARY}
+- External knowledge document in text format: {KNOWLEDGE_DOCUMENT}
+Your job is to:
+1. Review this schema summary, external knowledge document and user query thoroughly. 
+2. Break the user query into logical user subqueries. 
+3. For each subquery, identify source and target schema nodes that would be used to construct path segments through the database schema summary based on these RELATIONSHIP TYPES:
+ 
+   **RELATIONSHIP TYPES TO CONSIDER:**
+   - SEMANTIC: Direct or indirect relevance to query concepts
+   - STRUCTURAL: Representing organizational structures in the query
+   - TEMPORAL: Time-based connections to query elements
+   - CAUSAL: Cause-effect relationships described in the query
+   - LOGICAL: Supporting logical conditions in the query
+   - STATISTICAL: Statistical correlations to query concepts
+   - DOMAIN-SPECIFIC: Domain relevancy with query
+
+   - **Source nodes**: ALL STARTING COLUMNS (with table prefixes) having strong relationships of ANY TYPE ABOVE with the subquery.
+   - **Target nodes**: ALL DESTINATION COLUMNS (with table prefixes) having strong relationships of ANY TYPE ABOVE with the subquery.
+4. When domain-specific concepts appear in the query, properly map these concepts to the appropriate schema column elements
+5. **Identify the most confident path of schema graph**: For each subquery, determine and explicitly state the most confident path that the LLM should follow through the schema graph, using right arrow format (->).
+
+Important:
+- Schema nodes MUST be specified as "table.column" EXACTLY the same as they appear in the schema summary. EVEN DO NOT change upper or lower letters.
+- The most confident path should use the right arrow format (->)
+- The source and target nodes MUST ONLY be column name in the schema summary and must be specified as "table.column".
+- Only output a json without explanation 
+- source_schema_nodes and target_schema_nodes MUST ONLY consist of "table.column"s and nothing extra. 
+
+Example
+User Query:
+"Find the most popular movie category among customers living in cities that start with 'A' or have a hyphen in their name"
+Response:
+```json
+[
+  {
+    "subquery": "Filter cities that start with 'A' or have a hyphen",
+    "query_seeds": ["cities", "start with 'A'", "hyphen in name"],
+    "source_schema_nodes": ["city.city_id", "city.city_name"],
+    "target_schema_nodes": ["city.city_name"],
+    "most_confident_path": "city.city_name "
+  },
+  {
+    "subquery": "Connect cities to customers",
+    "query_seeds": ["customers living in cities"],
+    "source_schema_nodes": ["city.city_id", "address.city_id"],
+    "target_schema_nodes": ["address.address_id", "customer.address_id"],
+    "most_confident_path": "city.city_id -> address.city_id -> address.address_id -> customer.address_id"
+  },
+  {
+    "subquery": "Find movie rentals by these customers",
+    "query_seeds": ["customers", "rentals"],
+    "source_schema_nodes": ["customer.customer_id"],
+    "target_schema_nodes": ["rental.customer_id", "rental.inventory_id", "inventory.inventory_id"],
+    "most_confident_path": "customer.customer_id -> rental.customer_id -> rental.inventory_id"
+  },
+  {
+    "subquery": "Determine the most popular movie category",
+    "query_seeds": ["most popular", "movie category"],
+    "source_schema_nodes": ["rental.inventory_id", "inventory.film_id", "film.film_id"],
+    "target_schema_nodes": ["film_category.film_id", "film_category.category_id", "category.category_id", "category.name"],
+    "most_confident_path": "rental.inventory_id -> inventory.inventory_id -> inventory.film_id -> film_category.film_id -> film_category.category_id -> category.category_id -> category.name -> COUNT(*) ORDER BY DESC LIMIT 1"
+  }
+]
+```
