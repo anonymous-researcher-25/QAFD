@@ -56,12 +56,7 @@ QAFD_snow/
 ## Requirements
 
 - Python 3.8+
-- Required packages (install via pip):
-  - `openai`
-  - `networkx`
-  - `pandas`
-  - `jsonlines`
-  - Other dependencies as specified in requirements.txt
+- Required packages and dependencies as specified in requirements.txt
 
 ---
 
