@@ -13,7 +13,7 @@ QAFD/
 ├── QAFD-RAG/                    # Question answering (RAG) code and experiments
 ├── QAFD_text2sql/
 │   ├── QAFD_snow/              # Text-to-SQL code and experiments
-│   ├── baselines/              # Baseline methods for QA and T2SQL
+│   ├── baselines/              # Baseline methods for T2SQL
 │   └── ...
 ├── README.md
 └── .gitignore
