@@ -25,7 +25,7 @@ QAFD/
 
 To **run or reproduce experiments**, refer to the detailed `README.md` provided in each subfolder:
 
-- [`QAFD-RAG/README.md`](./QAFD_RAG/README.md):  
+- [`QAFD_RAG/README.md`](./QAFD_RAG/README.md):  
   Instructions for QAFD-RAG question answering, setup, and experiment reproduction.
 
 - [`QAFD_text2sql/QAFD_snow/README.md`](./QAFD_text2sql/QAFD_snow/README.md):  
