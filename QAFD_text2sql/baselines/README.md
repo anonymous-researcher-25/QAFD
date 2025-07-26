@@ -33,5 +33,5 @@ baselines/
 
 ## Remark
 DailSQL, DIN-SQL, and CodeS require adaptations of the Spider 2 Snowflake dataset to ensure compatibility with these methods. Due to GitHub's file size limitations, the modified dataset is hosted externally and can be accessed via
-[https://drive.google.com/file/d/1Y1zSbZ9cBUVJFI_W3t5EZZTzcUi1Ma4i/view](resource). For more information on the original version of the Spider 2 dataset, please refer to the official repository:
+[https://drive.google.com/file/d/1Y1zSbZ9cBUVJFI_W3t5EZZTzcUi1Ma4i/view](resource). Please download and unzip the file inside the baselines folder. For more information on the original version of the Spider 2 dataset, please refer to the official repository:
 [https://github.com/xlang-ai/Spider2](Spider2)
