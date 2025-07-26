@@ -10,7 +10,7 @@ This repository provides code for running and reproducing experiments on Query-A
 
 ```
 QAFD/
-├── QAFD-RAG/                    # Question answering (RAG) code and experiments
+├── QAFD_RAG/                    # Question answering (RAG) code and experiments
 ├── QAFD_text2sql/
 │   ├── QAFD_snow/              # Text-to-SQL code and experiments
 │   ├── baselines/              # Baseline methods for T2SQL
@@ -25,7 +25,7 @@ QAFD/
 
 To **run or reproduce experiments**, refer to the detailed `README.md` provided in each subfolder:
 
-- [`QAFD-RAG/README.md`](./QAFD-RAG/README.md):  
+- [`QAFD-RAG/README.md`](./QAFD_RAG/README.md):  
   Instructions for QAFD-RAG question answering, setup, and experiment reproduction.
 
 - [`QAFD_text2sql/QAFD_snow/README.md`](./QAFD_text2sql/QAFD_snow/README.md):  
