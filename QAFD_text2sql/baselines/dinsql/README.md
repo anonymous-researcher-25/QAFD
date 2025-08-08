@@ -1,4 +1,5 @@
 # Installation 
+Download the resource folder and place it in the root folder of baselines. You can download it from https://drive.google.com/file/d/1Y1zSbZ9cBUVJFI_W3t5EZZTzcUi1Ma4i/view
 
 Set up the Python environment:
 ```
@@ -24,3 +25,5 @@ Finally, simply run :laughing::
 ```
 bash run.sh
 ```
+
+To switch from lite/snow change DEV to either spider2-lite or spider2-snow.
