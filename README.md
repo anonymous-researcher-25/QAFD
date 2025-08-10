@@ -6,6 +6,12 @@ This repository provides code for running and reproducing experiments on Query-A
 
 ---
 
+![Two-stage architecture of the QAFD-RAG framework](question_illustration.png)
+
+*Figure: Two-stage architecture of the QAFD-RAG framework. The indexing stage constructs a domain-specific knowledge graph by extracting entities, relations, and document-level structure from raw corpus data. The query stage processes an incoming user query in several steps: (1) keyword extraction identifies query-relevant dual-level keywords; (2) a query-aware flow diffusion algorithm propagates selected seed nodes over the graph based on semantic and structural signals; (3) clusters are collected for each seed node, and each cluster is summarized into natural language; and (4) cluster summaries, along with the original query, are passed to a language model for final response generation.*
+
+
+
 ## Directory Structure
 
 ```
