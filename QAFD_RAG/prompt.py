@@ -16,7 +16,7 @@ Use {language} as output language.
 
 -Steps-
 1. Identify all entities. For each identified entity, extract the following information:
-- entity_name: Name of the entity, use same language as input text. If English, capitalized the name.
+- entity_name: Name of the entity, use same language as input text. If English, use lowercase.
 - entity_type: One of the following types: [{entity_types}]
 - entity_description: Comprehensive description of the entity's attributes and activities
 Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
@@ -58,7 +58,7 @@ Entity_types: [person, technology, mission, organization, location]
 Text:
 while Alex clenched his jaw, the buzz of frustration dull against the backdrop of Taylor's authoritarian certainty. It was this competitive undercurrent that kept him alert, the sense that his and Jordan's shared commitment to discovery was an unspoken rebellion against Cruz's narrowing vision of control and order.
 
-Then Taylor did something unexpected. They paused beside Jordan and, for a moment, observed the device with something akin to reverence. “If this tech can be understood..." Taylor said, their voice quieter, "It could change the game for us. For all of us.”
+Then Taylor did something unexpected. They paused beside Jordan and, for a moment, observed the device with something akin to reverence. "If this tech can be understood..." Taylor said, their voice quieter, "It could change the game for us. For all of us."
 
 The underlying dismissal earlier seemed to falter, replaced by a glimpse of reluctant respect for the gravity of what lay in their hands. Jordan looked up, and for a fleeting heartbeat, their eyes locked with Taylor's, a wordless clash of wills softening into an uneasy truce.
 
@@ -238,7 +238,6 @@ Output:
 #############################""",
 ]
 
-
 PROMPTS["naive_rag_response"] = """---Role---
 
 You are a helpful assistant responding to questions about documents provided.
@@ -283,4 +282,368 @@ Similarity score criteria:
 1: Identical and answer can be directly reused
 0.5: Partially related and answer needs modification to be used
 Return only a number between 0-1, without any additional content.
+"""
+
+PROMPTS["enhanced_graph_description"] = """You are a database expert tasked with enhancing entity descriptions for a knowledge graph based on comprehensive schema analysis.
+
+Your goal is to provide detailed, business-focused descriptions that incorporate insights from:
+- Schema structure and relationships
+- Sample data patterns and distributions (from the JSON file)
+- Data quality analysis
+- Business context and domain knowledge from metadata
+
+**ANALYSIS REQUIREMENTS:**
+
+1. **Table Analysis**: For each table, provide comprehensive description including:
+   - Business purpose and domain context (use metadata for business context)
+   - Data volume insights (row count, column count)
+   - Key data categories and their relationships
+   - Usage patterns and analytical importance
+   - Data quality observations from sample analysis
+   - Business domain insights from metadata (if available)
+
+2. **Column Analysis**: For EACH AND EVERY column, provide detailed description including:
+   - Business meaning and purpose (enhanced with metadata context)
+   - Data constraints and relationships
+   - Sample data patterns and insights (analyze the samples in the JSON)
+   - Data quality observations (null rates, unique values, ranges)
+   - Usage context and analytical importance
+   - Any business rules inferred from data patterns and metadata
+
+3. **Sample Data Analysis**: Extract insights from the sample data provided in the JSON schema:
+   - Identify data patterns, formats, and distributions
+   - Note data quality issues (null values, missing data, anomalies)
+   - Observe business logic in the data (date formats, ID patterns, value ranges)
+   - Identify relationships between different columns based on sample data
+   - Extract business rules and constraints from data patterns
+   - Analyze Korean text content if present
+   - Identify temporal patterns in date/time columns
+   - Analyze numeric ranges to understand business scales
+
+4. **Business Context Inference**: Use data patterns AND metadata to infer:
+   - Industry domain and business context (prioritize metadata if available)
+   - Temporal patterns and time-series characteristics
+   - Categorical hierarchies and relationships
+   - Measurement units and scales
+   - Business processes and workflows
+   - Regulatory or compliance requirements (from metadata)
+
+5. **Metadata Integration**: If metadata is provided:
+   - Use metadata to understand the business domain and industry context
+   - Incorporate business rules and processes mentioned in metadata
+   - Apply domain-specific terminology and concepts
+   - Consider regulatory or compliance requirements
+   - Use metadata to validate or enhance data pattern interpretations
+
+**OUTPUT FORMAT:**
+Return enhanced descriptions in JSON format:
+
+{{
+  "table_descriptions": {{
+    "table_name": "Comprehensive business description including data volume, quality insights, analytical importance, and business context from metadata"
+  }},
+  "column_descriptions": {{
+    "table_name.column_name": "Detailed description including business purpose, data patterns, quality observations, usage context, and metadata-enhanced business meaning"
+  }},
+  "data_insights": {{
+    "business_domain": "Inferred business domain based on data patterns and metadata",
+    "data_quality_summary": "Overall data quality assessment",
+    "key_patterns": ["Pattern 1", "Pattern 2", "Pattern 3"],
+    "business_rules": ["Rule 1", "Rule 2", "Rule 3"],
+    "metadata_insights": ["Metadata-derived insight 1", "Metadata-derived insight 2"]
+  }}
+}}
+
+**CRITICAL GUIDELINES:**
+- **DIRECTLY ANALYZE** the sample data provided in the JSON schema
+- **INTEGRATE METADATA** insights to enhance business context and domain understanding
+- Use sample data to provide specific, concrete insights
+- Include data quality observations (null rates, unique values, ranges)
+- Identify business patterns and rules from data analysis AND metadata
+- Provide context about data formats and business meaning
+- Focus on analytical and business intelligence value
+- Use {language} as output language
+- **PAY ATTENTION TO**: Date formats, ID patterns, Korean text, numeric ranges, data distributions, AND metadata business context
+- **PRIORITIZE METADATA** for business domain and industry context when available
+
+**SCHEMA INFORMATION:**
+{schema_text}
+
+**METADATA INFORMATION:**
+{metadata_content}
+
+**ENHANCED DESCRIPTIONS:**
+"""
+
+PROMPTS["enhanced_metadata_extraction"] = """-Goal-
+Given a database schema JSON file and ABC manufacturing metadata document, extract entities and relationships with proper naming conventions, complete formula preservation, and comprehensive domain rule extraction.
+Use {language} as output language.
+
+-CRITICAL NAMING RULES-
+1. **Entity Names MUST be concise, standardized, and knowledge graph friendly:**
+   - Use SHORT, DESCRIPTIVE names (2-5 words max)
+   - NO sentences or long phrases as entity names
+   - Use English only, never Korean in entity names
+   - Use underscores or camelCase for multi-word names
+   - Examples: "operation_count", "good_quality_rate", "defect_rate_calculation", "date_format_rule", "calendar_week_rule"
+   - **STRICT ENFORCEMENT**: If you generate a long name, break it down into a concise version
+
+2. **Formula Preservation:**
+   - ALWAYS include COMPLETE mathematical formulas in entity_description
+   - Preserve EXACT mathematical expressions with all operators, parentheses, variables
+   - Include both Korean and English versions of formulas when available
+   - Do not simplify or paraphrase mathematical expressions
+
+3. **Domain Rule Extraction:**
+   - Extract ALL business logic, domain rules, and calculation methods
+   - Create separate entities for each distinct rule or concept
+   - Link rules to relevant columns and tables
+   - Preserve exact wording and conditions
+
+-Steps-
+1. **Table Analysis**: Extract from JSON schema only:
+- entity_name: EXACT table name from JSON schema
+- entity_type: "complete_table"
+- entity_description: Comprehensive description with column count, row count, business purpose
+Format: ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+2. **Column Analysis**: Extract from JSON schema only:
+- entity_name: Column name with table prefix (e.g., "abc_data.work_ymd")
+- entity_type: "column"
+- entity_description: Data type, constraints, business purpose, Korean and English descriptions
+Format: ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+3. **Business Logic Extraction**: From metadata, create entities for:
+- entity_name: Concise, standardized name (e.g., "operation_count", "good_quality_rate")
+- entity_type: "calculation_formula" or "business_concept"
+- entity_description: COMPLETE formula with exact mathematical expression + explanation
+Format: ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+4. **Domain Rules Extraction**: Create entities for:
+- entity_name: Concise rule name (e.g., "date_format_rule", "calendar_week_rule")
+- entity_type: "domain_rule"
+- entity_description: Complete rule description with exact conditions and examples
+Format: ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+5. **Calculation Method Rules**: Create entities for:
+- entity_name: Method name (e.g., "average_performance_calculation", "overall_performance_calculation")
+- entity_type: "calculation_formula"
+- entity_description: Complete calculation method with examples
+Format: ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+6. **Relationship Creation**: Link entities appropriately:
+- Table-to-column relationships (weight: 10)
+- Formula-to-column relationships (weight: 9)
+- Rule-to-column relationships (weight: 8)
+- Formula-to-rule relationships (weight: 7)
+Format: ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_keywords>{tuple_delimiter}<relationship_strength>)
+
+**MANDATORY RELATIONSHIPS:**
+- Every calculation formula MUST link to its component columns
+- Every domain rule MUST link to relevant columns
+- Every business concept MUST link to related entities
+
+7. **Content Keywords**: High-level business domain summary
+Format: ("content_keywords"{tuple_delimiter}<high_level_keywords>)
+
+8. Return output in {language} using {record_delimiter} as delimiter.
+
+9. When finished, output {completion_delimiter}
+
+**FORMULA PRESERVATION EXAMPLES:**
+- "operation_count" description: "Operation count (number of operation) = real_good_qty + real_dfct_qty + real_loss_qty. Represents total operations including positive and negative values, excluding zero values."
+- "good_quality_rate" description: "Good quality rate = (good_quantity/operation_count)*100 = (real_good_qty/(real_good_qty+real_dfct_qty+real_loss_qty))*100. Percentage of good quality products relative to total operations."
+- "defect_rate" description: "Defect rate = (defect_quantity/operation_count)*1000000 = (real_dfct_qty/(real_good_qty+real_dfct_qty+real_loss_qty))*1000000. Defect rate per million operations."
+
+**DOMAIN RULE EXAMPLES:**
+- "calendar_week_rule" description: "Samsung ABC calendar starts week from Sunday to Saturday. Sunday identifies week of year and month. Examples: 20240101 is 1st week of year and Jan 2024, 20240714 is 29th week of year and 3rd week of July 2024."
+- "aggregation_method_rule" description: "When calculating ratio metrics with grouping, compute sums of numerator and denominator: ROUND((SUM(real_loss_qty) / NULLIF(SUM(real_good_qty + real_dfct_qty + real_loss_qty), 0)) * 1000000, 1). Use HAVING clause to exclude zero operations."
+
+**VALIDATION CHECKLIST:**
+- All entity names are concise and standardized (no sentences)
+- All formulas include complete mathematical expressions
+- All domain rules are extracted with exact conditions
+- All business logic entities are created
+- All mandatory relationships are established
+- No Korean text in entity names
+- All formulas preserve exact mathematical notation
+
+######################
+-Examples-
+{examples}
+
+#############################
+-Real Data-
+######################
+Entity_types: [complete_table, column, business_concept, domain_rule, data_type, calculation_formula, database, schema, primary_key, foreign_key, index, constraint, relationship, metadata_document]
+Text: {input_text}
+######################
+Output:
+"""
+
+PROMPTS["enhanced_metadata_extraction_examples"] = [
+    """Example: ABC Manufacturing Metadata Extraction
+
+Entity_types: [complete_table, column, business_concept, domain_rule, data_type, calculation_formula, database, schema, primary_key, foreign_key, index, constraint, relationship, metadata_document]
+Text:
+JSON Schema:
+{{
+  "tables": {{
+    "abc_data": {{
+      "column_count": 5,
+      "row_count": 1000,
+      "columns": [
+        {{"name": "work_ymd", "type": "VARCHAR(8)", "not_null": true}},
+        {{"name": "real_good_qty", "type": "INTEGER", "not_null": true}},
+        {{"name": "real_dfct_qty", "type": "INTEGER", "not_null": true}},
+        {{"name": "real_loss_qty", "type": "INTEGER", "not_null": true}},
+        {{"name": "eqp_id", "type": "VARCHAR(20)", "not_null": true}}
+      ]
+    }}
+  }}
+}}
+
+Metadata:
+Business Logic for performance indicator:
+Operation count (number of operation) = real_good_qty + real_dfct_qty + real_loss_qty
+Good quantity = real_good_qty
+Good quality rate = (good_quantity/operation_count)*100 = (real_good_qty/(real_good_qty+real_dfct_qty+real_loss_qty))*100
+Defect quantity = real_dfct_qty
+Defect rate = (defect_quantity/operation_count)*1000000 = (real_dfct_qty/(real_good_qty+real_dfct_qty+real_loss_qty))*1000000
+
+Domain Rules:
+1. Column work_ymd is of the format YYYYMMDD (e.g 20240701).
+2. Calendar starts week from Sunday to Saturday, and Sunday is used to identify the week of year and month.
+3. Strictly do not include measure columns in the GROUP BY clause.
+4. System supports UTF8. So generated query should use Korean or other language.
+
+#############
+Output:
+("entity"{tuple_delimiter}"abc_data"{tuple_delimiter}"complete_table"{tuple_delimiter}"Manufacturing data table with 5 columns and 1000 rows containing production quantities, quality metrics, and work dates, and equipment information for ABC manufacturing quality control."){record_delimiter}
+("entity"{tuple_delimiter}"abc_data.work_ymd"{tuple_delimiter}"column"{tuple_delimiter}"Work date column in VARCHAR(8) format, represents the manufacturing date in YYYYMMDD format. Primary key for temporal tracking and week calculation."){record_delimiter}
+("entity"{tuple_delimiter}"abc_data.real_good_qty"{tuple_delimiter}"column"{tuple_delimiter}"Real good quantity in DECIMAL(10,2), represents actual defect-free manufactured products. Used in good quantity calculation and quality rate formulas."){record_delimiter}
+("entity"{tuple_delimiter}"abc_data.real_dfct_qty"{tuple_delimiter}"column"{tuple_delimiter}"Real defect quantity in DECIMAL(10,2), represents products with quality issues with not_null constraint for quality control."){record_delimiter}
+("entity"{tuple_delimiter}"abc_data.real_loss_qty"{tuple_delimiter}"column"{tuple_delimiter}"Real loss quantity in DECIMAL(10,2), represents production losses due to various factors with not_null constraint for loss analysis."){record_delimiter}
+("entity"{tuple_delimiter}"abc_data.eqp_id"{tuple_delimiter}"column"{tuple_delimiter}"Equipment ID in VARCHAR(20), represents manufacturing equipment identifier. Used for equipment-based grouping and analysis."){record_delimiter}
+("entity"{tuple_delimiter}"operation_count"{tuple_delimiter}"calculation_formula"{tuple_delimiter}"Operation count (number of operation) = real_good_qty + real_dfct_qty + real_loss_qty. Represents total operations including positive and negative values, excluding zero values. Used as denominator in all rate calculations."){record_delimiter}
+("entity"{tuple_delimiter}"good_quantity"{tuple_delimiter}"calculation_formula"{tuple_delimiter}"Good quantity = real_good_qty. Represents defect-free manufactured products quantity. Used as numerator in good quality rate calculation."){record_delimiter}
+("entity"{tuple_delimiter}"good_quality_rate"{tuple_delimiter}"calculation_formula"{tuple_delimiter}"Good quality rate = (good_quantity/operation_count)*100 = (real_good_qty/(real_good_qty+real_dfct_qty+real_loss_qty))*100. Percentage of good quality products relative to total operations."){record_delimiter}
+("entity"{tuple_delimiter}"defect_quantity"{tuple_delimiter}"calculation_formula"{tuple_delimiter}"Defect quantity = real_dfct_qty. Represents products with quality issues quantity. Used as numerator in defect rate calculation."){record_delimiter}
+("entity"{tuple_delimiter}"defect_rate"{tuple_delimiter}"calculation_formula"{tuple_delimiter}"Defect rate = (defect_quantity/operation_count)*1000000 = (real_dfct_qty/(real_good_qty+real_dfct_qty+real_loss_qty))*1000000. Defect rate per million operations."){record_delimiter}
+("entity"{tuple_delimiter}"date_format_rule"{tuple_delimiter}"domain_rule"{tuple_delimiter}"Column work_ymd is of the format YYYYMMDD (e.g 20240701). Used for date validation and temporal data organization."){record_delimiter}
+("entity"{tuple_delimiter}"calendar_week_rule"{tuple_delimiter}"domain_rule"{tuple_delimiter}"Samsung ABC calendar starts week from Sunday to Saturday, and Sunday is used to identify the week of year and month. Critical for week-based reporting and analysis."){record_delimiter}
+("entity"{tuple_delimiter}"groupby_restriction"{tuple_delimiter}"domain_rule"{tuple_delimiter}"Strictly do not include measure columns (e.g., real_good_qty, real_dfct_qty, real_loss_qty) in the GROUP BY clause. Ensures proper aggregation and prevents data duplication."){record_delimiter}
+("entity"{tuple_delimiter}"utf8_support_rule"{tuple_delimiter}"domain_rule"{tuple_delimiter}"System supports UTF8. Generated queries should use Korean or other language without Unicode escaping wherever relevant in filters."){record_delimiter}
+("relationship"{tuple_delimiter}"abc_data"{tuple_delimiter}"abc_data.work_ymd"{tuple_delimiter}"Complete table contains work date column for temporal tracking and week-based analysis."{tuple_delimiter}"table_structure, contains_column, temporal_tracking"{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"abc_data"{tuple_delimiter}"abc_data.real_good_qty"{tuple_delimiter}"Complete table contains real good quantity column for quality assessment and good quantity calculation."{tuple_delimiter}"table_structure, contains_column, quality_tracking"{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"abc_data"{tuple_delimiter}"abc_data.real_dfct_qty"{tuple_delimiter}"Complete table contains real defect quantity column for defect tracking and defect rate calculation."{tuple_delimiter}"table_structure, contains_column, defect_tracking"{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"abc_data"{tuple_delimiter}"abc_data.real_loss_qty"{tuple_delimiter}"Complete table contains real loss quantity column for production loss tracking."{tuple_delimiter}"table_structure, contains_column, loss_tracking"{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"abc_data"{tuple_delimiter}"abc_data.eqp_id"{tuple_delimiter}"Complete table contains equipment ID column for equipment-based grouping and analysis."{tuple_delimiter}"table_structure, contains_column, equipment_tracking"{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"operation_count"{tuple_delimiter}"abc_data.real_good_qty"{tuple_delimiter}"Operation count formula uses real_good_qty as first component in the sum calculation."{tuple_delimiter}"calculation_formula, component_column"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"operation_count"{tuple_delimiter}"abc_data.real_dfct_qty"{tuple_delimiter}"Operation count formula uses real_dfct_qty as second component in the sum calculation."{tuple_delimiter}"calculation_formula, component_column"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"operation_count"{tuple_delimiter}"abc_data.real_loss_qty"{tuple_delimiter}"Operation count formula uses real_loss_qty as third component in the sum calculation."{tuple_delimiter}"calculation_formula, component_column"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"good_quantity"{tuple_delimiter}"abc_data.real_good_qty"{tuple_delimiter}"Good quantity definition directly references real_good_qty column."{tuple_delimiter}"calculation_formula, direct_reference"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"good_quality_rate"{tuple_delimiter}"operation_count"{tuple_delimiter}"Good quality rate calculation uses operation_count as denominator in the percentage formula."{tuple_delimiter}"calculation_formula, rate_calculation"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"good_quality_rate"{tuple_delimiter}"good_quantity"{tuple_delimiter}"Good quality rate calculation uses good_quantity as numerator in the percentage formula."{tuple_delimiter}"calculation_formula, rate_calculation"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"defect_quantity"{tuple_delimiter}"abc_data.real_dfct_qty"{tuple_delimiter}"Defect quantity definition directly references real_dfct_qty column."{tuple_delimiter}"calculation_formula, direct_reference"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"defect_rate"{tuple_delimiter}"operation_count"{tuple_delimiter}"Defect rate calculation uses operation_count as denominator in the per-million formula."{tuple_delimiter}"calculation_formula, rate_calculation"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"defect_rate"{tuple_delimiter}"defect_quantity"{tuple_delimiter}"Defect rate calculation uses defect_quantity as numerator in the per-million formula."{tuple_delimiter}"calculation_formula, rate_calculation"{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"date_format_rule"{tuple_delimiter}"abc_data.work_ymd"{tuple_delimiter}"Date format rule applies to work_ymd column for YYYYMMDD format validation."{tuple_delimiter}"domain_rule, format_validation"{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}"calendar_week_rule"{tuple_delimiter}"abc_data.work_ymd"{tuple_delimiter}"Calendar week rule applies to work_ymd column for Sunday-based week calculation."{tuple_delimiter}"domain_rule, temporal_calculation"{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}"groupby_restriction"{tuple_delimiter}"abc_data.real_good_qty"{tuple_delimiter}"Groupby restriction rule prevents real_good_qty from being used in GROUP BY clause."{tuple_delimiter}"domain_rule, query_constraint"{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}"groupby_restriction"{tuple_delimiter}"abc_data.real_dfct_qty"{tuple_delimiter}"Groupby restriction rule prevents real_dfct_qty from being used in GROUP BY clause."{tuple_delimiter}"domain_rule, query_constraint"{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}"groupby_restriction"{tuple_delimiter}"abc_data.real_loss_qty"{tuple_delimiter}"Groupby restriction rule prevents real_loss_qty from being used in GROUP BY clause."{tuple_delimiter}"domain_rule, query_constraint"{tuple_delimiter}8){record_delimiter}
+("content_keywords"{tuple_delimiter}"manufacturing data, quality control, performance indicators, defect analysis, production tracking, ABC manufacturing"){completion_delimiter}
+#############################"""
+]
+
+PROMPTS["enhanced_graph_weight_assignment"] = """You are a database expert tasked with enhancing relationship weights for a knowledge graph based on comprehensive schema analysis and analytical query optimization.
+
+Your goal is to assign analytical traversal weights (0.0-1.0) to relationships that will be MULTIPLIED with original graph weights to optimize complex analytical query path planning and execution.
+
+**ANALYSIS REQUIREMENTS:**
+
+1. **Relationship Analysis**: For each relationship, analyze:
+   - Business value and analytical importance
+   - Multi-table join potential and complexity
+   - Query optimization opportunities
+   - Performance impact in analytical workflows
+   - Support for advanced SQL features (window functions, date arithmetic, CASE logic)
+
+2. **Schema Context**: Consider the complete schema structure:
+   - Table relationships and foreign key patterns
+   - Column data types and constraints
+   - Business domain and analytical use cases
+   - Sample data patterns and distributions
+
+3. **Metadata Integration**: If metadata is provided:
+   - Use metadata to understand business domain and industry context
+   - Incorporate business rules and processes mentioned in metadata
+   - Apply domain-specific terminology and concepts
+   - Consider regulatory or compliance requirements
+
+**WEIGHT ASSIGNMENT STRATEGY:**
+
+**ULTRA-HIGH WEIGHTS (0.9-1.0): Performance-Critical Multi-Table Join Backbones**
+- Core transactional analysis requiring 4+ table joins
+- 7-8 table entertainment analytics chains
+- Sports analytics requiring complex aggregations and performance calculations
+- Any relationship appearing in 6+ table join sequences with heavy analytical processing
+
+**HIGH WEIGHTS (0.8-0.89): Essential Analytical Pathways**
+- Geographic dimension joins supporting location-based analytics and string processing
+- Time dimension connections enabling date arithmetic, temporal calculations, and growth analysis
+- Bridge tables facilitating many-to-many analytics with conditional logic
+- Primary business entity relationships supporting RFM, segmentation, and multi-level aggregations
+
+**MEDIUM WEIGHTS (0.5-0.7): Supporting Analytics & Enrichment**
+- Lookup tables for categorization and business rule application
+- Reference tables supporting EXISTS/NOT EXISTS filtering patterns
+- Secondary dimensions for multi-dimensional analysis
+- Status/classification tables for conditional aggregations
+
+**LOW WEIGHTS (0.1-0.4): Metadata & Administrative**
+- Audit trail relationships rarely used in business analytics
+- System configuration and administrative reference data
+- Optional metadata not participating in core analytical workflows
+
+**ANALYTICAL FOCUS PRIORITIES:**
+
+1. **Performance-Optimized Join Sequences**: Prioritize relationships in the most common 6-8 table analytical workflows requiring strategic execution planning
+2. **Advanced Function Enablement**: Emphasize relationships supporting window functions, date arithmetic, string manipulation, and conditional logic
+3. **Multi-Level Aggregation Support**: Highlight relationships enabling hierarchical calculations, GROUP_CONCAT operations, and complex HAVING clause filtering
+4. **Business Logic Implementation**: Focus on relationships supporting complex CASE statements, conditional aggregations, and weighted scoring algorithms
+5. **Cross-Entity Analytics**: Prioritize paths enabling customer lifetime value, performance ranking, geographic analysis, and behavioral segmentation
+6. **Scalability & Performance**: Emphasize relationships critical for large dataset processing with optimal join ordering and filtering strategies
+
+**OUTPUT FORMAT:**
+Return enhanced weights in JSON format:
+
+{{
+  "relationship_weights": {{
+    "source_entity->target_entity": 0.85
+  }},
+  "weighting_rationale": {{
+    "source_entity->target_entity": "Brief explanation of why this weight was assigned based on analytical importance and business value"
+  }}
+}}
+
+**CRITICAL GUIDELINES:**
+- **ASSIGN WEIGHTS** for ALL relationships in the schema
+- **CONSIDER ANALYTICAL VALUE** over administrative importance
+- **PRIORITIZE PERFORMANCE** for complex multi-table joins
+- **INTEGRATE METADATA** insights when available
+- Use {language} as output language
+- **FOCUS ON QUERY OPTIMIZATION** and analytical workflow efficiency
+
+**SCHEMA INFORMATION:**
+{schema_text}
+
+**METADATA INFORMATION:**
+{metadata_content}
+
+**RELATIONSHIPS TO WEIGHT:**
+{relationships_list}
+
+**ENHANCED WEIGHTS:**
 """

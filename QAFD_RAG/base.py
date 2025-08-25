@@ -15,7 +15,7 @@ T = TypeVar("T")
 
 @dataclass
 class QueryParam:
-    mode: Literal["local", "global", "hybrid", "combined"] = "hybrid"
+    mode: Literal["local", "global", "hybrid"] = "hybrid"
     only_need_context: bool = False
     only_need_prompt: bool = False
     response_type: str = "Multiple Paragraphs"
@@ -29,6 +29,10 @@ class QueryParam:
     enable_query_aware_flow_diffusion: bool = True  # Enable query-aware flow diffusion
     alpha: float = 50.0  # Alpha parameter for flow diffusion initialization
     weight_func: Literal["multiply", "add", "original"] = "original"
+    return_raw_entities: bool = False  # Return raw entity data as JSON instead of LLM summaries
+    return_raw_clusters: bool = False  # Return raw cluster data as JSON instead of LLM summaries
+    use_batch_cluster_summarization: bool = True  # Use batch processing for cluster summarization (more efficient)
+    batch_cluster_size: int = 10  # Number of clusters to process in each batch (to avoid token limits)
 
 
 @dataclass
@@ -137,4 +141,4 @@ class BaseGraphStorage(StorageNameSpace):
         raise NotImplementedError
 
     async def embed_nodes(self, algorithm: str) -> tuple[np.ndarray, list[str]]:
-        raise NotImplementedError("Node embedding is not used in QAFDRAG.")
+        raise NotImplementedError("Node embedding is not used in QAFD_RAG.")

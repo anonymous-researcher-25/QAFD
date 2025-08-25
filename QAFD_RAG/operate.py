@@ -18,10 +18,10 @@ from .utils import (
     encode_string_by_tiktoken,
     is_float_regex,
     list_of_list_to_csv,
+    csv_string_to_list,
     pack_user_ass_to_openai_messages,
     split_string_by_multi_markers,
     truncate_list_by_token_size,
-    process_combine_contexts,
     compute_args_hash,
     handle_cache,
     save_to_cache,
@@ -391,10 +391,10 @@ async def _handle_single_entity_extraction(
     if len(record_attributes) < 4 or record_attributes[0] != '"entity"':
         return None
    
-    entity_name = clean_str(record_attributes[1].upper())
+    entity_name = clean_str(record_attributes[1].lower())
     if not entity_name.strip():
         return None
-    entity_type = clean_str(record_attributes[2].upper())
+    entity_type = clean_str(record_attributes[2].lower())
     entity_description = clean_str(record_attributes[3])
     entity_source_id = chunk_key
     return dict(
@@ -412,8 +412,8 @@ async def _handle_single_relationship_extraction(
     if len(record_attributes) < 5 or record_attributes[0] != '"relationship"':
         return None
    
-    source = clean_str(record_attributes[1].upper())
-    target = clean_str(record_attributes[2].upper())
+    source = clean_str(record_attributes[1].lower())
+    target = clean_str(record_attributes[2].lower())
     edge_description = clean_str(record_attributes[3])
 
     edge_keywords = clean_str(record_attributes[4])
@@ -564,13 +564,35 @@ async def extract_entities(
     entity_types = global_config["addon_params"].get(
         "entity_types", PROMPTS["DEFAULT_ENTITY_TYPES"]
     )
+    
+    # Check if we should use database schema entity extraction
+    use_database_schema_prompt = global_config["addon_params"].get("use_database_schema_prompt", False)
+    
+    # Unified approach: use database_schema_entity_extraction for all database-related content
+    # This prompt can handle JSON schema, metadata, or both
+    if use_database_schema_prompt:
+        # Use unified database schema entity extraction prompt
+        entity_extract_prompt = PROMPTS["database_schema_entity_extraction"]
+        examples_key = "database_schema_entity_extraction_examples"
+    else:
+        # Use regular entity extraction prompt for non-database content
+        entity_extract_prompt = PROMPTS["entity_extraction"]
+        examples_key = "entity_extraction_examples"
+    
     example_number = global_config["addon_params"].get("example_number", None)
-    if example_number and example_number < len(PROMPTS["entity_extraction_examples"]):
+    example_index = global_config["addon_params"].get("example_index", None)
+    
+    if example_index is not None and example_index < len(PROMPTS[examples_key]):
+        # Use specific example by index
+        examples = PROMPTS[examples_key][example_index]
+    elif example_number and example_number < len(PROMPTS[examples_key]):
+        # Use first N examples
         examples = "\n".join(
-            PROMPTS["entity_extraction_examples"][: int(example_number)]
+            PROMPTS[examples_key][: int(example_number)]
         )
     else:
-        examples = "\n".join(PROMPTS["entity_extraction_examples"])
+        # Use all examples
+        examples = "\n".join(PROMPTS[examples_key])
 
     example_context_base = dict(
         tuple_delimiter=PROMPTS["DEFAULT_TUPLE_DELIMITER"],
@@ -578,11 +600,10 @@ async def extract_entities(
         completion_delimiter=PROMPTS["DEFAULT_COMPLETION_DELIMITER"],
         entity_types=",".join(entity_types),
         language=language,
+        metadata="metadata",
     )
   
     examples = examples.format(**example_context_base)
-
-    entity_extract_prompt = PROMPTS["entity_extraction"]
     context_base = dict(
         tuple_delimiter=PROMPTS["DEFAULT_TUPLE_DELIMITER"],
         record_delimiter=PROMPTS["DEFAULT_RECORD_DELIMITER"],
@@ -590,6 +611,7 @@ async def extract_entities(
         entity_types=",".join(entity_types),
         examples=examples,
         language=language,
+        metadata="metadata",
     )
 
     continue_prompt = PROMPTS["entiti_continue_extraction"]
@@ -604,9 +626,12 @@ async def extract_entities(
         chunk_key = chunk_key_dp[0]
         chunk_dp = chunk_key_dp[1]
         content = chunk_dp["content"]
-        hint_prompt = entity_extract_prompt.format(
-            **context_base, input_text="{input_text}"
-        ).format(**context_base, input_text=content)
+        # Use a safer approach: first format the prompt template with a placeholder for input_text, then manually replace it
+        # This avoids conflicts with JSON content containing curly braces
+        context_with_placeholder = context_base.copy()
+        context_with_placeholder["input_text"] = "{input_text}"
+        formatted_prompt = entity_extract_prompt.format(**context_with_placeholder)
+        hint_prompt = formatted_prompt.replace("{input_text}", content)
 
         final_result = await use_llm_func(hint_prompt)
         history = pack_user_ass_to_openai_messages(hint_prompt, final_result)
@@ -784,7 +809,7 @@ async def kg_query(
         "language", PROMPTS["DEFAULT_LANGUAGE"]
     )
 
-    if query_param.mode not in ["local", "global", "hybrid", "combined"]:
+    if query_param.mode not in ["local", "global", "hybrid"]:
         logger.error(f"Unknown mode {query_param.mode} in kg_query")
         return PROMPTS["fail_response"]
 
@@ -823,9 +848,6 @@ async def kg_query(
         return PROMPTS["fail_response"]
     elif query_param.mode == "global" and hl_keywords == []:
         logger.warning("high_level_keywords is empty for global mode")
-        return PROMPTS["fail_response"]
-    elif query_param.mode == "combined" and ll_keywords == [] and hl_keywords == []:
-        logger.warning("Both low_level_keywords and high_level_keywords are empty for combined mode")
         return PROMPTS["fail_response"]
     elif query_param.mode == "hybrid" and ll_keywords == [] and hl_keywords == []:
         logger.warning("Both low_level_keywords and high_level_keywords are empty for hybrid mode")
@@ -950,25 +972,6 @@ async def _build_query_context(
             global_config,
         )
         
-    elif query_param.mode == "combined":
-        # Combined mode: get top entities from both ll_keywords and hl_keywords separately, then combine for flow diffusion
-        if ll_keywords == "" and hl_keywords == "":
-            logger.warning("Both Low Level and High Level keywords are empty for combined mode")
-            return "", "", ""
-        
-        (
-            entities_context,
-            relations_context,
-            text_units_context,
-        ) = await _get_combined_node_data_with_flow_diffusion(
-            ll_keywords,
-            hl_keywords,
-            knowledge_graph_inst,
-            entities_vdb,
-            text_chunks_db,
-            query_param,
-            global_config,
-        )
     
     elif query_param.mode == "hybrid":
         # Hybrid mode: use combined keywords (both ll_keywords and hl_keywords)
@@ -991,6 +994,7 @@ async def _build_query_context(
                 query_param,
                 global_config,
             )
+            print("low level entities: ", local_entities_context)
         
         # Get global information using hl_keywords
         global_entities_context, global_relations_context, global_text_units_context = "", "", ""
@@ -1007,9 +1011,15 @@ async def _build_query_context(
                 query_param,
                 global_config,
             )
-
+            print("high level entities: ", global_entities_context)
+    
     # Return context based on mode
     if query_param.mode == "local":
+        if query_param.return_raw_entities:
+            return entities_context
+        elif query_param.return_raw_clusters:
+            return relations_context
+
         return f"""
 -----local-information-----
 -----low-level entity information-----
@@ -1026,6 +1036,11 @@ async def _build_query_context(
 ```
 """
     elif query_param.mode == "global":
+        if query_param.return_raw_entities:
+            return entities_context
+        elif query_param.return_raw_clusters:
+            return relations_context
+        
         return f"""
 -----global-information-----
 -----high-level entity information-----
@@ -1041,23 +1056,24 @@ async def _build_query_context(
 {text_units_context}
 ```
 """
-    elif query_param.mode == "combined":
-        return f"""
------combined-information-----
------combined entity information (from low-level and high-level keywords)-----
-```csv
-{entities_context}
-```
------combined relationship information-----
-```csv
-{relations_context}
-```
------Sources-----
-```csv
-{text_units_context}
-```
-"""
     elif query_param.mode == "hybrid":
+        if query_param.return_raw_entities:
+            # Merge local + global entities CSV into one CSV and reindex id
+            merged_rows = []
+            if local_entities_context:
+                merged_rows += csv_string_to_list(local_entities_context)[1:]
+            if global_entities_context:
+                merged_rows += csv_string_to_list(global_entities_context)[1:]
+            for idx, row in enumerate(merged_rows):
+                if row:
+                    row[0] = str(idx)
+            merged_entities_csv = list_of_list_to_csv(
+                [["id", "entity", "type", "description", "rank"]] + merged_rows
+            )
+            return merged_entities_csv
+        elif query_param.return_raw_clusters:
+            return local_relations_context + global_relations_context
+        
         return f"""
 -----hybrid-information-----
 -----local information (from low-level keywords)-----
@@ -1166,10 +1182,14 @@ async def _get_node_data_with_flow_diffusion(
         )
     entities_context = list_of_list_to_csv(entites_section_list)
 
-    relations_section_list = [["id", "cluster_summary"]]
-    for i, summary in enumerate(use_relations):
-        relations_section_list.append([i, summary])
-    relations_context = list_of_list_to_csv(relations_section_list)
+    # Relations context: return JSON clusters when requested; otherwise CSV
+    if query_param.return_raw_clusters:
+        relations_context = use_relations
+    else:
+        relations_section_list = [["id", "cluster_summary"]]
+        for i, summary in enumerate(use_relations):
+            relations_section_list.append([i, summary])
+        relations_context = list_of_list_to_csv(relations_section_list)
 
     text_units_section_list = [["id", "content"]]
     for i, t in enumerate(use_text_units):
@@ -1205,6 +1225,7 @@ async def _get_embeddings_for_flow_diffusion(
     # Try to get embeddings from global config if available
     if "embedding_func" in global_config and global_config["embedding_func"]:
         try:
+            # Prioritize using cached node embeddings
             if hasattr(knowledge_graph_inst, 'get_cached_node_embeddings'):
                 logger.info("Attempting to use cached node embeddings...")
                 node_embeddings = await knowledge_graph_inst.get_cached_node_embeddings(global_config)
@@ -1307,6 +1328,7 @@ async def _get_embeddings_for_flow_diffusion(
             
             # Get query embedding
             if query:
+                # Prioritize using cached query embedding
                 if hasattr(knowledge_graph_inst, 'get_cached_query_embedding'):
                     logger.info("Attempting to use cached query embedding...")
                     subquery_embedding = await knowledge_graph_inst.get_cached_query_embedding(query, global_config)
@@ -1330,6 +1352,66 @@ async def _get_embeddings_for_flow_diffusion(
         logger.warning("No embedding function available in global config")
     
     return node_embeddings, subquery_embedding
+
+
+def _convert_subgraph_to_json(G: nx.Graph, cluster_nodes: list, diffused_nodes: dict, source_node: str) -> dict:
+    """
+    Convert a subgraph to JSON format with nodes and edges information.
+    
+    Parameters:
+    -----------
+    G : nx.Graph
+        The original graph
+    cluster_nodes : list
+        List of nodes in the cluster
+    diffused_nodes : dict
+        Dictionary mapping nodes to their flow values
+    source_node : str
+        The source node for this cluster
+        
+    Returns:
+    --------
+    dict
+        JSON representation of the subgraph
+    """
+    # Create subgraph from cluster nodes
+    support_nodes = set(cluster_nodes)
+    subgraph = G.subgraph(support_nodes)
+    
+    # Convert nodes to JSON format
+    nodes_json = []
+    # Build a local index map so node "id" matches the CSV-style index
+    node_index_map = {node: idx for idx, node in enumerate(cluster_nodes)}
+    for node in cluster_nodes:
+        node_attrs = G.nodes[node] if node in G.nodes else {}
+        node_degree = subgraph.degree(node) if node in subgraph else 0
+        nodes_json.append({
+            "id": node_index_map[node],
+            "entity": node,
+            "type": node_attrs.get("entity_type", "UNKNOWN"),
+            "description": node_attrs.get("description", "UNKNOWN"),
+            "rank": node_degree,
+        })
+    
+    # Convert edges to JSON format
+    edges_json = []
+    for u, v, data in subgraph.edges(data=True):
+        edges_json.append({
+            "source": u,
+            "target": v,
+            "source_id": node_index_map.get(u),
+            "target_id": node_index_map.get(v),
+            "weight": data.get('weight', 1.0)
+        })
+    
+    return {
+        "source_node": source_node,
+        "cluster_size": len(cluster_nodes),
+        "max_flow_value": max(diffused_nodes.values()) if diffused_nodes else 0.0,
+        "nodes": nodes_json,
+        "edges": edges_json,
+        "total_edges": len(edges_json)
+    }
 
 
 async def _find_flow_diffusion_clusters_and_summarize(
@@ -1358,14 +1440,17 @@ async def _find_flow_diffusion_clusters_and_summarize(
     Returns:
     --------
     list
-        List of summarized cluster relationships
+        If return_raw_clusters=True: List of cluster JSON objects with subgraph data
+        If return_raw_clusters=False: List of summarized cluster relationships
     """
+    # Use cached NetworkX graph to avoid repeated construction
     if hasattr(knowledge_graph_inst, 'get_cached_nx_graph'):
         logger.info("Attempting to use cached NetworkX graph...")
         G = await knowledge_graph_inst.get_cached_nx_graph()
         logger.info(f"Successfully obtained NetworkX graph with {G.number_of_nodes()} nodes and {G.number_of_edges()} edges")
     else:
         logger.info("Storage class does not support cached graphs, building new one...")
+        # Compatibility handling: if no cache method, use original approach
         G = nx.Graph()
         edges = await knowledge_graph_inst.edges()
         nodes = await knowledge_graph_inst.nodes()
@@ -1390,85 +1475,328 @@ async def _find_flow_diffusion_clusters_and_summarize(
     
     logger.info(f"Starting flow diffusion from {len(source_nodes)} source nodes independently")
     
+    # Pre-compute node embeddings and query embeddings to avoid repeated computation in loops
     logger.info("Pre-computing embeddings for flow diffusion...")
     node_embeddings, subquery_embedding = await _get_embeddings_for_flow_diffusion(
         G, query, knowledge_graph_inst, global_config, query_param
     )
     logger.info(f"Pre-computed embeddings: {len(node_embeddings)} nodes, query embedding: {'Yes' if subquery_embedding else 'No'}")
     
-    # Run flow diffusion from each source node
-    for source_node in source_nodes:
-        if not G.has_node(source_node):
-            continue
-            
-        # Get source node information
-        source_node_info = await knowledge_graph_inst.get_node(source_node)
-        if not source_node_info:
-            source_node_info = {"entity_type": "UNKNOWN", "description": "No description available"}
+    # Initialize cluster processing based on configuration
+    all_clusters = []
+    
+    if query_param.use_batch_cluster_summarization:
+        logger.info("Using batch cluster summarization mode (more efficient)")
+    else:
+        logger.info("Using individual cluster summarization mode (original approach)")
+    
+    if query_param.use_batch_cluster_summarization:
+        # Collect all clusters first for batch processing
+        clusters_to_summarize = []
+        raw_clusters = []
         
-        # Calculate confidence based on source node's relevance to the query
-        confidence = 0.7  # Default confidence
-        
-        # Apply flow diffusion from this source node
-        wfd = QueryAwareWeightedFlowDiffusion(
-            G, source_node, source_node, confidence,
-            node_embeddings=node_embeddings,
-            subquery_embedding=subquery_embedding,
-            weight_func=query_param.weight_func
-        )
-        wfd.initialize(alpha=query_param.alpha)
-        diffused_nodes = wfd.flow_diffusion()
-        
-        if len(diffused_nodes) > 1:  # Only consider clusters with multiple nodes
-            # Get cluster nodes and their flow values
-            cluster_nodes = list(diffused_nodes.keys())
-            cluster_flow_values = list(diffused_nodes.values())
+        # Run flow diffusion from each source node
+        for source_node in source_nodes:
+
+            if not G.has_node(source_node):
+                continue
+                
+            if G.nodes[source_node].get("entity_type", "").lower() == "complete_table":
+                continue
             
-            # Only process if cluster has significant flow (using configured threshold)
-            if cluster_flow_values:
-                max_flow = max(cluster_flow_values)
-                if max_flow < query_param.min_flow_threshold:
-                    continue
-            else:
-                continue  # Skip if no flow values
+            # Get source node information
+            source_node_info = await knowledge_graph_inst.get_node(source_node)
+            if not source_node_info:
+                source_node_info = {"entity_type": "UNKNOWN", "description": "No description available"}
             
-            # Get node information for the cluster
-            cluster_node_data = []
-            for node in cluster_nodes:
-                node_info = await knowledge_graph_inst.get_node(node)
-                if node_info:
-                    cluster_node_data.append({
-                        'name': node,
-                        'type': node_info.get('entity_type', 'UNKNOWN'),
-                        'description': node_info.get('description', 'UNKNOWN'),
-                        'flow_value': diffused_nodes.get(node, 0.0)
-                    })
+            # Calculate confidence based on source node's relevance to the query
+            confidence = 0.7  # Default confidence
             
-            # Sort by flow value
-            cluster_node_data.sort(key=lambda x: x['flow_value'], reverse=True)
-            
-            # Create cluster summary using LLM
-            cluster_summary = await _summarize_cluster_with_llm(
-                cluster_node_data, source_node, use_llm_func, global_config
+            # Apply flow diffusion from this source node
+            wfd = QueryAwareWeightedFlowDiffusion(
+                G, source_node, source_node, confidence,
+                node_embeddings=node_embeddings,
+                subquery_embedding=subquery_embedding,
+                weight_func=query_param.weight_func
             )
+            wfd.initialize(alpha=query_param.alpha)
+            diffused_nodes = wfd.flow_diffusion()
             
-            if cluster_summary:
-                all_clusters.append(cluster_summary)
+            if len(diffused_nodes) > 1:  # Only consider clusters with multiple nodes
+                # Get cluster nodes and their flow values
+                cluster_nodes = list(diffused_nodes.keys())
+                cluster_flow_values = list(diffused_nodes.values())
+                
+                # Only process if cluster has significant flow (using configured threshold)
+                if cluster_flow_values:
+                    max_flow = max(cluster_flow_values)
+                    if max_flow < query_param.min_flow_threshold:
+                        continue
+                else:
+                    continue  # Skip if no flow values
+                
+                # Get node information for the cluster
+                cluster_node_data = []
+                for node in cluster_nodes:
+                    node_info = await knowledge_graph_inst.get_node(node)
+                    if node_info:
+                        cluster_node_data.append({
+                            'name': node,
+                            'type': node_info.get('entity_type', 'UNKNOWN'),
+                            'description': node_info.get('description', 'UNKNOWN'),
+                            'flow_value': diffused_nodes.get(node, 0.0)
+                        })
+                
+                # Sort by flow value
+                cluster_node_data.sort(key=lambda x: x['flow_value'], reverse=True)
+                
+                # Check if we should return raw cluster data instead of LLM summaries
+                if query_param.return_raw_clusters:
+                    # Convert subgraph to JSON format
+                    cluster_json = _convert_subgraph_to_json(G, cluster_nodes, diffused_nodes, source_node)
+                    # Add node details to the JSON
+                    cluster_json["node_details"] = cluster_node_data
+                    raw_clusters.append(cluster_json)
+                else:
+                    # Collect cluster data for batch processing
+                    clusters_to_summarize.append((cluster_node_data, source_node))
+        
+        # Process clusters based on return type
+        if query_param.return_raw_clusters:
+            all_clusters = raw_clusters
+        else:
+            # Batch process clusters in chunks to avoid token limits
+            if clusters_to_summarize:
+                all_clusters = []
+                batch_size = query_param.batch_cluster_size
+                
+                # Process clusters in batches
+                for i in range(0, len(clusters_to_summarize), batch_size):
+                    batch_clusters = clusters_to_summarize[i:i + batch_size]
+                    logger.info(f"Processing batch {i//batch_size + 1}/{(len(clusters_to_summarize) + batch_size - 1)//batch_size} with {len(batch_clusters)} clusters")
+                    
+                    cluster_summaries = await _summarize_clusters_batch_with_llm(
+                        batch_clusters, use_llm_func, global_config
+                    )
+                    all_clusters.extend([summary for summary in cluster_summaries if summary])
+            else:
+                all_clusters = []
+    
+    else:
+        # Process clusters individually (original approach)
+        for source_node in source_nodes:
+
+            if not G.has_node(source_node):
+                continue
+                
+            if G.nodes[source_node].get("entity_type", "").lower() == "complete_table":
+                continue
+            
+            # Get source node information
+            source_node_info = await knowledge_graph_inst.get_node(source_node)
+            if not source_node_info:
+                source_node_info = {"entity_type": "UNKNOWN", "description": "No description available"}
+            
+            # Calculate confidence based on source node's relevance to the query
+            confidence = 0.7  # Default confidence
+            
+            # Apply flow diffusion from this source node
+            wfd = QueryAwareWeightedFlowDiffusion(
+                G, source_node, source_node, confidence,
+                node_embeddings=node_embeddings,
+                subquery_embedding=subquery_embedding,
+                weight_func=query_param.weight_func
+            )
+            wfd.initialize(alpha=query_param.alpha)
+            diffused_nodes = wfd.flow_diffusion()
+            
+            if len(diffused_nodes) > 1:  # Only consider clusters with multiple nodes
+                # Get cluster nodes and their flow values
+                cluster_nodes = list(diffused_nodes.keys())
+                cluster_flow_values = list(diffused_nodes.values())
+                
+                # Only process if cluster has significant flow (using configured threshold)
+                if cluster_flow_values:
+                    max_flow = max(cluster_flow_values)
+                    if max_flow < query_param.min_flow_threshold:
+                        continue
+                else:
+                    continue  # Skip if no flow values
+                
+                # Get node information for the cluster
+                cluster_node_data = []
+                for node in cluster_nodes:
+                    node_info = await knowledge_graph_inst.get_node(node)
+                    if node_info:
+                        cluster_node_data.append({
+                            'name': node,
+                            'type': node_info.get('entity_type', 'UNKNOWN'),
+                            'description': node_info.get('description', 'UNKNOWN'),
+                            'flow_value': diffused_nodes.get(node, 0.0)
+                        })
+                
+                # Sort by flow value
+                cluster_node_data.sort(key=lambda x: x['flow_value'], reverse=True)
+                
+                # Check if we should return raw cluster data instead of LLM summaries
+                if query_param.return_raw_clusters:
+                    # Convert subgraph to JSON format
+                    cluster_json = _convert_subgraph_to_json(G, cluster_nodes, diffused_nodes, source_node)
+                    # Add node details to the JSON
+                    cluster_json["node_details"] = cluster_node_data
+                    all_clusters.append(cluster_json)
+                else:
+                    # Create cluster summary using LLM (individual processing)
+                    cluster_summary = await _summarize_cluster_with_llm(
+                        cluster_node_data, source_node, use_llm_func, global_config
+                    )
+                    
+                    if cluster_summary:
+                        all_clusters.append(cluster_summary)
     
     logger.info(f"Flow diffusion completed, {len(all_clusters)} clusters found")
     
-    # Limit the number of clusters based on token constraints
-    original_cluster_count = len(all_clusters)
-    all_clusters = truncate_list_by_token_size(
-        all_clusters,
-        key=lambda x: x,
-        max_token_size=query_param.max_token_for_local_context,
-    )
-    
-    if original_cluster_count != len(all_clusters):
-        logger.info(f"Clusters truncated from {original_cluster_count} to {len(all_clusters)} due to token limit")
+    # Only apply token constraints if we're returning LLM summaries
+    if not query_param.return_raw_clusters:
+        # Limit the number of clusters based on token constraints
+        original_cluster_count = len(all_clusters)
+        all_clusters = truncate_list_by_token_size(
+            all_clusters,
+            key=lambda x: x,
+            max_token_size=query_param.max_token_for_local_context,
+        )
+        
+        if original_cluster_count != len(all_clusters):
+            logger.info(f"Clusters truncated from {original_cluster_count} to {len(all_clusters)} due to token limit")
     
     return all_clusters
+
+
+async def _summarize_clusters_batch_with_llm(
+    clusters_data: list[tuple[list[dict], str]],
+    use_llm_func: callable,
+    global_config: dict = None,
+) -> list[str]:
+    """
+    Summarize multiple clusters using a single LLM call.
+    
+    Parameters:
+    -----------
+    clusters_data : list[tuple[list[dict], str]]
+        List of tuples containing (cluster_node_data, source_node) for each cluster
+    use_llm_func : callable
+        LLM function to use for summarization
+    global_config : dict
+        Global configuration (optional)
+        
+    Returns:
+    --------
+    list[str]
+        List of summarized cluster relationships
+    """
+    if not clusters_data:
+        return []
+    
+    # Filter out clusters with less than 2 nodes
+    valid_clusters = []
+    for cluster_node_data, source_node in clusters_data:
+        if len(cluster_node_data) >= 2:
+            valid_clusters.append((cluster_node_data, source_node))
+    
+    if not valid_clusters:
+        return []
+    
+    # Create batch prompt for all clusters
+    clusters_info = []
+    for i, (cluster_node_data, source_node) in enumerate(valid_clusters, 1):
+        nodes_info = []
+        for node_data in cluster_node_data:
+            nodes_info.append(
+                f"- {node_data['name']} ({node_data['type']}): {node_data['description']} "
+                f"(flow strength: {node_data['flow_value']:.3f})"
+            )
+        
+        nodes_text = "\n".join(nodes_info)
+        clusters_info.append(f"""Cluster {i}:
+Source Node: {source_node}
+Cluster Nodes:
+{nodes_text}""")
+    
+    all_clusters_text = "\n\n".join(clusters_info)
+    
+    prompt = f"""Please analyze the following clusters of entities and their relationships, then provide a concise summary for each cluster.
+
+Clusters Information:
+{all_clusters_text}
+
+For each cluster, please provide a summary that explains:
+1. How these entities are related to each other
+2. What concept or theme this cluster represents
+3. The significance of the connections between these entities
+4. How the source node connects to the other entities in this cluster
+
+Please format your response as follows:
+Cluster 1: [summary for cluster 1]
+Cluster 2: [summary for cluster 2]
+...
+Cluster N: [summary for cluster N]
+
+Keep each summary concise but informative, focusing on the relationships and thematic connections."""
+
+    # Use configuration-based max_tokens if available, otherwise use a reasonable default
+    max_tokens = 2000  # Increased for batch processing
+    if global_config and "entity_summary_to_max_tokens" in global_config:
+        max_tokens = global_config["entity_summary_to_max_tokens"] * len(valid_clusters)  # Scale with number of clusters
+    
+    logger.info(f"Processing batch of {len(valid_clusters)} clusters with max_tokens={max_tokens}")
+
+    try:
+        batch_summary = await use_llm_func(prompt, max_tokens=max_tokens)
+        batch_summary = batch_summary.strip()
+        
+        # Parse the response to extract individual cluster summaries
+        summaries = []
+        lines = batch_summary.split('\n')
+        current_summary = ""
+        
+        for line in lines:
+            line = line.strip()
+            if line.startswith('Cluster ') and ':' in line:
+                # Save previous summary if exists
+                if current_summary:
+                    summaries.append(current_summary.strip())
+                # Start new summary
+                current_summary = line.split(':', 1)[1].strip()
+            elif line and current_summary:
+                current_summary += " " + line
+        
+        # Add the last summary
+        if current_summary:
+            summaries.append(current_summary.strip())
+        
+        # Ensure we have the right number of summaries
+        while len(summaries) < len(valid_clusters):
+            summaries.append("Cluster summary not available")
+        
+        return summaries[:len(valid_clusters)]
+        
+    except Exception as e:
+        logger.error(f"Error summarizing clusters batch: {e}")
+        # Fallback: create individual summaries for each cluster
+        fallback_summaries = []
+        for cluster_node_data, source_node in valid_clusters:
+            if len(cluster_node_data) > 0:
+                top_nodes = cluster_node_data[:3]  # Get top 3 nodes by flow value
+                node_names = [node['name'] for node in top_nodes]
+                if len(cluster_node_data) > 1:
+                    fallback_summary = f"Cluster centered around {source_node} connecting to {', '.join(node_names)} and {len(cluster_node_data)-1} other entities with flow values ranging from {cluster_node_data[0]['flow_value']:.3f} to {cluster_node_data[-1]['flow_value']:.3f}"
+                else:
+                    fallback_summary = f"Cluster centered around {source_node} connecting to {', '.join(node_names)}"
+                fallback_summaries.append(fallback_summary)
+            else:
+                fallback_summaries.append(f"Cluster connecting {source_node} with related entities")
+        
+        return fallback_summaries
 
 
 async def _summarize_cluster_with_llm(
@@ -1525,11 +1853,9 @@ Please provide a summary that explains:
 Keep the summary concise but informative, focusing on the relationships and thematic connections."""
 
     # Use configuration-based max_tokens if available, otherwise use a reasonable default
-    max_tokens = 500  # Default value
+    max_tokens = 1000  # Default value
     if global_config and "entity_summary_to_max_tokens" in global_config:
         max_tokens = global_config["entity_summary_to_max_tokens"]
-    elif global_config and "summary_to_max_tokens" in global_config:
-        max_tokens = global_config["summary_to_max_tokens"]
 
     try:
         summary = await use_llm_func(prompt, max_tokens=max_tokens)
@@ -1886,181 +2212,3 @@ def calculate_evaluation_metrics(evaluation_result: dict) -> dict:
                 metrics["score_range"] = max(values) - min(values)
     
     return metrics
-
-async def _get_combined_node_data_with_flow_diffusion(
-    ll_keywords: str,
-    hl_keywords: str,
-    knowledge_graph_inst: BaseGraphStorage,
-    entities_vdb: BaseVectorStorage,
-    text_chunks_db: BaseKVStorage[TextChunkSchema],
-    query_param: QueryParam,
-    global_config: dict,
-):
-    """
-    Get combined node data from both low-level and high-level keywords for flow diffusion.
-    
-    Parameters:
-    -----------
-    ll_keywords : str
-        Low-level keywords
-    hl_keywords : str
-        High-level keywords
-    knowledge_graph_inst : BaseGraphStorage
-        Knowledge graph storage instance
-    entities_vdb : BaseVectorStorage
-        Entity vector database
-    text_chunks_db : BaseKVStorage[TextChunkSchema]
-        Text chunks database
-    query_param : QueryParam
-        Query parameters
-    global_config : dict
-        Global configuration
-        
-    Returns:
-    --------
-    tuple
-        (entities_context, relations_context, text_units_context)
-    """
-    # Calculate how many source nodes to allocate to each keyword type
-    # Reserve half for each type, but ensure we don't exceed max_source_nodes
-    max_source_nodes = query_param.max_source_nodes
-    nodes_per_type = max(1, max_source_nodes // 2)  # At least 1 node per type
-    
-    # Get entities from low-level keywords
-    ll_results = []
-    if ll_keywords:
-        ll_results = await entities_vdb.query(ll_keywords, top_k=max_source_nodes)
-    
-    # Get entities from high-level keywords
-    hl_results = []
-    if hl_keywords:
-        hl_results = await entities_vdb.query(hl_keywords, top_k=max_source_nodes)
-    
-    # Combine and deduplicate results with priority to low-level keywords
-    all_results = []
-    seen_entities = set()
-    
-    # Add low-level entities first (up to nodes_per_type)
-    for result in ll_results[:nodes_per_type]:
-        if result["entity_name"] not in seen_entities:
-            all_results.append(result)
-            seen_entities.add(result["entity_name"])
-    
-    # Add high-level entities (up to nodes_per_type)
-    for result in hl_results[:nodes_per_type]:
-        if result["entity_name"] not in seen_entities:
-            all_results.append(result)
-            seen_entities.add(result["entity_name"])
-    
-    # Fill remaining slots with additional entities from both types
-    remaining_slots = max_source_nodes - len(all_results)
-    if remaining_slots > 0:
-        # Add remaining low-level entities
-        for result in ll_results[nodes_per_type:]:
-            if result["entity_name"] not in seen_entities and len(all_results) < max_source_nodes:
-                all_results.append(result)
-                seen_entities.add(result["entity_name"])
-        
-        # Add remaining high-level entities
-        for result in hl_results[nodes_per_type:]:
-            if result["entity_name"] not in seen_entities and len(all_results) < max_source_nodes:
-                all_results.append(result)
-                seen_entities.add(result["entity_name"])
-    
-    if not len(all_results):
-        return "", "", ""
-
-    # Get node data for all entities
-    node_datas = await asyncio.gather(
-        *[knowledge_graph_inst.get_node(r["entity_name"]) for r in all_results]
-    )
-    if not all([n is not None for n in node_datas]):
-        logger.warning("Some nodes are missing, maybe the storage is damaged")
-
-    node_degrees = await asyncio.gather(
-        *[knowledge_graph_inst.node_degree(r["entity_name"]) for r in all_results]
-    )
-    node_datas = [
-        {**n, "entity_name": k["entity_name"], "rank": d}
-        for k, n, d in zip(all_results, node_datas, node_degrees)
-        if n is not None
-    ]  
-    
-    # Get text units from all entities
-    use_text_units = await _find_most_related_text_unit_from_entities(
-        node_datas, query_param, text_chunks_db, knowledge_graph_inst
-    )
-
-    # Use flow diffusion with combined entities
-    # Create a combined query string for flow diffusion context
-    combined_query = ""
-    if ll_keywords and hl_keywords:
-        combined_query = f"{ll_keywords}, {hl_keywords}"
-    elif ll_keywords:
-        combined_query = ll_keywords
-    elif hl_keywords:
-        combined_query = hl_keywords
-    
-    use_relations = await _find_flow_diffusion_clusters_and_summarize(
-        node_datas, combined_query, query_param, knowledge_graph_inst, global_config
-    )
-
-    # Count entities from different sources (handle overlaps)
-    ll_entities = set()
-    hl_entities = set()
-    
-    # Collect entities from each source
-    for r in ll_results:
-        ll_entities.add(r['entity_name'])
-    for r in hl_results:
-        hl_entities.add(r['entity_name'])
-    
-    # Count entities that are actually used in node_datas
-    ll_only_count = len([n for n in node_datas if n['entity_name'] in ll_entities and n['entity_name'] not in hl_entities])
-    hl_only_count = len([n for n in node_datas if n['entity_name'] in hl_entities and n['entity_name'] not in ll_entities])
-    overlap_count = len([n for n in node_datas if n['entity_name'] in ll_entities and n['entity_name'] in hl_entities])
-    
-    logger.info(
-        f"Combined flow diffusion query uses {len(node_datas)} entities "
-        f"({ll_only_count} low-level only, {hl_only_count} high-level only, {overlap_count} overlap), "
-        f"{len(use_relations)} cluster summaries, {len(use_text_units)} text units"
-    )
-
-    # Create entities section
-    entites_section_list = [["id", "entity", "type", "description", "rank", "source"]]
-    for i, n in enumerate(node_datas):
-        # Determine source (low-level or high-level)
-        source = "unknown"
-        if n["entity_name"] in ll_entities:
-            source = "low-level"
-        if n["entity_name"] in hl_entities:
-            if source == "low-level":
-                source = "both"
-            else:
-                source = "high-level"
-        
-        entites_section_list.append(
-            [
-                i,
-                n["entity_name"],
-                n.get("entity_type", "UNKNOWN"),
-                n.get("description", "UNKNOWN"),
-                n["rank"],
-                source,
-            ]
-        )
-    entities_context = list_of_list_to_csv(entites_section_list)
-
-    # Create relations section
-    relations_section_list = [["id", "cluster_summary"]]
-    for i, summary in enumerate(use_relations):
-        relations_section_list.append([i, summary])
-    relations_context = list_of_list_to_csv(relations_section_list)
-
-    # Create text units section
-    text_units_section_list = [["id", "content"]]
-    for i, t in enumerate(use_text_units):
-        text_units_section_list.append([i, t["content"]])
-    text_units_context = list_of_list_to_csv(text_units_section_list)
-    
-    return entities_context, relations_context, text_units_context

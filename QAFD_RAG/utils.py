@@ -15,7 +15,7 @@ import xml.etree.ElementTree as ET
 import numpy as np
 import tiktoken
 
-from QAFDRAG.prompt import PROMPTS
+from QAFD_RAG.prompt import PROMPTS
 
 
 class UnlimitedSemaphore:
@@ -30,7 +30,7 @@ class UnlimitedSemaphore:
 
 ENCODER = None
 
-logger = logging.getLogger("QAFDRAG")
+logger = logging.getLogger("QAFD_RAG")
 
 
 def set_logger(log_file: str):
