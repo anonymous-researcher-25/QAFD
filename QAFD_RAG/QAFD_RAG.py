@@ -130,7 +130,7 @@ class QAFD_RAG:
 
 
     entity_extract_max_gleaning: int = 1
-    entity_summary_to_max_tokens: int = 5000
+    entity_summary_to_max_tokens: int = 500
 
 
     node_embedding_algorithm: str = "node2vec"
@@ -242,11 +242,10 @@ class QAFD_RAG:
             partial(
                 self.llm_model_func,
                 hashing_kv=self.llm_response_cache
-                if self.llm_response_cache
+                if self.enable_llm_cache
+                and self.llm_response_cache
                 and hasattr(self.llm_response_cache, "global_config")
-                else self.key_string_value_json_storage_cls(
-                    global_config=asdict(self),
-                ),
+                else None,
                 **self.llm_model_kwargs,
             )
         )
@@ -525,11 +524,10 @@ class QAFD_RAG:
                 param,
                 asdict(self),
                 hashing_kv=self.llm_response_cache
-                if self.llm_response_cache
+                if self.enable_llm_cache
+                and self.llm_response_cache
                 and hasattr(self.llm_response_cache, "global_config")
-                else self.key_string_value_json_storage_cls(
-                    global_config=asdict(self),
-                ),
+                else None,
             )
             print("response all ready")
         else:

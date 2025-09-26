@@ -355,7 +355,7 @@ class NetworkXStorage(BaseGraphStorage):
     async def get_cached_nx_graph(self) -> nx.Graph:
         """Get cached NetworkX graph instance to avoid repeated construction"""
         if self._cached_nx_graph is None:
-            logger.info("Building cached NetworkX graph...")
+            # logger.info("Building cached NetworkX graph...")
             # Build undirected graph for flow diffusion
             G = nx.Graph()
             
@@ -378,9 +378,9 @@ class NetworkXStorage(BaseGraphStorage):
                 node_count += 1
             
             self._cached_nx_graph = G
-            logger.info(f"Successfully cached NetworkX graph with {node_count} nodes and {edge_count} edges")
-        else:
-            logger.info(f"Using cached NetworkX graph with {self._cached_nx_graph.number_of_nodes()} nodes and {self._cached_nx_graph.number_of_edges()} edges")
+        #     logger.info(f"Successfully cached NetworkX graph with {node_count} nodes and {edge_count} edges")
+        # else:
+        #     logger.info(f"Using cached NetworkX graph with {self._cached_nx_graph.number_of_nodes()} nodes and {self._cached_nx_graph.number_of_edges()} edges")
         
         return self._cached_nx_graph
 
@@ -394,9 +394,9 @@ class NetworkXStorage(BaseGraphStorage):
             if os.path.exists(self._node_embeddings_file):
                 persisted = load_json(self._node_embeddings_file) or {}
                 if isinstance(persisted, dict) and len(persisted) > 0:
-                    logger.info(
-                        f"Loaded node embeddings from file ({len(persisted)} nodes): {self._node_embeddings_file}"
-                    )
+                    # logger.info(
+                    #     f"Loaded node embeddings from file ({len(persisted)} nodes): {self._node_embeddings_file}"
+                    # )
                     return persisted
         except Exception as e:
             logger.warning(
@@ -404,7 +404,7 @@ class NetworkXStorage(BaseGraphStorage):
             )
 
         # 2) Compute if not available on disk
-        logger.info("No persisted node embeddings found, computing new ones...")
+        # logger.info("No persisted node embeddings found, computing new ones...")
         if "embedding_func" not in global_config or not global_config["embedding_func"]:
             logger.warning("No embedding function available in global config")
             return {}
@@ -415,9 +415,9 @@ class NetworkXStorage(BaseGraphStorage):
                 logger.warning("No nodes found in graph for embedding computation")
                 return {}
 
-            logger.info(
-                f"Preparing to compute embeddings for {len(all_nodes)} nodes..."
-            )
+            # logger.info(
+            #     f"Preparing to compute embeddings for {len(all_nodes)} nodes..."
+            # )
 
             # Get batch size and token limits
             batch_size = global_config.get("embedding_batch_num", 32)
@@ -506,9 +506,9 @@ class NetworkXStorage(BaseGraphStorage):
             # Persist to disk
             try:
                 write_json(node_embeddings, self._node_embeddings_file)
-                logger.info(
-                    f"Persisted node embeddings to file: {self._node_embeddings_file} ({len(node_embeddings)} nodes)"
-                )
+                # logger.info(
+                #     f"Persisted node embeddings to file: {self._node_embeddings_file} ({len(node_embeddings)} nodes)"
+                # )
             except Exception as e:
                 logger.error(
                     f"Failed to persist node embeddings to {self._node_embeddings_file}: {e}"
@@ -523,12 +523,12 @@ class NetworkXStorage(BaseGraphStorage):
     async def get_cached_query_embedding(self, query: str, global_config: dict) -> list:
         """Get cached query embedding to avoid repeated computation"""
         if query not in self._query_embeddings_cache:
-            logger.info(f"Computing new query embedding for: {query[:50]}...")
+            # logger.info(f"Computing new query embedding for: {query[:50]}...")
             if "embedding_func" in global_config and global_config["embedding_func"]:
                 try:
                     query_embedding_array = await global_config["embedding_func"]([query])
                     self._query_embeddings_cache[query] = query_embedding_array[0].tolist()
-                    logger.info(f"Successfully cached query embedding for: {query[:50]}...")
+                    # logger.info(f"Successfully cached query embedding for: {query[:50]}...")
                     
                     # Limit cache size to avoid excessive memory usage
                     max_cache_size = 100  # Cache at most 100 query embeddings
@@ -536,7 +536,7 @@ class NetworkXStorage(BaseGraphStorage):
                         # Remove oldest cache entry
                         oldest_query = next(iter(self._query_embeddings_cache))
                         del self._query_embeddings_cache[oldest_query]
-                        logger.info(f"Removed oldest query embedding from cache to maintain size limit")
+                        # logger.info(f"Removed oldest query embedding from cache to maintain size limit")
                         
                 except Exception as e:
                     logger.error(f"Failed to compute query embedding: {e}")
@@ -544,8 +544,8 @@ class NetworkXStorage(BaseGraphStorage):
             else:
                 logger.warning("No embedding function available in global config")
                 return None
-        else:
-            logger.info(f"Using cached query embedding for: {query[:50]}...")
+        # else:
+        #     logger.info(f"Using cached query embedding for: {query[:50]}...")
         
         return self._query_embeddings_cache[query]
 

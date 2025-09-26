@@ -22,6 +22,7 @@ from .utils import (
     pack_user_ass_to_openai_messages,
     split_string_by_multi_markers,
     truncate_list_by_token_size,
+    process_combine_contexts,
     compute_args_hash,
     handle_cache,
     save_to_cache,
@@ -119,6 +120,7 @@ class QueryAwareWeightedFlowDiffusion:
             # Apply modest boost: original_weight * (1 + small_boost)
             query_factor = (node1_query_sim + node2_query_sim) / 2.0
             smart_weight = original_weight * (1.0 + query_factor * 0.5)
+            # smart_weight = original_weight * (node1_query_sim**2) * (node2_query_sim**2)
 
         # Cache and return
         self.edge_weights_cache[cache_key] = smart_weight
@@ -994,7 +996,7 @@ async def _build_query_context(
                 query_param,
                 global_config,
             )
-            print("low level entities: ", local_entities_context)
+            # print("low level entities: ", local_entities_context)
         
         # Get global information using hl_keywords
         global_entities_context, global_relations_context, global_text_units_context = "", "", ""
@@ -1011,80 +1013,160 @@ async def _build_query_context(
                 query_param,
                 global_config,
             )
-            print("high level entities: ", global_entities_context)
+            # print("high level entities: ", global_entities_context)
     
     # Return context based on mode
     if query_param.mode == "local":
-        if query_param.return_raw_entities:
-            return entities_context
-        elif query_param.return_raw_clusters:
-            return relations_context
+        # if query_param.return_raw_entities:
+        #     return entities_context
 
-        return f"""
+        # Handle different relation context formats
+        if query_param.return_raw_clusters and query_param.cluster_json_format == "text":
+            relations_section = f"""
+-----low-level relationship information-----
+{relations_context}
+"""
+        else:
+            relations_section = f"""
+-----low-level relationship information-----
+```csv
+{relations_context}
+```
+"""
+
+        # When returning raw clusters, skip entities_context to avoid duplication
+        if query_param.return_raw_clusters:
+            return f"""
+-----local-information-----
+{relations_section}
+-----Sources-----
+```csv
+{text_units_context}
+```
+"""
+        else:
+            return f"""
 -----local-information-----
 -----low-level entity information-----
 ```csv
 {entities_context}
 ```
------low-level relationship information-----
-```csv
-{relations_context}
-```
+{relations_section}
 -----Sources-----
 ```csv
 {text_units_context}
 ```
 """
     elif query_param.mode == "global":
-        if query_param.return_raw_entities:
-            return entities_context
-        elif query_param.return_raw_clusters:
-            return relations_context
+        # if query_param.return_raw_entities:
+        #     return entities_context
         
-        return f"""
+        # Handle different relation context formats
+        if query_param.return_raw_clusters and query_param.cluster_json_format == "text":
+            relations_section = f"""
+-----high-level relationship information-----
+{relations_context}
+"""
+        else:
+            relations_section = f"""
+-----high-level relationship information-----
+```csv
+{relations_context}
+```
+"""
+
+        # When returning raw clusters, skip entities_context to avoid duplication
+        if query_param.return_raw_clusters:
+            return f"""
+-----global-information-----
+{relations_section}
+-----Sources-----
+```csv
+{text_units_context}
+```
+"""
+        else:
+            return f"""
 -----global-information-----
 -----high-level entity information-----
 ```csv
 {entities_context}
 ```
------high-level relationship information-----
-```csv
-{relations_context}
-```
+{relations_section}
 -----Sources-----
 ```csv
 {text_units_context}
 ```
 """
     elif query_param.mode == "hybrid":
-        if query_param.return_raw_entities:
-            # Merge local + global entities CSV into one CSV and reindex id
-            merged_rows = []
-            if local_entities_context:
-                merged_rows += csv_string_to_list(local_entities_context)[1:]
-            if global_entities_context:
-                merged_rows += csv_string_to_list(global_entities_context)[1:]
-            for idx, row in enumerate(merged_rows):
-                if row:
-                    row[0] = str(idx)
-            merged_entities_csv = list_of_list_to_csv(
-                [["id", "entity", "type", "description", "rank"]] + merged_rows
-            )
-            return merged_entities_csv
-        elif query_param.return_raw_clusters:
-            return local_relations_context + global_relations_context
+        # if query_param.return_raw_entities:
+        #     # Merge local + global entities CSV into one CSV and reindex id
+        #     merged_rows = []
+        #     if local_entities_context:
+        #         merged_rows += csv_string_to_list(local_entities_context)[1:]
+        #     if global_entities_context:
+        #         merged_rows += csv_string_to_list(global_entities_context)[1:]
+        #     for idx, row in enumerate(merged_rows):
+        #         if row:
+        #             row[0] = str(idx)
+        #     merged_entities_csv = list_of_list_to_csv(
+        #         [["id", "entity", "type", "description", "rank"]] + merged_rows
+        #     )
+        #     return merged_entities_csv
         
-        return f"""
+        # Combine local and global text units contexts to avoid duplication
+        combined_text_units_context = process_combine_contexts(global_text_units_context, local_text_units_context)
+        
+        # Handle different relation context formats for local
+        if query_param.return_raw_clusters and query_param.cluster_json_format == "text":
+            local_relations_section = f"""
+-----local relationship information-----
+{local_relations_context}
+"""
+        else:
+            local_relations_section = f"""
+-----local relationship information-----
+```csv
+{local_relations_context}
+```
+"""
+
+        # Handle different relation context formats for global
+        if query_param.return_raw_clusters and query_param.cluster_json_format == "text":
+            global_relations_section = f"""
+-----global relationship information-----
+{global_relations_context}
+"""
+        else:
+            global_relations_section = f"""
+-----global relationship information-----
+```csv
+{global_relations_context}
+```
+"""
+        
+        # When returning raw clusters, skip entities_context to avoid duplication
+        if query_param.return_raw_clusters:
+            return f"""
+-----hybrid-information-----
+-----local information (from low-level keywords)-----
+{local_relations_section}
+-----global information (from high-level keywords)-----
+{global_relations_section}
+-----combined sources (from both local and global keywords)-----
+```csv
+{combined_text_units_context}
+```
+"""
+        else:
+            return f"""
 -----hybrid-information-----
 -----local information (from low-level keywords)-----
 -----local entity information-----
 ```csv
 {local_entities_context}
 ```
------local relationship information-----
-```csv
-{local_relations_context}
-```
+{local_relations_section}
 -----local sources-----
 ```csv
 {local_text_units_context}
@@ -1094,15 +1176,46 @@ async def _build_query_context(
 ```csv
 {global_entities_context}
 ```
------global relationship information-----
-```csv
-{global_relations_context}
-```
+{global_relations_section}
 -----global sources-----
 ```csv
 {global_text_units_context}
 ```
+-----combined sources (from both local and global keywords)-----
+```csv
+{combined_text_units_context}
+```
 """
+
+#         return f"""
+# -----hybrid-information-----
+# -----local information (from low-level keywords)-----
+# -----local entity information-----
+# ```csv
+# {local_entities_context}
+# ```
+# -----local relationship information-----
+# ```csv
+# {local_relations_context}
+# ```
+# -----local sources-----
+# ```csv
+# {local_text_units_context}
+# ```
+# -----global information (from high-level keywords)-----
+# -----global entity information-----
+# ```csv
+# {global_entities_context}
+# ```
+# -----global relationship information-----
+# ```csv
+# {global_relations_context}
+# ```
+# -----global sources-----
+# ```csv
+# {global_text_units_context}
+# ```
+# """
     else:
         return ""
 
@@ -1165,9 +1278,9 @@ async def _get_node_data_with_flow_diffusion(
         node_datas, query, query_param, knowledge_graph_inst, global_config
     )
 
-    logger.info(
-        f"Flow diffusion query uses {len(node_datas)} entities, {len(use_relations)} cluster summaries, {len(use_text_units)} text units"
-    )
+    # logger.info(
+    #     f"Flow diffusion query uses {len(node_datas)} entities, {len(use_relations)} cluster summaries, {len(use_text_units)} text units"
+    # )
 
     entites_section_list = [["id", "entity", "type", "description", "rank"]]
     for i, n in enumerate(node_datas):
@@ -1182,9 +1295,14 @@ async def _get_node_data_with_flow_diffusion(
         )
     entities_context = list_of_list_to_csv(entites_section_list)
 
-    # Relations context: return JSON clusters when requested; otherwise CSV
+    # Relations context: return raw clusters when requested; otherwise CSV
     if query_param.return_raw_clusters:
-        relations_context = use_relations
+        if query_param.cluster_json_format == "text":
+            # For text format, join all cluster texts with separators
+            relations_context = "\n\n" + "="*50 + "\n\n".join(use_relations)
+        else:
+            # For JSON formats, return as-is (list of dicts)
+            relations_context = use_relations
     else:
         relations_section_list = [["id", "cluster_summary"]]
         for i, summary in enumerate(use_relations):
@@ -1227,14 +1345,14 @@ async def _get_embeddings_for_flow_diffusion(
         try:
             # Prioritize using cached node embeddings
             if hasattr(knowledge_graph_inst, 'get_cached_node_embeddings'):
-                logger.info("Attempting to use cached node embeddings...")
+                # logger.info("Attempting to use cached node embeddings...")
                 node_embeddings = await knowledge_graph_inst.get_cached_node_embeddings(global_config)
-                if node_embeddings:
-                    logger.info(f"Successfully using cached embeddings for {len(node_embeddings)} nodes")
-                else:
-                    logger.info("No cached embeddings found, will compute new ones")
+                # if node_embeddings:
+                #     logger.info(f"Successfully using cached embeddings for {len(node_embeddings)} nodes")
+                # else:
+                #     logger.info("No cached embeddings found, will compute new ones")
             else:
-                logger.info("Storage class does not support cached embeddings, computing new ones...")
+                # logger.info("Storage class does not support cached embeddings, computing new ones...")
                 # Get embeddings for all nodes in the graph with batching
                 all_nodes = list(graph.nodes())
                 if all_nodes:
@@ -1252,7 +1370,7 @@ async def _get_embeddings_for_flow_diffusion(
                             node_texts.append(node)
                     
                     # Process in batches to avoid token limit
-                    logger.info(f"Computing embeddings for {len(node_texts)} node texts in batches of {batch_size}...")
+                    # logger.info(f"Computing embeddings for {len(node_texts)} node texts in batches of {batch_size}...")
                     
                     # Import tiktoken for token counting
                     import tiktoken
@@ -1324,24 +1442,24 @@ async def _get_embeddings_for_flow_diffusion(
                         else:
                             logger.warning(f"Missing embedding for node {node}")
                     
-                    logger.info(f"Computed embeddings for {len(node_embeddings)} nodes")
+                    # logger.info(f"Computed embeddings for {len(node_embeddings)} nodes")
             
             # Get query embedding
             if query:
                 # Prioritize using cached query embedding
                 if hasattr(knowledge_graph_inst, 'get_cached_query_embedding'):
-                    logger.info("Attempting to use cached query embedding...")
+                    # logger.info("Attempting to use cached query embedding...")
                     subquery_embedding = await knowledge_graph_inst.get_cached_query_embedding(query, global_config)
                     if subquery_embedding is None:
                         logger.warning("Failed to get cached query embedding, computing new one...")
                         query_embedding_array = await global_config["embedding_func"]([query])
                         subquery_embedding = query_embedding_array[0].tolist()
-                        logger.info("Query embedding computed successfully")
+                        # logger.info("Query embedding computed successfully")
                 else:
-                    logger.info("Storage class does not support cached query embeddings, computing new one...")
+                    # logger.info("Storage class does not support cached query embeddings, computing new one...")
                     query_embedding_array = await global_config["embedding_func"]([query])
                     subquery_embedding = query_embedding_array[0].tolist()
-                    logger.info("Query embedding computed successfully")
+                    # logger.info("Query embedding computed successfully")
                 
         except Exception as e:
             logger.warning(f"Failed to get embeddings for query-aware flow diffusion: {e}")
@@ -1354,9 +1472,9 @@ async def _get_embeddings_for_flow_diffusion(
     return node_embeddings, subquery_embedding
 
 
-def _convert_subgraph_to_json(G: nx.Graph, cluster_nodes: list, diffused_nodes: dict, source_node: str) -> dict:
+def _convert_subgraph_to_text(G: nx.Graph, cluster_nodes: list, diffused_nodes: dict, source_node: str, text_mode: str = "detailed") -> str:
     """
-    Convert a subgraph to JSON format with nodes and edges information.
+    Convert a subgraph to compact text format with nodes and edges information.
     
     Parameters:
     -----------
@@ -1368,6 +1486,114 @@ def _convert_subgraph_to_json(G: nx.Graph, cluster_nodes: list, diffused_nodes: 
         Dictionary mapping nodes to their flow values
     source_node : str
         The source node for this cluster
+    text_mode : str
+        Text format mode: "detailed", "compact", or "minimal"
+        
+    Returns:
+    --------
+    str
+        Text representation of the subgraph
+    """
+    # Create subgraph from cluster nodes
+    support_nodes = set(cluster_nodes)
+    subgraph = G.subgraph(support_nodes)
+    
+    # Build node index map
+    node_index_map = {node: idx for idx, node in enumerate(cluster_nodes)}
+    
+    if text_mode == "minimal":
+        # Ultra-compact format: just node names and connections
+        nodes_text = [f"{i}:{node}" for i, node in enumerate(cluster_nodes)]
+        edges_text = []
+        for u, v, data in subgraph.edges(data=True):
+            weight = data.get('weight', 1.0)
+            u_idx = node_index_map.get(u)
+            v_idx = node_index_map.get(v)
+            if weight == 1.0:
+                edges_text.append(f"{u_idx}-{v_idx}")
+            else:
+                edges_text.append(f"{u_idx}-{v_idx}({weight:.2f})")
+        
+        max_flow = max(diffused_nodes.values()) if diffused_nodes else 0.0
+        return f"CLUSTER:{source_node}({len(cluster_nodes)},{max_flow:.2f}) | NODES:{','.join(nodes_text)} | EDGES:{','.join(edges_text)}"
+    
+    elif text_mode == "compact":
+        # Compact format: structured but concise
+        nodes_text = []
+        for i, node in enumerate(cluster_nodes):
+            node_attrs = G.nodes[node] if node in G.nodes else {}
+            node_type = node_attrs.get("entity_type", "UNK")
+            flow_value = diffused_nodes.get(node, 0.0)
+            nodes_text.append(f"{i}:{node}({node_type},{flow_value:.2f})")
+        
+        edges_text = []
+        for u, v, data in subgraph.edges(data=True):
+            weight = data.get('weight', 1.0)
+            u_idx = node_index_map.get(u)
+            v_idx = node_index_map.get(v)
+            if weight == 1.0:
+                edges_text.append(f"{u_idx}->{v_idx}")
+            else:
+                edges_text.append(f"{u_idx}->{v_idx}({weight:.2f})")
+        
+        max_flow = max(diffused_nodes.values()) if diffused_nodes else 0.0
+        return f"CLUSTER: {source_node} (size:{len(cluster_nodes)}, flow:{max_flow:.2f})\nNODES: {', '.join(nodes_text)}\nEDGES: {', '.join(edges_text)}"
+    
+    else:  # detailed mode
+        # Detailed format: full information
+        nodes_text = []
+        for i, node in enumerate(cluster_nodes):
+            node_attrs = G.nodes[node] if node in G.nodes else {}
+            node_degree = subgraph.degree(node) if node in subgraph else 0
+            flow_value = diffused_nodes.get(node, 0.0)
+            
+            node_type = node_attrs.get("entity_type", "UNKNOWN")
+            description = node_attrs.get("description", "UNKNOWN")
+            
+            # Compact node format: [idx] name (type) - description [degree, flow]
+            node_line = f"[{i}] {node} ({node_type}) - {description} [deg:{node_degree}, flow:{flow_value:.3f}]"
+            nodes_text.append(node_line)
+        
+        # Format edges
+        edges_text = []
+        for u, v, data in subgraph.edges(data=True):
+            weight = data.get('weight', 1.0)
+            u_idx = node_index_map.get(u)
+            v_idx = node_index_map.get(v)
+            
+            if weight == 1.0:
+                edge_line = f"[{u_idx}]->[{v_idx}]"
+            else:
+                edge_line = f"[{u_idx}]->[{v_idx}] (w:{weight:.3f})"
+            edges_text.append(edge_line)
+        
+        # Combine into final text
+        max_flow = max(diffused_nodes.values()) if diffused_nodes else 0.0
+        text_output = f"""CLUSTER: {source_node} (size:{len(cluster_nodes)}, max_flow:{max_flow:.3f})
+NODES:
+{chr(10).join(nodes_text)}
+EDGES:
+{chr(10).join(edges_text)}"""
+        
+        return text_output
+
+
+def _convert_subgraph_to_json(G: nx.Graph, cluster_nodes: list, diffused_nodes: dict, source_node: str, compact_mode: str = "compact") -> dict:
+    """
+    Convert a subgraph to compact JSON format with nodes and edges information.
+    
+    Parameters:
+    -----------
+    G : nx.Graph
+        The original graph
+    cluster_nodes : list
+        List of nodes in the cluster
+    diffused_nodes : dict
+        Dictionary mapping nodes to their flow values
+    source_node : str
+        The source node for this cluster
+    compact_mode : str
+        Format mode: "compact" (default), "minimal", or "original"
         
     Returns:
     --------
@@ -1378,40 +1604,89 @@ def _convert_subgraph_to_json(G: nx.Graph, cluster_nodes: list, diffused_nodes: 
     support_nodes = set(cluster_nodes)
     subgraph = G.subgraph(support_nodes)
     
-    # Convert nodes to JSON format
-    nodes_json = []
-    # Build a local index map so node "id" matches the CSV-style index
+    # Build node index map
     node_index_map = {node: idx for idx, node in enumerate(cluster_nodes)}
-    for node in cluster_nodes:
-        node_attrs = G.nodes[node] if node in G.nodes else {}
-        node_degree = subgraph.degree(node) if node in subgraph else 0
-        nodes_json.append({
-            "id": node_index_map[node],
-            "entity": node,
-            "type": node_attrs.get("entity_type", "UNKNOWN"),
-            "description": node_attrs.get("description", "UNKNOWN"),
-            "rank": node_degree,
-        })
     
-    # Convert edges to JSON format
-    edges_json = []
-    for u, v, data in subgraph.edges(data=True):
-        edges_json.append({
-            "source": u,
-            "target": v,
-            "source_id": node_index_map.get(u),
-            "target_id": node_index_map.get(v),
-            "weight": data.get('weight', 1.0)
-        })
+    if compact_mode == "minimal":
+        # Ultra-compact format: only essential data
+        nodes_minimal = [node for node in cluster_nodes]  # Just node names
+        edges_minimal = []
+        for u, v, data in subgraph.edges(data=True):
+            weight = data.get('weight', 1.0)
+            if weight != 1.0:  # Only store non-default weights
+                edges_minimal.append([node_index_map.get(u), node_index_map.get(v), round(weight, 2)])
+            else:
+                edges_minimal.append([node_index_map.get(u), node_index_map.get(v)])
+        
+        return {
+            "s": source_node,  # source
+            "n": nodes_minimal,  # nodes (names only)
+            "e": edges_minimal,  # edges (indices only)
+            "f": round(max(diffused_nodes.values()) if diffused_nodes else 0.0, 2)  # max flow
+        }
     
-    return {
-        "source_node": source_node,
-        "cluster_size": len(cluster_nodes),
-        "max_flow_value": max(diffused_nodes.values()) if diffused_nodes else 0.0,
-        "nodes": nodes_json,
-        "edges": edges_json,
-        "total_edges": len(edges_json)
-    }
+    elif compact_mode == "original":
+        # Original verbose format (for backward compatibility)
+        nodes_json = []
+        for node in cluster_nodes:
+            node_attrs = G.nodes[node] if node in G.nodes else {}
+            node_degree = subgraph.degree(node) if node in subgraph else 0
+            nodes_json.append({
+                "id": node_index_map[node],
+                "entity": node,
+                "type": node_attrs.get("entity_type", "UNKNOWN"),
+                "description": node_attrs.get("description", "UNKNOWN"),
+                "rank": node_degree,
+            })
+        
+        edges_json = []
+        for u, v, data in subgraph.edges(data=True):
+            edges_json.append({
+                "source": u,
+                "target": v,
+                "source_id": node_index_map.get(u),
+                "target_id": node_index_map.get(v),
+                "weight": data.get('weight', 1.0)
+            })
+        
+        return {
+            "source_node": source_node,
+            "cluster_size": len(cluster_nodes),
+            "max_flow_value": max(diffused_nodes.values()) if diffused_nodes else 0.0,
+            "nodes": nodes_json,
+            "edges": edges_json,
+            "total_edges": len(edges_json)
+        }
+    
+    else:  # compact mode (default)
+        # Compact format: arrays with short field names
+        nodes_compact = []
+        for node in cluster_nodes:
+            node_attrs = G.nodes[node] if node in G.nodes else {}
+            node_degree = subgraph.degree(node) if node in subgraph else 0
+            nodes_compact.append([
+                node,  # name
+                node_attrs.get("entity_type", "UNKNOWN"),  # type
+                node_attrs.get("description", "UNKNOWN"),  # description
+                node_degree  # degree
+            ])
+        
+        edges_compact = []
+        for u, v, data in subgraph.edges(data=True):
+            edges_compact.append([
+                node_index_map.get(u),  # source index
+                node_index_map.get(v),  # target index
+                round(data.get('weight', 1.0), 3)  # weight (rounded to 3 decimals)
+            ])
+        
+        return {
+            "src": source_node,  # source node
+            "sz": len(cluster_nodes),  # cluster size
+            "max_flow": round(max(diffused_nodes.values()) if diffused_nodes else 0.0, 3),  # max flow value
+            "n": nodes_compact,  # nodes array
+            "e": edges_compact,  # edges array
+            "te": len(edges_compact)  # total edges
+        }
 
 
 async def _find_flow_diffusion_clusters_and_summarize(
@@ -1445,11 +1720,11 @@ async def _find_flow_diffusion_clusters_and_summarize(
     """
     # Use cached NetworkX graph to avoid repeated construction
     if hasattr(knowledge_graph_inst, 'get_cached_nx_graph'):
-        logger.info("Attempting to use cached NetworkX graph...")
+        # logger.info("Attempting to use cached NetworkX graph...")
         G = await knowledge_graph_inst.get_cached_nx_graph()
-        logger.info(f"Successfully obtained NetworkX graph with {G.number_of_nodes()} nodes and {G.number_of_edges()} edges")
+        # logger.info(f"Successfully obtained NetworkX graph with {G.number_of_nodes()} nodes and {G.number_of_edges()} edges")
     else:
-        logger.info("Storage class does not support cached graphs, building new one...")
+        # logger.info("Storage class does not support cached graphs, building new one...")
         # Compatibility handling: if no cache method, use original approach
         G = nx.Graph()
         edges = await knowledge_graph_inst.edges()
@@ -1464,7 +1739,7 @@ async def _find_flow_diffusion_clusters_and_summarize(
                 G.add_edge(u, v, weight=1.0)  # Default weight: 1.0 if not specified
         
         G.add_nodes_from(nodes)
-        logger.info(f"Built new NetworkX graph with {G.number_of_nodes()} nodes and {G.number_of_edges()} edges")
+        # logger.info(f"Built new NetworkX graph with {G.number_of_nodes()} nodes and {G.number_of_edges()} edges")
     
     # Get source nodes from node_datas (limit to configured maximum)
     source_nodes = [dp["entity_name"] for dp in node_datas[:query_param.max_source_nodes]]
@@ -1473,22 +1748,22 @@ async def _find_flow_diffusion_clusters_and_summarize(
     all_clusters = []
     use_llm_func = global_config["llm_model_func"]
     
-    logger.info(f"Starting flow diffusion from {len(source_nodes)} source nodes independently")
+    # logger.info(f"Starting flow diffusion from {len(source_nodes)} source nodes independently")
     
     # Pre-compute node embeddings and query embeddings to avoid repeated computation in loops
-    logger.info("Pre-computing embeddings for flow diffusion...")
+    # logger.info("Pre-computing embeddings for flow diffusion...")
     node_embeddings, subquery_embedding = await _get_embeddings_for_flow_diffusion(
         G, query, knowledge_graph_inst, global_config, query_param
     )
-    logger.info(f"Pre-computed embeddings: {len(node_embeddings)} nodes, query embedding: {'Yes' if subquery_embedding else 'No'}")
+    # logger.info(f"Pre-computed embeddings: {len(node_embeddings)} nodes, query embedding: {'Yes' if subquery_embedding else 'No'}")
     
     # Initialize cluster processing based on configuration
     all_clusters = []
     
-    if query_param.use_batch_cluster_summarization:
-        logger.info("Using batch cluster summarization mode (more efficient)")
-    else:
-        logger.info("Using individual cluster summarization mode (original approach)")
+    # if query_param.use_batch_cluster_summarization:
+    #     logger.info("Using batch cluster summarization mode (more efficient)")
+    # else:
+    #     logger.info("Using individual cluster summarization mode (original approach)")
     
     if query_param.use_batch_cluster_summarization:
         # Collect all clusters first for batch processing
@@ -1552,11 +1827,16 @@ async def _find_flow_diffusion_clusters_and_summarize(
                 
                 # Check if we should return raw cluster data instead of LLM summaries
                 if query_param.return_raw_clusters:
-                    # Convert subgraph to JSON format
-                    cluster_json = _convert_subgraph_to_json(G, cluster_nodes, diffused_nodes, source_node)
-                    # Add node details to the JSON
-                    cluster_json["node_details"] = cluster_node_data
-                    raw_clusters.append(cluster_json)
+                    if query_param.cluster_json_format == "text":
+                        # Convert subgraph to text format
+                        cluster_text = _convert_subgraph_to_text(G, cluster_nodes, diffused_nodes, source_node, query_param.cluster_text_mode)
+                        raw_clusters.append(cluster_text)
+                    else:
+                        # Convert subgraph to JSON format
+                        cluster_json = _convert_subgraph_to_json(G, cluster_nodes, diffused_nodes, source_node, query_param.cluster_json_format)
+                        # Add node details to the JSON
+                        cluster_json["node_details"] = cluster_node_data
+                        raw_clusters.append(cluster_json)
                 else:
                     # Collect cluster data for batch processing
                     clusters_to_summarize.append((cluster_node_data, source_node))
@@ -1573,7 +1853,7 @@ async def _find_flow_diffusion_clusters_and_summarize(
                 # Process clusters in batches
                 for i in range(0, len(clusters_to_summarize), batch_size):
                     batch_clusters = clusters_to_summarize[i:i + batch_size]
-                    logger.info(f"Processing batch {i//batch_size + 1}/{(len(clusters_to_summarize) + batch_size - 1)//batch_size} with {len(batch_clusters)} clusters")
+                    # logger.info(f"Processing batch {i//batch_size + 1}/{(len(clusters_to_summarize) + batch_size - 1)//batch_size} with {len(batch_clusters)} clusters")
                     
                     cluster_summaries = await _summarize_clusters_batch_with_llm(
                         batch_clusters, use_llm_func, global_config
@@ -1640,11 +1920,16 @@ async def _find_flow_diffusion_clusters_and_summarize(
                 
                 # Check if we should return raw cluster data instead of LLM summaries
                 if query_param.return_raw_clusters:
-                    # Convert subgraph to JSON format
-                    cluster_json = _convert_subgraph_to_json(G, cluster_nodes, diffused_nodes, source_node)
-                    # Add node details to the JSON
-                    cluster_json["node_details"] = cluster_node_data
-                    all_clusters.append(cluster_json)
+                    if query_param.cluster_json_format == "text":
+                        # Convert subgraph to text format
+                        cluster_text = _convert_subgraph_to_text(G, cluster_nodes, diffused_nodes, source_node, query_param.cluster_text_mode)
+                        all_clusters.append(cluster_text)
+                    else:
+                        # Convert subgraph to JSON format
+                        cluster_json = _convert_subgraph_to_json(G, cluster_nodes, diffused_nodes, source_node, query_param.cluster_json_format)
+                        # Add node details to the JSON
+                        cluster_json["node_details"] = cluster_node_data
+                        all_clusters.append(cluster_json)
                 else:
                     # Create cluster summary using LLM (individual processing)
                     cluster_summary = await _summarize_cluster_with_llm(
@@ -1748,7 +2033,7 @@ Keep each summary concise but informative, focusing on the relationships and the
     if global_config and "entity_summary_to_max_tokens" in global_config:
         max_tokens = global_config["entity_summary_to_max_tokens"] * len(valid_clusters)  # Scale with number of clusters
     
-    logger.info(f"Processing batch of {len(valid_clusters)} clusters with max_tokens={max_tokens}")
+    # logger.info(f"Processing batch of {len(valid_clusters)} clusters with max_tokens={max_tokens}")
 
     try:
         batch_summary = await use_llm_func(prompt, max_tokens=max_tokens)
@@ -1963,252 +2248,3 @@ async def _find_most_related_text_unit_from_entities(
 
     all_text_units = [t["data"] for t in all_text_units]
     return all_text_units
-
-
-async def evaluate_multiple_answers(
-    query: str,
-    answers: list[str],
-    use_llm_func: callable,
-) -> dict:
-    """
-    Evaluate multiple answers to the same question based on five criteria.
-    
-    Parameters:
-    -----------
-    query : str
-        The original question
-    answers : list[str]
-        List of answers to evaluate
-    use_llm_func : callable
-        LLM function to use for evaluation
-        
-    Returns:
-    --------
-    dict
-        Evaluation results with scores and rankings for each answer
-    """
-    if len(answers) < 2:
-        logger.warning("Need at least 2 answers for evaluation")
-        return {}
-    
-    # Create evaluation prompt for multiple answers
-    answers_text = ""
-    for i, answer in enumerate(answers, 1):
-        answers_text += f"Answer {i}: {answer}\n\n"
-    
-    prompt = f"""---Role---
-You are an expert tasked with evaluating multiple answers to the same question based on five criteria: Comprehensiveness, Diversity, Logicality, Relevance, and Coherence.
-
----Goal---
-You will evaluate {len(answers)} answers to the same question based on five criteria:
-- Comprehensiveness: How much detail does the answer provide to cover all aspects and details of the question?
-- Diversity: How varied and rich is the answer in providing different perspectives and insights on the question?
-- Logicality: How logically does the answer respond to all parts of the question?
-- Relevance: How relevant is the answer to the question, staying focused and addressing the intended topic or issue?
-- Coherence: How well does the answer maintain internal logical connections between its parts, ensuring a smooth and consistent structure?
-
-Here is the question: {query}
-
-Here are the {len(answers)} answers:
-{answers_text}
-
-For each criterion, assign a score from 1 to 10 to each answer, where:
-- 1-2: Poor performance
-- 3-4: Below average
-- 5-6: Average
-- 7-8: Good
-- 9-10: Excellent
-
-Then provide an overall ranking of the answers from best to worst.
-
-Output your evaluation in the following JSON format:
-{{
-    "criterion_scores": {{
-        "Comprehensiveness": {{
-            "Answer 1": [score],
-            "Answer 2": [score],
-            ...
-        }},
-        "Diversity": {{
-            "Answer 1": [score],
-            "Answer 2": [score],
-            ...
-        }},
-        "Logicality": {{
-            "Answer 1": [score],
-            "Answer 2": [score],
-            ...
-        }},
-        "Relevance": {{
-            "Answer 1": [score],
-            "Answer 2": [score],
-            ...
-        }},
-        "Coherence": {{
-            "Answer 1": [score],
-            "Answer 2": [score],
-            ...
-        }}
-    }},
-    "overall_scores": {{
-        "Answer 1": [total_score],
-        "Answer 2": [total_score],
-        ...
-    }},
-    "ranking": ["Answer X", "Answer Y", ...],
-    "best_answer": "Answer X",
-    "explanations": {{
-        "Answer 1": "Brief explanation of strengths and weaknesses",
-        "Answer 2": "Brief explanation of strengths and weaknesses",
-        ...
-    }}
-}}"""
-
-    try:
-        response = await use_llm_func(prompt, max_tokens=1000)
-        
-        # Extract JSON from response
-        import re
-        import json
-        
-        # Try to find JSON in the response
-        json_match = re.search(r'\{.*\}', response, re.DOTALL)
-        if json_match:
-            try:
-                evaluation_result = json.loads(json_match.group())
-                return evaluation_result
-            except json.JSONDecodeError as e:
-                logger.error(f"Failed to parse JSON from LLM response: {e}")
-                logger.error(f"Response: {response}")
-                return {}
-        else:
-            logger.error(f"No JSON found in LLM response: {response}")
-            return {}
-            
-    except Exception as e:
-        logger.error(f"Error during answer evaluation: {e}")
-        return {}
-
-
-async def compare_two_answers(
-    query: str,
-    answer1: str,
-    answer2: str,
-    use_llm_func: callable,
-) -> dict:
-    """
-    Compare two answers to the same question based on five criteria.
-    
-    Parameters:
-    -----------
-    query : str
-        The original question
-    answer1 : str
-        First answer to evaluate
-    answer2 : str
-        Second answer to evaluate
-    use_llm_func : callable
-        LLM function to use for evaluation
-        
-    Returns:
-    --------
-    dict
-        Comparison results with winner for each criterion and overall winner
-    """
-    prompt = f"""---Role---
-You are an expert tasked with evaluating two answers to the same question based on five criteria: Comprehensiveness, Diversity, Logicality, Relevance, and Coherence.
-
----Goal---
-You will evaluate two answers to the same question based on five criteria:
-- Comprehensiveness: How much detail does the answer provide to cover all aspects and details of the question?
-- Diversity: How varied and rich is the answer in providing different perspectives and insights on the question?
-- Logicality: How logically does the answer respond to all parts of the question?
-- Relevance: How relevant is the answer to the question, staying focused and addressing the intended topic or issue?
-- Coherence: How well does the answer maintain internal logical connections between its parts, ensuring a smooth and consistent structure?
-
-Here is the question: {query}
-
-Here are the two answers:
-Answer 1: {answer1}
-
-Answer 2: {answer2}
-
-For each criterion, choose the better answer (either Answer 1 or Answer 2) and explain why. Then, select an overall winner based on these five criteria.
-
-Output your evaluation in the following JSON format:
-{{
-    "Comprehensiveness": {{ "Winner": "[Answer 1 or Answer 2]", "Explanation": "[Provide explanation here]" }},
-    "Diversity": {{ "Winner": "[Answer 1 or Answer 2]", "Explanation": "[Provide explanation here]" }},
-    "Logicality": {{ "Winner": "[Answer 1 or Answer 2]", "Explanation": "[Provide explanation here]" }},
-    "Relevance": {{ "Winner": "[Answer 1 or Answer 2]", "Explanation": "[Provide explanation here]" }},
-    "Coherence": {{ "Winner": "[Answer 1 or Answer 2]", "Explanation": "[Provide explanation here]" }},
-    "Overall Winner": {{ "Winner": "[Answer 1 or Answer 2]", "Explanation": "[Summarize why this answer is the overall winner based on the five criteria]" }}
-}}"""
-
-    try:
-        response = await use_llm_func(prompt, max_tokens=800)
-        
-        # Extract JSON from response
-        import re
-        import json
-        
-        # Try to find JSON in the response
-        json_match = re.search(r'\{.*\}', response, re.DOTALL)
-        if json_match:
-            try:
-                comparison_result = json.loads(json_match.group())
-                return comparison_result
-            except json.JSONDecodeError as e:
-                logger.error(f"Failed to parse JSON from LLM response: {e}")
-                logger.error(f"Response: {response}")
-                return {}
-        else:
-            logger.error(f"No JSON found in LLM response: {response}")
-            return {}
-            
-    except Exception as e:
-        logger.error(f"Error during answer comparison: {e}")
-        return {}
-
-
-def calculate_evaluation_metrics(evaluation_result: dict) -> dict:
-    """
-    Calculate additional metrics from evaluation results.
-    
-    Parameters:
-    -----------
-    evaluation_result : dict
-        Result from evaluate_multiple_answers function
-        
-    Returns:
-    --------
-    dict
-        Additional metrics including average scores, standard deviations, etc.
-    """
-    if not evaluation_result or "criterion_scores" not in evaluation_result:
-        return {}
-    
-    metrics = {}
-    criterion_scores = evaluation_result["criterion_scores"]
-    
-    # Calculate average scores for each criterion
-    for criterion, scores in criterion_scores.items():
-        if isinstance(scores, dict):
-            values = [v for v in scores.values() if isinstance(v, (int, float))]
-            if values:
-                metrics[f"{criterion}_average"] = sum(values) / len(values)
-                metrics[f"{criterion}_max"] = max(values)
-                metrics[f"{criterion}_min"] = min(values)
-    
-    # Calculate overall statistics
-    if "overall_scores" in evaluation_result:
-        overall_scores = evaluation_result["overall_scores"]
-        if isinstance(overall_scores, dict):
-            values = [v for v in overall_scores.values() if isinstance(v, (int, float))]
-            if values:
-                metrics["overall_average"] = sum(values) / len(values)
-                metrics["overall_max"] = max(values)
-                metrics["overall_min"] = min(values)
-                metrics["score_range"] = max(values) - min(values)
-    
-    return metrics

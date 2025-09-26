@@ -31,6 +31,8 @@ class QueryParam:
     weight_func: Literal["multiply", "add", "original"] = "original"
     return_raw_entities: bool = False  # Return raw entity data as JSON instead of LLM summaries
     return_raw_clusters: bool = False  # Return raw cluster data as JSON instead of LLM summaries
+    cluster_json_format: Literal["compact", "minimal", "original", "text"] = "text"  # Format for cluster data
+    cluster_text_mode: Literal["detailed", "compact", "minimal"] = "detailed"  # Text format mode when using text format
     use_batch_cluster_summarization: bool = True  # Use batch processing for cluster summarization (more efficient)
     batch_cluster_size: int = 10  # Number of clusters to process in each batch (to avoid token limits)
 
