@@ -22,10 +22,10 @@ os.environ["OPENAI_API_KEY"] = "your-openai-api-key"
 ### 2.2. Import and Initialization
 
 ```python
-from QAFDRAG import QAFDRAG, QueryParam
+from QAFD_RAG import QAFD_RAG, QueryParam
 
 # Initialize the RAG system (choose your storage backends as needed)
-rag = QAFDRAG(
+rag = QAFD_RAG(
     working_dir="./QAFDRAG_cache",  # Directory for cache and storage files
     kv_storage="JsonKVStorage",     # Key-value storage backend
     vector_storage="NanoVectorDBStorage",  # Vector DB backend
@@ -77,9 +77,9 @@ You can also adjust other parameters in `QueryParam` (see code for all options).
 import os
 os.environ["OPENAI_API_KEY"] = "your-openai-api-key"
 
-from QAFDRAG import QAFDRAG, QueryParam
+from QAFD_RAG import QAFD_RAG, QueryParam
 
-rag = QAFDRAG(working_dir="./QAFDRAG_cache")
+rag = QAFD_RAG(working_dir="./QAFDRAG_cache")
 rag.insert("The Eiffel Tower is located in Paris and is a famous landmark.")
 answer = rag.query("Where is the Eiffel Tower?", QueryParam(mode="local"))
 print(answer)
@@ -87,51 +87,47 @@ print(answer)
 
 ## 4. Illustration
 
+![Graph-Based RAG Comparison](synthetic/graph-based%20rag%20comp.png)
+
 ![QAFD-RAG Illustration](question_illustration.png)
 
-Two-stage architecture of the QAFD-RAG framework. The indexing stage constructs a domain-specific knowledge graph by extracting entities, relations, and document-level structure from raw corpus data. The query stage processes an incoming user query in several steps: (1) keyword extraction identifies query-relevant dual-level keywords; (2) a query-aware flow diffusion algorithm propagates selected seed nodes over the graph based on semantic and structural signals; (3) clusters are collected for each seed node, and each cluster is summarized into natural language; and (4) cluster summaries, along with the original query, are passed to a language model for final response generation.
+Figure 2: Two-stage architecture of the QAFD-RAG framework. The indexing stage constructs a domain-specific knowledge graph by extracting entities, relations, and document-level structure from raw corpus data. The query stage processes an incoming user query in several steps: (1) keyword extraction identifies query-relevant dual-level keywords; (2) a query-aware flow diffusion algorithm propagates selected seed nodes over the graph based on semantic and structural signals; (3) clusters are collected for each seed node, and each cluster is summarized into natural language; and (4) cluster summaries, along with the original query, are passed to a language model for final response generation.
 
 ## 5. Dataset
 
-We evaluate using domain splits from the UltraDomain QA dataset, including Cooking, Mathematics, Mix, Music, Philosophy, and Physics. Dataset source: [UltraDomain on Hugging Face](https://huggingface.co/datasets/TommyChien/UltraDomain).
+We evaluate using domain splits from the UltraDomain QA dataset, including Agriculture, Biology, Cooking, History, Legal, etc.. Dataset source: [UltraDomain on Hugging Face](https://huggingface.co/datasets/TommyChien/UltraDomain).
 
 ## 6. Numerical Results
 
 Comparison of QAFD-RAG and baseline methods across five evaluation dimensions: Comprehensiveness, Diversity, Logicality, Relevance, and Coherence. Each score (ranging from 0 to 100) is the average of five independent evaluations conducted using GPT-4o. The best score in each row is highlighted in bold.
 
-| Domain | Metric | GraphRAG | LightRAG | PathRAG | QAFD-RAG |
-| --- | --- | ---: | ---: | ---: | ---: |
-| Cooking | Comprehensiveness | 86.23 (±7.00) | 82.11 (±7.56) | 87.26 (±8.02) | **89.25 (±3.82)** |
-| Cooking | Diversity | 79.10 (±8.72) | 74.97 (±9.46) | 81.87 (±8.68) | **83.42 (±5.25)** |
-| Cooking | Logicality | 90.79 (±2.68) | 87.49 (±5.82) | 90.20 (±5.97) | **91.35 (±2.73)** |
-| Cooking | Relevance | 95.14 (±2.91) | 92.27 (±5.88) | 93.60 (±8.24) | **95.45 (±2.83)** |
-| Cooking | Coherence | 90.63 (±1.75) | 87.98 (±4.09) | 90.56 (±4.10) | **91.58 (±2.04)** |
-| Mathematics | Comprehensiveness | 84.30 (±9.52) | 80.93 (±8.44) | 85.83 (±7.46) | **87.30 (±4.94)** |
-| Mathematics | Diversity | 77.46 (±10.68) | 74.07 (±10.40) | 81.11 (±8.15) | **82.56 (±6.09)** |
-| Mathematics | Logicality | 88.91 (±8.29) | 86.30 (±6.20) | 88.83 (±7.43) | **90.04 (±5.15)** |
-| Mathematics | Relevance | 92.65 (±10.34) | 90.77 (±8.26) | 91.62 (±10.23) | **93.36 (±7.24)** |
-| Mathematics | Coherence | 89.04 (±7.52) | 86.29 (±4.56) | 89.67 (±4.20) | **90.37 (±3.16)** |
-| Mix | Comprehensiveness | 82.76 (±11.41) | 78.72 (±13.12) | 84.66 (±6.34) | **87.15 (±3.46)** |
-| Mix | Diversity | 74.94 (±11.68) | 70.97 (±13.39) | 78.86 (±6.51) | **81.15 (±4.86)** |
-| Mix | Logicality | 88.45 (±6.95) | 85.72 (±7.00) | 88.81 (±5.62) | **90.70 (±2.93)** |
-| Mix | Relevance | 92.81 (±8.65) | 90.37 (±9.36) | 92.39 (±8.55) | **94.36 (±4.50)** |
-| Mix | Coherence | 88.90 (±3.34) | 86.26 (±4.68) | 89.16 (±3.63) | **90.36 (±2.07)** |
-| Music | Comprehensiveness | 85.32 (±6.46) | 81.14 (±8.54) | 87.02 (±4.46) | **87.95 (±3.99)** |
-| Music | Diversity | 79.37 (±7.92) | 75.08 (±10.13) | 82.32 (±4.92) | **83.40 (±4.47)** |
-| Music | Logicality | 90.02 (±4.63) | 86.64 (±6.29) | 90.11 (±4.66) | **90.56 (±3.77)** |
-| Music | Relevance | **94.14 (±7.01)** | 91.29 (±8.41) | 93.90 (±6.34) | 94.08 (±5.46) |
-| Music | Coherence | 89.80 (±3.25) | 87.34 (±4.36) | 90.48 (±3.14) | **90.94 (±2.39)** |
-| Philosophy | Comprehensiveness | 84.61 (±8.41) | 80.92 (±8.88) | 85.84 (±4.75) | **86.78 (±4.11)** |
-| Philosophy | Diversity | 78.36 (±8.90) | 74.36 (±9.63) | 81.32 (±5.16) | **81.91 (±4.69)** |
-| Philosophy | Logicality | 88.67 (±6.90) | 85.74 (±6.57) | 88.69 (±4.35) | **89.35 (±4.25)** |
-| Philosophy | Relevance | 93.53 (±8.05) | 90.85 (±7.32) | 92.75 (±6.48) | **93.63 (±5.91)** |
-| Philosophy | Coherence | 88.83 (±6.59) | 86.44 (±4.61) | 89.49 (±2.65) | **89.91 (±2.70)** |
-| Physics | Comprehensiveness | 86.33 (±7.32) | 84.45 (±4.39) | 88.77 (±3.20) | **89.51 (±3.14)** |
-| Physics | Diversity | 79.10 (±7.84) | 76.38 (±6.19) | 83.31 (±4.28) | **84.21 (±3.89)** |
-| Physics | Logicality | 90.29 (±7.68) | 89.13 (±4.37) | **91.82 (±2.75)** | 91.77 (±3.26) |
-| Physics | Relevance | 94.73 (±7.71) | 93.67 (±5.39) | 95.60 (±2.77) | **95.61 (±2.74)** |
-| Physics | Coherence | 89.99 (±7.37) | 88.65 (±2.76) | 91.60 (±1.94) | **91.67 (±2.14)** |
-
+| Dataset | Metric | GraphRAG | LightRAG | RAPTOR | HippoRAG | QAFD-RAG |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| Agriculture | Comprehensiveness | 87.30 (±4.46) | 83.65 (±5.97) | 83.32 (±8.67) | 82.51 (±5.14) | **89.93 (±3.36)** |
+| Agriculture | Diversity         | 82.85 (±4.73) | 77.71 (±7.34) | 76.65 (±12.08) | 76.26 (±9.23) | **84.95 (±4.26)** |
+| Agriculture | Logicality        | 90.80 (±5.84) | 88.85 (±3.76) | 89.54 (±3.63) | 88.84 (±3.26) | **92.10 (±2.53)** |
+| Agriculture | Relevance         | 94.01 (±6.62) | 93.55 (±4.16) | 94.56 (±3.41) | 94.09 (±2.48) | **95.67 (±3.28)** |
+| Agriculture | Coherence         | 90.08 (±3.23) | 88.67 (±2.57) | 89.47 (±3.01) | 88.79 (±2.73) | **92.00 (±1.62)** |
+| Biology     | Comprehensiveness | 85.76 (±10.80) | 83.92 (±4.13) | 83.57 (±6.20) | 83.07 (±4.15) | **89.44 (±3.92)** |
+| Biology     | Diversity         | 81.05 (±10.39) | 78.28 (±6.46) | 77.10 (±9.41) | 76.91 (±7.25) | **85.13 (±4.11)** |
+| Biology     | Logicality        | 88.94 (±11.70) | 88.40 (±4.24) | 88.33 (±5.62) | 88.07 (±3.69) | **91.19 (±4.20)** |
+| Biology     | Relevance         | 93.00 (±12.50) | 93.31 (±5.42) | 93.62 (±6.42) | 93.62 (±3.53) | **95.05 (±4.71)** |
+| Biology     | Coherence         | 88.57 (±11.10) | 88.09 (±2.86) | 88.67 (±4.21) | 88.52 (±2.90) | **91.33 (±2.59)** |
+| Cooking     | Comprehensiveness | 86.23 (±7.00) | 82.11 (±7.56) | 83.15 (±6.99) | 82.52 (±4.55) | **89.25 (±3.82)** |
+| Cooking     | Diversity         | 79.10 (±8.72) | 74.97 (±9.46) | 75.30 (±9.79) | 74.13 (±7.25) | **83.42 (±5.25)** |
+| Cooking     | Logicality        | 90.79 (±2.68) | 87.49 (±5.82) | 88.52 (±5.12) | 88.40 (±3.20) | **91.35 (±2.73)** |
+| Cooking     | Relevance         | 95.14 (±2.91) | 92.27 (±5.88) | 93.59 (±5.48) | 93.71 (±2.66) | **95.45 (±2.83)** |
+| Cooking     | Coherence         | 90.63 (±1.75) | 87.98 (±4.09) | 88.83 (±3.87) | 88.57 (±2.61) | **91.58 (±2.04)** |
+| History     | Comprehensiveness | 84.18 (±10.30) | 82.24 (±6.04) | 82.08 (±7.43) | 80.45 (±6.95) | **87.75 (±3.96)** |
+| History     | Diversity         | 78.88 (±9.97) | 76.42 (±7.51) | 75.59 (±9.75) | 74.61 (±8.22) | **83.14 (±4.40)** |
+| History     | Logicality        | 88.18 (±11.63) | 86.98 (±5.75) | 87.67 (±4.63) | 86.37 (±6.36) | **90.04 (±3.93)** |
+| History     | Relevance         | 92.35 (±13.51) | 92.18 (±6.17) | 92.94 (±4.93) | 91.54 (±8.22) | **93.77 (±6.25)** |
+| History     | Coherence         | 88.40 (±10.71) | 87.18 (±4.24) | 88.13 (±3.58) | 86.97 (±4.77) | **90.55 (±2.37)** |
+| Legal       | Comprehensiveness | 84.96 (±9.72) | 79.63 (±11.25) | 81.43 (±9.67) | 82.23 (±8.85) | **86.19 (±5.86)** |
+| Legal       | Diversity         | **78.74 (±10.28)** | 67.63 (±11.86) | 64.97 (±13.91) | 64.28 (±11.31) | 77.14 (±7.42) |
+| Legal       | Logicality        | 88.67 (±8.58) | 86.06 (±7.47) | 88.34 (±6.54) | 88.56 (±7.64) | **90.06 (±5.06)** |
+| Legal       | Relevance         | 91.01 (±10.90) | 90.77 (±10.17) | 93.29 (±9.18) | 93.60 (±9.45) | **93.30 (±9.66)** |
+| Legal       | Coherence         | 88.44 (±5.77) | 86.12 (±6.10) | 87.70 (±6.16) | 87.95 (±6.39) | **89.99 (±3.35)** |
 ---
 
 **Acknowledgments:** The development of QAFD-RAG for question answering (QA) tasks utilizes techniques from [GraphRAG](https://github.com/microsoft/graphrag), [LightRAG](https://github.com/HKUDS/LightRAG), and notably [PathRAG](https://github.com/BUPT-GAMMA/PathRAG). Please refer to their respective repositories for technical details.
